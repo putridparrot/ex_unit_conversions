@@ -3,7 +3,7 @@ defmodule UnitConversions.MixProject do
 
   def project do
     [
-      app: :unit_conversions,
+      app: :ex_unit_conversions,
       version: "0.1.0",
       elixir: "~> 1.17",
       start_permanent: Mix.env() == :prod,
