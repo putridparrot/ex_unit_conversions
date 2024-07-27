@@ -14,15 +14,15 @@ defmodule PutridParrot.Units.LuminousEnergy do
   end
 
   test "Convert known LumenHour to LumenMinute" do
-    assert_in_delta PutridParrot.Units.LumenHour.to_lumen_minute(1.2), 72.0, 0.01
-    assert_in_delta PutridParrot.Units.LumenHour.to_lumen_minute(0.8), 48.0, 0.01
-    assert_in_delta PutridParrot.Units.LumenHour.to_lumen_minute(109.00), 6540.0, 0.01
+    assert_in_delta PutridParrot.Units.LumenHour.to_lumenminute(1.2), 72.0, 0.01
+    assert_in_delta PutridParrot.Units.LumenHour.to_lumenminute(0.8), 48.0, 0.01
+    assert_in_delta PutridParrot.Units.LumenHour.to_lumenminute(109.00), 6540.0, 0.01
   end
 
   test "Convert known LumenHour to LumenSecond" do
-    assert_in_delta PutridParrot.Units.LumenHour.to_lumen_second(109.0), 392_400.0, 0.01
-    assert_in_delta PutridParrot.Units.LumenHour.to_lumen_second(6.1), 21960.0, 0.01
-    assert_in_delta PutridParrot.Units.LumenHour.to_lumen_second(0.7), 2520.0, 0.01
+    assert_in_delta PutridParrot.Units.LumenHour.to_lumensecond(109.0), 392_400.0, 0.01
+    assert_in_delta PutridParrot.Units.LumenHour.to_lumensecond(6.1), 21960.0, 0.01
+    assert_in_delta PutridParrot.Units.LumenHour.to_lumensecond(0.7), 2520.0, 0.01
   end
 
   test "Convert known LumenMinute to Talbot" do
@@ -32,15 +32,15 @@ defmodule PutridParrot.Units.LuminousEnergy do
   end
 
   test "Convert known LumenMinute to LumenHour" do
-    assert_in_delta PutridParrot.Units.LumenMinute.to_lumen_hour(89.0), 1.4833, 0.01
-    assert_in_delta PutridParrot.Units.LumenMinute.to_lumen_hour(9.0), 0.15, 0.01
-    assert_in_delta PutridParrot.Units.LumenMinute.to_lumen_hour(0.123), 0.00205, 0.01
+    assert_in_delta PutridParrot.Units.LumenMinute.to_lumenhour(89.0), 1.4833, 0.01
+    assert_in_delta PutridParrot.Units.LumenMinute.to_lumenhour(9.0), 0.15, 0.01
+    assert_in_delta PutridParrot.Units.LumenMinute.to_lumenhour(0.123), 0.00205, 0.01
   end
 
   test "Convert known LumenMinute to LumenSecond" do
-    assert_in_delta PutridParrot.Units.LumenMinute.to_lumen_second(0.123), 7.38, 0.01
-    assert_in_delta PutridParrot.Units.LumenMinute.to_lumen_second(8000.0), 480_000.0, 0.01
-    assert_in_delta PutridParrot.Units.LumenMinute.to_lumen_second(34.1), 2046.0, 0.01
+    assert_in_delta PutridParrot.Units.LumenMinute.to_lumensecond(0.123), 7.38, 0.01
+    assert_in_delta PutridParrot.Units.LumenMinute.to_lumensecond(8000.0), 480_000.0, 0.01
+    assert_in_delta PutridParrot.Units.LumenMinute.to_lumensecond(34.1), 2046.0, 0.01
   end
 
   test "Convert known LumenSecond to Talbot" do
@@ -50,32 +50,32 @@ defmodule PutridParrot.Units.LuminousEnergy do
   end
 
   test "Convert known LumenSecond to LumenHour" do
-    assert_in_delta PutridParrot.Units.LumenSecond.to_lumen_hour(190.0), 0.052778, 0.01
-    assert_in_delta PutridParrot.Units.LumenSecond.to_lumen_hour(200_600.0), 55.7222, 0.01
-    assert_in_delta PutridParrot.Units.LumenSecond.to_lumen_hour(1234.0), 0.342778, 0.01
+    assert_in_delta PutridParrot.Units.LumenSecond.to_lumenhour(190.0), 0.052778, 0.01
+    assert_in_delta PutridParrot.Units.LumenSecond.to_lumenhour(200_600.0), 55.7222, 0.01
+    assert_in_delta PutridParrot.Units.LumenSecond.to_lumenhour(1234.0), 0.342778, 0.01
   end
 
   test "Convert known LumenSecond to LumenMinute" do
-    assert_in_delta PutridParrot.Units.LumenSecond.to_lumen_minute(10900.0), 181.6667, 0.01
-    assert_in_delta PutridParrot.Units.LumenSecond.to_lumen_minute(50.3), 0.83833, 0.01
-    assert_in_delta PutridParrot.Units.LumenSecond.to_lumen_minute(276.0), 4.6, 0.01
+    assert_in_delta PutridParrot.Units.LumenSecond.to_lumenminute(10900.0), 181.6667, 0.01
+    assert_in_delta PutridParrot.Units.LumenSecond.to_lumenminute(50.3), 0.83833, 0.01
+    assert_in_delta PutridParrot.Units.LumenSecond.to_lumenminute(276.0), 4.6, 0.01
   end
 
   test "Convert known Talbot to LumenSecond" do
-    assert_in_delta PutridParrot.Units.Talbot.to_lumen_second(100.0), 100.0, 0.01
-    assert_in_delta PutridParrot.Units.Talbot.to_lumen_second(0.9), 0.9, 0.01
-    assert_in_delta PutridParrot.Units.Talbot.to_lumen_second(23.1), 23.1, 0.01
+    assert_in_delta PutridParrot.Units.Talbot.to_lumensecond(100.0), 100.0, 0.01
+    assert_in_delta PutridParrot.Units.Talbot.to_lumensecond(0.9), 0.9, 0.01
+    assert_in_delta PutridParrot.Units.Talbot.to_lumensecond(23.1), 23.1, 0.01
   end
 
   test "Convert known Talbot to LumenHour" do
-    assert_in_delta PutridParrot.Units.Talbot.to_lumen_hour(800.0), 0.222, 0.01
-    assert_in_delta PutridParrot.Units.Talbot.to_lumen_hour(6789.0), 1.885833, 0.01
-    assert_in_delta PutridParrot.Units.Talbot.to_lumen_hour(10900.0), 3.027778, 0.01
+    assert_in_delta PutridParrot.Units.Talbot.to_lumenhour(800.0), 0.222, 0.01
+    assert_in_delta PutridParrot.Units.Talbot.to_lumenhour(6789.0), 1.885833, 0.01
+    assert_in_delta PutridParrot.Units.Talbot.to_lumenhour(10900.0), 3.027778, 0.01
   end
 
   test "Convert known Talbot to LumenMinute" do
-    assert_in_delta PutridParrot.Units.Talbot.to_lumen_minute(900.0), 15.0, 0.01
-    assert_in_delta PutridParrot.Units.Talbot.to_lumen_minute(78.9), 1.315, 0.01
-    assert_in_delta PutridParrot.Units.Talbot.to_lumen_minute(1500.0), 25.0, 0.01
+    assert_in_delta PutridParrot.Units.Talbot.to_lumenminute(900.0), 15.0, 0.01
+    assert_in_delta PutridParrot.Units.Talbot.to_lumenminute(78.9), 1.315, 0.01
+    assert_in_delta PutridParrot.Units.Talbot.to_lumenminute(1500.0), 25.0, 0.01
   end
 end

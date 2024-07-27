@@ -27,12 +27,12 @@ defmodule PutridParrot.Units.Degrees do
   @doc """
   Converts the supplied Degrees value to Minute Of Arc
   """
-  def to_minute_of_arc(value), do: value * 60.0
+  def to_minuteofarc(value), do: value * 60.0
 
   @doc """
   Converts the supplied Degrees value to Seconds Of Arc
   """
-  def to_seconds_of_arc(value), do: value * 3600.0
+  def to_secondsofarc(value), do: value * 3600.0
 end
 
 defmodule PutridParrot.Units.Gradians do
@@ -58,12 +58,12 @@ defmodule PutridParrot.Units.Gradians do
   @doc """
   Converts the supplied Gradians value to Minute Of Arc
   """
-  def to_minute_of_arc(value), do: value * 54.0
+  def to_minuteofarc(value), do: value * 54.0
 
   @doc """
   Converts the supplied Gradians value to Seconds Of Arc
   """
-  def to_seconds_of_arc(value), do: value * 3240.0
+  def to_secondsofarc(value), do: value * 3240.0
 end
 
 defmodule PutridParrot.Units.Milliradians do
@@ -89,12 +89,12 @@ defmodule PutridParrot.Units.Milliradians do
   @doc """
   Converts the supplied Milliradians value to Minute Of Arc
   """
-  def to_minute_of_arc(value), do: value * (60.0 * 180.0) / (1000.0 * Math.pi())
+  def to_minuteofarc(value), do: value * (60.0 * 180.0) / (1000.0 * Math.pi())
 
   @doc """
   Converts the supplied Milliradians value to Seconds Of Arc
   """
-  def to_seconds_of_arc(value), do: value * (3600.0 * 180.0) / (1000.0 * Math.pi())
+  def to_secondsofarc(value), do: value * (3600.0 * 180.0) / (1000.0 * Math.pi())
 end
 
 defmodule PutridParrot.Units.MinuteOfArc do
@@ -125,7 +125,7 @@ defmodule PutridParrot.Units.MinuteOfArc do
   @doc """
   Converts the supplied Minute Of Arc value to Seconds Of Arc
   """
-  def to_seconds_of_arc(value), do: value * 60.0
+  def to_secondsofarc(value), do: value * 60.0
 end
 
 defmodule PutridParrot.Units.Radians do
@@ -151,12 +151,12 @@ defmodule PutridParrot.Units.Radians do
   @doc """
   Converts the supplied Radians value to Minute Of Arc
   """
-  def to_minute_of_arc(value), do: value * (60.0 * 180.0) / Math.pi()
+  def to_minuteofarc(value), do: value * (60.0 * 180.0) / Math.pi()
 
   @doc """
   Converts the supplied Radians value to Seconds Of Arc
   """
-  def to_seconds_of_arc(value), do: value * (3600.0 * 180.0) / Math.pi()
+  def to_secondsofarc(value), do: value * (3600.0 * 180.0) / Math.pi()
 end
 
 defmodule PutridParrot.Units.SecondsOfArc do
@@ -187,5 +187,5 @@ defmodule PutridParrot.Units.SecondsOfArc do
   @doc """
   Converts the supplied Seconds Of Arc value to Minute Of Arc
   """
-  def to_minute_of_arc(value), do: value / 60.0
+  def to_minuteofarc(value), do: value / 60.0
 end

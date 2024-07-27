@@ -12,32 +12,32 @@ defmodule PutridParrot.Units.Acres do
   @doc """
   Converts the supplied Acres value to Square Kilometres
   """
-  def to_square_kilometres(value), do: value / 247.105
+  def to_squarekilometres(value), do: value / 247.105
 
   @doc """
   Converts the supplied Acres value to Square Metres
   """
-  def to_square_metres(value), do: value * 4046.86
+  def to_squaremetres(value), do: value * 4046.86
 
   @doc """
   Converts the supplied Acres value to Square Miles
   """
-  def to_square_miles(value), do: value / 640.0
+  def to_squaremiles(value), do: value / 640.0
 
   @doc """
   Converts the supplied Acres value to Square Yards
   """
-  def to_square_yards(value), do: value * 4840.0
+  def to_squareyards(value), do: value * 4840.0
 
   @doc """
   Converts the supplied Acres value to Square Feet
   """
-  def to_square_feet(value), do: value * 43560.0
+  def to_squarefeet(value), do: value * 43560.0
 
   @doc """
   Converts the supplied Acres value to Square Inches
   """
-  def to_square_inches(value), do: value * 6_272_640.0
+  def to_squareinches(value), do: value * 6_272_640.0
 
   @doc """
   Converts the supplied Acres value to Hectares
@@ -53,32 +53,32 @@ defmodule PutridParrot.Units.Hectares do
   @doc """
   Converts the supplied Hectares value to Square Kilometres
   """
-  def to_square_kilometres(value), do: value / 100.0
+  def to_squarekilometres(value), do: value / 100.0
 
   @doc """
   Converts the supplied Hectares value to Square Metres
   """
-  def to_square_metres(value), do: value * 10000.0
+  def to_squaremetres(value), do: value * 10000.0
 
   @doc """
   Converts the supplied Hectares value to Square Miles
   """
-  def to_square_miles(value), do: value / 258.99881103
+  def to_squaremiles(value), do: value / 258.99881103
 
   @doc """
   Converts the supplied Hectares value to Square Yards
   """
-  def to_square_yards(value), do: value * 11959.900463011
+  def to_squareyards(value), do: value * 11959.900463011
 
   @doc """
   Converts the supplied Hectares value to Square Feet
   """
-  def to_square_feet(value), do: value * 107_639.0
+  def to_squarefeet(value), do: value * 107_639.0
 
   @doc """
   Converts the supplied Hectares value to Square Inches
   """
-  def to_square_inches(value), do: value * 15_500_031.0
+  def to_squareinches(value), do: value * 15_500_031.0
 
   @doc """
   Converts the supplied Hectares value to Acres
@@ -94,27 +94,27 @@ defmodule PutridParrot.Units.SquareFeet do
   @doc """
   Converts the supplied Square Feet value to Square Kilometres
   """
-  def to_square_kilometres(value), do: value / 10_763_910.41671
+  def to_squarekilometres(value), do: value / 10_763_910.41671
 
   @doc """
   Converts the supplied Square Feet value to Square Metres
   """
-  def to_square_metres(value), do: value / 10.76391042
+  def to_squaremetres(value), do: value / 10.76391042
 
   @doc """
   Converts the supplied Square Feet value to Square Miles
   """
-  def to_square_miles(value), do: value / 27_878_400.0
+  def to_squaremiles(value), do: value / 27_878_400.0
 
   @doc """
   Converts the supplied Square Feet value to Square Yards
   """
-  def to_square_yards(value), do: value / 9.0
+  def to_squareyards(value), do: value / 9.0
 
   @doc """
   Converts the supplied Square Feet value to Square Inches
   """
-  def to_square_inches(value), do: value * 144.0
+  def to_squareinches(value), do: value * 144.0
 
   @doc """
   Converts the supplied Square Feet value to Hectares
@@ -135,27 +135,27 @@ defmodule PutridParrot.Units.SquareInches do
   @doc """
   Converts the supplied Square Inches value to Square Kilometres
   """
-  def to_square_kilometres(value), do: value / 1_550_003_100.00
+  def to_squarekilometres(value), do: value / 1_550_003_100.00
 
   @doc """
   Converts the supplied Square Inches value to Square Metres
   """
-  def to_square_metres(value), do: value / 1550.0
+  def to_squaremetres(value), do: value / 1550.0
 
   @doc """
   Converts the supplied Square Inches value to Square Miles
   """
-  def to_square_miles(value), do: value / 4_014_489_600.0
+  def to_squaremiles(value), do: value / 4_014_489_600.0
 
   @doc """
   Converts the supplied Square Inches value to Square Yards
   """
-  def to_square_yards(value), do: value / 1296.0
+  def to_squareyards(value), do: value / 1296.0
 
   @doc """
   Converts the supplied Square Inches value to Square Feet
   """
-  def to_square_feet(value), do: value / 144.0
+  def to_squarefeet(value), do: value / 144.0
 
   @doc """
   Converts the supplied Square Inches value to Hectares
@@ -176,27 +176,27 @@ defmodule PutridParrot.Units.SquareKilometres do
   @doc """
   Converts the supplied Square Kilometres value to Square Metres
   """
-  def to_square_metres(value), do: value * 1.0e+6
+  def to_squaremetres(value), do: value * 1.0e+6
 
   @doc """
   Converts the supplied Square Kilometres value to Square Miles
   """
-  def to_square_miles(value), do: value / 2.58999
+  def to_squaremiles(value), do: value / 2.58999
 
   @doc """
   Converts the supplied Square Kilometres value to Square Yards
   """
-  def to_square_yards(value), do: value * 1_195_990.05
+  def to_squareyards(value), do: value * 1_195_990.05
 
   @doc """
   Converts the supplied Square Kilometres value to Square Feet
   """
-  def to_square_feet(value), do: value * 10_763_910.41671
+  def to_squarefeet(value), do: value * 10_763_910.41671
 
   @doc """
   Converts the supplied Square Kilometres value to Square Inches
   """
-  def to_square_inches(value), do: value * 1_550_003_100.00
+  def to_squareinches(value), do: value * 1_550_003_100.00
 
   @doc """
   Converts the supplied Square Kilometres value to Hectares
@@ -217,27 +217,27 @@ defmodule PutridParrot.Units.SquareMetres do
   @doc """
   Converts the supplied Square Metres value to Square Kilometres
   """
-  def to_square_kilometres(value), do: value / 1.0e+6
+  def to_squarekilometres(value), do: value / 1.0e+6
 
   @doc """
   Converts the supplied Square Metres value to Square Miles
   """
-  def to_square_miles(value), do: value / 2_589_988.10
+  def to_squaremiles(value), do: value / 2_589_988.10
 
   @doc """
   Converts the supplied Square Metres value to Square Yards
   """
-  def to_square_yards(value), do: value * 1.1959900463
+  def to_squareyards(value), do: value * 1.1959900463
 
   @doc """
   Converts the supplied Square Metres value to Square Feet
   """
-  def to_square_feet(value), do: value * 10.76391042
+  def to_squarefeet(value), do: value * 10.76391042
 
   @doc """
   Converts the supplied Square Metres value to Square Inches
   """
-  def to_square_inches(value), do: value * 1550.0
+  def to_squareinches(value), do: value * 1550.0
 
   @doc """
   Converts the supplied Square Metres value to Hectares
@@ -258,27 +258,27 @@ defmodule PutridParrot.Units.SquareMiles do
   @doc """
   Converts the supplied Square Miles value to Square Kilometres
   """
-  def to_square_kilometres(value), do: value * 2.58999
+  def to_squarekilometres(value), do: value * 2.58999
 
   @doc """
   Converts the supplied Square Miles value to Square Metres
   """
-  def to_square_metres(value), do: value * 2_589_988.10
+  def to_squaremetres(value), do: value * 2_589_988.10
 
   @doc """
   Converts the supplied Square Miles value to Square Yards
   """
-  def to_square_yards(value), do: value * 3_097_600.0
+  def to_squareyards(value), do: value * 3_097_600.0
 
   @doc """
   Converts the supplied Square Miles value to Square Feet
   """
-  def to_square_feet(value), do: value * 27_878_400.0
+  def to_squarefeet(value), do: value * 27_878_400.0
 
   @doc """
   Converts the supplied Square Miles value to Square Inches
   """
-  def to_square_inches(value), do: value * 4_014_489_600.0
+  def to_squareinches(value), do: value * 4_014_489_600.0
 
   @doc """
   Converts the supplied Square Miles value to Hectares
@@ -299,27 +299,27 @@ defmodule PutridParrot.Units.SquareYards do
   @doc """
   Converts the supplied Square Yards value to Square Kilometres
   """
-  def to_square_kilometres(value), do: value / 1_195_990.05
+  def to_squarekilometres(value), do: value / 1_195_990.05
 
   @doc """
   Converts the supplied Square Yards value to Square Metres
   """
-  def to_square_metres(value), do: value / 1.1959900463
+  def to_squaremetres(value), do: value / 1.1959900463
 
   @doc """
   Converts the supplied Square Yards value to Square Miles
   """
-  def to_square_miles(value), do: value / 3_097_600.0
+  def to_squaremiles(value), do: value / 3_097_600.0
 
   @doc """
   Converts the supplied Square Yards value to Square Feet
   """
-  def to_square_feet(value), do: value * 9.0
+  def to_squarefeet(value), do: value * 9.0
 
   @doc """
   Converts the supplied Square Yards value to Square Inches
   """
-  def to_square_inches(value), do: value * 1296.0
+  def to_squareinches(value), do: value * 1296.0
 
   @doc """
   Converts the supplied Square Yards value to Hectares

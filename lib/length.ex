@@ -47,7 +47,7 @@ defmodule PutridParrot.Units.Centimetres do
   @doc """
   Converts the supplied Centimetres value to Nautical Miles
   """
-  def to_nautical_miles(value), do: value / 185_200.0
+  def to_nauticalmiles(value), do: value / 185_200.0
 end
 
 defmodule PutridParrot.Units.Feet do
@@ -93,7 +93,7 @@ defmodule PutridParrot.Units.Feet do
   @doc """
   Converts the supplied Feet value to Nautical Miles
   """
-  def to_nautical_miles(value), do: value / 6076.12
+  def to_nauticalmiles(value), do: value / 6076.12
 end
 
 defmodule PutridParrot.Units.Inches do
@@ -139,7 +139,7 @@ defmodule PutridParrot.Units.Inches do
   @doc """
   Converts the supplied Inches value to Nautical Miles
   """
-  def to_nautical_miles(value), do: value / 72913.4
+  def to_nauticalmiles(value), do: value / 72913.4
 end
 
 defmodule PutridParrot.Units.Kilometres do
@@ -185,7 +185,7 @@ defmodule PutridParrot.Units.Kilometres do
   @doc """
   Converts the supplied Kilometres value to Nautical Miles
   """
-  def to_nautical_miles(value), do: value / 1.85200
+  def to_nauticalmiles(value), do: value / 1.85200
 end
 
 defmodule PutridParrot.Units.Metres do
@@ -231,7 +231,7 @@ defmodule PutridParrot.Units.Metres do
   @doc """
   Converts the supplied Metres value to Nautical Miles
   """
-  def to_nautical_miles(value), do: value / 1852.0
+  def to_nauticalmiles(value), do: value / 1852.0
 end
 
 defmodule PutridParrot.Units.Miles do
@@ -277,7 +277,7 @@ defmodule PutridParrot.Units.Miles do
   @doc """
   Converts the supplied Miles value to Nautical Miles
   """
-  def to_nautical_miles(value), do: value / 1.15078
+  def to_nauticalmiles(value), do: value / 1.15078
 end
 
 defmodule PutridParrot.Units.Millimetres do
@@ -323,7 +323,7 @@ defmodule PutridParrot.Units.Millimetres do
   @doc """
   Converts the supplied Millimetres value to Nautical Miles
   """
-  def to_nautical_miles(value), do: value / 1_852_000.0
+  def to_nauticalmiles(value), do: value / 1_852_000.0
 end
 
 defmodule PutridParrot.Units.NauticalMiles do
@@ -415,5 +415,5 @@ defmodule PutridParrot.Units.Yards do
   @doc """
   Converts the supplied Yards value to Nautical Miles
   """
-  def to_nautical_miles(value), do: value / 2025.37
+  def to_nauticalmiles(value), do: value / 2025.37
 end

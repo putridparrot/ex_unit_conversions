@@ -56,69 +56,69 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known Cubic Feet to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.CubicFeet.to_fluid_ounces(14.0), 13952.6, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_fluid_ounces(7.0), 6976.3, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_fluid_ounces(0.34777769), 346.6, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_fluidounces(14.0), 13952.6, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_fluidounces(7.0), 6976.3, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_fluidounces(0.34777769), 346.6, 0.01
   end
 
   test "Convert known Cubic Feet to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_teaspoons(5.0), 28725.2, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_teaspoons(0.4), 2298.02, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_teaspoons(9.2), 52854.3679, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_usteaspoons(5.0), 28725.2, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_usteaspoons(0.4), 2298.02, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_usteaspoons(9.2), 52854.3679, 0.01
   end
 
   test "Convert known Cubic Feet to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_tablespoons(1.4), 2681.02, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_tablespoons(4.0), 7660.04, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_tablespoons(0.6443821), 1234.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_ustablespoons(1.4), 2681.02, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_ustablespoons(4.0), 7660.04, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_ustablespoons(0.6443821), 1234.0, 0.01
   end
 
   test "Convert known Cubic Feet to US Quarts" do
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_quarts(6.0), 179.532, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_quarts(12.0), 359.065, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_quarts(25.9674), 777.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_usquarts(6.0), 179.532, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_usquarts(12.0), 359.065, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_usquarts(25.9674), 777.0, 0.01
   end
 
   test "Convert known Cubic Feet to US Pints" do
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_pints(6.9), 412.925, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_pints(23.0), 1376.42, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_pints(14.8385), 888.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_uspints(6.9), 412.925, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_uspints(23.0), 1376.42, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_uspints(14.8385), 888.0, 0.01
   end
 
   test "Convert known Cubic Feet to US Gallons" do
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_gallons(77.0), 576.0, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_gallons(45.0), 336.623, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_gallons(4.0), 29.9221, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_usgallons(77.0), 576.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_usgallons(45.0), 336.623, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_usgallons(4.0), 29.9221, 0.01
   end
 
   test "Convert known Cubic Feet to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_fluid_ounces(20.0), 19150.119, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_fluid_ounces(0.359266), 344.0, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_fluid_ounces(0.699734), 670.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_usfluidounces(20.0), 19150.119, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_usfluidounces(0.359266), 344.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_usfluidounces(0.699734), 670.0, 0.01
   end
 
   test "Convert known Cubic Feet to US Cups" do
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_cups(77.0), 9084.99, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_cups(8.0), 943.895, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_u_s_cups(4.79714), 566.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_uscups(77.0), 9084.99, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_uscups(8.0), 943.895, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_uscups(4.79714), 566.0, 0.01
   end
 
   test "Convert known Cubic Feet to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.CubicFeet.to_cubic_metres(28.2517), 0.8, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_cubic_metres(45.0), 1.27426, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_cubic_metres(2719.23), 77.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_cubicmetres(28.2517), 0.8, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_cubicmetres(45.0), 1.27426, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_cubicmetres(2719.23), 77.0, 0.01
   end
 
   test "Convert known Cubic Feet to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.CubicFeet.to_cubic_inches(6.8), 11750.4, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_cubic_inches(5666.0), 9_790_848.0, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_cubic_inches(0.7), 1209.6, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_cubicinches(6.8), 11750.4, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_cubicinches(5666.0), 9_790_848.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_cubicinches(0.7), 1209.6, 0.01
   end
 
   test "Convert known Cubic Feet to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.CubicFeet.to_oil_barrels(67.0), 11.9332, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_oil_barrels(44.0), 7.83673, 0.01
-    assert_in_delta PutridParrot.Units.CubicFeet.to_oil_barrels(67.375), 12.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_oilbarrels(67.0), 11.9332, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_oilbarrels(44.0), 7.83673, 0.01
+    assert_in_delta PutridParrot.Units.CubicFeet.to_oilbarrels(67.375), 12.0, 0.01
   end
 
   test "Convert known Cubic Inches to Millilitres" do
@@ -170,69 +170,69 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known Cubic Inches to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.CubicInches.to_fluid_ounces(77.0), 44.4093, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_fluid_ounces(55.0), 31.7209, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_fluid_ounces(27.7419), 16.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_fluidounces(77.0), 44.4093, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_fluidounces(55.0), 31.7209, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_fluidounces(27.7419), 16.0, 0.01
   end
 
   test "Convert known Cubic Inches to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_teaspoons(678.0), 2254.13, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_teaspoons(55.0), 182.857, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_teaspoons(26.4687), 88.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_usteaspoons(678.0), 2254.13, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_usteaspoons(55.0), 182.857, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_usteaspoons(26.4687), 88.0, 0.01
   end
 
   test "Convert known Cubic Inches to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_tablespoons(66.0), 73.1429, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_tablespoons(55.0), 60.9524, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_tablespoons(10.8281), 12.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_ustablespoons(66.0), 73.1429, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_ustablespoons(55.0), 60.9524, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_ustablespoons(10.8281), 12.0, 0.01
   end
 
   test "Convert known Cubic Inches to US Quarts" do
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_quarts(345.0), 5.97403, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_quarts(33.0), 0.571429, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_quarts(3176.25), 55.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_usquarts(345.0), 5.97403, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_usquarts(33.0), 0.571429, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_usquarts(3176.25), 55.0, 0.01
   end
 
   test "Convert known Cubic Inches to US Pints" do
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_pints(89.0), 3.08225, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_pints(3176.25), 110.0, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_pints(462.0), 16.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_uspints(89.0), 3.08225, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_uspints(3176.25), 110.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_uspints(462.0), 16.0, 0.01
   end
 
   test "Convert known Cubic Inches to US Gallons" do
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_gallons(600.0), 2.5974, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_gallons(462.0), 2.0, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_gallons(899.0), 3.89177, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_usgallons(600.0), 2.5974, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_usgallons(462.0), 2.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_usgallons(899.0), 3.89177, 0.01
   end
 
   test "Convert known Cubic Inches to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_fluid_ounces(900.0), 498.700607, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_fluid_ounces(777.0), 430.544858, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_fluid_ounces(178.664), 98.99982822, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_usfluidounces(900.0), 498.700607, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_usfluidounces(777.0), 430.544858, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_usfluidounces(178.664), 98.99982822, 0.01
   end
 
   test "Convert known Cubic Inches to US Cups" do
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_cups(7.0), 0.477956, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_cups(77.0), 5.25752, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_u_s_cups(123.0), 8.39837, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_uscups(7.0), 0.477956, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_uscups(77.0), 5.25752, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_uscups(123.0), 8.39837, 0.01
   end
 
   test "Convert known Cubic Inches to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.CubicInches.to_cubic_metres(24409.5), 0.4, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_cubic_metres(7777.0), 0.1274422, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_cubic_metres(366_142.0), 6.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_cubicmetres(24409.5), 0.4, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_cubicmetres(7777.0), 0.1274422, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_cubicmetres(366_142.0), 6.0, 0.01
   end
 
   test "Convert known Cubic Inches to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.CubicInches.to_cubic_feet(11750.4), 6.8, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_cubic_feet(57024.0), 33.0, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_cubic_feet(1234.0), 0.7141204, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_cubicfeet(11750.4), 6.8, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_cubicfeet(57024.0), 33.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_cubicfeet(1234.0), 0.7141204, 0.01
   end
 
   test "Convert known Cubic Inches to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.CubicInches.to_oil_barrels(90000.0), 9.2764378, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_oil_barrels(8888.0), 0.9160998, 0.01
-    assert_in_delta PutridParrot.Units.CubicInches.to_oil_barrels(11642.4), 1.2, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_oilbarrels(90000.0), 9.2764378, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_oilbarrels(8888.0), 0.9160998, 0.01
+    assert_in_delta PutridParrot.Units.CubicInches.to_oilbarrels(11642.4), 1.2, 0.01
   end
 
   test "Convert known Cubic Metres to Millilitres" do
@@ -284,69 +284,69 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known Cubic Metres to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.CubicMetres.to_fluid_ounces(0.7), 24636.569, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_fluid_ounces(0.09), 3167.557, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_fluid_ounces(4.0), 140_780.399, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_fluidounces(0.7), 24636.569, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_fluidounces(0.09), 3167.557, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_fluidounces(4.0), 140_780.399, 0.01
   end
 
   test "Convert known Cubic Metres to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_teaspoons(0.5), 101_442.0, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_teaspoons(2.0), 405_768.0, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_teaspoons(0.3), 60865.199, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_usteaspoons(0.5), 101_442.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_usteaspoons(2.0), 405_768.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_usteaspoons(0.3), 60865.199, 0.01
   end
 
   test "Convert known Cubic Metres to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_tablespoons(0.2), 13525.6, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_tablespoons(0.9), 60865.2, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_tablespoons(2.0), 135_256.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_ustablespoons(0.2), 13525.6, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_ustablespoons(0.9), 60865.2, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_ustablespoons(2.0), 135_256.0, 0.01
   end
 
   test "Convert known Cubic Metres to US Quarts" do
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_quarts(0.2), 211.338, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_quarts(4.0), 4226.76, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_quarts(0.851718), 900.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_usquarts(0.2), 211.338, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_usquarts(4.0), 4226.76, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_usquarts(0.851718), 900.0, 0.01
   end
 
   test "Convert known Cubic Metres to US Pints" do
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_pints(0.4), 845.351, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_pints(7.0), 14793.66, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_pints(6.0), 12680.280, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_uspints(0.4), 845.351, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_uspints(7.0), 14793.66, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_uspints(6.0), 12680.280, 0.01
   end
 
   test "Convert known Cubic Metres to US Gallons" do
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_gallons(0.7), 184.92, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_gallons(0.851718), 225.0, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_gallons(0.02), 5.283441, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_usgallons(0.7), 184.92, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_usgallons(0.851718), 225.0, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_usgallons(0.02), 5.283441, 0.01
   end
 
   test "Convert known Cubic Metres to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_fluid_ounces(0.9), 30432.6, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_fluid_ounces(0.3), 10144.2, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_fluid_ounces(3.3), 111_586.2, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_usfluidounces(0.9), 30432.6, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_usfluidounces(0.3), 10144.2, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_usfluidounces(3.3), 111_586.2, 0.01
   end
 
   test "Convert known Cubic Metres to US Cups" do
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_cups(7.0), 29166.7, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_cups(11.0), 45833.37, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_u_s_cups(66.0), 275_000.22, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_uscups(7.0), 29166.7, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_uscups(11.0), 45833.37, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_uscups(66.0), 275_000.22, 0.01
   end
 
   test "Convert known Cubic Metres to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.CubicMetres.to_cubic_feet(0.8), 28.2517, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_cubic_feet(5.0), 176.573, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_cubic_feet(12.12), 428.014163, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_cubicfeet(0.8), 28.2517, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_cubicfeet(5.0), 176.573, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_cubicfeet(12.12), 428.014163, 0.01
   end
 
   test "Convert known Cubic Metres to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.CubicMetres.to_cubic_inches(0.4), 24409.48, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_cubic_inches(3.0), 183_071.099, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_cubic_inches(0.99), 60413.4629, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_cubicinches(0.4), 24409.48, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_cubicinches(3.0), 183_071.099, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_cubicinches(0.99), 60413.4629, 0.01
   end
 
   test "Convert known Cubic Metres to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.CubicMetres.to_oil_barrels(0.09), 0.566083, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_oil_barrels(5.0), 31.4491, 0.01
-    assert_in_delta PutridParrot.Units.CubicMetres.to_oil_barrels(1.2), 7.547772, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_oilbarrels(0.09), 0.566083, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_oilbarrels(5.0), 31.4491, 0.01
+    assert_in_delta PutridParrot.Units.CubicMetres.to_oilbarrels(1.2), 7.547772, 0.01
   end
 
   test "Convert known Fluid Ounces to Millilitres" do
@@ -398,69 +398,69 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known Fluid Ounces to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_teaspoons(12345.0), 71163.512, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_teaspoons(8.9), 51.3046, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_teaspoons(0.005), 0.028822808, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_usteaspoons(12345.0), 71163.512, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_usteaspoons(8.9), 51.3046, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_usteaspoons(0.005), 0.028822808, 0.01
   end
 
   test "Convert known Fluid Ounces to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_tablespoons(190.0), 365.089, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_tablespoons(6.8), 13.0663, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_tablespoons(2340.0), 4496.357, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_ustablespoons(190.0), 365.089, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_ustablespoons(6.8), 13.0663, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_ustablespoons(2340.0), 4496.357, 0.01
   end
 
   test "Convert known Fluid Ounces to US Quarts" do
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_quarts(45.0), 1.35107, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_quarts(1090.0), 32.72589, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_quarts(777.0), 23.3285, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_usquarts(45.0), 1.35107, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_usquarts(1090.0), 32.72589, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_usquarts(777.0), 23.3285, 0.01
   end
 
   test "Convert known Fluid Ounces to US Pints" do
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_pints(678.0), 40.7122, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_pints(4.5), 0.270214, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_pints(1900.0), 114.0902, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_uspints(678.0), 40.7122, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_uspints(4.5), 0.270214, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_uspints(1900.0), 114.0902, 0.01
   end
 
   test "Convert known Fluid Ounces to US Gallons" do
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_gallons(1890.0), 14.18622, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_gallons(5.8), 0.0435344, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_gallons(10090.0), 75.734905, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_usgallons(1890.0), 14.18622, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_usgallons(5.8), 0.0435344, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_usgallons(10090.0), 75.734905, 0.01
   end
 
   test "Convert known Fluid Ounces to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_fluid_ounces(190.0), 182.544, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_fluid_ounces(54.8), 52.64964, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_fluid_ounces(1.7), 1.63329, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_usfluidounces(190.0), 182.544, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_usfluidounces(54.8), 52.64964, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_usfluidounces(1.7), 1.63329, 0.01
   end
 
   test "Convert known Fluid Ounces to US Cups" do
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_cups(6.0), 0.72057, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_cups(1800.0), 216.171, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_u_s_cups(6.9), 0.828655, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_uscups(6.0), 0.72057, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_uscups(1800.0), 216.171, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_uscups(6.9), 0.828655, 0.01
   end
 
   test "Convert known Fluid Ounces to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.FluidOunces.to_cubic_metres(316_756.0), 9.00000284, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_cubic_metres(8000.0), 0.2273043690, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_cubic_metres(123_456.0), 3.5077610, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_cubicmetres(316_756.0), 9.00000284, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_cubicmetres(8000.0), 0.2273043690, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_cubicmetres(123_456.0), 3.5077610, 0.01
   end
 
   test "Convert known Fluid Ounces to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.FluidOunces.to_cubic_feet(888.0), 0.891017, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_cubic_feet(100_900.0), 101.242841, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_cubic_feet(678.0), 0.680304, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_cubicfeet(888.0), 0.891017, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_cubicfeet(100_900.0), 101.242841, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_cubicfeet(678.0), 0.680304, 0.01
   end
 
   test "Convert known Fluid Ounces to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.FluidOunces.to_cubic_inches(7.0), 12.1371, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_cubic_inches(900.0), 1560.48, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_cubic_inches(6.0), 10.4032, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_cubicinches(7.0), 12.1371, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_cubicinches(900.0), 1560.48, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_cubicinches(6.0), 10.4032, 0.01
   end
 
   test "Convert known Fluid Ounces to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.FluidOunces.to_oil_barrels(430_859.0), 77.0, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_oil_barrels(777.0), 0.13886, 0.01
-    assert_in_delta PutridParrot.Units.FluidOunces.to_oil_barrels(1234.0), 0.2205316, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_oilbarrels(430_859.0), 77.0, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_oilbarrels(777.0), 0.13886, 0.01
+    assert_in_delta PutridParrot.Units.FluidOunces.to_oilbarrels(1234.0), 0.2205316, 0.01
   end
 
   test "Convert known Gallons to Millilitres" do
@@ -506,75 +506,75 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known Gallons to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Gallons.to_fluid_ounces(24.7), 3952.0, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_fluid_ounces(13.09), 2094.4, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_fluid_ounces(5.8), 928.0, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_fluidounces(24.7), 3952.0, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_fluidounces(13.09), 2094.4, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_fluidounces(5.8), 928.0, 0.01
   end
 
   test "Convert known Gallons to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_teaspoons(5.8), 5349.51, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_teaspoons(0.44), 405.8251, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_teaspoons(1.9), 1752.43, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_usteaspoons(5.8), 5349.51, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_usteaspoons(0.44), 405.8251, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_usteaspoons(1.9), 1752.43, 0.01
   end
 
   test "Convert known Gallons to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_tablespoons(1.8), 553.398, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_tablespoons(0.33), 101.4562, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_tablespoons(100.0), 30744.33080, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_ustablespoons(1.8), 553.398, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_ustablespoons(0.33), 101.4562, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_ustablespoons(100.0), 30744.33080, 0.01
   end
 
   test "Convert known Gallons to US Quarts" do
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_quarts(78.0), 374.696, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_quarts(1.7), 8.16646, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_quarts(16.9), 81.18421, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_usquarts(78.0), 374.696, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_usquarts(1.7), 8.16646, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_usquarts(16.9), 81.18421, 0.01
   end
 
   test "Convert known Gallons to US Pints" do
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_pints(13.4), 128.7418, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_pints(8.12), 78.01371, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_pints(0.99), 9.511523, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_uspints(13.4), 128.7418, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_uspints(8.12), 78.01371, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_uspints(0.99), 9.511523, 0.01
   end
 
   test "Convert known Gallons to US Gallons" do
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_gallons(1.5), 1.80142, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_gallons(0.78), 0.9367409, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_gallons(103.0), 123.698, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_usgallons(1.5), 1.80142, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_usgallons(0.78), 0.9367409, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_usgallons(103.0), 123.698, 0.01
   end
 
   test "Convert known Gallons to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_fluid_ounces(111.0), 17063.1, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_fluid_ounces(89.9), 13819.57, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_fluid_ounces(1.2), 184.466, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_usfluidounces(111.0), 17063.1, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_usfluidounces(89.9), 13819.57, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_usfluidounces(1.2), 184.466, 0.01
   end
 
   test "Convert known Gallons to US Cups" do
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_cups(1.2), 23.0582, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_cups(0.55), 10.56836, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_u_s_cups(890.0), 17101.534007630, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_uscups(1.2), 23.0582, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_uscups(0.55), 10.56836, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_uscups(890.0), 17101.534007630, 0.01
   end
 
   test "Convert known Gallons to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.Gallons.to_cubic_metres(9898.62), 45.0, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_cubic_metres(12345.0), 56.121481, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_cubic_metres(80.0), 0.363687, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_cubicmetres(9898.62), 45.0, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_cubicmetres(12345.0), 56.121481, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_cubicmetres(80.0), 0.363687, 0.01
   end
 
   test "Convert known Gallons to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.Gallons.to_cubic_feet(55.0), 8.8299, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_cubic_feet(90.5), 14.5292, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_cubic_feet(123.0), 19.7469, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_cubicfeet(55.0), 8.8299, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_cubicfeet(90.5), 14.5292, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_cubicfeet(123.0), 19.7469, 0.01
   end
 
   test "Convert known Gallons to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.Gallons.to_cubic_inches(66.0), 18309.6539, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_cubic_inches(2.4007), 666.0, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_cubic_inches(77.0), 21361.2629, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_cubicinches(66.0), 18309.6539, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_cubicinches(2.4007), 666.0, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_cubicinches(77.0), 21361.2629, 0.01
   end
 
   test "Convert known Gallons to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.Gallons.to_oil_barrels(174.862), 5.0, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_oil_barrels(19409.6), 555.0, 0.01
-    assert_in_delta PutridParrot.Units.Gallons.to_oil_barrels(24.4806), 0.7, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_oilbarrels(174.862), 5.0, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_oilbarrels(19409.6), 555.0, 0.01
+    assert_in_delta PutridParrot.Units.Gallons.to_oilbarrels(24.4806), 0.7, 0.01
   end
 
   test "Convert known Kilolitres to Millilitres" do
@@ -620,78 +620,75 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known Kilolitres to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Kilolitres.to_fluid_ounces(0.2), 7039.02, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_fluid_ounces(4.8), 168_936.31286856, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_fluid_ounces(6.0), 211_170.391085, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_fluidounces(0.2), 7039.02, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_fluidounces(4.8), 168_936.31286856, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_fluidounces(6.0), 211_170.391085, 0.01
   end
 
   test "Convert known Kilolitres to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_teaspoons(4.0), 811_536.5448442, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_teaspoons(0.2), 40576.82724221160, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_teaspoons(2.4), 486_921.92690653, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_usteaspoons(4.0), 811_536.5448442, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_usteaspoons(0.2), 40576.82724221160, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_usteaspoons(2.4), 486_921.92690653, 0.01
   end
 
   test "Convert known Kilolitres to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_tablespoons(1.3), 87916.45902479, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_tablespoons(0.6), 40576.82724221, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_tablespoons(0.03), 2028.841, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_ustablespoons(1.3), 87916.45902479, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_ustablespoons(0.6), 40576.82724221, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_ustablespoons(0.03), 2028.841, 0.01
   end
 
   test "Convert known Kilolitres to US Quarts" do
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_quarts(0.09), 95.10194, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_quarts(2.5), 2641.72, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_quarts(178.9), 189_041.52, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_usquarts(0.09), 95.10194, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_usquarts(2.5), 2641.72, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_usquarts(178.9), 189_041.52, 0.01
   end
 
   test "Convert known Kilolitres to US Pints" do
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_pints(67.0), 141_596.2200639, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_pints(4.7), 9932.87, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_pints(108.9), 230_146.69, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_uspints(67.0), 141_596.2200639, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_uspints(4.7), 9932.87, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_uspints(108.9), 230_146.69, 0.01
   end
 
   test "Convert known Kilolitres to US Gallons" do
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_gallons(1.6), 422.675, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_gallons(57.0), 15057.8, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_gallons(0.88), 232.4714, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_usgallons(1.6), 422.675, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_usgallons(57.0), 15057.8, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_usgallons(0.88), 232.4714, 0.01
   end
 
   test "Convert known Kilolitres to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_fluid_ounces(0.07), 2366.982, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_fluid_ounces(4.2), 142_018.89516765, 0.01
-
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_fluid_ounces(12.0),
-                    405_768.27190759,
-                    0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_usfluidounces(0.07), 2366.982, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_usfluidounces(4.2), 142_018.89516765, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_usfluidounces(12.0), 405_768.27190759, 0.01
   end
 
   test "Convert known Kilolitres to US Cups" do
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_cups(12.0), 50721.03405276, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_cups(0.8), 3381.4, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_u_s_cups(6.2), 26205.86759392, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_uscups(12.0), 50721.03405276, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_uscups(0.8), 3381.4, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_uscups(6.2), 26205.86759392, 0.01
   end
 
   test "Convert known Kilolitres to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.Kilolitres.to_cubic_metres(1000.0), 1000.0, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_cubic_metres(0.9), 0.9, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_cubic_metres(6.09), 6.09, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_cubicmetres(1000.0), 1000.0, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_cubicmetres(0.9), 0.9, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_cubicmetres(6.09), 6.09, 0.01
   end
 
   test "Convert known Kilolitres to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.Kilolitres.to_cubic_feet(0.0566337), 2.0, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_cubic_feet(7.9), 278.986, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_cubic_feet(88.0), 3107.69, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_cubicfeet(0.0566337), 2.0, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_cubicfeet(7.9), 278.986, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_cubicfeet(88.0), 3107.69, 0.01
   end
 
   test "Convert known Kilolitres to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.Kilolitres.to_cubic_inches(6.0), 366_142.19999, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_cubic_inches(0.1), 6102.37, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_cubic_inches(0.8), 48818.959, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_cubicinches(6.0), 366_142.19999, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_cubicinches(0.1), 6102.37, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_cubicinches(0.8), 48818.959, 0.01
   end
 
   test "Convert known Kilolitres to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.Kilolitres.to_oil_barrels(0.476962), 3.0, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_oil_barrels(4.0), 25.1592, 0.01
-    assert_in_delta PutridParrot.Units.Kilolitres.to_oil_barrels(6.0), 37.7389, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_oilbarrels(0.476962), 3.0, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_oilbarrels(4.0), 25.1592, 0.01
+    assert_in_delta PutridParrot.Units.Kilolitres.to_oilbarrels(6.0), 37.7389, 0.01
   end
 
   test "Convert known Litres to Millilitres" do
@@ -737,75 +734,75 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known Litres to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Litres.to_fluid_ounces(5.0), 175.975, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_fluid_ounces(0.3), 10.5585, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_fluid_ounces(1.1), 38.7146, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_fluidounces(5.0), 175.975, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_fluidounces(0.3), 10.5585, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_fluidounces(1.1), 38.7146, 0.01
   end
 
   test "Convert known Litres to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_teaspoons(12.0), 2434.61, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_teaspoons(0.7), 142.019, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_teaspoons(89.9), 18239.29, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_usteaspoons(12.0), 2434.61, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_usteaspoons(0.7), 142.019, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_usteaspoons(89.9), 18239.29, 0.01
   end
 
   test "Convert known Litres to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_tablespoons(12.0), 811.537, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_tablespoons(5.6), 378.717, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_tablespoons(0.5), 33.814, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_ustablespoons(12.0), 811.537, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_ustablespoons(5.6), 378.717, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_ustablespoons(0.5), 33.814, 0.01
   end
 
   test "Convert known Litres to US Quarts" do
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_quarts(12.0), 12.6803, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_quarts(1.09), 1.15179, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_quarts(5.5), 5.81179, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_usquarts(12.0), 12.6803, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_usquarts(1.09), 1.15179, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_usquarts(5.5), 5.81179, 0.01
   end
 
   test "Convert known Litres to US Pints" do
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_pints(3.4), 7.18548, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_pints(0.8), 1.6907, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_pints(3000.0), 6340.129, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_uspints(3.4), 7.18548, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_uspints(0.8), 1.6907, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_uspints(3000.0), 6340.129, 0.01
   end
 
   test "Convert known Litres to US Gallons" do
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_gallons(109.1), 28.821171, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_gallons(41.5), 10.96314, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_gallons(0.8), 0.211338, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_usgallons(109.1), 28.821171, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_usgallons(41.5), 10.96314, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_usgallons(0.8), 0.211338, 0.01
   end
 
   test "Convert known Litres to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_fluid_ounces(81.0), 2738.94, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_fluid_ounces(7.3), 246.842, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_fluid_ounces(0.65), 21.97911, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_usfluidounces(81.0), 2738.94, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_usfluidounces(7.3), 246.842, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_usfluidounces(0.65), 21.97911, 0.01
   end
 
   test "Convert known Litres to US Cups" do
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_cups(0.9), 3.80408, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_cups(103.9), 439.15962, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_u_s_cups(71.6), 302.6355, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_uscups(0.9), 3.80408, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_uscups(103.9), 439.15962, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_uscups(71.6), 302.6355, 0.01
   end
 
   test "Convert known Litres to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.Litres.to_cubic_metres(400.5), 0.4005, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_cubic_metres(900.0), 0.9, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_cubic_metres(6090.0), 6.09, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_cubicmetres(400.5), 0.4005, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_cubicmetres(900.0), 0.9, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_cubicmetres(6090.0), 6.09, 0.01
   end
 
   test "Convert known Litres to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.Litres.to_cubic_feet(5.0), 0.176573, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_cubic_feet(84.9505), 3.0, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_cubic_feet(6.0), 0.211888, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_cubicfeet(5.0), 0.176573, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_cubicfeet(84.9505), 3.0, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_cubicfeet(6.0), 0.211888, 0.01
   end
 
   test "Convert known Litres to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.Litres.to_cubic_inches(666.0), 40641.7842, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_cubic_inches(788.0), 48086.675599, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_cubic_inches(4.0), 244.095, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_cubicinches(666.0), 40641.7842, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_cubicinches(788.0), 48086.675599, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_cubicinches(4.0), 244.095, 0.01
   end
 
   test "Convert known Litres to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.Litres.to_oil_barrels(8744.3), 55.0, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_oil_barrels(1234.0), 7.761626, 0.01
-    assert_in_delta PutridParrot.Units.Litres.to_oil_barrels(953.924), 6.0, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_oilbarrels(8744.3), 55.0, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_oilbarrels(1234.0), 7.761626, 0.01
+    assert_in_delta PutridParrot.Units.Litres.to_oilbarrels(953.924), 6.0, 0.01
   end
 
   test "Convert known Millilitres to Litres" do
@@ -851,75 +848,75 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known Millilitres to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Millilitres.to_fluid_ounces(78.0), 2.74522, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_fluid_ounces(12.9), 0.4540165, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_fluid_ounces(1009.0), 35.51184, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_fluidounces(78.0), 2.74522, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_fluidounces(12.9), 0.4540165, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_fluidounces(1009.0), 35.51184, 0.01
   end
 
   test "Convert known Millilitres to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_teaspoons(100.0), 20.2884, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_teaspoons(12.3), 2.495476, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_teaspoons(69.0), 13.999, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_usteaspoons(100.0), 20.2884, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_usteaspoons(12.3), 2.495476, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_usteaspoons(69.0), 13.999, 0.01
   end
 
   test "Convert known Millilitres to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_tablespoons(38.0), 2.56987, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_tablespoons(1023.0), 69.18349, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_tablespoons(88.8), 6.00537, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_ustablespoons(38.0), 2.56987, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_ustablespoons(1023.0), 69.18349, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_ustablespoons(88.8), 6.00537, 0.01
   end
 
   test "Convert known Millilitres to US Quarts" do
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_quarts(1009.0), 1.066198, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_quarts(4567.0), 4.825895, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_quarts(8009.0), 8.463016, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_usquarts(1009.0), 1.066198, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_usquarts(4567.0), 4.825895, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_usquarts(8009.0), 8.463016, 0.01
   end
 
   test "Convert known Millilitres to US Pints" do
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_pints(110.0), 0.232471, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_pints(2032.0), 4.294381, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_pints(1000.9), 2.11527846, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_uspints(110.0), 0.232471, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_uspints(2032.0), 4.294381, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_uspints(1000.9), 2.11527846, 0.01
   end
 
   test "Convert known Millilitres to US Gallons" do
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_gallons(5000.0), 1.32086, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_gallons(123_456.0), 32.6136249, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_gallons(900.0), 0.237755, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_usgallons(5000.0), 1.32086, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_usgallons(123_456.0), 32.6136249, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_usgallons(900.0), 0.237755, 0.01
   end
 
   test "Convert known Millilitres to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_fluid_ounces(67.0), 2.26554, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_fluid_ounces(12.6), 0.4260567, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_fluid_ounces(11009.0), 372.25858, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_usfluidounces(67.0), 2.26554, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_usfluidounces(12.6), 0.4260567, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_usfluidounces(11009.0), 372.25858, 0.01
   end
 
   test "Convert known Millilitres to US Cups" do
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_cups(348.0), 1.47091, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_cups(12.9), 0.05452511, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_u_s_cups(700.0), 2.95873, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_uscups(348.0), 1.47091, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_uscups(12.9), 0.05452511, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_uscups(700.0), 2.95873, 0.01
   end
 
   test "Convert known Millilitres to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.Millilitres.to_cubic_metres(9_999_999.0), 9.999999, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_cubic_metres(123_456.0), 0.123456, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_cubic_metres(400_500.0), 0.4005, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_cubicmetres(9_999_999.0), 9.999999, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_cubicmetres(123_456.0), 0.123456, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_cubicmetres(400_500.0), 0.4005, 0.01
   end
 
   test "Convert known Millilitres to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.Millilitres.to_cubic_feet(254_852.0), 9.0, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_cubic_feet(6000.0), 0.211888, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_cubic_feet(70792.1), 2.5, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_cubicfeet(254_852.0), 9.0, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_cubicfeet(6000.0), 0.211888, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_cubicfeet(70792.1), 2.5, 0.01
   end
 
   test "Convert known Millilitres to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.Millilitres.to_cubic_inches(777.0), 47.4154, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_cubic_inches(98.3224), 5.999987, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_cubic_inches(12.0), 0.732285, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_cubicinches(777.0), 47.4154, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_cubicinches(98.3224), 5.999987, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_cubicinches(12.0), 0.732285, 0.01
   end
 
   test "Convert known Millilitres to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.Millilitres.to_oil_barrels(47696.2), 0.3, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_oil_barrels(143_089.0), 0.9, 0.01
-    assert_in_delta PutridParrot.Units.Millilitres.to_oil_barrels(317.97459), 0.002, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_oilbarrels(47696.2), 0.3, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_oilbarrels(143_089.0), 0.9, 0.01
+    assert_in_delta PutridParrot.Units.Millilitres.to_oilbarrels(317.97459), 0.002, 0.01
   end
 
   test "Convert known Oil Barrels to Millilitres" do
@@ -971,69 +968,69 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known Oil Barrels to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.OilBarrels.to_fluid_ounces(0.5), 2797.79, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_fluid_ounces(6.0), 33573.4199, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_fluid_ounces(77.0), 430_858.889, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_fluidounces(0.5), 2797.79, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_fluidounces(6.0), 33573.4199, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_fluidounces(77.0), 430_858.889, 0.01
   end
 
   test "Convert known Oil Barrels to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_teaspoons(0.3), 9676.8, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_teaspoons(7.0), 225_792.0, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_teaspoons(1.5), 48384.0, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_usteaspoons(0.3), 9676.8, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_usteaspoons(7.0), 225_792.0, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_usteaspoons(1.5), 48384.0, 0.01
   end
 
   test "Convert known Oil Barrels to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_tablespoons(0.2), 2150.4, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_tablespoons(6.0), 64512.0, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_tablespoons(77.0), 827_904.0, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_ustablespoons(0.2), 2150.4, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_ustablespoons(6.0), 64512.0, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_ustablespoons(77.0), 827_904.0, 0.01
   end
 
   test "Convert known Oil Barrels to US Quarts" do
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_quarts(4.5), 756.0, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_quarts(77.0), 12936.0, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_quarts(0.7), 117.6, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_usquarts(4.5), 756.0, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_usquarts(77.0), 12936.0, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_usquarts(0.7), 117.6, 0.01
   end
 
   test "Convert known Oil Barrels to US Pints" do
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_pints(7.8), 2620.8, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_pints(0.7), 235.2, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_pints(3.0), 1008.0, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_uspints(7.8), 2620.8, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_uspints(0.7), 235.2, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_uspints(3.0), 1008.0, 0.01
   end
 
   test "Convert known Oil Barrels to US Gallons" do
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_gallons(78.0), 3276.0, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_gallons(3.0), 126.0, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_gallons(777.0), 32634.0, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_usgallons(78.0), 3276.0, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_usgallons(3.0), 126.0, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_usgallons(777.0), 32634.0, 0.01
   end
 
   test "Convert known Oil Barrels to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_fluid_ounces(4.9), 26342.4, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_fluid_ounces(0.4), 2150.4, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_fluid_ounces(3.0), 16128.0, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_usfluidounces(4.9), 26342.4, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_usfluidounces(0.4), 2150.4, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_usfluidounces(3.0), 16128.0, 0.01
   end
 
   test "Convert known Oil Barrels to US Cups" do
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_cups(55.0), 36434.5849, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_cups(0.686847), 455.0, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_u_s_cups(9.2), 6094.51, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_uscups(55.0), 36434.5849, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_uscups(0.686847), 455.0, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_uscups(9.2), 6094.51, 0.01
   end
 
   test "Convert known Oil Barrels to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.OilBarrels.to_cubic_metres(7.0), 1.1129112, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_cubic_metres(3.0), 0.476962, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_cubic_metres(78.0), 12.401, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_cubicmetres(7.0), 1.1129112, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_cubicmetres(3.0), 0.476962, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_cubicmetres(78.0), 12.401, 0.01
   end
 
   test "Convert known Oil Barrels to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.OilBarrels.to_cubic_feet(88.0), 494.083, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_cubic_feet(3.0), 16.8438, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_cubic_feet(11.0), 61.7604, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_cubicfeet(88.0), 494.083, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_cubicfeet(3.0), 16.8438, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_cubicfeet(11.0), 61.7604, 0.01
   end
 
   test "Convert known Oil Barrels to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.OilBarrels.to_cubic_inches(100.4), 974_080.8, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_cubic_inches(5.0), 48510.0, 0.01
-    assert_in_delta PutridParrot.Units.OilBarrels.to_cubic_inches(66.0), 640_332.0, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_cubicinches(100.4), 974_080.8, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_cubicinches(5.0), 48510.0, 0.01
+    assert_in_delta PutridParrot.Units.OilBarrels.to_cubicinches(66.0), 640_332.0, 0.01
   end
 
   test "Convert known Pints to Millilitres" do
@@ -1079,75 +1076,75 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known Pints to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Pints.to_fluid_ounces(1.5), 30.0, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_fluid_ounces(789.0), 15780.0, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_fluid_ounces(1020.8), 20416.0, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_fluidounces(1.5), 30.0, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_fluidounces(789.0), 15780.0, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_fluidounces(1020.8), 20416.0, 0.01
   end
 
   test "Convert known Pints to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_teaspoons(1020.8), 117_689.298303295, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_teaspoons(0.4), 46.1165, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_teaspoons(104.0), 11990.2890120912, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_usteaspoons(1020.8), 117_689.298303295, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_usteaspoons(0.4), 46.1165, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_usteaspoons(104.0), 11990.2890120912, 0.01
   end
 
   test "Convert known Pints to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_tablespoons(104.0), 3996.76, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_tablespoons(5.6), 215.21, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_tablespoons(0.4), 15.3722, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_ustablespoons(104.0), 3996.76, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_ustablespoons(5.6), 215.21, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_ustablespoons(0.4), 15.3722, 0.01
   end
 
   test "Convert known Pints to US Quarts" do
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_quarts(0.55), 0.3302612, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_quarts(80.6), 48.39828, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_quarts(12.0), 7.2057, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_usquarts(0.55), 0.3302612, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_usquarts(80.6), 48.39828, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_usquarts(12.0), 7.2057, 0.01
   end
 
   test "Convert known Pints to US Pints" do
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_pints(12.0), 14.4114, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_pints(4.7), 5.64446, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_pints(0.44), 0.528418, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_uspints(12.0), 14.4114, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_uspints(4.7), 5.64446, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_uspints(0.44), 0.528418, 0.01
   end
 
   test "Convert known Pints to US Gallons" do
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_gallons(1.2), 0.180142, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_gallons(9000.0), 1351.069, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_gallons(108.4), 16.272871, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_usgallons(1.2), 0.180142, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_usgallons(9000.0), 1351.069, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_usgallons(108.4), 16.272871, 0.01
   end
 
   test "Convert known Pints to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_fluid_ounces(108.0), 2075.24, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_fluid_ounces(23.4), 449.6357, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_fluid_ounces(8.65), 166.2115, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_usfluidounces(108.0), 2075.24, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_usfluidounces(23.4), 449.6357, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_usfluidounces(8.65), 166.2115, 0.01
   end
 
   test "Convert known Pints to US Cups" do
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_cups(23.0), 55.2437, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_cups(3.0), 7.2057, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_u_s_cups(50.6), 121.5361, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_uscups(23.0), 55.2437, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_uscups(3.0), 7.2057, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_uscups(50.6), 121.5361, 0.01
   end
 
   test "Convert known Pints to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.Pints.to_cubic_metres(21117.0), 12.0, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_cubic_metres(14078.0), 8.0, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_cubic_metres(9999.0), 5.682044, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_cubicmetres(21117.0), 12.0, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_cubicmetres(14078.0), 8.0, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_cubicmetres(9999.0), 5.682044, 0.01
   end
 
   test "Convert known Pints to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.Pints.to_cubic_feet(44.0), 0.88299, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_cubic_feet(1234.0), 24.76386, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_cubic_feet(8000.0), 160.5436, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_cubicfeet(44.0), 0.88299, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_cubicfeet(1234.0), 24.76386, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_cubicfeet(8000.0), 160.5436, 0.01
   end
 
   test "Convert known Pints to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.Pints.to_cubic_inches(5.0), 173.387, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_cubic_inches(777.0), 26944.33979, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_cubic_inches(35.58511), 1234.0, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_cubicinches(5.0), 173.387, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_cubicinches(777.0), 26944.33979, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_cubicinches(35.58511), 1234.0, 0.01
   end
 
   test "Convert known Pints to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.Pints.to_oil_barrels(1398.89), 5.0, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_oil_barrels(122.0), 0.436059, 0.01
-    assert_in_delta PutridParrot.Units.Pints.to_oil_barrels(559.557), 2.0, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_oilbarrels(1398.89), 5.0, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_oilbarrels(122.0), 0.436059, 0.01
+    assert_in_delta PutridParrot.Units.Pints.to_oilbarrels(559.557), 2.0, 0.01
   end
 
   test "Convert known Quarts to Millilitres" do
@@ -1193,75 +1190,75 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known Quarts to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Quarts.to_fluid_ounces(67.6), 2704.0, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_fluid_ounces(1009.0), 40360.0, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_fluid_ounces(6.2), 248.0, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_fluidounces(67.6), 2704.0, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_fluidounces(1009.0), 40360.0, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_fluidounces(6.2), 248.0, 0.01
   end
 
   test "Convert known Quarts to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_teaspoons(6.2), 1429.61, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_teaspoons(0.7), 161.408, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_teaspoons(80.3), 18515.77, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_usteaspoons(6.2), 1429.61, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_usteaspoons(0.7), 161.408, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_usteaspoons(80.3), 18515.77, 0.01
   end
 
   test "Convert known Quarts to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_tablespoons(80.0), 6148.86, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_tablespoons(5.7), 438.107, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_tablespoons(0.44), 33.81875, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_ustablespoons(80.0), 6148.86, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_ustablespoons(5.7), 438.107, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_ustablespoons(0.44), 33.81875, 0.01
   end
 
   test "Convert known Quarts to US Quarts" do
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_quarts(0.44), 0.528418, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_quarts(12.7), 15.25206, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_quarts(109.0), 130.904, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_usquarts(0.44), 0.528418, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_usquarts(12.7), 15.25206, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_usquarts(109.0), 130.904, 0.01
   end
 
   test "Convert known Quarts to US Pints" do
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_pints(18.0), 43.2342, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_pints(2.5), 6.00475, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_pints(0.4), 0.96076, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_uspints(18.0), 43.2342, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_uspints(2.5), 6.00475, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_uspints(0.4), 0.96076, 0.01
   end
 
   test "Convert known Quarts to US Gallons" do
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_gallons(4.8), 1.44114, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_gallons(0.3), 0.0900712, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_gallons(1.5), 0.450356, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_usgallons(4.8), 1.44114, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_usgallons(0.3), 0.0900712, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_usgallons(1.5), 0.450356, 0.01
   end
 
   test "Convert known Quarts to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_fluid_ounces(6.0), 230.582, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_fluid_ounces(0.46), 17.67798, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_fluid_ounces(2.0), 76.8608, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_usfluidounces(6.0), 230.582, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_usfluidounces(0.46), 17.67798, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_usfluidounces(2.0), 76.8608, 0.01
   end
 
   test "Convert known Quarts to US Cups" do
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_cups(2.0), 9.6076, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_cups(800.9), 3847.3632, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_u_s_cups(0.23), 1.104874, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_uscups(2.0), 9.6076, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_uscups(800.9), 3847.3632, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_uscups(0.23), 1.104874, 0.01
   end
 
   test "Convert known Quarts to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.Quarts.to_cubic_metres(7918.89), 9.0, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_cubic_metres(1200.0), 1.363827, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_cubic_metres(8000.0), 9.09218, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_cubicmetres(7918.89), 9.0, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_cubicmetres(1200.0), 1.363827, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_cubicmetres(8000.0), 9.09218, 0.01
   end
 
   test "Convert known Quarts to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.Quarts.to_cubic_feet(20.0), 0.802718, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_cubic_feet(800.0), 32.1087, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_cubic_feet(67.0), 2.68911, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_cubicfeet(20.0), 0.802718, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_cubicfeet(800.0), 32.1087, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_cubicfeet(67.0), 2.68911, 0.01
   end
 
   test "Convert known Quarts to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.Quarts.to_cubic_inches(777.0), 53888.75729, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_cubic_inches(8.16093), 566.0, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_cubic_inches(76.0), 5270.97, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_cubicinches(777.0), 53888.75729, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_cubicinches(8.16093), 566.0, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_cubicinches(76.0), 5270.97, 0.01
   end
 
   test "Convert known Quarts to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.Quarts.to_oil_barrels(839.336), 6.0, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_oil_barrels(41.9668), 0.3, 0.01
-    assert_in_delta PutridParrot.Units.Quarts.to_oil_barrels(22.0), 0.157267, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_oilbarrels(839.336), 6.0, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_oilbarrels(41.9668), 0.3, 0.01
+    assert_in_delta PutridParrot.Units.Quarts.to_oilbarrels(22.0), 0.157267, 0.01
   end
 
   test "Convert known Tablespoons to Millilitres" do
@@ -1307,75 +1304,75 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known Tablespoons to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Tablespoons.to_fluid_ounces(80.8), 50.50002, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_fluid_ounces(9009.0), 5630.627, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_fluid_ounces(12.6), 7.875003, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_fluidounces(80.8), 50.50002, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_fluidounces(9009.0), 5630.627, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_fluidounces(12.6), 7.875003, 0.01
   end
 
   test "Convert known Tablespoons to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_teaspoons(12.0), 43.2342, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_teaspoons(0.6), 2.16171, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_teaspoons(52.9), 190.5909, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_usteaspoons(12.0), 43.2342, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_usteaspoons(0.6), 2.16171, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_usteaspoons(52.9), 190.5909, 0.01
   end
 
   test "Convert known Tablespoons to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_tablespoons(67.0), 80.4637, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_tablespoons(5.8), 6.96551, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_tablespoons(0.23), 0.2762186, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_ustablespoons(67.0), 80.4637, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_ustablespoons(5.8), 6.96551, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_ustablespoons(0.23), 0.2762186, 0.01
   end
 
   test "Convert known Tablespoons to US Quarts" do
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_quarts(54.0), 1.0133, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_quarts(1005.9), 18.875563, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_quarts(0.9), 0.0168884, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_usquarts(54.0), 1.0133, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_usquarts(1005.9), 18.875563, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_usquarts(0.9), 0.0168884, 0.01
   end
 
   test "Convert known Tablespoons to US Pints" do
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_pints(34.0), 1.27601, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_pints(109.3), 4.1019963, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_pints(190.0), 7.13064, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_uspints(34.0), 1.27601, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_uspints(109.3), 4.1019963, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_uspints(190.0), 7.13064, 0.01
   end
 
   test "Convert known Tablespoons to US Gallons" do
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_gallons(900.0), 4.22209, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_gallons(2.8), 0.0131354, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_gallons(1469.0), 6.891391, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_usgallons(900.0), 4.22209, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_usgallons(2.8), 0.0131354, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_usgallons(1469.0), 6.891391, 0.01
   end
 
   test "Convert known Tablespoons to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_fluid_ounces(1009.0), 605.8795, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_fluid_ounces(8.2), 4.9239, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_fluid_ounces(190.5), 114.39053, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_usfluidounces(1009.0), 605.8795, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_usfluidounces(8.2), 4.9239, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_usfluidounces(190.5), 114.39053, 0.01
   end
 
   test "Convert known Tablespoons to US Cups" do
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_cups(109.0), 8.18147, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_cups(3.4), 0.255202, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_u_s_cups(1000.0), 75.0594, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_uscups(109.0), 8.18147, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_uscups(3.4), 0.255202, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_uscups(1000.0), 75.0594, 0.01
   end
 
   test "Convert known Tablespoons to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.Tablespoons.to_cubic_metres(10000.0), 0.1775817, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_cubic_metres(3378.726), 0.059999995422, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_cubic_metres(800_009.0), 14.2066969, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_cubicmetres(10000.0), 0.1775817, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_cubicmetres(3378.726), 0.059999995422, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_cubicmetres(800_009.0), 14.2066969, 0.01
   end
 
   test "Convert known Tablespoons to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.Tablespoons.to_cubic_feet(780.0), 0.489157, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_cubic_feet(6378.32), 4.0, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_cubic_feet(8451.28), 5.3, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_cubicfeet(780.0), 0.489157, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_cubicfeet(6378.32), 4.0, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_cubicfeet(8451.28), 5.3, 0.01
   end
 
   test "Convert known Tablespoons to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.Tablespoons.to_cubic_inches(66.0), 71.5222, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_cubic_inches(123.0), 133.291, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_cubic_inches(56.0), 60.6855, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_cubicinches(66.0), 71.5222, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_cubicinches(123.0), 133.291, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_cubicinches(56.0), 60.6855, 0.01
   end
 
   test "Convert known Tablespoons to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.Tablespoons.to_oil_barrels(44764.5), 5.0, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_oil_barrels(12222.0), 1.3651429, 0.01
-    assert_in_delta PutridParrot.Units.Tablespoons.to_oil_barrels(800.0), 0.0893564, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_oilbarrels(44764.5), 5.0, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_oilbarrels(12222.0), 1.3651429, 0.01
+    assert_in_delta PutridParrot.Units.Tablespoons.to_oilbarrels(800.0), 0.0893564, 0.01
   end
 
   test "Convert known Teaspoons to Millilitres" do
@@ -1421,75 +1418,75 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known Teaspoons to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Teaspoons.to_fluid_ounces(109.0), 22.7083, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_fluid_ounces(55.7), 11.60417, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_fluid_ounces(609.0), 126.875, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_fluidounces(109.0), 22.7083, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_fluidounces(55.7), 11.60417, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_fluidounces(609.0), 126.875, 0.01
   end
 
   test "Convert known Teaspoons to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_teaspoons(90.0), 108.086, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_teaspoons(1.45), 1.741379, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_teaspoons(80.1), 96.19616, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_usteaspoons(90.0), 108.086, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_usteaspoons(1.45), 1.741379, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_usteaspoons(80.1), 96.19616, 0.01
   end
 
   test "Convert known Teaspoons to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_tablespoons(56.0), 22.4177, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_tablespoons(7.0), 2.80222, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_tablespoons(109.0), 43.6345, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_ustablespoons(56.0), 22.4177, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_ustablespoons(7.0), 2.80222, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_ustablespoons(109.0), 43.6345, 0.01
   end
 
   test "Convert known Teaspoons to US Quarts" do
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_quarts(199.0), 1.24474, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_quarts(5.9), 0.0369042, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_quarts(23.0), 0.143864, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_usquarts(199.0), 1.24474, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_usquarts(5.9), 0.0369042, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_usquarts(23.0), 0.143864, 0.01
   end
 
   test "Convert known Teaspoons to US Pints" do
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_pints(106.0), 1.32605, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_pints(34.0), 0.425337, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_pints(6.21), 0.07768648, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_uspints(106.0), 1.32605, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_uspints(34.0), 0.425337, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_uspints(6.21), 0.07768648, 0.01
   end
 
   test "Convert known Teaspoons to US Gallons" do
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_gallons(900.0), 1.40736, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_gallons(1234.6), 1.93059035, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_gallons(88.0), 0.137609, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_usgallons(900.0), 1.40736, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_usgallons(1234.6), 1.93059035, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_usgallons(88.0), 0.137609, 0.01
   end
 
   test "Convert known Teaspoons to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_fluid_ounces(56.0), 11.2089, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_fluid_ounces(2.9), 0.580459, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_fluid_ounces(1020.0), 204.1616, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_usfluidounces(56.0), 11.2089, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_usfluidounces(2.9), 0.580459, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_usfluidounces(1020.0), 204.1616, 0.01
   end
 
   test "Convert known Teaspoons to US Cups" do
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_cups(8000.0), 200.1584, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_cups(34.0), 0.850673, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_u_s_cups(109.9), 2.7496761, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_uscups(8000.0), 200.1584, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_uscups(34.0), 0.850673, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_uscups(109.9), 2.7496761, 0.01
   end
 
   test "Convert known Teaspoons to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.Teaspoons.to_cubic_metres(152_043.0), 0.9, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_cubic_metres(3378.726), 0.02, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_cubic_metres(8000.0), 0.04735512, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_cubicmetres(152_043.0), 0.9, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_cubicmetres(3378.726), 0.02, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_cubicmetres(8000.0), 0.04735512, 0.01
   end
 
   test "Convert known Teaspoons to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.Teaspoons.to_cubic_feet(600.0), 0.125425, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_cubic_feet(1234.0), 0.257957, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_cubic_feet(880.0), 0.183956, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_cubicfeet(600.0), 0.125425, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_cubicfeet(1234.0), 0.257957, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_cubicfeet(880.0), 0.183956, 0.01
   end
 
   test "Convert known Teaspoons to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.Teaspoons.to_cubic_inches(8.0), 2.88979, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_cubic_inches(12.0), 4.33468, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_cubic_inches(666.0), 240.575, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_cubicinches(8.0), 2.88979, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_cubicinches(12.0), 4.33468, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_cubicinches(666.0), 240.575, 0.01
   end
 
   test "Convert known Teaspoons to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.Teaspoons.to_oil_barrels(10743.5), 0.4, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_oil_barrels(107_435.0), 4.0, 0.01
-    assert_in_delta PutridParrot.Units.Teaspoons.to_oil_barrels(134_294.0), 5.0, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_oilbarrels(10743.5), 0.4, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_oilbarrels(107_435.0), 4.0, 0.01
+    assert_in_delta PutridParrot.Units.Teaspoons.to_oilbarrels(134_294.0), 5.0, 0.01
   end
 
   test "Convert known US Cups to Millilitres" do
@@ -1541,69 +1538,69 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known US Cups to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.USCups.to_fluid_ounces(55.0), 457.971, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_fluid_ounces(0.4), 3.3307, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_fluid_ounces(88.4), 736.084, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_fluidounces(55.0), 457.971, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_fluidounces(0.4), 3.3307, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_fluidounces(88.4), 736.084, 0.01
   end
 
   test "Convert known US Cups to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_teaspoons(12.0), 576.0, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_teaspoons(5.12), 245.7601, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_teaspoons(6701.0), 321_648.0, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_usteaspoons(12.0), 576.0, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_usteaspoons(5.12), 245.7601, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_usteaspoons(6701.0), 321_648.0, 0.01
   end
 
   test "Convert known US Cups to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_tablespoons(677.0), 10832.0, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_tablespoons(1.9), 30.4, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_tablespoons(800.8), 12812.8, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_ustablespoons(677.0), 10832.0, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_ustablespoons(1.9), 30.4, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_ustablespoons(800.8), 12812.8, 0.01
   end
 
   test "Convert known US Cups to US Quarts" do
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_quarts(800.8), 200.2, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_quarts(4.84), 1.21, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_quarts(0.99), 0.2475, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_usquarts(800.8), 200.2, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_usquarts(4.84), 1.21, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_usquarts(0.99), 0.2475, 0.01
   end
 
   test "Convert known US Cups to US Pints" do
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_pints(0.99), 0.495, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_pints(358.9), 179.45, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_pints(1000.0), 500.0, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_uspints(0.99), 0.495, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_uspints(358.9), 179.45, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_uspints(1000.0), 500.0, 0.01
   end
 
   test "Convert known US Cups to US Gallons" do
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_gallons(1000.0), 62.5, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_gallons(0.78), 0.04875, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_gallons(123.123), 7.6951875, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_usgallons(1000.0), 62.5, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_usgallons(0.78), 0.04875, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_usgallons(123.123), 7.6951875, 0.01
   end
 
   test "Convert known US Cups to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_fluid_ounces(123.123), 984.984, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_fluid_ounces(4.0), 32.0, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_u_s_fluid_ounces(0.9), 7.2, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_usfluidounces(123.123), 984.984, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_usfluidounces(4.0), 32.0, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_usfluidounces(0.9), 7.2, 0.01
   end
 
   test "Convert known US Cups to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.USCups.to_cubic_metres(4555.0), 1.0932, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_cubic_metres(100_900.0), 24.216, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_cubic_metres(7800.0), 1.872, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_cubicmetres(4555.0), 1.0932, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_cubicmetres(100_900.0), 24.216, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_cubicmetres(7800.0), 1.872, 0.01
   end
 
   test "Convert known US Cups to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.USCups.to_cubic_feet(88.0), 0.745846, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_cubic_feet(471.947), 4.0, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_cubic_feet(123.0), 1.04249, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_cubicfeet(88.0), 0.745846, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_cubicfeet(471.947), 4.0, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_cubicfeet(123.0), 1.04249, 0.01
   end
 
   test "Convert known US Cups to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.USCups.to_cubic_inches(6.0), 87.8742, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_cubic_inches(2.3), 33.6851, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_cubic_inches(0.9), 13.1811, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_cubicinches(6.0), 87.8742, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_cubicinches(2.3), 33.6851, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_cubicinches(0.9), 13.1811, 0.01
   end
 
   test "Convert known US Cups to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.USCups.to_oil_barrels(43721.5), 66.0, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_oil_barrels(1111.0), 1.677115, 0.01
-    assert_in_delta PutridParrot.Units.USCups.to_oil_barrels(3312.24), 5.0, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_oilbarrels(43721.5), 66.0, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_oilbarrels(1111.0), 1.677115, 0.01
+    assert_in_delta PutridParrot.Units.USCups.to_oilbarrels(3312.24), 5.0, 0.01
   end
 
   test "Convert known US Fluid Ounces to Millilitres" do
@@ -1655,69 +1652,69 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known US Fluid Ounces to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_fluid_ounces(0.6), 0.624506, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_fluid_ounces(123.0), 128.024, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_fluid_ounces(8009.0), 8336.109, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_fluidounces(0.6), 0.624506, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_fluidounces(123.0), 128.024, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_fluidounces(8009.0), 8336.109, 0.01
   end
 
   test "Convert known US Fluid Ounces to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_teaspoons(45.0), 270.0, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_teaspoons(1.5), 9.0, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_teaspoons(400.8), 2404.8008, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_usteaspoons(45.0), 270.0, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_usteaspoons(1.5), 9.0, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_usteaspoons(400.8), 2404.8008, 0.01
   end
 
   test "Convert known US Fluid Ounces to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_tablespoons(4.0), 8.0, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_tablespoons(170.2), 340.4, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_tablespoons(8811.0), 17622.0, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_ustablespoons(4.0), 8.0, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_ustablespoons(170.2), 340.4, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_ustablespoons(8811.0), 17622.0, 0.01
   end
 
   test "Convert known US Fluid Ounces to US Quarts" do
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_quarts(8811.0), 275.3438, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_quarts(4.2), 0.13125, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_quarts(109.0), 3.40625, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_usquarts(8811.0), 275.3438, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_usquarts(4.2), 0.13125, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_usquarts(109.0), 3.40625, 0.01
   end
 
   test "Convert known US Fluid Ounces to US Pints" do
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_pints(109.0), 6.8125, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_pints(77.09), 4.818125, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_pints(180.4), 11.275, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_uspints(109.0), 6.8125, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_uspints(77.09), 4.818125, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_uspints(180.4), 11.275, 0.01
   end
 
   test "Convert known US Fluid Ounces to US Gallons" do
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_gallons(45.0), 0.351563, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_gallons(1.8), 0.0140625, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_gallons(778.9), 6.0851562, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_usgallons(45.0), 0.351563, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_usgallons(1.8), 0.0140625, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_usgallons(778.9), 6.0851562, 0.01
   end
 
   test "Convert known US Fluid Ounces to US Cups" do
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_cups(45.0), 5.625, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_cups(66.9), 8.3625, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_u_s_cups(0.29), 0.03625, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_uscups(45.0), 5.625, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_uscups(66.9), 8.3625, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_uscups(0.29), 0.03625, 0.01
   end
 
   test "Convert known US Fluid Ounces to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubic_metres(800_900.0), 23.6854398, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubic_metres(789.0), 0.0233335, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubic_metres(100_100.0), 2.96031031, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubicmetres(800_900.0), 23.6854398, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubicmetres(789.0), 0.0233335, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubicmetres(100_100.0), 2.96031031, 0.01
   end
 
   test "Convert known US Fluid Ounces to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubic_feet(344.0), 0.359266, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubic_feet(8009.0), 8.364434, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubic_feet(3830.03), 4.0, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubicfeet(344.0), 0.359266, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubicfeet(8009.0), 8.364434, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubicfeet(3830.03), 4.0, 0.01
   end
 
   test "Convert known US Fluid Ounces to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubic_inches(66.0), 119.109, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubic_inches(900.0), 1624.22, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubic_inches(8.0), 14.4375, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubicinches(66.0), 119.109, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubicinches(900.0), 1624.22, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_cubicinches(8.0), 14.4375, 0.01
   end
 
   test "Convert known US Fluid Ounces to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_oil_barrels(32256.0), 6.0, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_oil_barrels(1899.0), 0.3532366, 0.01
-    assert_in_delta PutridParrot.Units.USFluidOunces.to_oil_barrels(6988.8), 1.3, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_oilbarrels(32256.0), 6.0, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_oilbarrels(1899.0), 0.3532366, 0.01
+    assert_in_delta PutridParrot.Units.USFluidOunces.to_oilbarrels(6988.8), 1.3, 0.01
   end
 
   test "Convert known US Gallons to Millilitres" do
@@ -1769,69 +1766,69 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known US Gallons to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.USGallons.to_fluid_ounces(1.09), 145.2184, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_fluid_ounces(34.0), 4529.75, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_fluid_ounces(666.0), 88729.724440098, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_fluidounces(1.09), 145.2184, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_fluidounces(34.0), 4529.75, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_fluidounces(666.0), 88729.724440098, 0.01
   end
 
   test "Convert known US Gallons to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_teaspoons(4.0), 3072.0, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_teaspoons(1.28), 983.0403, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_teaspoons(6.99), 5368.322, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_usteaspoons(4.0), 3072.0, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_usteaspoons(1.28), 983.0403, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_usteaspoons(6.99), 5368.322, 0.01
   end
 
   test "Convert known US Gallons to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_tablespoons(34.0), 8704.0, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_tablespoons(8.4), 2150.4, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_tablespoons(0.091), 23.296, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_ustablespoons(34.0), 8704.0, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_ustablespoons(8.4), 2150.4, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_ustablespoons(0.091), 23.296, 0.01
   end
 
   test "Convert known US Gallons to US Quarts" do
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_quarts(0.091), 0.364, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_quarts(23.0), 92.0, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_quarts(1000.8), 4003.2, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_usquarts(0.091), 0.364, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_usquarts(23.0), 92.0, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_usquarts(1000.8), 4003.2, 0.01
   end
 
   test "Convert known US Gallons to US Pints" do
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_pints(1000.8), 8006.4, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_pints(23.6), 188.8, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_pints(0.71), 5.68, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_uspints(1000.8), 8006.4, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_uspints(23.6), 188.8, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_uspints(0.71), 5.68, 0.01
   end
 
   test "Convert known US Gallons to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_fluid_ounces(0.71), 90.88, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_fluid_ounces(83.2), 10649.6, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_fluid_ounces(777.0), 99456.0, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_usfluidounces(0.71), 90.88, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_usfluidounces(83.2), 10649.6, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_usfluidounces(777.0), 99456.0, 0.01
   end
 
   test "Convert known US Gallons to US Cups" do
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_cups(777.0), 12432.0, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_cups(5.71), 91.36, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_u_s_cups(0.98), 15.68, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_uscups(777.0), 12432.0, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_uscups(5.71), 91.36, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_uscups(0.98), 15.68, 0.01
   end
 
   test "Convert known US Gallons to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.USGallons.to_cubic_metres(1849.2), 7.0, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_cubic_metres(87.0), 0.329331, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_cubic_metres(123_456.0), 467.331797, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_cubicmetres(1849.2), 7.0, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_cubicmetres(87.0), 0.329331, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_cubicmetres(123_456.0), 467.331797, 0.01
   end
 
   test "Convert known US Gallons to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.USGallons.to_cubic_feet(6.0), 0.802083, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_cubic_feet(24.0), 3.20833, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_cubic_feet(5.0), 0.668403, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_cubicfeet(6.0), 0.802083, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_cubicfeet(24.0), 3.20833, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_cubicfeet(5.0), 0.668403, 0.01
   end
 
   test "Convert known US Gallons to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.USGallons.to_cubic_inches(6.0), 1386.0, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_cubic_inches(190.0), 43890.0, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_cubic_inches(55.0), 12705.0, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_cubicinches(6.0), 1386.0, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_cubicinches(190.0), 43890.0, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_cubicinches(55.0), 12705.0, 0.01
   end
 
   test "Convert known US Gallons to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.USGallons.to_oil_barrels(966.0), 23.0, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_oil_barrels(1234.0), 29.38095, 0.01
-    assert_in_delta PutridParrot.Units.USGallons.to_oil_barrels(16.8), 0.4, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_oilbarrels(966.0), 23.0, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_oilbarrels(1234.0), 29.38095, 0.01
+    assert_in_delta PutridParrot.Units.USGallons.to_oilbarrels(16.8), 0.4, 0.01
   end
 
   test "Convert known US Pints to Millilitres" do
@@ -1883,69 +1880,69 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known US Pints to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.USPints.to_fluid_ounces(12.0), 199.842, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_fluid_ounces(9.7), 161.539, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_fluid_ounces(124.0), 2065.03, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_fluidounces(12.0), 199.842, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_fluidounces(9.7), 161.539, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_fluidounces(124.0), 2065.03, 0.01
   end
 
   test "Convert known US Pints to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_teaspoons(4.0), 384.0, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_teaspoons(2.5), 240.0, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_teaspoons(8001.9), 768_182.4, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_usteaspoons(4.0), 384.0, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_usteaspoons(2.5), 240.0, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_usteaspoons(8001.9), 768_182.4, 0.01
   end
 
   test "Convert known US Pints to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_tablespoons(80.0), 2560.0, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_tablespoons(12.7), 406.4, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_tablespoons(0.6), 19.2, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_ustablespoons(80.0), 2560.0, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_ustablespoons(12.7), 406.4, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_ustablespoons(0.6), 19.2, 0.01
   end
 
   test "Convert known US Pints to US Quarts" do
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_quarts(0.6), 0.3, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_quarts(10090.0), 5045.0, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_quarts(4.56), 2.28, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_usquarts(0.6), 0.3, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_usquarts(10090.0), 5045.0, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_usquarts(4.56), 2.28, 0.01
   end
 
   test "Convert known US Pints to US Gallons" do
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_gallons(4.56), 0.57, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_gallons(9000.0), 1125.0, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_gallons(47.2), 5.9, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_usgallons(4.56), 0.57, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_usgallons(9000.0), 1125.0, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_usgallons(47.2), 5.9, 0.01
   end
 
   test "Convert known US Pints to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_fluid_ounces(47.2), 755.2, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_fluid_ounces(1001.0), 16016.0, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_fluid_ounces(23.9), 382.4, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_usfluidounces(47.2), 755.2, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_usfluidounces(1001.0), 16016.0, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_usfluidounces(23.9), 382.4, 0.01
   end
 
   test "Convert known US Pints to US Cups" do
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_cups(23.9), 47.8, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_cups(1009.0), 2018.0, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_u_s_cups(45.9), 91.8, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_uscups(23.9), 47.8, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_uscups(1009.0), 2018.0, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_uscups(45.9), 91.8, 0.01
   end
 
   test "Convert known US Pints to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.USPints.to_cubic_metres(14793.6), 7.0, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_cubic_metres(700.0), 0.331224, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_cubic_metres(123_456.0), 58.4164747, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_cubicmetres(14793.6), 7.0, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_cubicmetres(700.0), 0.331224, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_cubicmetres(123_456.0), 58.4164747, 0.01
   end
 
   test "Convert known US Pints to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.USPints.to_cubic_feet(66.0), 1.10286, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_cubic_feet(2692.99), 45.0, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_cubic_feet(123.0), 2.05534, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_cubicfeet(66.0), 1.10286, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_cubicfeet(2692.99), 45.0, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_cubicfeet(123.0), 2.05534, 0.01
   end
 
   test "Convert known US Pints to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.USPints.to_cubic_inches(66.0), 1905.75, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_cubic_inches(900.0), 25987.5, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_cubic_inches(6.7), 193.463, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_cubicinches(66.0), 1905.75, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_cubicinches(900.0), 25987.5, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_cubicinches(6.7), 193.463, 0.01
   end
 
   test "Convert known US Pints to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.USPints.to_oil_barrels(223_776.0), 666.0, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_oil_barrels(1234.0), 3.672619, 0.01
-    assert_in_delta PutridParrot.Units.USPints.to_oil_barrels(302.4), 0.9, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_oilbarrels(223_776.0), 666.0, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_oilbarrels(1234.0), 3.672619, 0.01
+    assert_in_delta PutridParrot.Units.USPints.to_oilbarrels(302.4), 0.9, 0.01
   end
 
   test "Convert known US Quarts to Millilitres" do
@@ -1997,69 +1994,69 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known US Quarts to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.USQuarts.to_fluid_ounces(800.0), 26645.56289492, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_fluid_ounces(6.8), 226.487, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_fluid_ounces(0.9), 29.9763, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_fluidounces(800.0), 26645.56289492, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_fluidounces(6.8), 226.487, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_fluidounces(0.9), 29.9763, 0.01
   end
 
   test "Convert known US Quarts to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_teaspoons(3.0), 576.0, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_teaspoons(0.12), 23.04001, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_teaspoons(4.5), 864.0, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_usteaspoons(3.0), 576.0, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_usteaspoons(0.12), 23.04001, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_usteaspoons(4.5), 864.0, 0.01
   end
 
   test "Convert known US Quarts to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_tablespoons(4.5), 288.0, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_tablespoons(0.777), 49.728, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_tablespoons(1.8), 115.2, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_ustablespoons(4.5), 288.0, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_ustablespoons(0.777), 49.728, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_ustablespoons(1.8), 115.2, 0.01
   end
 
   test "Convert known US Quarts to US Pints" do
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_pints(1.8), 3.6, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_pints(900.0), 1800.0, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_pints(12.45), 24.9, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_uspints(1.8), 3.6, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_uspints(900.0), 1800.0, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_uspints(12.45), 24.9, 0.01
   end
 
   test "Convert known US Quarts to US Gallons" do
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_gallons(12.45), 3.1125, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_gallons(0.8), 0.2, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_gallons(100.9), 25.225, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_usgallons(12.45), 3.1125, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_usgallons(0.8), 0.2, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_usgallons(100.9), 25.225, 0.01
   end
 
   test "Convert known US Quarts to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_fluid_ounces(100.9), 3228.8, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_fluid_ounces(12345.0), 395_040.0, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_fluid_ounces(8.7), 278.4, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_usfluidounces(100.9), 3228.8, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_usfluidounces(12345.0), 395_040.0, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_usfluidounces(8.7), 278.4, 0.01
   end
 
   test "Convert known US Quarts to US Cups" do
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_cups(8.7), 34.8, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_cups(123.9), 495.6, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_u_s_cups(0.66), 2.64, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_uscups(8.7), 34.8, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_uscups(123.9), 495.6, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_uscups(0.66), 2.64, 0.01
   end
 
   test "Convert known US Quarts to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.USQuarts.to_cubic_metres(8453.51), 8.0, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_cubic_metres(5000.0), 4.731765, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_cubic_metres(123_456.0), 116.832949, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_cubicmetres(8453.51), 8.0, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_cubicmetres(5000.0), 4.731765, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_cubicmetres(123_456.0), 116.832949, 0.01
   end
 
   test "Convert known US Quarts to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.USQuarts.to_cubic_feet(44.0), 1.47049, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_cubic_feet(2663.06), 89.0, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_cubic_feet(444.0), 14.8385, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_cubicfeet(44.0), 1.47049, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_cubicfeet(2663.06), 89.0, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_cubicfeet(444.0), 14.8385, 0.01
   end
 
   test "Convert known US Quarts to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.USQuarts.to_cubic_inches(44.0), 2541.0, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_cubic_inches(800.0), 46200.0, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_cubic_inches(6.0), 346.5, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_cubicinches(44.0), 2541.0, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_cubicinches(800.0), 46200.0, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_cubicinches(6.0), 346.5, 0.01
   end
 
   test "Convert known US Quarts to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.USQuarts.to_oil_barrels(9240.0), 55.0, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_oil_barrels(1344.0), 8.0, 0.01
-    assert_in_delta PutridParrot.Units.USQuarts.to_oil_barrels(207_312.0), 1234.0, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_oilbarrels(9240.0), 55.0, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_oilbarrels(1344.0), 8.0, 0.01
+    assert_in_delta PutridParrot.Units.USQuarts.to_oilbarrels(207_312.0), 1234.0, 0.01
   end
 
   test "Convert known US Tablespoons to Millilitres" do
@@ -2111,69 +2108,69 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known US Tablespoons to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.USTablespoons.to_fluid_ounces(4.0), 2.08169, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_fluid_ounces(50.9), 26.48945, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_fluid_ounces(123.0), 64.0118, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_fluidounces(4.0), 2.08169, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_fluidounces(50.9), 26.48945, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_fluidounces(123.0), 64.0118, 0.01
   end
 
   test "Convert known US Tablespoons to US Teaspoons" do
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_teaspoons(90.0), 270.0, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_teaspoons(4.5), 13.5, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_teaspoons(4608.0), 13824.0, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_usteaspoons(90.0), 270.0, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_usteaspoons(4.5), 13.5, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_usteaspoons(4608.0), 13824.0, 0.01
   end
 
   test "Convert known US Tablespoons to US Quarts" do
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_quarts(456.0), 7.125, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_quarts(7.12), 0.11125, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_quarts(194.9), 3.0453125, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_usquarts(456.0), 7.125, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_usquarts(7.12), 0.11125, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_usquarts(194.9), 3.0453125, 0.01
   end
 
   test "Convert known US Tablespoons to US Pints" do
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_pints(194.9), 6.090625, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_pints(2000.0), 62.5, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_pints(18.7), 0.584375, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_uspints(194.9), 6.090625, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_uspints(2000.0), 62.5, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_uspints(18.7), 0.584375, 0.01
   end
 
   test "Convert known US Tablespoons to US Gallons" do
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_gallons(18.7), 0.07304687, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_gallons(1900.0), 7.421875, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_gallons(12345.0), 48.222656, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_usgallons(18.7), 0.07304687, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_usgallons(1900.0), 7.421875, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_usgallons(12345.0), 48.222656, 0.01
   end
 
   test "Convert known US Tablespoons to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_fluid_ounces(1234.0), 617.0, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_fluid_ounces(89.3), 44.65, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_fluid_ounces(90.99), 45.495, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_usfluidounces(1234.0), 617.0, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_usfluidounces(89.3), 44.65, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_usfluidounces(90.99), 45.495, 0.01
   end
 
   test "Convert known US Tablespoons to US Cups" do
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_cups(90.99), 5.686875, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_cups(1230.0), 76.875, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_u_s_cups(9000.9), 562.55625, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_uscups(90.99), 5.686875, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_uscups(1230.0), 76.875, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_uscups(9000.9), 562.55625, 0.01
   end
 
   test "Convert known US Tablespoons to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.USTablespoons.to_cubic_metres(541_024.0), 8.0, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_cubic_metres(10200.0), 0.150825, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_cubic_metres(123_456.0), 1.82551483, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_cubicmetres(541_024.0), 8.0, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_cubicmetres(10200.0), 0.150825, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_cubicmetres(123_456.0), 1.82551483, 0.01
   end
 
   test "Convert known US Tablespoons to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.USTablespoons.to_cubic_feet(66.0), 0.0344645, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_cubic_feet(7660.05), 4.0, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_cubic_feet(1234.0), 0.6443821, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_cubicfeet(66.0), 0.0344645, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_cubicfeet(7660.05), 4.0, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_cubicfeet(1234.0), 0.6443821, 0.01
   end
 
   test "Convert known US Tablespoons to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.USTablespoons.to_cubic_inches(900.0), 812.109, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_cubic_inches(10.0), 9.02344, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_cubic_inches(4.0), 3.60938, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_cubicinches(900.0), 812.109, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_cubicinches(10.0), 9.02344, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_cubicinches(4.0), 3.60938, 0.01
   end
 
   test "Convert known US Tablespoons to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.USTablespoons.to_oil_barrels(591_360.0), 55.0, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_oil_barrels(4300.8), 0.4, 0.01
-    assert_in_delta PutridParrot.Units.USTablespoons.to_oil_barrels(34406.4), 3.2, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_oilbarrels(591_360.0), 55.0, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_oilbarrels(4300.8), 0.4, 0.01
+    assert_in_delta PutridParrot.Units.USTablespoons.to_oilbarrels(34406.4), 3.2, 0.01
   end
 
   test "Convert known US Teaspoons to Millilitres" do
@@ -2225,68 +2222,68 @@ defmodule PutridParrot.Units.Volume do
   end
 
   test "Convert known US Teaspoons to Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_fluid_ounces(123.0), 21.3373, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_fluid_ounces(89.0), 15.4392, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_fluid_ounces(1009.0), 175.035, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_fluidounces(123.0), 21.3373, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_fluidounces(89.0), 15.4392, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_fluidounces(1009.0), 175.035, 0.01
   end
 
   test "Convert known US Teaspoons to US Tablespoons" do
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_tablespoons(190.0), 63.3333, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_tablespoons(5.6), 1.86667, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_tablespoons(0.7), 0.233333, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_ustablespoons(190.0), 63.3333, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_ustablespoons(5.6), 1.86667, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_ustablespoons(0.7), 0.233333, 0.01
   end
 
   test "Convert known US Teaspoons to US Quarts" do
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_quarts(100.4), 0.5229165, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_quarts(9000.0), 46.87498, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_quarts(1234.0), 6.427081, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_usquarts(100.4), 0.5229165, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_usquarts(9000.0), 46.87498, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_usquarts(1234.0), 6.427081, 0.01
   end
 
   test "Convert known US Teaspoons to US Pints" do
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_pints(109.0), 1.13542, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_pints(3400.0), 35.41666, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_pints(10.7), 0.1114583, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_uspints(109.0), 1.13542, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_uspints(3400.0), 35.41666, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_uspints(10.7), 0.1114583, 0.01
   end
 
   test "Convert known US Teaspoons to US Gallons" do
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_gallons(109.0), 0.141927, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_gallons(9876.0), 12.85937, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_gallons(10900.0), 14.192704, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_usgallons(109.0), 0.141927, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_usgallons(9876.0), 12.85937, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_usgallons(10900.0), 14.192704, 0.01
   end
 
   test "Convert known US Teaspoons to US Fluid Ounces" do
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_fluid_ounces(180.0), 30.0, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_fluid_ounces(5.6), 0.933333, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_fluid_ounces(900.5), 150.08328, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_usfluidounces(180.0), 30.0, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_usfluidounces(5.6), 0.933333, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_usfluidounces(900.5), 150.08328, 0.01
   end
 
   test "Convert known US Teaspoons to US Cups" do
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_cups(90.0), 1.875, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_cups(4500.8), 93.7666363, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_u_s_cups(0.9), 0.01875, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_uscups(90.0), 1.875, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_uscups(4500.8), 93.7666363, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_uscups(0.9), 0.01875, 0.01
   end
 
   test "Convert known US Teaspoons to Cubic Metres" do
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubic_metres(405_768.0), 2.0, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubic_metres(80808.0), 0.39829617, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubic_metres(123_456.0), 0.608504748, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubicmetres(405_768.0), 2.0, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubicmetres(80808.0), 0.39829617, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubicmetres(123_456.0), 0.608504748, 0.01
   end
 
   test "Convert known US Teaspoons to Cubic Feet" do
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubic_feet(2000.0), 0.3481263, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubic_feet(6894.05), 1.2, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubic_feet(12345.0), 2.1488098, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubicfeet(2000.0), 0.3481263, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubicfeet(6894.05), 1.2, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubicfeet(12345.0), 2.1488098, 0.01
   end
 
   test "Convert known US Teaspoons to Cubic Inches" do
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubic_inches(23.2727), 7.0, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubic_inches(219.429), 66.0, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubic_inches(39.8961), 12.0, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubicinches(23.2727), 7.0, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubicinches(219.429), 66.0, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_cubicinches(39.8961), 12.0, 0.01
   end
 
   test "Convert known US Teaspoons to Oil Barrels" do
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_oil_barrels(103_219.0), 3.2, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_oil_barrels(6666.0), 0.2066592, 0.01
-    assert_in_delta PutridParrot.Units.USTeaspoons.to_oil_barrels(64512.0), 2.0, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_oilbarrels(103_219.0), 3.2, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_oilbarrels(6666.0), 0.2066592, 0.01
+    assert_in_delta PutridParrot.Units.USTeaspoons.to_oilbarrels(64512.0), 2.0, 0.01
   end
 end

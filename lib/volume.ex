@@ -52,57 +52,57 @@ defmodule PutridParrot.Units.CubicFeet do
   @doc """
   Converts the supplied Cubic Feet value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value * 996.614
+  def to_fluidounces(value), do: value * 996.614
 
   @doc """
   Converts the supplied Cubic Feet value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value * 5745.04
+  def to_usteaspoons(value), do: value * 5745.04
 
   @doc """
   Converts the supplied Cubic Feet value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value * 1915.01
+  def to_ustablespoons(value), do: value * 1915.01
 
   @doc """
   Converts the supplied Cubic Feet value to US Quarts
   """
-  def to_u_s_quarts(value), do: value * 29.9221
+  def to_usquarts(value), do: value * 29.9221
 
   @doc """
   Converts the supplied Cubic Feet value to US Pints
   """
-  def to_u_s_pints(value), do: value * 59.8442
+  def to_uspints(value), do: value * 59.8442
 
   @doc """
   Converts the supplied Cubic Feet value to US Gallons
   """
-  def to_u_s_gallons(value), do: value * 7.48052
+  def to_usgallons(value), do: value * 7.48052
 
   @doc """
   Converts the supplied Cubic Feet value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value * 957.506
+  def to_usfluidounces(value), do: value * 957.506
 
   @doc """
   Converts the supplied Cubic Feet value to US Cups
   """
-  def to_u_s_cups(value), do: value * 117.987
+  def to_uscups(value), do: value * 117.987
 
   @doc """
   Converts the supplied Cubic Feet value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 35.3147
+  def to_cubicmetres(value), do: value / 35.3147
 
   @doc """
   Converts the supplied Cubic Feet value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 1728.0
+  def to_cubicinches(value), do: value * 1728.0
 
   @doc """
   Converts the supplied Cubic Feet value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 5.61458
+  def to_oilbarrels(value), do: value / 5.61458
 end
 
 defmodule PutridParrot.Units.CubicInches do
@@ -153,57 +153,57 @@ defmodule PutridParrot.Units.CubicInches do
   @doc """
   Converts the supplied Cubic Inches value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value / 1.73387
+  def to_fluidounces(value), do: value / 1.73387
 
   @doc """
   Converts the supplied Cubic Inches value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value * 3.32468
+  def to_usteaspoons(value), do: value * 3.32468
 
   @doc """
   Converts the supplied Cubic Inches value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value * 1.10823
+  def to_ustablespoons(value), do: value * 1.10823
 
   @doc """
   Converts the supplied Cubic Inches value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 57.75
+  def to_usquarts(value), do: value / 57.75
 
   @doc """
   Converts the supplied Cubic Inches value to US Pints
   """
-  def to_u_s_pints(value), do: value / 28.875
+  def to_uspints(value), do: value / 28.875
 
   @doc """
   Converts the supplied Cubic Inches value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 231.0
+  def to_usgallons(value), do: value / 231.0
 
   @doc """
   Converts the supplied Cubic Inches value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value / 1.80469
+  def to_usfluidounces(value), do: value / 1.80469
 
   @doc """
   Converts the supplied Cubic Inches value to US Cups
   """
-  def to_u_s_cups(value), do: value / 14.6457
+  def to_uscups(value), do: value / 14.6457
 
   @doc """
   Converts the supplied Cubic Inches value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 61023.7
+  def to_cubicmetres(value), do: value / 61023.7
 
   @doc """
   Converts the supplied Cubic Inches value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 1728.0
+  def to_cubicfeet(value), do: value / 1728.0
 
   @doc """
   Converts the supplied Cubic Inches value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 9702.0
+  def to_oilbarrels(value), do: value / 9702.0
 end
 
 defmodule PutridParrot.Units.CubicMetres do
@@ -254,57 +254,57 @@ defmodule PutridParrot.Units.CubicMetres do
   @doc """
   Converts the supplied Cubic Metres value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value * 35195.1
+  def to_fluidounces(value), do: value * 35195.1
 
   @doc """
   Converts the supplied Cubic Metres value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value * 202_884.0
+  def to_usteaspoons(value), do: value * 202_884.0
 
   @doc """
   Converts the supplied Cubic Metres value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value * 67628.0
+  def to_ustablespoons(value), do: value * 67628.0
 
   @doc """
   Converts the supplied Cubic Metres value to US Quarts
   """
-  def to_u_s_quarts(value), do: value * 1056.69
+  def to_usquarts(value), do: value * 1056.69
 
   @doc """
   Converts the supplied Cubic Metres value to US Pints
   """
-  def to_u_s_pints(value), do: value * 2113.38
+  def to_uspints(value), do: value * 2113.38
 
   @doc """
   Converts the supplied Cubic Metres value to US Gallons
   """
-  def to_u_s_gallons(value), do: value * 264.172
+  def to_usgallons(value), do: value * 264.172
 
   @doc """
   Converts the supplied Cubic Metres value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value * 33814.0
+  def to_usfluidounces(value), do: value * 33814.0
 
   @doc """
   Converts the supplied Cubic Metres value to US Cups
   """
-  def to_u_s_cups(value), do: value * 4166.67
+  def to_uscups(value), do: value * 4166.67
 
   @doc """
   Converts the supplied Cubic Metres value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value * 35.3147
+  def to_cubicfeet(value), do: value * 35.3147
 
   @doc """
   Converts the supplied Cubic Metres value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 61023.7
+  def to_cubicinches(value), do: value * 61023.7
 
   @doc """
   Converts the supplied Cubic Metres value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value * 6.28981
+  def to_oilbarrels(value), do: value * 6.28981
 end
 
 defmodule PutridParrot.Units.FluidOunces do
@@ -355,57 +355,57 @@ defmodule PutridParrot.Units.FluidOunces do
   @doc """
   Converts the supplied Fluid Ounces value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value / 0.1734737167638313984
+  def to_usteaspoons(value), do: value / 0.1734737167638313984
 
   @doc """
   Converts the supplied Fluid Ounces value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value / 0.52042115029149417472
+  def to_ustablespoons(value), do: value / 0.52042115029149417472
 
   @doc """
   Converts the supplied Fluid Ounces value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 33.306953618655629312
+  def to_usquarts(value), do: value / 33.306953618655629312
 
   @doc """
   Converts the supplied Fluid Ounces value to US Pints
   """
-  def to_u_s_pints(value), do: value / 16.653476809327814656
+  def to_uspints(value), do: value / 16.653476809327814656
 
   @doc """
   Converts the supplied Fluid Ounces value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 133.22781447462252544
+  def to_usgallons(value), do: value / 133.22781447462252544
 
   @doc """
   Converts the supplied Fluid Ounces value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value / 1.0408423005829883904
+  def to_usfluidounces(value), do: value / 1.0408423005829883904
 
   @doc """
   Converts the supplied Fluid Ounces value to US Cups
   """
-  def to_u_s_cups(value), do: value / 8.3267384046639071232
+  def to_uscups(value), do: value / 8.3267384046639071232
 
   @doc """
   Converts the supplied Fluid Ounces value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 35195.1
+  def to_cubicmetres(value), do: value / 35195.1
 
   @doc """
   Converts the supplied Fluid Ounces value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 996.614
+  def to_cubicfeet(value), do: value / 996.614
 
   @doc """
   Converts the supplied Fluid Ounces value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 1.73387
+  def to_cubicinches(value), do: value * 1.73387
 
   @doc """
   Converts the supplied Fluid Ounces value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 5595.57
+  def to_oilbarrels(value), do: value / 5595.57
 end
 
 defmodule PutridParrot.Units.Gallons do
@@ -451,62 +451,62 @@ defmodule PutridParrot.Units.Gallons do
   @doc """
   Converts the supplied Gallons value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value * 160.0
+  def to_fluidounces(value), do: value * 160.0
 
   @doc """
   Converts the supplied Gallons value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value / 0.00108421072977394606
+  def to_usteaspoons(value), do: value / 0.00108421072977394606
 
   @doc """
   Converts the supplied Gallons value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value / 0.003252632189321838592
+  def to_ustablespoons(value), do: value / 0.003252632189321838592
 
   @doc """
   Converts the supplied Gallons value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 0.20816846011659767808
+  def to_usquarts(value), do: value / 0.20816846011659767808
 
   @doc """
   Converts the supplied Gallons value to US Pints
   """
-  def to_u_s_pints(value), do: value / 0.10408423005829883904
+  def to_uspints(value), do: value / 0.10408423005829883904
 
   @doc """
   Converts the supplied Gallons value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 0.83267384046639071232
+  def to_usgallons(value), do: value / 0.83267384046639071232
 
   @doc """
   Converts the supplied Gallons value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value / 0.006505264378643677184
+  def to_usfluidounces(value), do: value / 0.006505264378643677184
 
   @doc """
   Converts the supplied Gallons value to US Cups
   """
-  def to_u_s_cups(value), do: value / 0.052042115029149417472
+  def to_uscups(value), do: value / 0.052042115029149417472
 
   @doc """
   Converts the supplied Gallons value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 219.969
+  def to_cubicmetres(value), do: value / 219.969
 
   @doc """
   Converts the supplied Gallons value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 6.22884
+  def to_cubicfeet(value), do: value / 6.22884
 
   @doc """
   Converts the supplied Gallons value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 277.419
+  def to_cubicinches(value), do: value * 277.419
 
   @doc """
   Converts the supplied Gallons value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 34.9723
+  def to_oilbarrels(value), do: value / 34.9723
 end
 
 defmodule PutridParrot.Units.Kilolitres do
@@ -552,62 +552,62 @@ defmodule PutridParrot.Units.Kilolitres do
   @doc """
   Converts the supplied Kilolitres value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value / 0.0000284130742437499946
+  def to_fluidounces(value), do: value / 0.0000284130742437499946
 
   @doc """
   Converts the supplied Kilolitres value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value / 0.000004928921593749999
+  def to_usteaspoons(value), do: value / 0.000004928921593749999
 
   @doc """
   Converts the supplied Kilolitres value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value / 0.000014786764781249998
+  def to_ustablespoons(value), do: value / 0.000014786764781249998
 
   @doc """
   Converts the supplied Kilolitres value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 0.000946352945999999959
+  def to_usquarts(value), do: value / 0.000946352945999999959
 
   @doc """
   Converts the supplied Kilolitres value to US Pints
   """
-  def to_u_s_pints(value), do: value / 0.000473176472999999979
+  def to_uspints(value), do: value / 0.000473176472999999979
 
   @doc """
   Converts the supplied Kilolitres value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 0.003785411784
+  def to_usgallons(value), do: value / 0.003785411784
 
   @doc """
   Converts the supplied Kilolitres value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value / 0.0000295735296
+  def to_usfluidounces(value), do: value / 0.0000295735296
 
   @doc """
   Converts the supplied Kilolitres value to US Cups
   """
-  def to_u_s_cups(value), do: value / 0.000236588236499999989
+  def to_uscups(value), do: value / 0.000236588236499999989
 
   @doc """
   Converts the supplied Kilolitres value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value * 1.0
+  def to_cubicmetres(value), do: value * 1.0
 
   @doc """
   Converts the supplied Kilolitres value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value * 35.3147
+  def to_cubicfeet(value), do: value * 35.3147
 
   @doc """
   Converts the supplied Kilolitres value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 61023.7
+  def to_cubicinches(value), do: value * 61023.7
 
   @doc """
   Converts the supplied Kilolitres value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value * 6.28981
+  def to_oilbarrels(value), do: value * 6.28981
 end
 
 defmodule PutridParrot.Units.Litres do
@@ -653,62 +653,62 @@ defmodule PutridParrot.Units.Litres do
   @doc """
   Converts the supplied Litres value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value / 0.028413074243749994496
+  def to_fluidounces(value), do: value / 0.028413074243749994496
 
   @doc """
   Converts the supplied Litres value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value / 0.004928921593749999616
+  def to_usteaspoons(value), do: value / 0.004928921593749999616
 
   @doc """
   Converts the supplied Litres value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value / 0.014786764781249998848
+  def to_ustablespoons(value), do: value / 0.014786764781249998848
 
   @doc """
   Converts the supplied Litres value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 0.94635294599999995904
+  def to_usquarts(value), do: value / 0.94635294599999995904
 
   @doc """
   Converts the supplied Litres value to US Pints
   """
-  def to_u_s_pints(value), do: value / 0.47317647299999997952
+  def to_uspints(value), do: value / 0.47317647299999997952
 
   @doc """
   Converts the supplied Litres value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 3.785411784
+  def to_usgallons(value), do: value / 3.785411784
 
   @doc """
   Converts the supplied Litres value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value / 0.029573529562499997696
+  def to_usfluidounces(value), do: value / 0.029573529562499997696
 
   @doc """
   Converts the supplied Litres value to US Cups
   """
-  def to_u_s_cups(value), do: value / 0.23658823649999998976
+  def to_uscups(value), do: value / 0.23658823649999998976
 
   @doc """
   Converts the supplied Litres value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 1000.0
+  def to_cubicmetres(value), do: value / 1000.0
 
   @doc """
   Converts the supplied Litres value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 28.3168
+  def to_cubicfeet(value), do: value / 28.3168
 
   @doc """
   Converts the supplied Litres value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 61.0237
+  def to_cubicinches(value), do: value * 61.0237
 
   @doc """
   Converts the supplied Litres value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 158.987
+  def to_oilbarrels(value), do: value / 158.987
 end
 
 defmodule PutridParrot.Units.Millilitres do
@@ -754,62 +754,62 @@ defmodule PutridParrot.Units.Millilitres do
   @doc """
   Converts the supplied Millilitres value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value / 28.413074243749994496
+  def to_fluidounces(value), do: value / 28.413074243749994496
 
   @doc """
   Converts the supplied Millilitres value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value / 4.928921593749999616
+  def to_usteaspoons(value), do: value / 4.928921593749999616
 
   @doc """
   Converts the supplied Millilitres value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value / 14.786764781249998848
+  def to_ustablespoons(value), do: value / 14.786764781249998848
 
   @doc """
   Converts the supplied Millilitres value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 946.35294599999995904
+  def to_usquarts(value), do: value / 946.35294599999995904
 
   @doc """
   Converts the supplied Millilitres value to US Pints
   """
-  def to_u_s_pints(value), do: value / 473.17647299999997952
+  def to_uspints(value), do: value / 473.17647299999997952
 
   @doc """
   Converts the supplied Millilitres value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 3785.411784
+  def to_usgallons(value), do: value / 3785.411784
 
   @doc """
   Converts the supplied Millilitres value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value / 29.573529562499997696
+  def to_usfluidounces(value), do: value / 29.573529562499997696
 
   @doc """
   Converts the supplied Millilitres value to US Cups
   """
-  def to_u_s_cups(value), do: value / 236.58823649999998976
+  def to_uscups(value), do: value / 236.58823649999998976
 
   @doc """
   Converts the supplied Millilitres value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 1_000_000.0
+  def to_cubicmetres(value), do: value / 1_000_000.0
 
   @doc """
   Converts the supplied Millilitres value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 28316.8
+  def to_cubicfeet(value), do: value / 28316.8
 
   @doc """
   Converts the supplied Millilitres value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value / 16.3871
+  def to_cubicinches(value), do: value / 16.3871
 
   @doc """
   Converts the supplied Millilitres value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 158_987.0
+  def to_oilbarrels(value), do: value / 158_987.0
 end
 
 defmodule PutridParrot.Units.OilBarrels do
@@ -860,57 +860,57 @@ defmodule PutridParrot.Units.OilBarrels do
   @doc """
   Converts the supplied Oil Barrels value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value * 5595.57
+  def to_fluidounces(value), do: value * 5595.57
 
   @doc """
   Converts the supplied Oil Barrels value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value * 32256.0
+  def to_usteaspoons(value), do: value * 32256.0
 
   @doc """
   Converts the supplied Oil Barrels value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value * 10752.0
+  def to_ustablespoons(value), do: value * 10752.0
 
   @doc """
   Converts the supplied Oil Barrels value to US Quarts
   """
-  def to_u_s_quarts(value), do: value * 168.0
+  def to_usquarts(value), do: value * 168.0
 
   @doc """
   Converts the supplied Oil Barrels value to US Pints
   """
-  def to_u_s_pints(value), do: value * 336.0
+  def to_uspints(value), do: value * 336.0
 
   @doc """
   Converts the supplied Oil Barrels value to US Gallons
   """
-  def to_u_s_gallons(value), do: value * 42.0
+  def to_usgallons(value), do: value * 42.0
 
   @doc """
   Converts the supplied Oil Barrels value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value * 5376.0
+  def to_usfluidounces(value), do: value * 5376.0
 
   @doc """
   Converts the supplied Oil Barrels value to US Cups
   """
-  def to_u_s_cups(value), do: value * 662.447
+  def to_uscups(value), do: value * 662.447
 
   @doc """
   Converts the supplied Oil Barrels value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 6.28981
+  def to_cubicmetres(value), do: value / 6.28981
 
   @doc """
   Converts the supplied Oil Barrels value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value * 5.61458
+  def to_cubicfeet(value), do: value * 5.61458
 
   @doc """
   Converts the supplied Oil Barrels value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 9702.0
+  def to_cubicinches(value), do: value * 9702.0
 end
 
 defmodule PutridParrot.Units.Pints do
@@ -956,62 +956,62 @@ defmodule PutridParrot.Units.Pints do
   @doc """
   Converts the supplied Pints value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value * 20.0
+  def to_fluidounces(value), do: value * 20.0
 
   @doc """
   Converts the supplied Pints value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value / 0.008673685838191568486
+  def to_usteaspoons(value), do: value / 0.008673685838191568486
 
   @doc """
   Converts the supplied Pints value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value / 0.026021057514574708736
+  def to_ustablespoons(value), do: value / 0.026021057514574708736
 
   @doc """
   Converts the supplied Pints value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 1.6653476809327814656
+  def to_usquarts(value), do: value / 1.6653476809327814656
 
   @doc """
   Converts the supplied Pints value to US Pints
   """
-  def to_u_s_pints(value), do: value / 0.83267384046639071232
+  def to_uspints(value), do: value / 0.83267384046639071232
 
   @doc """
   Converts the supplied Pints value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 6.6613907237311258624
+  def to_usgallons(value), do: value / 6.6613907237311258624
 
   @doc """
   Converts the supplied Pints value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value / 0.052042115029149417472
+  def to_usfluidounces(value), do: value / 0.052042115029149417472
 
   @doc """
   Converts the supplied Pints value to US Cups
   """
-  def to_u_s_cups(value), do: value / 0.41633692023319535616
+  def to_uscups(value), do: value / 0.41633692023319535616
 
   @doc """
   Converts the supplied Pints value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 1759.75
+  def to_cubicmetres(value), do: value / 1759.75
 
   @doc """
   Converts the supplied Pints value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 49.8307
+  def to_cubicfeet(value), do: value / 49.8307
 
   @doc """
   Converts the supplied Pints value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 34.6774
+  def to_cubicinches(value), do: value * 34.6774
 
   @doc """
   Converts the supplied Pints value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 279.779
+  def to_oilbarrels(value), do: value / 279.779
 end
 
 defmodule PutridParrot.Units.Quarts do
@@ -1057,62 +1057,62 @@ defmodule PutridParrot.Units.Quarts do
   @doc """
   Converts the supplied Quarts value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value * 40.0
+  def to_fluidounces(value), do: value * 40.0
 
   @doc """
   Converts the supplied Quarts value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value / 0.004336842919095784243
+  def to_usteaspoons(value), do: value / 0.004336842919095784243
 
   @doc """
   Converts the supplied Quarts value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value / 0.013010528757287354368
+  def to_ustablespoons(value), do: value / 0.013010528757287354368
 
   @doc """
   Converts the supplied Quarts value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 0.83267384046639071232
+  def to_usquarts(value), do: value / 0.83267384046639071232
 
   @doc """
   Converts the supplied Quarts value to US Pints
   """
-  def to_u_s_pints(value), do: value / 0.41633692023319535616
+  def to_uspints(value), do: value / 0.41633692023319535616
 
   @doc """
   Converts the supplied Quarts value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 3.3306953618655629312
+  def to_usgallons(value), do: value / 3.3306953618655629312
 
   @doc """
   Converts the supplied Quarts value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value / 0.026021057514574708736
+  def to_usfluidounces(value), do: value / 0.026021057514574708736
 
   @doc """
   Converts the supplied Quarts value to US Cups
   """
-  def to_u_s_cups(value), do: value / 0.20816846011659767808
+  def to_uscups(value), do: value / 0.20816846011659767808
 
   @doc """
   Converts the supplied Quarts value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 879.877
+  def to_cubicmetres(value), do: value / 879.877
 
   @doc """
   Converts the supplied Quarts value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 24.9153
+  def to_cubicfeet(value), do: value / 24.9153
 
   @doc """
   Converts the supplied Quarts value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 69.3549
+  def to_cubicinches(value), do: value * 69.3549
 
   @doc """
   Converts the supplied Quarts value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 139.889
+  def to_oilbarrels(value), do: value / 139.889
 end
 
 defmodule PutridParrot.Units.Tablespoons do
@@ -1158,62 +1158,62 @@ defmodule PutridParrot.Units.Tablespoons do
   @doc """
   Converts the supplied Tablespoons value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value / 1.6
+  def to_fluidounces(value), do: value / 1.6
 
   @doc """
   Converts the supplied Tablespoons value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value / 0.27755794682213023744
+  def to_usteaspoons(value), do: value / 0.27755794682213023744
 
   @doc """
   Converts the supplied Tablespoons value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value / 0.83267384046639071232
+  def to_ustablespoons(value), do: value / 0.83267384046639071232
 
   @doc """
   Converts the supplied Tablespoons value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 53.291125789849001984
+  def to_usquarts(value), do: value / 53.291125789849001984
 
   @doc """
   Converts the supplied Tablespoons value to US Pints
   """
-  def to_u_s_pints(value), do: value / 26.645562894924500992
+  def to_uspints(value), do: value / 26.645562894924500992
 
   @doc """
   Converts the supplied Tablespoons value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 213.16450315939602432
+  def to_usgallons(value), do: value / 213.16450315939602432
 
   @doc """
   Converts the supplied Tablespoons value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value / 1.6653476809327814656
+  def to_usfluidounces(value), do: value / 1.6653476809327814656
 
   @doc """
   Converts the supplied Tablespoons value to US Cups
   """
-  def to_u_s_cups(value), do: value / 13.322781447462250496
+  def to_uscups(value), do: value / 13.322781447462250496
 
   @doc """
   Converts the supplied Tablespoons value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 56312.1
+  def to_cubicmetres(value), do: value / 56312.1
 
   @doc """
   Converts the supplied Tablespoons value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 1594.58
+  def to_cubicfeet(value), do: value / 1594.58
 
   @doc """
   Converts the supplied Tablespoons value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 1.08367
+  def to_cubicinches(value), do: value * 1.08367
 
   @doc """
   Converts the supplied Tablespoons value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 8952.91
+  def to_oilbarrels(value), do: value / 8952.91
 end
 
 defmodule PutridParrot.Units.Teaspoons do
@@ -1259,62 +1259,62 @@ defmodule PutridParrot.Units.Teaspoons do
   @doc """
   Converts the supplied Teaspoons value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value / 4.8
+  def to_fluidounces(value), do: value / 4.8
 
   @doc """
   Converts the supplied Teaspoons value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value / 0.83267384046639071232
+  def to_usteaspoons(value), do: value / 0.83267384046639071232
 
   @doc """
   Converts the supplied Teaspoons value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value / 2.4980215213991718912
+  def to_ustablespoons(value), do: value / 2.4980215213991718912
 
   @doc """
   Converts the supplied Teaspoons value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 159.87337736954701824
+  def to_usquarts(value), do: value / 159.87337736954701824
 
   @doc """
   Converts the supplied Teaspoons value to US Pints
   """
-  def to_u_s_pints(value), do: value / 79.936688684773507072
+  def to_uspints(value), do: value / 79.936688684773507072
 
   @doc """
   Converts the supplied Teaspoons value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 639.49350947818807296
+  def to_usgallons(value), do: value / 639.49350947818807296
 
   @doc """
   Converts the supplied Teaspoons value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value / 4.9960430427983437824
+  def to_usfluidounces(value), do: value / 4.9960430427983437824
 
   @doc """
   Converts the supplied Teaspoons value to US Cups
   """
-  def to_u_s_cups(value), do: value / 39.968344342386753536
+  def to_uscups(value), do: value / 39.968344342386753536
 
   @doc """
   Converts the supplied Teaspoons value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 168_936.0
+  def to_cubicmetres(value), do: value / 168_936.0
 
   @doc """
   Converts the supplied Teaspoons value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 4783.74
+  def to_cubicfeet(value), do: value / 4783.74
 
   @doc """
   Converts the supplied Teaspoons value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value / 2.76837
+  def to_cubicinches(value), do: value / 2.76837
 
   @doc """
   Converts the supplied Teaspoons value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 26858.7
+  def to_oilbarrels(value), do: value / 26858.7
 end
 
 defmodule PutridParrot.Units.USCups do
@@ -1365,57 +1365,57 @@ defmodule PutridParrot.Units.USCups do
   @doc """
   Converts the supplied US Cups value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value * 8.3267384046639071232
+  def to_fluidounces(value), do: value * 8.3267384046639071232
 
   @doc """
   Converts the supplied US Cups value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value * 48.0
+  def to_usteaspoons(value), do: value * 48.0
 
   @doc """
   Converts the supplied US Cups value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value * 16.0
+  def to_ustablespoons(value), do: value * 16.0
 
   @doc """
   Converts the supplied US Cups value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 4.0
+  def to_usquarts(value), do: value / 4.0
 
   @doc """
   Converts the supplied US Cups value to US Pints
   """
-  def to_u_s_pints(value), do: value / 2.0
+  def to_uspints(value), do: value / 2.0
 
   @doc """
   Converts the supplied US Cups value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 16.0
+  def to_usgallons(value), do: value / 16.0
 
   @doc """
   Converts the supplied US Cups value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value * 8.0
+  def to_usfluidounces(value), do: value * 8.0
 
   @doc """
   Converts the supplied US Cups value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 4166.67
+  def to_cubicmetres(value), do: value / 4166.67
 
   @doc """
   Converts the supplied US Cups value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 117.987
+  def to_cubicfeet(value), do: value / 117.987
 
   @doc """
   Converts the supplied US Cups value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 14.6457
+  def to_cubicinches(value), do: value * 14.6457
 
   @doc """
   Converts the supplied US Cups value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 662.447
+  def to_oilbarrels(value), do: value / 662.447
 end
 
 defmodule PutridParrot.Units.USFluidOunces do
@@ -1466,57 +1466,57 @@ defmodule PutridParrot.Units.USFluidOunces do
   @doc """
   Converts the supplied US Fluid Ounces value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value * 1.0408423005829883904
+  def to_fluidounces(value), do: value * 1.0408423005829883904
 
   @doc """
   Converts the supplied US Fluid Ounces value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value * 6.0
+  def to_usteaspoons(value), do: value * 6.0
 
   @doc """
   Converts the supplied US Fluid Ounces value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value * 2.0
+  def to_ustablespoons(value), do: value * 2.0
 
   @doc """
   Converts the supplied US Fluid Ounces value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 32.0
+  def to_usquarts(value), do: value / 32.0
 
   @doc """
   Converts the supplied US Fluid Ounces value to US Pints
   """
-  def to_u_s_pints(value), do: value / 16.0
+  def to_uspints(value), do: value / 16.0
 
   @doc """
   Converts the supplied US Fluid Ounces value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 128.0
+  def to_usgallons(value), do: value / 128.0
 
   @doc """
   Converts the supplied US Fluid Ounces value to US Cups
   """
-  def to_u_s_cups(value), do: value / 8.0
+  def to_uscups(value), do: value / 8.0
 
   @doc """
   Converts the supplied US Fluid Ounces value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 33814.0
+  def to_cubicmetres(value), do: value / 33814.0
 
   @doc """
   Converts the supplied US Fluid Ounces value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 957.506
+  def to_cubicfeet(value), do: value / 957.506
 
   @doc """
   Converts the supplied US Fluid Ounces value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 1.80469
+  def to_cubicinches(value), do: value * 1.80469
 
   @doc """
   Converts the supplied US Fluid Ounces value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 5376.0
+  def to_oilbarrels(value), do: value / 5376.0
 end
 
 defmodule PutridParrot.Units.USGallons do
@@ -1567,57 +1567,57 @@ defmodule PutridParrot.Units.USGallons do
   @doc """
   Converts the supplied US Gallons value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value * 133.22781447462252544
+  def to_fluidounces(value), do: value * 133.22781447462252544
 
   @doc """
   Converts the supplied US Gallons value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value * 768.0
+  def to_usteaspoons(value), do: value * 768.0
 
   @doc """
   Converts the supplied US Gallons value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value * 256.0
+  def to_ustablespoons(value), do: value * 256.0
 
   @doc """
   Converts the supplied US Gallons value to US Quarts
   """
-  def to_u_s_quarts(value), do: value * 4.0
+  def to_usquarts(value), do: value * 4.0
 
   @doc """
   Converts the supplied US Gallons value to US Pints
   """
-  def to_u_s_pints(value), do: value * 8.0
+  def to_uspints(value), do: value * 8.0
 
   @doc """
   Converts the supplied US Gallons value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value * 128.0
+  def to_usfluidounces(value), do: value * 128.0
 
   @doc """
   Converts the supplied US Gallons value to US Cups
   """
-  def to_u_s_cups(value), do: value * 16.0
+  def to_uscups(value), do: value * 16.0
 
   @doc """
   Converts the supplied US Gallons value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 264.172
+  def to_cubicmetres(value), do: value / 264.172
 
   @doc """
   Converts the supplied US Gallons value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 7.48052
+  def to_cubicfeet(value), do: value / 7.48052
 
   @doc """
   Converts the supplied US Gallons value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 231.0
+  def to_cubicinches(value), do: value * 231.0
 
   @doc """
   Converts the supplied US Gallons value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 42.0
+  def to_oilbarrels(value), do: value / 42.0
 end
 
 defmodule PutridParrot.Units.USPints do
@@ -1668,57 +1668,57 @@ defmodule PutridParrot.Units.USPints do
   @doc """
   Converts the supplied US Pints value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value * 16.653476809327814656
+  def to_fluidounces(value), do: value * 16.653476809327814656
 
   @doc """
   Converts the supplied US Pints value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value * 96.0
+  def to_usteaspoons(value), do: value * 96.0
 
   @doc """
   Converts the supplied US Pints value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value * 32.0
+  def to_ustablespoons(value), do: value * 32.0
 
   @doc """
   Converts the supplied US Pints value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 2.0
+  def to_usquarts(value), do: value / 2.0
 
   @doc """
   Converts the supplied US Pints value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 8.0
+  def to_usgallons(value), do: value / 8.0
 
   @doc """
   Converts the supplied US Pints value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value * 16.0
+  def to_usfluidounces(value), do: value * 16.0
 
   @doc """
   Converts the supplied US Pints value to US Cups
   """
-  def to_u_s_cups(value), do: value * 2.0
+  def to_uscups(value), do: value * 2.0
 
   @doc """
   Converts the supplied US Pints value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 2113.38
+  def to_cubicmetres(value), do: value / 2113.38
 
   @doc """
   Converts the supplied US Pints value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 59.8442
+  def to_cubicfeet(value), do: value / 59.8442
 
   @doc """
   Converts the supplied US Pints value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 28.875
+  def to_cubicinches(value), do: value * 28.875
 
   @doc """
   Converts the supplied US Pints value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 336.0
+  def to_oilbarrels(value), do: value / 336.0
 end
 
 defmodule PutridParrot.Units.USQuarts do
@@ -1769,57 +1769,57 @@ defmodule PutridParrot.Units.USQuarts do
   @doc """
   Converts the supplied US Quarts value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value * 33.306953618655629312
+  def to_fluidounces(value), do: value * 33.306953618655629312
 
   @doc """
   Converts the supplied US Quarts value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value * 192.0
+  def to_usteaspoons(value), do: value * 192.0
 
   @doc """
   Converts the supplied US Quarts value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value * 64.0
+  def to_ustablespoons(value), do: value * 64.0
 
   @doc """
   Converts the supplied US Quarts value to US Pints
   """
-  def to_u_s_pints(value), do: value * 2.0
+  def to_uspints(value), do: value * 2.0
 
   @doc """
   Converts the supplied US Quarts value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 4.0
+  def to_usgallons(value), do: value / 4.0
 
   @doc """
   Converts the supplied US Quarts value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value * 32.0
+  def to_usfluidounces(value), do: value * 32.0
 
   @doc """
   Converts the supplied US Quarts value to US Cups
   """
-  def to_u_s_cups(value), do: value * 4.0
+  def to_uscups(value), do: value * 4.0
 
   @doc """
   Converts the supplied US Quarts value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 1056.69
+  def to_cubicmetres(value), do: value / 1056.69
 
   @doc """
   Converts the supplied US Quarts value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 29.9221
+  def to_cubicfeet(value), do: value / 29.9221
 
   @doc """
   Converts the supplied US Quarts value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value * 57.75
+  def to_cubicinches(value), do: value * 57.75
 
   @doc """
   Converts the supplied US Quarts value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 168.0
+  def to_oilbarrels(value), do: value / 168.0
 end
 
 defmodule PutridParrot.Units.USTablespoons do
@@ -1870,57 +1870,57 @@ defmodule PutridParrot.Units.USTablespoons do
   @doc """
   Converts the supplied US Tablespoons value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value * 0.52042115029149417472
+  def to_fluidounces(value), do: value * 0.52042115029149417472
 
   @doc """
   Converts the supplied US Tablespoons value to US Teaspoons
   """
-  def to_u_s_teaspoons(value), do: value * 3.0
+  def to_usteaspoons(value), do: value * 3.0
 
   @doc """
   Converts the supplied US Tablespoons value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 64.0
+  def to_usquarts(value), do: value / 64.0
 
   @doc """
   Converts the supplied US Tablespoons value to US Pints
   """
-  def to_u_s_pints(value), do: value / 32.0
+  def to_uspints(value), do: value / 32.0
 
   @doc """
   Converts the supplied US Tablespoons value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 256.0
+  def to_usgallons(value), do: value / 256.0
 
   @doc """
   Converts the supplied US Tablespoons value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value / 2.0
+  def to_usfluidounces(value), do: value / 2.0
 
   @doc """
   Converts the supplied US Tablespoons value to US Cups
   """
-  def to_u_s_cups(value), do: value / 16.0
+  def to_uscups(value), do: value / 16.0
 
   @doc """
   Converts the supplied US Tablespoons value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 67628.0
+  def to_cubicmetres(value), do: value / 67628.0
 
   @doc """
   Converts the supplied US Tablespoons value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 1915.01
+  def to_cubicfeet(value), do: value / 1915.01
 
   @doc """
   Converts the supplied US Tablespoons value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value / 1.10823
+  def to_cubicinches(value), do: value / 1.10823
 
   @doc """
   Converts the supplied US Tablespoons value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 10752.0
+  def to_oilbarrels(value), do: value / 10752.0
 end
 
 defmodule PutridParrot.Units.USTeaspoons do
@@ -1971,55 +1971,55 @@ defmodule PutridParrot.Units.USTeaspoons do
   @doc """
   Converts the supplied US Teaspoons value to Fluid Ounces
   """
-  def to_fluid_ounces(value), do: value * 0.1734737167638313984
+  def to_fluidounces(value), do: value * 0.1734737167638313984
 
   @doc """
   Converts the supplied US Teaspoons value to US Tablespoons
   """
-  def to_u_s_tablespoons(value), do: value / 3.0
+  def to_ustablespoons(value), do: value / 3.0
 
   @doc """
   Converts the supplied US Teaspoons value to US Quarts
   """
-  def to_u_s_quarts(value), do: value / 192.0
+  def to_usquarts(value), do: value / 192.0
 
   @doc """
   Converts the supplied US Teaspoons value to US Pints
   """
-  def to_u_s_pints(value), do: value / 96.0
+  def to_uspints(value), do: value / 96.0
 
   @doc """
   Converts the supplied US Teaspoons value to US Gallons
   """
-  def to_u_s_gallons(value), do: value / 768.0
+  def to_usgallons(value), do: value / 768.0
 
   @doc """
   Converts the supplied US Teaspoons value to US Fluid Ounces
   """
-  def to_u_s_fluid_ounces(value), do: value / 6.0
+  def to_usfluidounces(value), do: value / 6.0
 
   @doc """
   Converts the supplied US Teaspoons value to US Cups
   """
-  def to_u_s_cups(value), do: value / 48.0
+  def to_uscups(value), do: value / 48.0
 
   @doc """
   Converts the supplied US Teaspoons value to Cubic Metres
   """
-  def to_cubic_metres(value), do: value / 202_884.0
+  def to_cubicmetres(value), do: value / 202_884.0
 
   @doc """
   Converts the supplied US Teaspoons value to Cubic Feet
   """
-  def to_cubic_feet(value), do: value / 5745.04
+  def to_cubicfeet(value), do: value / 5745.04
 
   @doc """
   Converts the supplied US Teaspoons value to Cubic Inches
   """
-  def to_cubic_inches(value), do: value / 3.32468
+  def to_cubicinches(value), do: value / 3.32468
 
   @doc """
   Converts the supplied US Teaspoons value to Oil Barrels
   """
-  def to_oil_barrels(value), do: value / 32256.0
+  def to_oilbarrels(value), do: value / 32256.0
 end

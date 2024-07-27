@@ -32,22 +32,22 @@ defmodule PutridParrot.Units.Btu do
   @doc """
   Converts the supplied Btu value to US Therms
   """
-  def to_u_s_therms(value), do: value / 99976.12448781215
+  def to_ustherms(value), do: value / 99976.12448781215
 
   @doc """
   Converts the supplied Btu value to Watt Hours
   """
-  def to_watt_hours(value), do: value * 0.293071
+  def to_watthours(value), do: value * 0.293071
 
   @doc """
   Converts the supplied Btu value to Kilowatt Hours
   """
-  def to_kilowatt_hours(value), do: value / 3412.14
+  def to_kilowatthours(value), do: value / 3412.14
 
   @doc """
   Converts the supplied Btu value to Foot Pounds
   """
-  def to_foot_pounds(value), do: value * 778.169
+  def to_footpounds(value), do: value * 778.169
 
   @doc """
   Converts the supplied Btu value to Electronvolts
@@ -83,22 +83,22 @@ defmodule PutridParrot.Units.Calories do
   @doc """
   Converts the supplied Calories value to US Therms
   """
-  def to_u_s_therms(value), do: value / 25_210_420.0
+  def to_ustherms(value), do: value / 25_210_420.0
 
   @doc """
   Converts the supplied Calories value to Watt Hours
   """
-  def to_watt_hours(value), do: value * 0.00116222
+  def to_watthours(value), do: value * 0.00116222
 
   @doc """
   Converts the supplied Calories value to Kilowatt Hours
   """
-  def to_kilowatt_hours(value), do: value / 860_421.0
+  def to_kilowatthours(value), do: value / 860_421.0
 
   @doc """
   Converts the supplied Calories value to Foot Pounds
   """
-  def to_foot_pounds(value), do: value * 3.08596
+  def to_footpounds(value), do: value * 3.08596
 
   @doc """
   Converts the supplied Calories value to Electronvolts
@@ -139,22 +139,22 @@ defmodule PutridParrot.Units.Electronvolts do
   @doc """
   Converts the supplied Electronvolts value to US Therms
   """
-  def to_u_s_therms(value), do: value / 6.5835660010911e+26
+  def to_ustherms(value), do: value / 6.5835660010911e+26
 
   @doc """
   Converts the supplied Electronvolts value to Watt Hours
   """
-  def to_watt_hours(value), do: value / 2.2469422907138e+22
+  def to_watthours(value), do: value / 2.2469422907138e+22
 
   @doc """
   Converts the supplied Electronvolts value to Kilowatt Hours
   """
-  def to_kilowatt_hours(value), do: value / 2.246943e+25
+  def to_kilowatthours(value), do: value / 2.246943e+25
 
   @doc """
   Converts the supplied Electronvolts value to Foot Pounds
   """
-  def to_foot_pounds(value), do: value / 8_462_350_936_293_971_968.00
+  def to_footpounds(value), do: value / 8_462_350_936_293_971_968.00
 end
 
 defmodule PutridParrot.Units.FootPounds do
@@ -190,17 +190,17 @@ defmodule PutridParrot.Units.FootPounds do
   @doc """
   Converts the supplied Foot Pounds value to US Therms
   """
-  def to_u_s_therms(value), do: value / 77_816_937.099186
+  def to_ustherms(value), do: value / 77_816_937.099186
 
   @doc """
   Converts the supplied Foot Pounds value to Watt Hours
   """
-  def to_watt_hours(value), do: value / 2655.22
+  def to_watthours(value), do: value / 2655.22
 
   @doc """
   Converts the supplied Foot Pounds value to Kilowatt Hours
   """
-  def to_kilowatt_hours(value), do: value * 0.00000037662
+  def to_kilowatthours(value), do: value * 0.00000037662
 
   @doc """
   Converts the supplied Foot Pounds value to Electronvolts
@@ -236,22 +236,22 @@ defmodule PutridParrot.Units.Joules do
   @doc """
   Converts the supplied Joules value to US Therms
   """
-  def to_u_s_therms(value), do: value / 105_480_400.0
+  def to_ustherms(value), do: value / 105_480_400.0
 
   @doc """
   Converts the supplied Joules value to Watt Hours
   """
-  def to_watt_hours(value), do: value / 3600.0
+  def to_watthours(value), do: value / 3600.0
 
   @doc """
   Converts the supplied Joules value to Kilowatt Hours
   """
-  def to_kilowatt_hours(value), do: value / 3.6e+6
+  def to_kilowatthours(value), do: value / 3.6e+6
 
   @doc """
   Converts the supplied Joules value to Foot Pounds
   """
-  def to_foot_pounds(value), do: value / 1.35582
+  def to_footpounds(value), do: value / 1.35582
 
   @doc """
   Converts the supplied Joules value to Electronvolts
@@ -287,22 +287,22 @@ defmodule PutridParrot.Units.Kilocalories do
   @doc """
   Converts the supplied Kilocalories value to US Therms
   """
-  def to_u_s_therms(value), do: value / 25210.44007218
+  def to_ustherms(value), do: value / 25210.44007218
 
   @doc """
   Converts the supplied Kilocalories value to Watt Hours
   """
-  def to_watt_hours(value), do: value * 1.16222
+  def to_watthours(value), do: value * 1.16222
 
   @doc """
   Converts the supplied Kilocalories value to Kilowatt Hours
   """
-  def to_kilowatt_hours(value), do: value / 860.421
+  def to_kilowatthours(value), do: value / 860.421
 
   @doc """
   Converts the supplied Kilocalories value to Foot Pounds
   """
-  def to_foot_pounds(value), do: value * 3085.96
+  def to_footpounds(value), do: value * 3085.96
 
   @doc """
   Converts the supplied Kilocalories value to Electronvolts
@@ -338,22 +338,22 @@ defmodule PutridParrot.Units.Kilojoules do
   @doc """
   Converts the supplied Kilojoules value to US Therms
   """
-  def to_u_s_therms(value), do: value / 105_480.04
+  def to_ustherms(value), do: value / 105_480.04
 
   @doc """
   Converts the supplied Kilojoules value to Watt Hours
   """
-  def to_watt_hours(value), do: value / 3.6
+  def to_watthours(value), do: value / 3.6
 
   @doc """
   Converts the supplied Kilojoules value to Kilowatt Hours
   """
-  def to_kilowatt_hours(value), do: value / 3600.0
+  def to_kilowatthours(value), do: value / 3600.0
 
   @doc """
   Converts the supplied Kilojoules value to Foot Pounds
   """
-  def to_foot_pounds(value), do: value * 737.562
+  def to_footpounds(value), do: value * 737.562
 
   @doc """
   Converts the supplied Kilojoules value to Electronvolts
@@ -394,17 +394,17 @@ defmodule PutridParrot.Units.KilowattHours do
   @doc """
   Converts the supplied Kilowatt Hours value to US Therms
   """
-  def to_u_s_therms(value), do: value / 29.3001
+  def to_ustherms(value), do: value / 29.3001
 
   @doc """
   Converts the supplied Kilowatt Hours value to Watt Hours
   """
-  def to_watt_hours(value), do: value * 1000.0
+  def to_watthours(value), do: value * 1000.0
 
   @doc """
   Converts the supplied Kilowatt Hours value to Foot Pounds
   """
-  def to_foot_pounds(value), do: value / 0.00000037662
+  def to_footpounds(value), do: value / 0.00000037662
 
   @doc """
   Converts the supplied Kilowatt Hours value to Electronvolts
@@ -445,17 +445,17 @@ defmodule PutridParrot.Units.USTherms do
   @doc """
   Converts the supplied US Therms value to Watt Hours
   """
-  def to_watt_hours(value), do: value * 29300.1
+  def to_watthours(value), do: value * 29300.1
 
   @doc """
   Converts the supplied US Therms value to Kilowatt Hours
   """
-  def to_kilowatt_hours(value), do: value * 29.3001
+  def to_kilowatthours(value), do: value * 29.3001
 
   @doc """
   Converts the supplied US Therms value to Foot Pounds
   """
-  def to_foot_pounds(value), do: value * 77_816_937.099186
+  def to_footpounds(value), do: value * 77_816_937.099186
 
   @doc """
   Converts the supplied US Therms value to Electronvolts
@@ -496,17 +496,17 @@ defmodule PutridParrot.Units.WattHours do
   @doc """
   Converts the supplied Watt Hours value to US Therms
   """
-  def to_u_s_therms(value), do: value / 29300.1
+  def to_ustherms(value), do: value / 29300.1
 
   @doc """
   Converts the supplied Watt Hours value to Kilowatt Hours
   """
-  def to_kilowatt_hours(value), do: value / 1000.0
+  def to_kilowatthours(value), do: value / 1000.0
 
   @doc """
   Converts the supplied Watt Hours value to Foot Pounds
   """
-  def to_foot_pounds(value), do: value * 2655.22
+  def to_footpounds(value), do: value * 2655.22
 
   @doc """
   Converts the supplied Watt Hours value to Electronvolts

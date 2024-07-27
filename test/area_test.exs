@@ -8,39 +8,39 @@ defmodule PutridParrot.Units.Area do
   use ExUnit.Case
 
   test "Convert known Acres to Square Kilometres" do
-    assert_in_delta PutridParrot.Units.Acres.to_square_kilometres(100.0), 0.404686, 0.01
-    assert_in_delta PutridParrot.Units.Acres.to_square_kilometres(90.0), 0.364217, 0.01
-    assert_in_delta PutridParrot.Units.Acres.to_square_kilometres(1800.0), 7.284342, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squarekilometres(100.0), 0.404686, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squarekilometres(90.0), 0.364217, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squarekilometres(1800.0), 7.284342, 0.01
   end
 
   test "Convert known Acres to Square Metres" do
-    assert_in_delta PutridParrot.Units.Acres.to_square_metres(1.2), 4856.23, 0.01
-    assert_in_delta PutridParrot.Units.Acres.to_square_metres(0.8), 3237.49, 0.01
-    assert_in_delta PutridParrot.Units.Acres.to_square_metres(5.6), 22662.416, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squaremetres(1.2), 4856.23, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squaremetres(0.8), 3237.49, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squaremetres(5.6), 22662.416, 0.01
   end
 
   test "Convert known Acres to Square Miles" do
-    assert_in_delta PutridParrot.Units.Acres.to_square_miles(1009.0), 1.576562, 0.01
-    assert_in_delta PutridParrot.Units.Acres.to_square_miles(90.0), 0.140625, 0.01
-    assert_in_delta PutridParrot.Units.Acres.to_square_miles(765.0), 1.19531, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squaremiles(1009.0), 1.576562, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squaremiles(90.0), 0.140625, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squaremiles(765.0), 1.19531, 0.01
   end
 
   test "Convert known Acres to Square Yards" do
-    assert_in_delta PutridParrot.Units.Acres.to_square_yards(3.4), 16456.0, 0.01
-    assert_in_delta PutridParrot.Units.Acres.to_square_yards(0.7), 3388.0, 0.01
-    assert_in_delta PutridParrot.Units.Acres.to_square_yards(0.01), 48.4, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squareyards(3.4), 16456.0, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squareyards(0.7), 3388.0, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squareyards(0.01), 48.4, 0.01
   end
 
   test "Convert known Acres to Square Feet" do
-    assert_in_delta PutridParrot.Units.Acres.to_square_feet(0.01), 435.6, 0.01
-    assert_in_delta PutridParrot.Units.Acres.to_square_feet(12.0), 522_720.0, 0.01
-    assert_in_delta PutridParrot.Units.Acres.to_square_feet(0.67), 29185.2, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squarefeet(0.01), 435.6, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squarefeet(12.0), 522_720.0, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squarefeet(0.67), 29185.2, 0.01
   end
 
   test "Convert known Acres to Square Inches" do
-    assert_in_delta PutridParrot.Units.Acres.to_square_inches(0.09), 564_537.6, 0.01
-    assert_in_delta PutridParrot.Units.Acres.to_square_inches(0.005), 31363.2, 0.01
-    assert_in_delta PutridParrot.Units.Acres.to_square_inches(0.012), 75271.68, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squareinches(0.09), 564_537.6, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squareinches(0.005), 31363.2, 0.01
+    assert_in_delta PutridParrot.Units.Acres.to_squareinches(0.012), 75271.68, 0.01
   end
 
   test "Convert known Acres to Hectares" do
@@ -50,39 +50,39 @@ defmodule PutridParrot.Units.Area do
   end
 
   test "Convert known Hectares to Square Kilometres" do
-    assert_in_delta PutridParrot.Units.Hectares.to_square_kilometres(15000.0), 150.0, 0.01
-    assert_in_delta PutridParrot.Units.Hectares.to_square_kilometres(300.0), 3.0, 0.01
-    assert_in_delta PutridParrot.Units.Hectares.to_square_kilometres(45.6), 0.456, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squarekilometres(15000.0), 150.0, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squarekilometres(300.0), 3.0, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squarekilometres(45.6), 0.456, 0.01
   end
 
   test "Convert known Hectares to Square Metres" do
-    assert_in_delta PutridParrot.Units.Hectares.to_square_metres(1.4), 14000.0, 0.01
-    assert_in_delta PutridParrot.Units.Hectares.to_square_metres(0.9), 9000.0, 0.01
-    assert_in_delta PutridParrot.Units.Hectares.to_square_metres(0.012), 120.0, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squaremetres(1.4), 14000.0, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squaremetres(0.9), 9000.0, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squaremetres(0.012), 120.0, 0.01
   end
 
   test "Convert known Hectares to Square Miles" do
-    assert_in_delta PutridParrot.Units.Hectares.to_square_miles(1102.0), 4.254846, 0.01
-    assert_in_delta PutridParrot.Units.Hectares.to_square_miles(4500.0), 17.3746, 0.01
-    assert_in_delta PutridParrot.Units.Hectares.to_square_miles(90.0), 0.347492, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squaremiles(1102.0), 4.254846, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squaremiles(4500.0), 17.3746, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squaremiles(90.0), 0.347492, 0.01
   end
 
   test "Convert known Hectares to Square Yards" do
-    assert_in_delta PutridParrot.Units.Hectares.to_square_yards(1.2), 14351.8805556, 0.01
-    assert_in_delta PutridParrot.Units.Hectares.to_square_yards(0.8), 9567.92, 0.01
-    assert_in_delta PutridParrot.Units.Hectares.to_square_yards(34.0), 406_636.615, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squareyards(1.2), 14351.8805556, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squareyards(0.8), 9567.92, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squareyards(34.0), 406_636.615, 0.01
   end
 
   test "Convert known Hectares to Square Feet" do
-    assert_in_delta PutridParrot.Units.Hectares.to_square_feet(3.4), 365_972.599, 0.01
-    assert_in_delta PutridParrot.Units.Hectares.to_square_feet(0.09), 9687.519, 0.01
-    assert_in_delta PutridParrot.Units.Hectares.to_square_feet(1.2), 129_166.7999, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squarefeet(3.4), 365_972.599, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squarefeet(0.09), 9687.519, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squarefeet(1.2), 129_166.7999, 0.01
   end
 
   test "Convert known Hectares to Square Inches" do
-    assert_in_delta PutridParrot.Units.Hectares.to_square_inches(0.009), 139_500.28, 0.01
-    assert_in_delta PutridParrot.Units.Hectares.to_square_inches(0.01), 155_000.31, 0.01
-    assert_in_delta PutridParrot.Units.Hectares.to_square_inches(0.0061), 94550.1891, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squareinches(0.009), 139_500.28, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squareinches(0.01), 155_000.31, 0.01
+    assert_in_delta PutridParrot.Units.Hectares.to_squareinches(0.0061), 94550.1891, 0.01
   end
 
   test "Convert known Hectares to Acres" do
@@ -92,49 +92,49 @@ defmodule PutridParrot.Units.Area do
   end
 
   test "Convert known Square Feet to Square Kilometres" do
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_kilometres(88_997_766.0),
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squarekilometres(88_997_766.0),
                     8.2681630146,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_kilometres(10_009_002.0),
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squarekilometres(10_009_002.0),
                     0.92986671317,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_kilometres(987_654_321.0),
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squarekilometres(987_654_321.0),
                     91.75608889,
                     0.01
   end
 
   test "Convert known Square Feet to Square Metres" do
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_metres(900.0), 83.6127, 0.01
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_metres(799.123), 74.24095603, 0.01
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_metres(500.0), 46.4515, 0.01
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squaremetres(900.0), 83.6127, 0.01
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squaremetres(799.123), 74.24095603, 0.01
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squaremetres(500.0), 46.4515, 0.01
   end
 
   test "Convert known Square Feet to Square Miles" do
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_miles(12_000_000.0),
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squaremiles(12_000_000.0),
                     0.43044077135,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_miles(987_654_321.0),
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squaremiles(987_654_321.0),
                     35.4272239799,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_miles(900_800_700.0),
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squaremiles(900_800_700.0),
                     32.3117790117,
                     0.01
   end
 
   test "Convert known Square Feet to Square Yards" do
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_yards(909.0), 101.0, 0.01
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_yards(123.456), 13.71733333, 0.01
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_yards(8009.0), 889.8889, 0.01
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squareyards(909.0), 101.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squareyards(123.456), 13.71733333, 0.01
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squareyards(8009.0), 889.8889, 0.01
   end
 
   test "Convert known Square Feet to Square Inches" do
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_inches(6.7), 964.8, 0.01
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_inches(1.5), 216.0, 0.01
-    assert_in_delta PutridParrot.Units.SquareFeet.to_square_inches(0.9), 129.6, 0.01
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squareinches(6.7), 964.8, 0.01
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squareinches(1.5), 216.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareFeet.to_squareinches(0.9), 129.6, 0.01
   end
 
   test "Convert known Square Feet to Hectares" do
@@ -150,47 +150,45 @@ defmodule PutridParrot.Units.Area do
   end
 
   test "Convert known Square Inches to Square Kilometres" do
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_kilometres(678_900_000.0),
+    assert_in_delta PutridParrot.Units.SquareInches.to_squarekilometres(678_900_000.0),
                     0.437999124,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_kilometres(10_000_000_000.0),
+    assert_in_delta PutridParrot.Units.SquareInches.to_squarekilometres(10_000_000_000.0),
                     6.4516,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_kilometres(9.0e12), 5806.44, 0.01
+    assert_in_delta PutridParrot.Units.SquareInches.to_squarekilometres(9.0e12), 5806.44, 0.01
   end
 
   test "Convert known Square Inches to Square Metres" do
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_metres(1090.0), 0.7032244, 0.01
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_metres(1.3e6), 838.708, 0.01
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_metres(9988.0), 6.443858, 0.01
+    assert_in_delta PutridParrot.Units.SquareInches.to_squaremetres(1090.0), 0.7032244, 0.01
+    assert_in_delta PutridParrot.Units.SquareInches.to_squaremetres(1.3e6), 838.708, 0.01
+    assert_in_delta PutridParrot.Units.SquareInches.to_squaremetres(9988.0), 6.443858, 0.01
   end
 
   test "Convert known Square Inches to Square Miles" do
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_miles(1_007_008_000.0),
+    assert_in_delta PutridParrot.Units.SquareInches.to_squaremiles(1_007_008_000.0),
                     0.2508433450668,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_miles(1.2e12),
+    assert_in_delta PutridParrot.Units.SquareInches.to_squaremiles(1.2e12),
                     298.9172023262932,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_miles(250.0e7),
-                    0.6227441715131,
-                    0.01
+    assert_in_delta PutridParrot.Units.SquareInches.to_squaremiles(250.0e7), 0.6227441715131, 0.01
   end
 
   test "Convert known Square Inches to Square Yards" do
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_yards(900.0), 0.694444, 0.01
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_yards(15000.0), 11.574074, 0.01
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_yards(3.0e6), 2314.814815, 0.01
+    assert_in_delta PutridParrot.Units.SquareInches.to_squareyards(900.0), 0.694444, 0.01
+    assert_in_delta PutridParrot.Units.SquareInches.to_squareyards(15000.0), 11.574074, 0.01
+    assert_in_delta PutridParrot.Units.SquareInches.to_squareyards(3.0e6), 2314.814815, 0.01
   end
 
   test "Convert known Square Inches to Square Feet" do
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_feet(34.0), 0.236111, 0.01
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_feet(1002.0), 6.958333, 0.01
-    assert_in_delta PutridParrot.Units.SquareInches.to_square_feet(890.0), 6.18056, 0.01
+    assert_in_delta PutridParrot.Units.SquareInches.to_squarefeet(34.0), 0.236111, 0.01
+    assert_in_delta PutridParrot.Units.SquareInches.to_squarefeet(1002.0), 6.958333, 0.01
+    assert_in_delta PutridParrot.Units.SquareInches.to_squarefeet(890.0), 6.18056, 0.01
   end
 
   test "Convert known Square Inches to Hectares" do
@@ -206,51 +204,51 @@ defmodule PutridParrot.Units.Area do
   end
 
   test "Convert known Square Kilometres to Square Metres" do
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_metres(0.12), 120_000.0, 0.01
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_metres(0.9), 900_000.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squaremetres(0.12), 120_000.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squaremetres(0.9), 900_000.0, 0.01
 
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_metres(8.123456),
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squaremetres(8.123456),
                     8_123_456.0,
                     0.01
   end
 
   test "Convert known Square Kilometres to Square Miles" do
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_miles(492.098), 190.0, 0.01
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_miles(23.3099), 9.0, 0.01
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_miles(4661.979), 1800.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squaremiles(492.098), 190.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squaremiles(23.3099), 9.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squaremiles(4661.979), 1800.0, 0.01
   end
 
   test "Convert known Square Kilometres to Square Yards" do
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_yards(0.158028071),
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squareyards(0.158028071),
                     189_000.0005,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_yards(8.361272764),
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squareyards(8.361272764),
                     9_999_999.0310,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_yards(0.6), 717_594.030, 0.01
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squareyards(0.6), 717_594.030, 0.01
   end
 
   test "Convert known Square Kilometres to Square Feet" do
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_feet(0.009), 96875.194, 0.01
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_feet(0.08), 861_112.833, 0.01
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squarefeet(0.009), 96875.194, 0.01
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squarefeet(0.08), 861_112.833, 0.01
 
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_feet(0.123),
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squarefeet(0.123),
                     1_323_960.9812553,
                     0.01
   end
 
   test "Convert known Square Kilometres to Square Inches" do
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_inches(0.0008),
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squareinches(0.0008),
                     1_240_002.48,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_inches(0.00123),
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squareinches(0.00123),
                     1_906_503.813,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareKilometres.to_square_inches(0.000045),
+    assert_in_delta PutridParrot.Units.SquareKilometres.to_squareinches(0.000045),
                     69750.1395,
                     0.01
   end
@@ -268,41 +266,37 @@ defmodule PutridParrot.Units.Area do
   end
 
   test "Convert known Square Metres to Square Kilometres" do
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_kilometres(19000.0), 0.019, 0.01
-
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_kilometres(123_456.0),
-                    0.123456,
-                    0.01
-
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_kilometres(900_100.0), 0.9001, 0.01
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squarekilometres(19000.0), 0.019, 0.01
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squarekilometres(123_456.0), 0.123456, 0.01
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squarekilometres(900_100.0), 0.9001, 0.01
   end
 
   test "Convert known Square Metres to Square Miles" do
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_miles(190_009.0), 0.073362885, 0.01
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squaremiles(190_009.0), 0.073362885, 0.01
 
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_miles(12_345_678.0),
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squaremiles(12_345_678.0),
                     4.7666929245,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_miles(777_666.0), 0.300258521, 0.01
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squaremiles(777_666.0), 0.300258521, 0.01
   end
 
   test "Convert known Square Metres to Square Yards" do
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_yards(5.0), 5.97995, 0.01
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_yards(1.23), 1.471068, 0.01
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_yards(700.0), 837.193, 0.01
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squareyards(5.0), 5.97995, 0.01
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squareyards(1.23), 1.471068, 0.01
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squareyards(700.0), 837.193, 0.01
   end
 
   test "Convert known Square Metres to Square Feet" do
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_feet(90.0), 968.7519375, 0.01
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_feet(180.0), 1937.503875, 0.01
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_feet(123.4), 1328.2665454, 0.01
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squarefeet(90.0), 968.7519375, 0.01
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squarefeet(180.0), 1937.503875, 0.01
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squarefeet(123.4), 1328.2665454, 0.01
   end
 
   test "Convert known Square Metres to Square Inches" do
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_inches(8.0), 12400.0, 0.01
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_inches(1.23), 1906.504, 0.01
-    assert_in_delta PutridParrot.Units.SquareMetres.to_square_inches(0.9), 1395.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squareinches(8.0), 12400.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squareinches(1.23), 1906.504, 0.01
+    assert_in_delta PutridParrot.Units.SquareMetres.to_squareinches(0.9), 1395.0, 0.01
   end
 
   test "Convert known Square Metres to Hectares" do
@@ -318,33 +312,33 @@ defmodule PutridParrot.Units.Area do
   end
 
   test "Convert known Square Miles to Square Kilometres" do
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_kilometres(3.0), 7.76996, 0.01
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_kilometres(0.9), 2.33099, 0.01
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_kilometres(100.0), 258.999, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squarekilometres(3.0), 7.76996, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squarekilometres(0.9), 2.33099, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squarekilometres(100.0), 258.999, 0.01
   end
 
   test "Convert known Square Miles to Square Metres" do
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_metres(0.009), 23309.893, 0.01
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_metres(0.010), 25899.88, 0.01
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_metres(0.0006), 1553.99287, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squaremetres(0.009), 23309.893, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squaremetres(0.010), 25899.88, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squaremetres(0.0006), 1553.99287, 0.01
   end
 
   test "Convert known Square Miles to Square Yards" do
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_yards(0.01), 30976.0, 0.01
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_yards(0.00123), 3810.048, 0.01
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_yards(0.09), 278_784.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squareyards(0.01), 30976.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squareyards(0.00123), 3810.048, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squareyards(0.09), 278_784.0, 0.01
   end
 
   test "Convert known Square Miles to Square Feet" do
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_feet(0.01), 278_784.0, 0.01
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_feet(0.005), 139_392.0, 0.01
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_feet(0.08), 2_230_272.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squarefeet(0.01), 278_784.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squarefeet(0.005), 139_392.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squarefeet(0.08), 2_230_272.0, 0.01
   end
 
   test "Convert known Square Miles to Square Inches" do
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_inches(0.0001), 401_448.96, 0.01
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_inches(0.00098), 3_934_199.808, 0.01
-    assert_in_delta PutridParrot.Units.SquareMiles.to_square_inches(0.000007), 28101.4272, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squareinches(0.0001), 401_448.96, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squareinches(0.00098), 3_934_199.808, 0.01
+    assert_in_delta PutridParrot.Units.SquareMiles.to_squareinches(0.000007), 28101.4272, 0.01
   end
 
   test "Convert known Square Miles to Hectares" do
@@ -360,44 +354,44 @@ defmodule PutridParrot.Units.Area do
   end
 
   test "Convert known Square Yards to Square Kilometres" do
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_kilometres(900_000.0),
+    assert_in_delta PutridParrot.Units.SquareYards.to_squarekilometres(900_000.0),
                     0.752514624,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_kilometres(190_190.0),
+    assert_in_delta PutridParrot.Units.SquareYards.to_squarekilometres(190_190.0),
                     0.159023063,
                     0.01
 
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_kilometres(7_000_000.0),
+    assert_in_delta PutridParrot.Units.SquareYards.to_squarekilometres(7_000_000.0),
                     5.85289152,
                     0.01
   end
 
   test "Convert known Square Yards to Square Metres" do
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_metres(700.0), 585.289, 0.01
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_metres(12.0), 10.0335, 0.01
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_metres(9.1), 7.60876, 0.01
+    assert_in_delta PutridParrot.Units.SquareYards.to_squaremetres(700.0), 585.289, 0.01
+    assert_in_delta PutridParrot.Units.SquareYards.to_squaremetres(12.0), 10.0335, 0.01
+    assert_in_delta PutridParrot.Units.SquareYards.to_squaremetres(9.1), 7.60876, 0.01
   end
 
   test "Convert known Square Yards to Square Miles" do
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_miles(98700.0), 0.031863378, 0.01
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_miles(8_888_888.0), 2.869604855, 0.01
+    assert_in_delta PutridParrot.Units.SquareYards.to_squaremiles(98700.0), 0.031863378, 0.01
+    assert_in_delta PutridParrot.Units.SquareYards.to_squaremiles(8_888_888.0), 2.869604855, 0.01
 
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_miles(100_200_300.0),
+    assert_in_delta PutridParrot.Units.SquareYards.to_squaremiles(100_200_300.0),
                     32.3477208161,
                     0.01
   end
 
   test "Convert known Square Yards to Square Feet" do
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_feet(12.0), 108.0, 0.01
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_feet(5.6), 50.4, 0.01
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_feet(102.5), 922.5, 0.01
+    assert_in_delta PutridParrot.Units.SquareYards.to_squarefeet(12.0), 108.0, 0.01
+    assert_in_delta PutridParrot.Units.SquareYards.to_squarefeet(5.6), 50.4, 0.01
+    assert_in_delta PutridParrot.Units.SquareYards.to_squarefeet(102.5), 922.5, 0.01
   end
 
   test "Convert known Square Yards to Square Inches" do
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_inches(56.7), 73483.2, 0.01
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_inches(1.8), 2332.8, 0.01
-    assert_in_delta PutridParrot.Units.SquareYards.to_square_inches(0.2), 259.2, 0.01
+    assert_in_delta PutridParrot.Units.SquareYards.to_squareinches(56.7), 73483.2, 0.01
+    assert_in_delta PutridParrot.Units.SquareYards.to_squareinches(1.8), 2332.8, 0.01
+    assert_in_delta PutridParrot.Units.SquareYards.to_squareinches(0.2), 259.2, 0.01
   end
 
   test "Convert known Square Yards to Hectares" do

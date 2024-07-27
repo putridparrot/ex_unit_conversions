@@ -50,9 +50,9 @@ defmodule PutridParrot.Units.Length do
   end
 
   test "Convert known Centimetres to Nautical Miles" do
-    assert_in_delta PutridParrot.Units.Centimetres.to_nautical_miles(30000.0), 0.16198704, 0.01
-    assert_in_delta PutridParrot.Units.Centimetres.to_nautical_miles(987_654.0), 5.33290497, 0.01
-    assert_in_delta PutridParrot.Units.Centimetres.to_nautical_miles(100_200.0), 0.541036717, 0.01
+    assert_in_delta PutridParrot.Units.Centimetres.to_nauticalmiles(30000.0), 0.16198704, 0.01
+    assert_in_delta PutridParrot.Units.Centimetres.to_nauticalmiles(987_654.0), 5.33290497, 0.01
+    assert_in_delta PutridParrot.Units.Centimetres.to_nauticalmiles(100_200.0), 0.541036717, 0.01
   end
 
   test "Convert known Feet to Millimetres" do
@@ -98,9 +98,9 @@ defmodule PutridParrot.Units.Length do
   end
 
   test "Convert known Feet to Nautical Miles" do
-    assert_in_delta PutridParrot.Units.Feet.to_nautical_miles(8765.0), 1.442533, 0.01
-    assert_in_delta PutridParrot.Units.Feet.to_nautical_miles(19000.0), 3.1269978, 0.01
-    assert_in_delta PutridParrot.Units.Feet.to_nautical_miles(1000.0), 0.164579, 0.01
+    assert_in_delta PutridParrot.Units.Feet.to_nauticalmiles(8765.0), 1.442533, 0.01
+    assert_in_delta PutridParrot.Units.Feet.to_nauticalmiles(19000.0), 3.1269978, 0.01
+    assert_in_delta PutridParrot.Units.Feet.to_nauticalmiles(1000.0), 0.164579, 0.01
   end
 
   test "Convert known Inches to Millimetres" do
@@ -146,9 +146,9 @@ defmodule PutridParrot.Units.Length do
   end
 
   test "Convert known Inches to Nautical Miles" do
-    assert_in_delta PutridParrot.Units.Inches.to_nautical_miles(9000.0), 0.1234341, 0.01
-    assert_in_delta PutridParrot.Units.Inches.to_nautical_miles(123_456.0), 1.69318704, 0.01
-    assert_in_delta PutridParrot.Units.Inches.to_nautical_miles(100_200.0), 1.37423326, 0.01
+    assert_in_delta PutridParrot.Units.Inches.to_nauticalmiles(9000.0), 0.1234341, 0.01
+    assert_in_delta PutridParrot.Units.Inches.to_nauticalmiles(123_456.0), 1.69318704, 0.01
+    assert_in_delta PutridParrot.Units.Inches.to_nauticalmiles(100_200.0), 1.37423326, 0.01
   end
 
   test "Convert known Kilometres to Millimetres" do
@@ -194,9 +194,9 @@ defmodule PutridParrot.Units.Length do
   end
 
   test "Convert known Kilometres to Nautical Miles" do
-    assert_in_delta PutridParrot.Units.Kilometres.to_nautical_miles(1.2), 0.647948, 0.01
-    assert_in_delta PutridParrot.Units.Kilometres.to_nautical_miles(0.2), 0.107991, 0.01
-    assert_in_delta PutridParrot.Units.Kilometres.to_nautical_miles(99.9), 53.94168, 0.01
+    assert_in_delta PutridParrot.Units.Kilometres.to_nauticalmiles(1.2), 0.647948, 0.01
+    assert_in_delta PutridParrot.Units.Kilometres.to_nauticalmiles(0.2), 0.107991, 0.01
+    assert_in_delta PutridParrot.Units.Kilometres.to_nauticalmiles(99.9), 53.94168, 0.01
   end
 
   test "Convert known Metres to Millimetres" do
@@ -242,9 +242,9 @@ defmodule PutridParrot.Units.Length do
   end
 
   test "Convert known Metres to Nautical Miles" do
-    assert_in_delta PutridParrot.Units.Metres.to_nautical_miles(900.0), 0.485961, 0.01
-    assert_in_delta PutridParrot.Units.Metres.to_nautical_miles(71819.0), 38.779158, 0.01
-    assert_in_delta PutridParrot.Units.Metres.to_nautical_miles(123_456.0), 66.6609071, 0.01
+    assert_in_delta PutridParrot.Units.Metres.to_nauticalmiles(900.0), 0.485961, 0.01
+    assert_in_delta PutridParrot.Units.Metres.to_nauticalmiles(71819.0), 38.779158, 0.01
+    assert_in_delta PutridParrot.Units.Metres.to_nauticalmiles(123_456.0), 66.6609071, 0.01
   end
 
   test "Convert known Miles to Millimetres" do
@@ -290,9 +290,9 @@ defmodule PutridParrot.Units.Length do
   end
 
   test "Convert known Miles to Nautical Miles" do
-    assert_in_delta PutridParrot.Units.Miles.to_nautical_miles(8.1), 7.03871, 0.01
-    assert_in_delta PutridParrot.Units.Miles.to_nautical_miles(0.8), 0.695181, 0.01
-    assert_in_delta PutridParrot.Units.Miles.to_nautical_miles(1.2), 1.04277, 0.01
+    assert_in_delta PutridParrot.Units.Miles.to_nauticalmiles(8.1), 7.03871, 0.01
+    assert_in_delta PutridParrot.Units.Miles.to_nauticalmiles(0.8), 0.695181, 0.01
+    assert_in_delta PutridParrot.Units.Miles.to_nauticalmiles(1.2), 1.04277, 0.01
   end
 
   test "Convert known Millimetres to Centimetres" do
@@ -338,15 +338,15 @@ defmodule PutridParrot.Units.Length do
   end
 
   test "Convert known Millimetres to Nautical Miles" do
-    assert_in_delta PutridParrot.Units.Millimetres.to_nautical_miles(9_000_000.0),
+    assert_in_delta PutridParrot.Units.Millimetres.to_nauticalmiles(9_000_000.0),
                     4.859611231,
                     0.01
 
-    assert_in_delta PutridParrot.Units.Millimetres.to_nautical_miles(12_345_678.0),
+    assert_in_delta PutridParrot.Units.Millimetres.to_nauticalmiles(12_345_678.0),
                     6.6661328294,
                     0.01
 
-    assert_in_delta PutridParrot.Units.Millimetres.to_nautical_miles(926_000.0), 0.5, 0.01
+    assert_in_delta PutridParrot.Units.Millimetres.to_nauticalmiles(926_000.0), 0.5, 0.01
   end
 
   test "Convert known Nautical Miles to Millimetres" do
@@ -440,8 +440,8 @@ defmodule PutridParrot.Units.Length do
   end
 
   test "Convert known Yards to Nautical Miles" do
-    assert_in_delta PutridParrot.Units.Yards.to_nautical_miles(1000.0), 0.493737, 0.01
-    assert_in_delta PutridParrot.Units.Yards.to_nautical_miles(202_020.0), 99.7446479, 0.01
-    assert_in_delta PutridParrot.Units.Yards.to_nautical_miles(71928.0), 35.513479, 0.01
+    assert_in_delta PutridParrot.Units.Yards.to_nauticalmiles(1000.0), 0.493737, 0.01
+    assert_in_delta PutridParrot.Units.Yards.to_nauticalmiles(202_020.0), 99.7446479, 0.01
+    assert_in_delta PutridParrot.Units.Yards.to_nauticalmiles(71928.0), 35.513479, 0.01
   end
 end

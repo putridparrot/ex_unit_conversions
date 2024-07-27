@@ -27,15 +27,15 @@ defmodule PutridParrot.Units.Angle do
   end
 
   test "Convert known Degrees to Minute Of Arc" do
-    assert_in_delta PutridParrot.Units.Degrees.to_minute_of_arc(97.0), 5820.0, 0.01
-    assert_in_delta PutridParrot.Units.Degrees.to_minute_of_arc(8.65), 519.0, 0.01
-    assert_in_delta PutridParrot.Units.Degrees.to_minute_of_arc(12.0), 720.0, 0.01
+    assert_in_delta PutridParrot.Units.Degrees.to_minuteofarc(97.0), 5820.0, 0.01
+    assert_in_delta PutridParrot.Units.Degrees.to_minuteofarc(8.65), 519.0, 0.01
+    assert_in_delta PutridParrot.Units.Degrees.to_minuteofarc(12.0), 720.0, 0.01
   end
 
   test "Convert known Degrees to Seconds Of Arc" do
-    assert_in_delta PutridParrot.Units.Degrees.to_seconds_of_arc(12.0), 43200.0, 0.01
-    assert_in_delta PutridParrot.Units.Degrees.to_seconds_of_arc(910.4), 3_277_440.0, 0.01
-    assert_in_delta PutridParrot.Units.Degrees.to_seconds_of_arc(5.6), 20160.0, 0.01
+    assert_in_delta PutridParrot.Units.Degrees.to_secondsofarc(12.0), 43200.0, 0.01
+    assert_in_delta PutridParrot.Units.Degrees.to_secondsofarc(910.4), 3_277_440.0, 0.01
+    assert_in_delta PutridParrot.Units.Degrees.to_secondsofarc(5.6), 20160.0, 0.01
   end
 
   test "Convert known Gradians to Degrees" do
@@ -57,15 +57,15 @@ defmodule PutridParrot.Units.Angle do
   end
 
   test "Convert known Gradians to Minute Of Arc" do
-    assert_in_delta PutridParrot.Units.Gradians.to_minute_of_arc(80.9), 4368.6, 0.01
-    assert_in_delta PutridParrot.Units.Gradians.to_minute_of_arc(1678.0), 90612.0, 0.01
-    assert_in_delta PutridParrot.Units.Gradians.to_minute_of_arc(900.0), 48600.0, 0.01
+    assert_in_delta PutridParrot.Units.Gradians.to_minuteofarc(80.9), 4368.6, 0.01
+    assert_in_delta PutridParrot.Units.Gradians.to_minuteofarc(1678.0), 90612.0, 0.01
+    assert_in_delta PutridParrot.Units.Gradians.to_minuteofarc(900.0), 48600.0, 0.01
   end
 
   test "Convert known Gradians to Seconds Of Arc" do
-    assert_in_delta PutridParrot.Units.Gradians.to_seconds_of_arc(0.9), 2916.0, 0.01
-    assert_in_delta PutridParrot.Units.Gradians.to_seconds_of_arc(12.3), 39852.0, 0.01
-    assert_in_delta PutridParrot.Units.Gradians.to_seconds_of_arc(5.1), 16524.0, 0.01
+    assert_in_delta PutridParrot.Units.Gradians.to_secondsofarc(0.9), 2916.0, 0.01
+    assert_in_delta PutridParrot.Units.Gradians.to_secondsofarc(12.3), 39852.0, 0.01
+    assert_in_delta PutridParrot.Units.Gradians.to_secondsofarc(5.1), 16524.0, 0.01
   end
 
   test "Convert known Milliradians to Degrees" do
@@ -88,19 +88,19 @@ defmodule PutridParrot.Units.Angle do
   end
 
   test "Convert known Milliradians to Minute Of Arc" do
-    assert_in_delta PutridParrot.Units.Milliradians.to_minute_of_arc(12.0), 41.253, 0.01
-    assert_in_delta PutridParrot.Units.Milliradians.to_minute_of_arc(0.9), 3.09397, 0.01
-    assert_in_delta PutridParrot.Units.Milliradians.to_minute_of_arc(800.0), 2750.2, 0.01
+    assert_in_delta PutridParrot.Units.Milliradians.to_minuteofarc(12.0), 41.253, 0.01
+    assert_in_delta PutridParrot.Units.Milliradians.to_minuteofarc(0.9), 3.09397, 0.01
+    assert_in_delta PutridParrot.Units.Milliradians.to_minuteofarc(800.0), 2750.2, 0.01
   end
 
   test "Convert known Milliradians to Seconds Of Arc" do
-    assert_in_delta PutridParrot.Units.Milliradians.to_seconds_of_arc(67.0), 13819.742, 0.01
+    assert_in_delta PutridParrot.Units.Milliradians.to_secondsofarc(67.0), 13819.742, 0.01
 
-    assert_in_delta PutridParrot.Units.Milliradians.to_seconds_of_arc(900.0),
+    assert_in_delta PutridParrot.Units.Milliradians.to_secondsofarc(900.0),
                     185_638.32562238674,
                     0.01
 
-    assert_in_delta PutridParrot.Units.Milliradians.to_seconds_of_arc(812.5), 167_590.16, 0.01
+    assert_in_delta PutridParrot.Units.Milliradians.to_secondsofarc(812.5), 167_590.16, 0.01
   end
 
   test "Convert known Minute Of Arc to Degrees" do
@@ -128,9 +128,9 @@ defmodule PutridParrot.Units.Angle do
   end
 
   test "Convert known Minute Of Arc to Seconds Of Arc" do
-    assert_in_delta PutridParrot.Units.MinuteOfArc.to_seconds_of_arc(0.9), 54.0, 0.01
-    assert_in_delta PutridParrot.Units.MinuteOfArc.to_seconds_of_arc(70.0), 4200.0, 0.01
-    assert_in_delta PutridParrot.Units.MinuteOfArc.to_seconds_of_arc(901.6), 54096.0, 0.01
+    assert_in_delta PutridParrot.Units.MinuteOfArc.to_secondsofarc(0.9), 54.0, 0.01
+    assert_in_delta PutridParrot.Units.MinuteOfArc.to_secondsofarc(70.0), 4200.0, 0.01
+    assert_in_delta PutridParrot.Units.MinuteOfArc.to_secondsofarc(901.6), 54096.0, 0.01
   end
 
   test "Convert known Radians to Degrees" do
@@ -153,15 +153,15 @@ defmodule PutridParrot.Units.Angle do
   end
 
   test "Convert known Radians to Minute Of Arc" do
-    assert_in_delta PutridParrot.Units.Radians.to_minute_of_arc(6.0), 20626.480624709635, 0.01
-    assert_in_delta PutridParrot.Units.Radians.to_minute_of_arc(0.8), 2750.2, 0.01
-    assert_in_delta PutridParrot.Units.Radians.to_minute_of_arc(2.3), 7906.82, 0.01
+    assert_in_delta PutridParrot.Units.Radians.to_minuteofarc(6.0), 20626.480624709635, 0.01
+    assert_in_delta PutridParrot.Units.Radians.to_minuteofarc(0.8), 2750.2, 0.01
+    assert_in_delta PutridParrot.Units.Radians.to_minuteofarc(2.3), 7906.82, 0.01
   end
 
   test "Convert known Radians to Seconds Of Arc" do
-    assert_in_delta PutridParrot.Units.Radians.to_seconds_of_arc(0.8), 165_011.84499767708, 0.01
-    assert_in_delta PutridParrot.Units.Radians.to_seconds_of_arc(0.001), 206.26481, 0.01
-    assert_in_delta PutridParrot.Units.Radians.to_seconds_of_arc(0.9), 185_638.32562238674, 0.01
+    assert_in_delta PutridParrot.Units.Radians.to_secondsofarc(0.8), 165_011.84499767708, 0.01
+    assert_in_delta PutridParrot.Units.Radians.to_secondsofarc(0.001), 206.26481, 0.01
+    assert_in_delta PutridParrot.Units.Radians.to_secondsofarc(0.9), 185_638.32562238674, 0.01
   end
 
   test "Convert known Seconds Of Arc to Degrees" do
@@ -189,8 +189,8 @@ defmodule PutridParrot.Units.Angle do
   end
 
   test "Convert known Seconds Of Arc to Minute Of Arc" do
-    assert_in_delta PutridParrot.Units.SecondsOfArc.to_minute_of_arc(100.0), 1.66667, 0.01
-    assert_in_delta PutridParrot.Units.SecondsOfArc.to_minute_of_arc(908.0), 15.1333, 0.01
-    assert_in_delta PutridParrot.Units.SecondsOfArc.to_minute_of_arc(8091.0), 134.85, 0.01
+    assert_in_delta PutridParrot.Units.SecondsOfArc.to_minuteofarc(100.0), 1.66667, 0.01
+    assert_in_delta PutridParrot.Units.SecondsOfArc.to_minuteofarc(908.0), 15.1333, 0.01
+    assert_in_delta PutridParrot.Units.SecondsOfArc.to_minuteofarc(8091.0), 134.85, 0.01
   end
 end

@@ -8,21 +8,21 @@ defmodule PutridParrot.Units.Speed do
   use ExUnit.Case
 
   test "Convert known Feet Per Second to Miles Per Hour" do
-    assert_in_delta PutridParrot.Units.FeetPerSecond.to_miles_per_hour(14.5), 9.886364, 0.01
-    assert_in_delta PutridParrot.Units.FeetPerSecond.to_miles_per_hour(100.0), 68.1818, 0.01
-    assert_in_delta PutridParrot.Units.FeetPerSecond.to_miles_per_hour(1.6), 1.09091, 0.01
+    assert_in_delta PutridParrot.Units.FeetPerSecond.to_milesperhour(14.5), 9.886364, 0.01
+    assert_in_delta PutridParrot.Units.FeetPerSecond.to_milesperhour(100.0), 68.1818, 0.01
+    assert_in_delta PutridParrot.Units.FeetPerSecond.to_milesperhour(1.6), 1.09091, 0.01
   end
 
   test "Convert known Feet Per Second to Kilometres Per Hour" do
-    assert_in_delta PutridParrot.Units.FeetPerSecond.to_kilometres_per_hour(1.5), 1.64592, 0.01
-    assert_in_delta PutridParrot.Units.FeetPerSecond.to_kilometres_per_hour(67.9), 74.50531, 0.01
-    assert_in_delta PutridParrot.Units.FeetPerSecond.to_kilometres_per_hour(109.0), 119.604, 0.01
+    assert_in_delta PutridParrot.Units.FeetPerSecond.to_kilometresperhour(1.5), 1.64592, 0.01
+    assert_in_delta PutridParrot.Units.FeetPerSecond.to_kilometresperhour(67.9), 74.50531, 0.01
+    assert_in_delta PutridParrot.Units.FeetPerSecond.to_kilometresperhour(109.0), 119.604, 0.01
   end
 
   test "Convert known Feet Per Second to Metres Per Second" do
-    assert_in_delta PutridParrot.Units.FeetPerSecond.to_metres_per_second(10.8), 3.29184, 0.01
-    assert_in_delta PutridParrot.Units.FeetPerSecond.to_metres_per_second(66.0), 20.1168, 0.01
-    assert_in_delta PutridParrot.Units.FeetPerSecond.to_metres_per_second(2.3), 0.70104, 0.01
+    assert_in_delta PutridParrot.Units.FeetPerSecond.to_metrespersecond(10.8), 3.29184, 0.01
+    assert_in_delta PutridParrot.Units.FeetPerSecond.to_metrespersecond(66.0), 20.1168, 0.01
+    assert_in_delta PutridParrot.Units.FeetPerSecond.to_metrespersecond(2.3), 0.70104, 0.01
   end
 
   test "Convert known Feet Per Second to Knots" do
@@ -32,21 +32,21 @@ defmodule PutridParrot.Units.Speed do
   end
 
   test "Convert known Kilometres Per Hour to Miles Per Hour" do
-    assert_in_delta PutridParrot.Units.KilometresPerHour.to_miles_per_hour(67.0), 41.6319, 0.01
-    assert_in_delta PutridParrot.Units.KilometresPerHour.to_miles_per_hour(12.0), 7.45645, 0.01
-    assert_in_delta PutridParrot.Units.KilometresPerHour.to_miles_per_hour(6.3), 3.91464, 0.01
+    assert_in_delta PutridParrot.Units.KilometresPerHour.to_milesperhour(67.0), 41.6319, 0.01
+    assert_in_delta PutridParrot.Units.KilometresPerHour.to_milesperhour(12.0), 7.45645, 0.01
+    assert_in_delta PutridParrot.Units.KilometresPerHour.to_milesperhour(6.3), 3.91464, 0.01
   end
 
   test "Convert known Kilometres Per Hour to Feet Per Second" do
-    assert_in_delta PutridParrot.Units.KilometresPerHour.to_feet_per_second(5.0), 4.55672, 0.01
-    assert_in_delta PutridParrot.Units.KilometresPerHour.to_feet_per_second(1.5), 1.36702, 0.01
-    assert_in_delta PutridParrot.Units.KilometresPerHour.to_feet_per_second(89.8), 81.83873, 0.01
+    assert_in_delta PutridParrot.Units.KilometresPerHour.to_feetpersecond(5.0), 4.55672, 0.01
+    assert_in_delta PutridParrot.Units.KilometresPerHour.to_feetpersecond(1.5), 1.36702, 0.01
+    assert_in_delta PutridParrot.Units.KilometresPerHour.to_feetpersecond(89.8), 81.83873, 0.01
   end
 
   test "Convert known Kilometres Per Hour to Metres Per Second" do
-    assert_in_delta PutridParrot.Units.KilometresPerHour.to_metres_per_second(67.0), 18.6111, 0.01
-    assert_in_delta PutridParrot.Units.KilometresPerHour.to_metres_per_second(5.9), 1.63889, 0.01
-    assert_in_delta PutridParrot.Units.KilometresPerHour.to_metres_per_second(900.0), 250.0, 0.01
+    assert_in_delta PutridParrot.Units.KilometresPerHour.to_metrespersecond(67.0), 18.6111, 0.01
+    assert_in_delta PutridParrot.Units.KilometresPerHour.to_metrespersecond(5.9), 1.63889, 0.01
+    assert_in_delta PutridParrot.Units.KilometresPerHour.to_metrespersecond(900.0), 250.0, 0.01
   end
 
   test "Convert known Kilometres Per Hour to Knots" do
@@ -56,48 +56,45 @@ defmodule PutridParrot.Units.Speed do
   end
 
   test "Convert known Knots to Miles Per Hour" do
-    assert_in_delta PutridParrot.Units.Knots.to_miles_per_hour(8.0), 9.20624, 0.01
-    assert_in_delta PutridParrot.Units.Knots.to_miles_per_hour(1.2), 1.38094, 0.01
-    assert_in_delta PutridParrot.Units.Knots.to_miles_per_hour(670.0), 771.022, 0.01
+    assert_in_delta PutridParrot.Units.Knots.to_milesperhour(8.0), 9.20624, 0.01
+    assert_in_delta PutridParrot.Units.Knots.to_milesperhour(1.2), 1.38094, 0.01
+    assert_in_delta PutridParrot.Units.Knots.to_milesperhour(670.0), 771.022, 0.01
   end
 
   test "Convert known Knots to Kilometres Per Hour" do
-    assert_in_delta PutridParrot.Units.Knots.to_kilometres_per_hour(678.0), 1255.66, 0.01
-    assert_in_delta PutridParrot.Units.Knots.to_kilometres_per_hour(1.8), 3.3336, 0.01
-    assert_in_delta PutridParrot.Units.Knots.to_kilometres_per_hour(56.0), 103.712, 0.01
+    assert_in_delta PutridParrot.Units.Knots.to_kilometresperhour(678.0), 1255.66, 0.01
+    assert_in_delta PutridParrot.Units.Knots.to_kilometresperhour(1.8), 3.3336, 0.01
+    assert_in_delta PutridParrot.Units.Knots.to_kilometresperhour(56.0), 103.712, 0.01
   end
 
   test "Convert known Knots to Feet Per Second" do
-    assert_in_delta PutridParrot.Units.Knots.to_feet_per_second(56.0), 94.5174, 0.01
-    assert_in_delta PutridParrot.Units.Knots.to_feet_per_second(4.7), 7.93271, 0.01
-    assert_in_delta PutridParrot.Units.Knots.to_feet_per_second(3.0), 5.06343, 0.01
+    assert_in_delta PutridParrot.Units.Knots.to_feetpersecond(56.0), 94.5174, 0.01
+    assert_in_delta PutridParrot.Units.Knots.to_feetpersecond(4.7), 7.93271, 0.01
+    assert_in_delta PutridParrot.Units.Knots.to_feetpersecond(3.0), 5.06343, 0.01
   end
 
   test "Convert known Knots to Metres Per Second" do
-    assert_in_delta PutridParrot.Units.Knots.to_metres_per_second(5.0), 2.57222, 0.01
-    assert_in_delta PutridParrot.Units.Knots.to_metres_per_second(9.1), 4.68144, 0.01
-    assert_in_delta PutridParrot.Units.Knots.to_metres_per_second(190.0), 97.7444, 0.01
+    assert_in_delta PutridParrot.Units.Knots.to_metrespersecond(5.0), 2.57222, 0.01
+    assert_in_delta PutridParrot.Units.Knots.to_metrespersecond(9.1), 4.68144, 0.01
+    assert_in_delta PutridParrot.Units.Knots.to_metrespersecond(190.0), 97.7444, 0.01
   end
 
   test "Convert known Metres Per Second to Miles Per Hour" do
-    assert_in_delta PutridParrot.Units.MetresPerSecond.to_miles_per_hour(13.0), 29.0802, 0.01
-    assert_in_delta PutridParrot.Units.MetresPerSecond.to_miles_per_hour(6.7), 14.9875, 0.01
-    assert_in_delta PutridParrot.Units.MetresPerSecond.to_miles_per_hour(140.0), 313.171, 0.01
+    assert_in_delta PutridParrot.Units.MetresPerSecond.to_milesperhour(13.0), 29.0802, 0.01
+    assert_in_delta PutridParrot.Units.MetresPerSecond.to_milesperhour(6.7), 14.9875, 0.01
+    assert_in_delta PutridParrot.Units.MetresPerSecond.to_milesperhour(140.0), 313.171, 0.01
   end
 
   test "Convert known Metres Per Second to Kilometres Per Hour" do
-    assert_in_delta PutridParrot.Units.MetresPerSecond.to_kilometres_per_hour(800.0), 2880.0, 0.01
-    assert_in_delta PutridParrot.Units.MetresPerSecond.to_kilometres_per_hour(7.8), 28.08, 0.01
-
-    assert_in_delta PutridParrot.Units.MetresPerSecond.to_kilometres_per_hour(9000.0),
-                    32400.0,
-                    0.01
+    assert_in_delta PutridParrot.Units.MetresPerSecond.to_kilometresperhour(800.0), 2880.0, 0.01
+    assert_in_delta PutridParrot.Units.MetresPerSecond.to_kilometresperhour(7.8), 28.08, 0.01
+    assert_in_delta PutridParrot.Units.MetresPerSecond.to_kilometresperhour(9000.0), 32400.0, 0.01
   end
 
   test "Convert known Metres Per Second to Feet Per Second" do
-    assert_in_delta PutridParrot.Units.MetresPerSecond.to_feet_per_second(9000.0), 29527.56, 0.01
-    assert_in_delta PutridParrot.Units.MetresPerSecond.to_feet_per_second(3.4), 11.1549, 0.01
-    assert_in_delta PutridParrot.Units.MetresPerSecond.to_feet_per_second(12.0), 39.3701, 0.01
+    assert_in_delta PutridParrot.Units.MetresPerSecond.to_feetpersecond(9000.0), 29527.56, 0.01
+    assert_in_delta PutridParrot.Units.MetresPerSecond.to_feetpersecond(3.4), 11.1549, 0.01
+    assert_in_delta PutridParrot.Units.MetresPerSecond.to_feetpersecond(12.0), 39.3701, 0.01
   end
 
   test "Convert known Metres Per Second to Knots" do
@@ -107,21 +104,21 @@ defmodule PutridParrot.Units.Speed do
   end
 
   test "Convert known Miles Per Hour to Kilometres Per Hour" do
-    assert_in_delta PutridParrot.Units.MilesPerHour.to_kilometres_per_hour(345.0), 555.224, 0.01
-    assert_in_delta PutridParrot.Units.MilesPerHour.to_kilometres_per_hour(1.6), 2.57495, 0.01
-    assert_in_delta PutridParrot.Units.MilesPerHour.to_kilometres_per_hour(0.5), 0.804672, 0.01
+    assert_in_delta PutridParrot.Units.MilesPerHour.to_kilometresperhour(345.0), 555.224, 0.01
+    assert_in_delta PutridParrot.Units.MilesPerHour.to_kilometresperhour(1.6), 2.57495, 0.01
+    assert_in_delta PutridParrot.Units.MilesPerHour.to_kilometresperhour(0.5), 0.804672, 0.01
   end
 
   test "Convert known Miles Per Hour to Feet Per Second" do
-    assert_in_delta PutridParrot.Units.MilesPerHour.to_feet_per_second(0.5), 0.733333, 0.01
-    assert_in_delta PutridParrot.Units.MilesPerHour.to_feet_per_second(123.0), 180.4, 0.01
-    assert_in_delta PutridParrot.Units.MilesPerHour.to_feet_per_second(4.5), 6.6, 0.01
+    assert_in_delta PutridParrot.Units.MilesPerHour.to_feetpersecond(0.5), 0.733333, 0.01
+    assert_in_delta PutridParrot.Units.MilesPerHour.to_feetpersecond(123.0), 180.4, 0.01
+    assert_in_delta PutridParrot.Units.MilesPerHour.to_feetpersecond(4.5), 6.6, 0.01
   end
 
   test "Convert known Miles Per Hour to Metres Per Second" do
-    assert_in_delta PutridParrot.Units.MilesPerHour.to_metres_per_second(4.5), 2.01168, 0.01
-    assert_in_delta PutridParrot.Units.MilesPerHour.to_metres_per_second(100.0), 44.704, 0.01
-    assert_in_delta PutridParrot.Units.MilesPerHour.to_metres_per_second(40.0), 17.8816, 0.01
+    assert_in_delta PutridParrot.Units.MilesPerHour.to_metrespersecond(4.5), 2.01168, 0.01
+    assert_in_delta PutridParrot.Units.MilesPerHour.to_metrespersecond(100.0), 44.704, 0.01
+    assert_in_delta PutridParrot.Units.MilesPerHour.to_metrespersecond(40.0), 17.8816, 0.01
   end
 
   test "Convert known Miles Per Hour to Knots" do

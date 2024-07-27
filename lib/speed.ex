@@ -12,17 +12,17 @@ defmodule PutridParrot.Units.FeetPerSecond do
   @doc """
   Converts the supplied Feet Per Second value to Miles Per Hour
   """
-  def to_miles_per_hour(value), do: value / 1.46667
+  def to_milesperhour(value), do: value / 1.46667
 
   @doc """
   Converts the supplied Feet Per Second value to Kilometres Per Hour
   """
-  def to_kilometres_per_hour(value), do: value * 1.09728
+  def to_kilometresperhour(value), do: value * 1.09728
 
   @doc """
   Converts the supplied Feet Per Second value to Metres Per Second
   """
-  def to_metres_per_second(value), do: value / 3.28084
+  def to_metrespersecond(value), do: value / 3.28084
 
   @doc """
   Converts the supplied Feet Per Second value to Knots
@@ -38,17 +38,17 @@ defmodule PutridParrot.Units.KilometresPerHour do
   @doc """
   Converts the supplied Kilometres Per Hour value to Miles Per Hour
   """
-  def to_miles_per_hour(value), do: value / 1.60934
+  def to_milesperhour(value), do: value / 1.60934
 
   @doc """
   Converts the supplied Kilometres Per Hour value to Feet Per Second
   """
-  def to_feet_per_second(value), do: value / 1.09728
+  def to_feetpersecond(value), do: value / 1.09728
 
   @doc """
   Converts the supplied Kilometres Per Hour value to Metres Per Second
   """
-  def to_metres_per_second(value), do: value / 3.6
+  def to_metrespersecond(value), do: value / 3.6
 
   @doc """
   Converts the supplied Kilometres Per Hour value to Knots
@@ -64,22 +64,22 @@ defmodule PutridParrot.Units.Knots do
   @doc """
   Converts the supplied Knots value to Miles Per Hour
   """
-  def to_miles_per_hour(value), do: value * 1.15078
+  def to_milesperhour(value), do: value * 1.15078
 
   @doc """
   Converts the supplied Knots value to Kilometres Per Hour
   """
-  def to_kilometres_per_hour(value), do: value * 1.852
+  def to_kilometresperhour(value), do: value * 1.852
 
   @doc """
   Converts the supplied Knots value to Feet Per Second
   """
-  def to_feet_per_second(value), do: value * 1.68781
+  def to_feetpersecond(value), do: value * 1.68781
 
   @doc """
   Converts the supplied Knots value to Metres Per Second
   """
-  def to_metres_per_second(value), do: value / 1.94384
+  def to_metrespersecond(value), do: value / 1.94384
 end
 
 defmodule PutridParrot.Units.MetresPerSecond do
@@ -90,17 +90,17 @@ defmodule PutridParrot.Units.MetresPerSecond do
   @doc """
   Converts the supplied Metres Per Second value to Miles Per Hour
   """
-  def to_miles_per_hour(value), do: value * 2.23694
+  def to_milesperhour(value), do: value * 2.23694
 
   @doc """
   Converts the supplied Metres Per Second value to Kilometres Per Hour
   """
-  def to_kilometres_per_hour(value), do: value * 3.6
+  def to_kilometresperhour(value), do: value * 3.6
 
   @doc """
   Converts the supplied Metres Per Second value to Feet Per Second
   """
-  def to_feet_per_second(value), do: value * 3.28084
+  def to_feetpersecond(value), do: value * 3.28084
 
   @doc """
   Converts the supplied Metres Per Second value to Knots
@@ -116,17 +116,17 @@ defmodule PutridParrot.Units.MilesPerHour do
   @doc """
   Converts the supplied Miles Per Hour value to Kilometres Per Hour
   """
-  def to_kilometres_per_hour(value), do: value * 1.60934
+  def to_kilometresperhour(value), do: value * 1.60934
 
   @doc """
   Converts the supplied Miles Per Hour value to Feet Per Second
   """
-  def to_feet_per_second(value), do: value * 1.46667
+  def to_feetpersecond(value), do: value * 1.46667
 
   @doc """
   Converts the supplied Miles Per Hour value to Metres Per Second
   """
-  def to_metres_per_second(value), do: value / 2.23694
+  def to_metrespersecond(value), do: value / 2.23694
 
   @doc """
   Converts the supplied Miles Per Hour value to Knots
