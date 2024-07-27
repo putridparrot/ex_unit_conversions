@@ -1,13 +1,24 @@
 defmodule UnitConversions.MixProject do
   use Mix.Project
 
+  @source_url "https://github.com/putridparrot/ex_unit_conversions"
+
   def project do
     [
       app: :ex_unit_conversions,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.17",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      source_url: @source_url,
+      homepage_url: @source_url,
+      start_permanent: Mix.env() == :prod,
+      deps: deps(),
+      package: [
+        links: %{"GitHub" => @source_url},
+        licenses: ["MIT"],
+      ],
+      description: "Various unit conversion functions"
     ]
   end
 
