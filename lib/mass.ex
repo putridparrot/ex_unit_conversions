@@ -5,281 +5,329 @@
 # </auto-generated>
 
 defmodule PutridParrot.Units.Carats do
-	@moduledoc """
-	Carats conversion functions
-	"""
+  @moduledoc """
+  Carats conversion functions
+  """
 
-	@doc """
-	Converts the supplied Carats value to Milligrams
-	"""
-	def to_milligrams(value), do: value * 200.0
-	@doc """
-	Converts the supplied Carats value to Grams
-	"""
-	def to_grams(value), do: value / 5.0
-	@doc """
-	Converts the supplied Carats value to Kilograms
-	"""
-	def to_kilograms(value), do: value / 5000.0
-	@doc """
-	Converts the supplied Carats value to Tonnes
-	"""
-	def to_tonnes(value), do: value / 5.0e+6
-	@doc """
-	Converts the supplied Carats value to Ounces
-	"""
-	def to_ounces(value), do: value * 0.00705479
-	@doc """
-	Converts the supplied Carats value to Pounds
-	"""
-	def to_pounds(value), do: value * 0.000440925
-	@doc """
-	Converts the supplied Carats value to Stones
-	"""
-	def to_stones(value), do: value * 3.1495e-5
+  @doc """
+  Converts the supplied Carats value to Milligrams
+  """
+  def to_milligrams(value), do: value * 200.0
+
+  @doc """
+  Converts the supplied Carats value to Grams
+  """
+  def to_grams(value), do: value / 5.0
+
+  @doc """
+  Converts the supplied Carats value to Kilograms
+  """
+  def to_kilograms(value), do: value / 5000.0
+
+  @doc """
+  Converts the supplied Carats value to Tonnes
+  """
+  def to_tonnes(value), do: value / 5.0e+6
+
+  @doc """
+  Converts the supplied Carats value to Ounces
+  """
+  def to_ounces(value), do: value * 0.00705479
+
+  @doc """
+  Converts the supplied Carats value to Pounds
+  """
+  def to_pounds(value), do: value * 0.000440925
+
+  @doc """
+  Converts the supplied Carats value to Stones
+  """
+  def to_stones(value), do: value * 3.1495e-5
 end
 
 defmodule PutridParrot.Units.Grams do
-	@moduledoc """
-	Grams conversion functions
-	"""
+  @moduledoc """
+  Grams conversion functions
+  """
 
-	@doc """
-	Converts the supplied Grams value to Milligrams
-	"""
-	def to_milligrams(value), do: value * 1000.0
-	@doc """
-	Converts the supplied Grams value to Kilograms
-	"""
-	def to_kilograms(value), do: value / 1000.0
-	@doc """
-	Converts the supplied Grams value to Tonnes
-	"""
-	def to_tonnes(value), do: value * 1.0e-6
-	@doc """
-	Converts the supplied Grams value to Ounces
-	"""
-	def to_ounces(value), do: value / 28.3495231
-	@doc """
-	Converts the supplied Grams value to Pounds
-	"""
-	def to_pounds(value), do: value / 453.59237
-	@doc """
-	Converts the supplied Grams value to Stones
-	"""
-	def to_stones(value), do: value / 6350.29318
-	@doc """
-	Converts the supplied Grams value to Carats
-	"""
-	def to_carats(value), do: value * 5.0
+  @doc """
+  Converts the supplied Grams value to Milligrams
+  """
+  def to_milligrams(value), do: value * 1000.0
+
+  @doc """
+  Converts the supplied Grams value to Kilograms
+  """
+  def to_kilograms(value), do: value / 1000.0
+
+  @doc """
+  Converts the supplied Grams value to Tonnes
+  """
+  def to_tonnes(value), do: value * 1.0e-6
+
+  @doc """
+  Converts the supplied Grams value to Ounces
+  """
+  def to_ounces(value), do: value / 28.3495231
+
+  @doc """
+  Converts the supplied Grams value to Pounds
+  """
+  def to_pounds(value), do: value / 453.59237
+
+  @doc """
+  Converts the supplied Grams value to Stones
+  """
+  def to_stones(value), do: value / 6350.29318
+
+  @doc """
+  Converts the supplied Grams value to Carats
+  """
+  def to_carats(value), do: value * 5.0
 end
 
 defmodule PutridParrot.Units.Kilograms do
-	@moduledoc """
-	Kilograms conversion functions
-	"""
+  @moduledoc """
+  Kilograms conversion functions
+  """
 
-	@doc """
-	Converts the supplied Kilograms value to Milligrams
-	"""
-	def to_milligrams(value), do: value * 1.0e+6
-	@doc """
-	Converts the supplied Kilograms value to Grams
-	"""
-	def to_grams(value), do: value * 1000.0
-	@doc """
-	Converts the supplied Kilograms value to Tonnes
-	"""
-	def to_tonnes(value), do: value * 0.001
-	@doc """
-	Converts the supplied Kilograms value to Ounces
-	"""
-	def to_ounces(value), do: value * 35.274
-	@doc """
-	Converts the supplied Kilograms value to Pounds
-	"""
-	def to_pounds(value), do: value * 2.20462
-	@doc """
-	Converts the supplied Kilograms value to Stones
-	"""
-	def to_stones(value), do: value / 6.35029
-	@doc """
-	Converts the supplied Kilograms value to Carats
-	"""
-	def to_carats(value), do: value * 5000.0
+  @doc """
+  Converts the supplied Kilograms value to Milligrams
+  """
+  def to_milligrams(value), do: value * 1.0e+6
+
+  @doc """
+  Converts the supplied Kilograms value to Grams
+  """
+  def to_grams(value), do: value * 1000.0
+
+  @doc """
+  Converts the supplied Kilograms value to Tonnes
+  """
+  def to_tonnes(value), do: value * 0.001
+
+  @doc """
+  Converts the supplied Kilograms value to Ounces
+  """
+  def to_ounces(value), do: value * 35.274
+
+  @doc """
+  Converts the supplied Kilograms value to Pounds
+  """
+  def to_pounds(value), do: value * 2.20462
+
+  @doc """
+  Converts the supplied Kilograms value to Stones
+  """
+  def to_stones(value), do: value / 6.35029
+
+  @doc """
+  Converts the supplied Kilograms value to Carats
+  """
+  def to_carats(value), do: value * 5000.0
 end
 
 defmodule PutridParrot.Units.Milligrams do
-	@moduledoc """
-	Milligrams conversion functions
-	"""
+  @moduledoc """
+  Milligrams conversion functions
+  """
 
-	@doc """
-	Converts the supplied Milligrams value to Grams
-	"""
-	def to_grams(value), do: value / 1000.0
-	@doc """
-	Converts the supplied Milligrams value to Kilograms
-	"""
-	def to_kilograms(value), do: value / 1.0e+6
-	@doc """
-	Converts the supplied Milligrams value to Tonnes
-	"""
-	def to_tonnes(value), do: value / 1.0e+9
-	@doc """
-	Converts the supplied Milligrams value to Ounces
-	"""
-	def to_ounces(value), do: value / 28349.5231
-	@doc """
-	Converts the supplied Milligrams value to Pounds
-	"""
-	def to_pounds(value), do: value / 453592.37
-	@doc """
-	Converts the supplied Milligrams value to Stones
-	"""
-	def to_stones(value), do: value / 6350293.18
-	@doc """
-	Converts the supplied Milligrams value to Carats
-	"""
-	def to_carats(value), do: value / 200.0
+  @doc """
+  Converts the supplied Milligrams value to Grams
+  """
+  def to_grams(value), do: value / 1000.0
+
+  @doc """
+  Converts the supplied Milligrams value to Kilograms
+  """
+  def to_kilograms(value), do: value / 1.0e+6
+
+  @doc """
+  Converts the supplied Milligrams value to Tonnes
+  """
+  def to_tonnes(value), do: value / 1.0e+9
+
+  @doc """
+  Converts the supplied Milligrams value to Ounces
+  """
+  def to_ounces(value), do: value / 28349.5231
+
+  @doc """
+  Converts the supplied Milligrams value to Pounds
+  """
+  def to_pounds(value), do: value / 453_592.37
+
+  @doc """
+  Converts the supplied Milligrams value to Stones
+  """
+  def to_stones(value), do: value / 6_350_293.18
+
+  @doc """
+  Converts the supplied Milligrams value to Carats
+  """
+  def to_carats(value), do: value / 200.0
 end
 
 defmodule PutridParrot.Units.Ounces do
-	@moduledoc """
-	Ounces conversion functions
-	"""
+  @moduledoc """
+  Ounces conversion functions
+  """
 
-	@doc """
-	Converts the supplied Ounces value to Milligrams
-	"""
-	def to_milligrams(value), do: value * 28349.5231
-	@doc """
-	Converts the supplied Ounces value to Grams
-	"""
-	def to_grams(value), do: value * 28.3495231
-	@doc """
-	Converts the supplied Ounces value to Kilograms
-	"""
-	def to_kilograms(value), do: value / 35.274
-	@doc """
-	Converts the supplied Ounces value to Tonnes
-	"""
-	def to_tonnes(value), do: value * 0.0000283495231
-	@doc """
-	Converts the supplied Ounces value to Pounds
-	"""
-	def to_pounds(value), do: value * 0.0625
-	@doc """
-	Converts the supplied Ounces value to Stones
-	"""
-	def to_stones(value), do: value / 224.0
-	@doc """
-	Converts the supplied Ounces value to Carats
-	"""
-	def to_carats(value), do: value / 0.00705479
+  @doc """
+  Converts the supplied Ounces value to Milligrams
+  """
+  def to_milligrams(value), do: value * 28349.5231
+
+  @doc """
+  Converts the supplied Ounces value to Grams
+  """
+  def to_grams(value), do: value * 28.3495231
+
+  @doc """
+  Converts the supplied Ounces value to Kilograms
+  """
+  def to_kilograms(value), do: value / 35.274
+
+  @doc """
+  Converts the supplied Ounces value to Tonnes
+  """
+  def to_tonnes(value), do: value * 0.0000283495231
+
+  @doc """
+  Converts the supplied Ounces value to Pounds
+  """
+  def to_pounds(value), do: value * 0.0625
+
+  @doc """
+  Converts the supplied Ounces value to Stones
+  """
+  def to_stones(value), do: value / 224.0
+
+  @doc """
+  Converts the supplied Ounces value to Carats
+  """
+  def to_carats(value), do: value / 0.00705479
 end
 
 defmodule PutridParrot.Units.Pounds do
-	@moduledoc """
-	Pounds conversion functions
-	"""
+  @moduledoc """
+  Pounds conversion functions
+  """
 
-	@doc """
-	Converts the supplied Pounds value to Milligrams
-	"""
-	def to_milligrams(value), do: value * 453592.37
-	@doc """
-	Converts the supplied Pounds value to Grams
-	"""
-	def to_grams(value), do: value * 453.59237
-	@doc """
-	Converts the supplied Pounds value to Kilograms
-	"""
-	def to_kilograms(value), do: value / 2.20462
-	@doc """
-	Converts the supplied Pounds value to Tonnes
-	"""
-	def to_tonnes(value), do: value / 2204.62
-	@doc """
-	Converts the supplied Pounds value to Ounces
-	"""
-	def to_ounces(value), do: value * 16.0
-	@doc """
-	Converts the supplied Pounds value to Stones
-	"""
-	def to_stones(value), do: value / 14.0
-	@doc """
-	Converts the supplied Pounds value to Carats
-	"""
-	def to_carats(value), do: value / 0.000440925
+  @doc """
+  Converts the supplied Pounds value to Milligrams
+  """
+  def to_milligrams(value), do: value * 453_592.37
+
+  @doc """
+  Converts the supplied Pounds value to Grams
+  """
+  def to_grams(value), do: value * 453.59237
+
+  @doc """
+  Converts the supplied Pounds value to Kilograms
+  """
+  def to_kilograms(value), do: value / 2.20462
+
+  @doc """
+  Converts the supplied Pounds value to Tonnes
+  """
+  def to_tonnes(value), do: value / 2204.62
+
+  @doc """
+  Converts the supplied Pounds value to Ounces
+  """
+  def to_ounces(value), do: value * 16.0
+
+  @doc """
+  Converts the supplied Pounds value to Stones
+  """
+  def to_stones(value), do: value / 14.0
+
+  @doc """
+  Converts the supplied Pounds value to Carats
+  """
+  def to_carats(value), do: value / 0.000440925
 end
 
 defmodule PutridParrot.Units.Stones do
-	@moduledoc """
-	Stones conversion functions
-	"""
+  @moduledoc """
+  Stones conversion functions
+  """
 
-	@doc """
-	Converts the supplied Stones value to Milligrams
-	"""
-	def to_milligrams(value), do: value * 6350293.18
-	@doc """
-	Converts the supplied Stones value to Grams
-	"""
-	def to_grams(value), do: value * 6350.29318
-	@doc """
-	Converts the supplied Stones value to Kilograms
-	"""
-	def to_kilograms(value), do: value * 6.35029
-	@doc """
-	Converts the supplied Stones value to Tonnes
-	"""
-	def to_tonnes(value), do: value / 157.473
-	@doc """
-	Converts the supplied Stones value to Ounces
-	"""
-	def to_ounces(value), do: value * 224.0
-	@doc """
-	Converts the supplied Stones value to Pounds
-	"""
-	def to_pounds(value), do: value * 14.0
-	@doc """
-	Converts the supplied Stones value to Carats
-	"""
-	def to_carats(value), do: value / 3.1495e-5
+  @doc """
+  Converts the supplied Stones value to Milligrams
+  """
+  def to_milligrams(value), do: value * 6_350_293.18
+
+  @doc """
+  Converts the supplied Stones value to Grams
+  """
+  def to_grams(value), do: value * 6350.29318
+
+  @doc """
+  Converts the supplied Stones value to Kilograms
+  """
+  def to_kilograms(value), do: value * 6.35029
+
+  @doc """
+  Converts the supplied Stones value to Tonnes
+  """
+  def to_tonnes(value), do: value / 157.473
+
+  @doc """
+  Converts the supplied Stones value to Ounces
+  """
+  def to_ounces(value), do: value * 224.0
+
+  @doc """
+  Converts the supplied Stones value to Pounds
+  """
+  def to_pounds(value), do: value * 14.0
+
+  @doc """
+  Converts the supplied Stones value to Carats
+  """
+  def to_carats(value), do: value / 3.1495e-5
 end
 
 defmodule PutridParrot.Units.Tonnes do
-	@moduledoc """
-	Tonnes conversion functions
-	"""
+  @moduledoc """
+  Tonnes conversion functions
+  """
 
-	@doc """
-	Converts the supplied Tonnes value to Milligrams
-	"""
-	def to_milligrams(value), do: value * 1.0e+9
-	@doc """
-	Converts the supplied Tonnes value to Grams
-	"""
-	def to_grams(value), do: value * 1.0e+6
-	@doc """
-	Converts the supplied Tonnes value to Kilograms
-	"""
-	def to_kilograms(value), do: value * 1000.0
-	@doc """
-	Converts the supplied Tonnes value to Ounces
-	"""
-	def to_ounces(value), do: value / 0.0000283495231
-	@doc """
-	Converts the supplied Tonnes value to Pounds
-	"""
-	def to_pounds(value), do: value * 2204.62
-	@doc """
-	Converts the supplied Tonnes value to Stones
-	"""
-	def to_stones(value), do: value * 157.473
-	@doc """
-	Converts the supplied Tonnes value to Carats
-	"""
-	def to_carats(value), do: value * 5.0e+6
+  @doc """
+  Converts the supplied Tonnes value to Milligrams
+  """
+  def to_milligrams(value), do: value * 1.0e+9
+
+  @doc """
+  Converts the supplied Tonnes value to Grams
+  """
+  def to_grams(value), do: value * 1.0e+6
+
+  @doc """
+  Converts the supplied Tonnes value to Kilograms
+  """
+  def to_kilograms(value), do: value * 1000.0
+
+  @doc """
+  Converts the supplied Tonnes value to Ounces
+  """
+  def to_ounces(value), do: value / 0.0000283495231
+
+  @doc """
+  Converts the supplied Tonnes value to Pounds
+  """
+  def to_pounds(value), do: value * 2204.62
+
+  @doc """
+  Converts the supplied Tonnes value to Stones
+  """
+  def to_stones(value), do: value * 157.473
+
+  @doc """
+  Converts the supplied Tonnes value to Carats
+  """
+  def to_carats(value), do: value * 5.0e+6
 end

@@ -5,126 +5,125 @@
 # </auto-generated>
 
 defmodule PutridParrot.Units.Pressure do
-    use ExUnit.Case
+  use ExUnit.Case
 
-    test "Convert known Atmospheres to Bars" do
-        assert_in_delta PutridParrot.Units.Atmospheres.to_bars(6.0), 6.0795, 0.01;
-        assert_in_delta PutridParrot.Units.Atmospheres.to_bars(1.2), 1.2159, 0.01;
-        assert_in_delta PutridParrot.Units.Atmospheres.to_bars(0.8), 0.8106, 0.01;
-    end
+  test "Convert known Atmospheres to Bars" do
+    assert_in_delta PutridParrot.Units.Atmospheres.to_bars(6.0), 6.0795, 0.01
+    assert_in_delta PutridParrot.Units.Atmospheres.to_bars(1.2), 1.2159, 0.01
+    assert_in_delta PutridParrot.Units.Atmospheres.to_bars(0.8), 0.8106, 0.01
+  end
 
-    test "Convert known Atmospheres to Pascals" do
-        assert_in_delta PutridParrot.Units.Atmospheres.to_pascals(0.8), 81060.0, 0.01;
-        assert_in_delta PutridParrot.Units.Atmospheres.to_pascals(1.2), 121590.0, 0.01;
-        assert_in_delta PutridParrot.Units.Atmospheres.to_pascals(0.45), 45596.25, 0.01;
-    end
+  test "Convert known Atmospheres to Pascals" do
+    assert_in_delta PutridParrot.Units.Atmospheres.to_pascals(0.8), 81060.0, 0.01
+    assert_in_delta PutridParrot.Units.Atmospheres.to_pascals(1.2), 121_590.0, 0.01
+    assert_in_delta PutridParrot.Units.Atmospheres.to_pascals(0.45), 45596.25, 0.01
+  end
 
-    test "Convert known Atmospheres to Torrs" do
-        assert_in_delta PutridParrot.Units.Atmospheres.to_torrs(0.45), 342.0, 0.01;
-        assert_in_delta PutridParrot.Units.Atmospheres.to_torrs(1.2), 912.0, 0.01;
-        assert_in_delta PutridParrot.Units.Atmospheres.to_torrs(6.0), 4560.0, 0.01;
-    end
+  test "Convert known Atmospheres to Torrs" do
+    assert_in_delta PutridParrot.Units.Atmospheres.to_torrs(0.45), 342.0, 0.01
+    assert_in_delta PutridParrot.Units.Atmospheres.to_torrs(1.2), 912.0, 0.01
+    assert_in_delta PutridParrot.Units.Atmospheres.to_torrs(6.0), 4560.0, 0.01
+  end
 
-    test "Convert known Atmospheres to Psi" do
-        assert_in_delta PutridParrot.Units.Atmospheres.to_psi(6.0), 88.1757, 0.01;
-        assert_in_delta PutridParrot.Units.Atmospheres.to_psi(0.4), 5.87838, 0.01;
-        assert_in_delta PutridParrot.Units.Atmospheres.to_psi(1.2), 17.6351, 0.01;
-    end
+  test "Convert known Atmospheres to Psi" do
+    assert_in_delta PutridParrot.Units.Atmospheres.to_psi(6.0), 88.1757, 0.01
+    assert_in_delta PutridParrot.Units.Atmospheres.to_psi(0.4), 5.87838, 0.01
+    assert_in_delta PutridParrot.Units.Atmospheres.to_psi(1.2), 17.6351, 0.01
+  end
 
-    test "Convert known Bars to Atmospheres" do
-        assert_in_delta PutridParrot.Units.Bars.to_atmospheres(800.0), 789.539, 0.01;
-        assert_in_delta PutridParrot.Units.Bars.to_atmospheres(123.0), 121.392, 0.01;
-        assert_in_delta PutridParrot.Units.Bars.to_atmospheres(89.0), 87.8362, 0.01;
-    end
+  test "Convert known Bars to Atmospheres" do
+    assert_in_delta PutridParrot.Units.Bars.to_atmospheres(800.0), 789.539, 0.01
+    assert_in_delta PutridParrot.Units.Bars.to_atmospheres(123.0), 121.392, 0.01
+    assert_in_delta PutridParrot.Units.Bars.to_atmospheres(89.0), 87.8362, 0.01
+  end
 
-    test "Convert known Bars to Pascals" do
-        assert_in_delta PutridParrot.Units.Bars.to_pascals(0.89), 89000.0, 0.01;
-        assert_in_delta PutridParrot.Units.Bars.to_pascals(0.01), 1000.0, 0.01;
-        assert_in_delta PutridParrot.Units.Bars.to_pascals(0.123), 12300.0, 0.01;
-    end
+  test "Convert known Bars to Pascals" do
+    assert_in_delta PutridParrot.Units.Bars.to_pascals(0.89), 89000.0, 0.01
+    assert_in_delta PutridParrot.Units.Bars.to_pascals(0.01), 1000.0, 0.01
+    assert_in_delta PutridParrot.Units.Bars.to_pascals(0.123), 12300.0, 0.01
+  end
 
-    test "Convert known Bars to Torrs" do
-        assert_in_delta PutridParrot.Units.Bars.to_torrs(0.123), 92.257587, 0.01;
-        assert_in_delta PutridParrot.Units.Bars.to_torrs(2.0), 1500.12, 0.01;
-        assert_in_delta PutridParrot.Units.Bars.to_torrs(8.9), 6675.55, 0.01;
-    end
+  test "Convert known Bars to Torrs" do
+    assert_in_delta PutridParrot.Units.Bars.to_torrs(0.123), 92.257587, 0.01
+    assert_in_delta PutridParrot.Units.Bars.to_torrs(2.0), 1500.12, 0.01
+    assert_in_delta PutridParrot.Units.Bars.to_torrs(8.9), 6675.55, 0.01
+  end
 
-    test "Convert known Bars to Psi" do
-        assert_in_delta PutridParrot.Units.Bars.to_psi(8.1), 117.481, 0.01;
-        assert_in_delta PutridParrot.Units.Bars.to_psi(1001.0), 14518.29290, 0.01;
-        assert_in_delta PutridParrot.Units.Bars.to_psi(6.0), 87.0226, 0.01;
-    end
+  test "Convert known Bars to Psi" do
+    assert_in_delta PutridParrot.Units.Bars.to_psi(8.1), 117.481, 0.01
+    assert_in_delta PutridParrot.Units.Bars.to_psi(1001.0), 14518.29290, 0.01
+    assert_in_delta PutridParrot.Units.Bars.to_psi(6.0), 87.0226, 0.01
+  end
 
-    test "Convert known Pascals to Atmospheres" do
-        assert_in_delta PutridParrot.Units.Pascals.to_atmospheres(90000.0), 0.88823094, 0.01;
-        assert_in_delta PutridParrot.Units.Pascals.to_atmospheres(1234567.0), 12.18422897, 0.01;
-        assert_in_delta PutridParrot.Units.Pascals.to_atmospheres(204060.0), 2.01391562, 0.01;
-    end
+  test "Convert known Pascals to Atmospheres" do
+    assert_in_delta PutridParrot.Units.Pascals.to_atmospheres(90000.0), 0.88823094, 0.01
+    assert_in_delta PutridParrot.Units.Pascals.to_atmospheres(1_234_567.0), 12.18422897, 0.01
+    assert_in_delta PutridParrot.Units.Pascals.to_atmospheres(204_060.0), 2.01391562, 0.01
+  end
 
-    test "Convert known Pascals to Bars" do
-        assert_in_delta PutridParrot.Units.Pascals.to_bars(10000.0), 0.1, 0.01;
-        assert_in_delta PutridParrot.Units.Pascals.to_bars(12345.0), 0.12345, 0.01;
-        assert_in_delta PutridParrot.Units.Pascals.to_bars(80000.0), 0.8, 0.01;
-    end
+  test "Convert known Pascals to Bars" do
+    assert_in_delta PutridParrot.Units.Pascals.to_bars(10000.0), 0.1, 0.01
+    assert_in_delta PutridParrot.Units.Pascals.to_bars(12345.0), 0.12345, 0.01
+    assert_in_delta PutridParrot.Units.Pascals.to_bars(80000.0), 0.8, 0.01
+  end
 
-    test "Convert known Pascals to Torrs" do
-        assert_in_delta PutridParrot.Units.Pascals.to_torrs(80000.0), 600.04935, 0.01;
-        assert_in_delta PutridParrot.Units.Pascals.to_torrs(1234.0), 9.255761, 0.01;
-        assert_in_delta PutridParrot.Units.Pascals.to_torrs(80.0), 0.600049, 0.01;
-    end
+  test "Convert known Pascals to Torrs" do
+    assert_in_delta PutridParrot.Units.Pascals.to_torrs(80000.0), 600.04935, 0.01
+    assert_in_delta PutridParrot.Units.Pascals.to_torrs(1234.0), 9.255761, 0.01
+    assert_in_delta PutridParrot.Units.Pascals.to_torrs(80.0), 0.600049, 0.01
+  end
 
-    test "Convert known Pascals to Psi" do
-        assert_in_delta PutridParrot.Units.Pascals.to_psi(800.0), 0.11603, 0.01;
-        assert_in_delta PutridParrot.Units.Pascals.to_psi(8670.0), 1.257477, 0.01;
-        assert_in_delta PutridParrot.Units.Pascals.to_psi(1000.0), 0.145038, 0.01;
-    end
+  test "Convert known Pascals to Psi" do
+    assert_in_delta PutridParrot.Units.Pascals.to_psi(800.0), 0.11603, 0.01
+    assert_in_delta PutridParrot.Units.Pascals.to_psi(8670.0), 1.257477, 0.01
+    assert_in_delta PutridParrot.Units.Pascals.to_psi(1000.0), 0.145038, 0.01
+  end
 
-    test "Convert known Psi to Bars" do
-        assert_in_delta PutridParrot.Units.Psi.to_bars(900.0), 62.0528, 0.01;
-        assert_in_delta PutridParrot.Units.Psi.to_bars(134.0), 9.23897, 0.01;
-        assert_in_delta PutridParrot.Units.Psi.to_bars(111.2), 7.6669701, 0.01;
-    end
+  test "Convert known Psi to Bars" do
+    assert_in_delta PutridParrot.Units.Psi.to_bars(900.0), 62.0528, 0.01
+    assert_in_delta PutridParrot.Units.Psi.to_bars(134.0), 9.23897, 0.01
+    assert_in_delta PutridParrot.Units.Psi.to_bars(111.2), 7.6669701, 0.01
+  end
 
-    test "Convert known Psi to Pascals" do
-        assert_in_delta PutridParrot.Units.Psi.to_pascals(0.9), 6205.28, 0.01;
-        assert_in_delta PutridParrot.Units.Psi.to_pascals(0.03), 206.8427, 0.01;
-        assert_in_delta PutridParrot.Units.Psi.to_pascals(2.0), 13789.5, 0.01;
-    end
+  test "Convert known Psi to Pascals" do
+    assert_in_delta PutridParrot.Units.Psi.to_pascals(0.9), 6205.28, 0.01
+    assert_in_delta PutridParrot.Units.Psi.to_pascals(0.03), 206.8427, 0.01
+    assert_in_delta PutridParrot.Units.Psi.to_pascals(2.0), 13789.5, 0.01
+  end
 
-    test "Convert known Psi to Atmospheres" do
-        assert_in_delta PutridParrot.Units.Psi.to_atmospheres(2.0), 0.136092, 0.01;
-        assert_in_delta PutridParrot.Units.Psi.to_atmospheres(109.0), 7.41701, 0.01;
-        assert_in_delta PutridParrot.Units.Psi.to_atmospheres(8.0), 0.544368, 0.01;
-    end
+  test "Convert known Psi to Atmospheres" do
+    assert_in_delta PutridParrot.Units.Psi.to_atmospheres(2.0), 0.136092, 0.01
+    assert_in_delta PutridParrot.Units.Psi.to_atmospheres(109.0), 7.41701, 0.01
+    assert_in_delta PutridParrot.Units.Psi.to_atmospheres(8.0), 0.544368, 0.01
+  end
 
-    test "Convert known Psi to Torrs" do
-        assert_in_delta PutridParrot.Units.Psi.to_torrs(6.0), 310.29, 0.01;
-        assert_in_delta PutridParrot.Units.Psi.to_torrs(3.4), 175.831, 0.01;
-        assert_in_delta PutridParrot.Units.Psi.to_torrs(0.5), 25.8575, 0.01;
-    end
+  test "Convert known Psi to Torrs" do
+    assert_in_delta PutridParrot.Units.Psi.to_torrs(6.0), 310.29, 0.01
+    assert_in_delta PutridParrot.Units.Psi.to_torrs(3.4), 175.831, 0.01
+    assert_in_delta PutridParrot.Units.Psi.to_torrs(0.5), 25.8575, 0.01
+  end
 
-    test "Convert known Torrs to Bars" do
-        assert_in_delta PutridParrot.Units.Torrs.to_bars(100.0), 0.133322, 0.01;
-        assert_in_delta PutridParrot.Units.Torrs.to_bars(9000.1), 11.9991465, 0.01;
-        assert_in_delta PutridParrot.Units.Torrs.to_bars(1234.0), 1.645198, 0.01;
-    end
+  test "Convert known Torrs to Bars" do
+    assert_in_delta PutridParrot.Units.Torrs.to_bars(100.0), 0.133322, 0.01
+    assert_in_delta PutridParrot.Units.Torrs.to_bars(9000.1), 11.9991465, 0.01
+    assert_in_delta PutridParrot.Units.Torrs.to_bars(1234.0), 1.645198, 0.01
+  end
 
-    test "Convert known Torrs to Pascals" do
-        assert_in_delta PutridParrot.Units.Torrs.to_pascals(190.0), 25331.2499, 0.01;
-        assert_in_delta PutridParrot.Units.Torrs.to_pascals(6.5), 866.595, 0.01;
-        assert_in_delta PutridParrot.Units.Torrs.to_pascals(3.4), 453.296, 0.01;
-    end
+  test "Convert known Torrs to Pascals" do
+    assert_in_delta PutridParrot.Units.Torrs.to_pascals(190.0), 25331.2499, 0.01
+    assert_in_delta PutridParrot.Units.Torrs.to_pascals(6.5), 866.595, 0.01
+    assert_in_delta PutridParrot.Units.Torrs.to_pascals(3.4), 453.296, 0.01
+  end
 
-    test "Convert known Torrs to Atmospheres" do
-        assert_in_delta PutridParrot.Units.Torrs.to_atmospheres(5678.0), 7.471053, 0.01;
-        assert_in_delta PutridParrot.Units.Torrs.to_atmospheres(100.0), 0.131579, 0.01;
-        assert_in_delta PutridParrot.Units.Torrs.to_atmospheres(4509.0), 5.932895, 0.01;
-    end
+  test "Convert known Torrs to Atmospheres" do
+    assert_in_delta PutridParrot.Units.Torrs.to_atmospheres(5678.0), 7.471053, 0.01
+    assert_in_delta PutridParrot.Units.Torrs.to_atmospheres(100.0), 0.131579, 0.01
+    assert_in_delta PutridParrot.Units.Torrs.to_atmospheres(4509.0), 5.932895, 0.01
+  end
 
-    test "Convert known Torrs to Psi" do
-        assert_in_delta PutridParrot.Units.Torrs.to_psi(4500.0), 87.01549, 0.01;
-        assert_in_delta PutridParrot.Units.Torrs.to_psi(1234.0), 23.86158, 0.01;
-        assert_in_delta PutridParrot.Units.Torrs.to_psi(900.0), 17.4031, 0.01;
-    end
-
+  test "Convert known Torrs to Psi" do
+    assert_in_delta PutridParrot.Units.Torrs.to_psi(4500.0), 87.01549, 0.01
+    assert_in_delta PutridParrot.Units.Torrs.to_psi(1234.0), 23.86158, 0.01
+    assert_in_delta PutridParrot.Units.Torrs.to_psi(900.0), 17.4031, 0.01
+  end
 end

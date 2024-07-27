@@ -5,163 +5,187 @@
 # </auto-generated>
 
 defmodule PutridParrot.Units.Degrees do
-	@moduledoc """
-	Degrees conversion functions
-	"""
+  @moduledoc """
+  Degrees conversion functions
+  """
 
-	@doc """
-	Converts the supplied Degrees value to Radians
-	"""
-	def to_radians(value), do: value * Math.pi/180.0
-	@doc """
-	Converts the supplied Degrees value to Gradians
-	"""
-	def to_gradians(value), do: value * 200.0/180.0
-	@doc """
-	Converts the supplied Degrees value to Milliradians
-	"""
-	def to_milliradians(value), do: value * (1000.0 * Math.pi)/180.0
-	@doc """
-	Converts the supplied Degrees value to Minute Of Arc
-	"""
-	def to_minuteofarc(value), do: value * 60.0
-	@doc """
-	Converts the supplied Degrees value to Seconds Of Arc
-	"""
-	def to_secondsofarc(value), do: value * 3600.0
+  @doc """
+  Converts the supplied Degrees value to Radians
+  """
+  def to_radians(value), do: value * Math.pi() / 180.0
+
+  @doc """
+  Converts the supplied Degrees value to Gradians
+  """
+  def to_gradians(value), do: value * 200.0 / 180.0
+
+  @doc """
+  Converts the supplied Degrees value to Milliradians
+  """
+  def to_milliradians(value), do: value * (1000.0 * Math.pi()) / 180.0
+
+  @doc """
+  Converts the supplied Degrees value to Minute Of Arc
+  """
+  def to_minute_of_arc(value), do: value * 60.0
+
+  @doc """
+  Converts the supplied Degrees value to Seconds Of Arc
+  """
+  def to_seconds_of_arc(value), do: value * 3600.0
 end
 
 defmodule PutridParrot.Units.Gradians do
-	@moduledoc """
-	Gradians conversion functions
-	"""
+  @moduledoc """
+  Gradians conversion functions
+  """
 
-	@doc """
-	Converts the supplied Gradians value to Degrees
-	"""
-	def to_degrees(value), do: value * 180.0/200.0
-	@doc """
-	Converts the supplied Gradians value to Radians
-	"""
-	def to_radians(value), do: value * Math.pi/200.0
-	@doc """
-	Converts the supplied Gradians value to Milliradians
-	"""
-	def to_milliradians(value), do: value * (1000.0*Math.pi)/200.0
-	@doc """
-	Converts the supplied Gradians value to Minute Of Arc
-	"""
-	def to_minuteofarc(value), do: value * 54.0
-	@doc """
-	Converts the supplied Gradians value to Seconds Of Arc
-	"""
-	def to_secondsofarc(value), do: value * 3240.0
+  @doc """
+  Converts the supplied Gradians value to Degrees
+  """
+  def to_degrees(value), do: value * 180.0 / 200.0
+
+  @doc """
+  Converts the supplied Gradians value to Radians
+  """
+  def to_radians(value), do: value * Math.pi() / 200.0
+
+  @doc """
+  Converts the supplied Gradians value to Milliradians
+  """
+  def to_milliradians(value), do: value * (1000.0 * Math.pi()) / 200.0
+
+  @doc """
+  Converts the supplied Gradians value to Minute Of Arc
+  """
+  def to_minute_of_arc(value), do: value * 54.0
+
+  @doc """
+  Converts the supplied Gradians value to Seconds Of Arc
+  """
+  def to_seconds_of_arc(value), do: value * 3240.0
 end
 
 defmodule PutridParrot.Units.Milliradians do
-	@moduledoc """
-	Milliradians conversion functions
-	"""
+  @moduledoc """
+  Milliradians conversion functions
+  """
 
-	@doc """
-	Converts the supplied Milliradians value to Degrees
-	"""
-	def to_degrees(value), do: value * 180.0/(1000.0 * Math.pi)
-	@doc """
-	Converts the supplied Milliradians value to Radians
-	"""
-	def to_radians(value), do: value / 1000.0
-	@doc """
-	Converts the supplied Milliradians value to Gradians
-	"""
-	def to_gradians(value), do: value * 200.0/(1000.0 * Math.pi)
-	@doc """
-	Converts the supplied Milliradians value to Minute Of Arc
-	"""
-	def to_minuteofarc(value), do: value * (60.0 * 180.0)/(1000.0 * Math.pi)
-	@doc """
-	Converts the supplied Milliradians value to Seconds Of Arc
-	"""
-	def to_secondsofarc(value), do: value * (3600.0 * 180.0)/(1000.0 * Math.pi)
+  @doc """
+  Converts the supplied Milliradians value to Degrees
+  """
+  def to_degrees(value), do: value * 180.0 / (1000.0 * Math.pi())
+
+  @doc """
+  Converts the supplied Milliradians value to Radians
+  """
+  def to_radians(value), do: value / 1000.0
+
+  @doc """
+  Converts the supplied Milliradians value to Gradians
+  """
+  def to_gradians(value), do: value * 200.0 / (1000.0 * Math.pi())
+
+  @doc """
+  Converts the supplied Milliradians value to Minute Of Arc
+  """
+  def to_minute_of_arc(value), do: value * (60.0 * 180.0) / (1000.0 * Math.pi())
+
+  @doc """
+  Converts the supplied Milliradians value to Seconds Of Arc
+  """
+  def to_seconds_of_arc(value), do: value * (3600.0 * 180.0) / (1000.0 * Math.pi())
 end
 
 defmodule PutridParrot.Units.MinuteOfArc do
-	@moduledoc """
-	Minute Of Arc conversion functions
-	"""
+  @moduledoc """
+  Minute Of Arc conversion functions
+  """
 
-	@doc """
-	Converts the supplied Minute Of Arc value to Degrees
-	"""
-	def to_degrees(value), do: value / 60.0
-	@doc """
-	Converts the supplied Minute Of Arc value to Radians
-	"""
-	def to_radians(value), do: value * Math.pi/(60.0 * 180.0)
-	@doc """
-	Converts the supplied Minute Of Arc value to Gradians
-	"""
-	def to_gradians(value), do: value / 54.0
-	@doc """
-	Converts the supplied Minute Of Arc value to Milliradians
-	"""
-	def to_milliradians(value), do: value * (1000.0 * Math.pi) / (60.0 * 180.0)
-	@doc """
-	Converts the supplied Minute Of Arc value to Seconds Of Arc
-	"""
-	def to_secondsofarc(value), do: value * 60.0
+  @doc """
+  Converts the supplied Minute Of Arc value to Degrees
+  """
+  def to_degrees(value), do: value / 60.0
+
+  @doc """
+  Converts the supplied Minute Of Arc value to Radians
+  """
+  def to_radians(value), do: value * Math.pi() / (60.0 * 180.0)
+
+  @doc """
+  Converts the supplied Minute Of Arc value to Gradians
+  """
+  def to_gradians(value), do: value / 54.0
+
+  @doc """
+  Converts the supplied Minute Of Arc value to Milliradians
+  """
+  def to_milliradians(value), do: value * (1000.0 * Math.pi()) / (60.0 * 180.0)
+
+  @doc """
+  Converts the supplied Minute Of Arc value to Seconds Of Arc
+  """
+  def to_seconds_of_arc(value), do: value * 60.0
 end
 
 defmodule PutridParrot.Units.Radians do
-	@moduledoc """
-	Radians conversion functions
-	"""
+  @moduledoc """
+  Radians conversion functions
+  """
 
-	@doc """
-	Converts the supplied Radians value to Degrees
-	"""
-	def to_degrees(value), do: value * 180.0/Math.pi
-	@doc """
-	Converts the supplied Radians value to Gradians
-	"""
-	def to_gradians(value), do: value * 200.0/Math.pi
-	@doc """
-	Converts the supplied Radians value to Milliradians
-	"""
-	def to_milliradians(value), do: value * 1000.0
-	@doc """
-	Converts the supplied Radians value to Minute Of Arc
-	"""
-	def to_minuteofarc(value), do: value * (60.0 * 180.0)/Math.pi
-	@doc """
-	Converts the supplied Radians value to Seconds Of Arc
-	"""
-	def to_secondsofarc(value), do: value * (3600.0 * 180.0)/Math.pi
+  @doc """
+  Converts the supplied Radians value to Degrees
+  """
+  def to_degrees(value), do: value * 180.0 / Math.pi()
+
+  @doc """
+  Converts the supplied Radians value to Gradians
+  """
+  def to_gradians(value), do: value * 200.0 / Math.pi()
+
+  @doc """
+  Converts the supplied Radians value to Milliradians
+  """
+  def to_milliradians(value), do: value * 1000.0
+
+  @doc """
+  Converts the supplied Radians value to Minute Of Arc
+  """
+  def to_minute_of_arc(value), do: value * (60.0 * 180.0) / Math.pi()
+
+  @doc """
+  Converts the supplied Radians value to Seconds Of Arc
+  """
+  def to_seconds_of_arc(value), do: value * (3600.0 * 180.0) / Math.pi()
 end
 
 defmodule PutridParrot.Units.SecondsOfArc do
-	@moduledoc """
-	Seconds Of Arc conversion functions
-	"""
+  @moduledoc """
+  Seconds Of Arc conversion functions
+  """
 
-	@doc """
-	Converts the supplied Seconds Of Arc value to Degrees
-	"""
-	def to_degrees(value), do: value / 3600.0
-	@doc """
-	Converts the supplied Seconds Of Arc value to Radians
-	"""
-	def to_radians(value), do: value * Math.pi/(180.0 * 3600.0)
-	@doc """
-	Converts the supplied Seconds Of Arc value to Gradians
-	"""
-	def to_gradians(value), do: value / 3240.0
-	@doc """
-	Converts the supplied Seconds Of Arc value to Milliradians
-	"""
-	def to_milliradians(value), do: value * (1000.0 * Math.pi) / (180.0 * 3600.0)
-	@doc """
-	Converts the supplied Seconds Of Arc value to Minute Of Arc
-	"""
-	def to_minuteofarc(value), do: value / 60.0
+  @doc """
+  Converts the supplied Seconds Of Arc value to Degrees
+  """
+  def to_degrees(value), do: value / 3600.0
+
+  @doc """
+  Converts the supplied Seconds Of Arc value to Radians
+  """
+  def to_radians(value), do: value * Math.pi() / (180.0 * 3600.0)
+
+  @doc """
+  Converts the supplied Seconds Of Arc value to Gradians
+  """
+  def to_gradians(value), do: value / 3240.0
+
+  @doc """
+  Converts the supplied Seconds Of Arc value to Milliradians
+  """
+  def to_milliradians(value), do: value * (1000.0 * Math.pi()) / (180.0 * 3600.0)
+
+  @doc """
+  Converts the supplied Seconds Of Arc value to Minute Of Arc
+  """
+  def to_minute_of_arc(value), do: value / 60.0
 end

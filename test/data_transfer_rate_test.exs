@@ -5,666 +5,1484 @@
 # </auto-generated>
 
 defmodule PutridParrot.Units.DataTransferRate do
-    use ExUnit.Case
-
-    test "Convert known Bits Per Second to KiloBits Per Second" do
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_kilobitspersecond(100.0), 0.1, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_kilobitspersecond(6021.0), 6.021, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_kilobitspersecond(9100.0), 9.1, 0.01;
-    end
-
-    test "Convert known Bits Per Second to MegaBits Per Second" do
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_megabitspersecond(9000000.0), 9.0, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_megabitspersecond(123456.0), 0.123456, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_megabitspersecond(1900000.0), 1.9, 0.01;
-    end
-
-    test "Convert known Bits Per Second to GigaBits Per Second" do
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_gigabitspersecond(190000000.0), 0.19, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_gigabitspersecond(8009.0), 8.009e-6, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_gigabitspersecond(987654321.0), 0.987654321, 0.01;
-    end
-
-    test "Convert known Bits Per Second to TeraBits Per Second" do
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_terabitspersecond(987654321234.0), 0.987654321234, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_terabitspersecond(1234567890123456.0), 1234.567890123455982, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_terabitspersecond(999888777666555.0), 999.888777666555029, 0.01;
-    end
-
-    test "Convert known Bits Per Second to KiloBytes Per Second" do
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_kilobytespersecond(900.0), 0.1125, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_kilobytespersecond(12345.0), 1.543125, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_kilobytespersecond(6000.9), 0.7501125, 0.01;
-    end
-
-    test "Convert known Bits Per Second to MegaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_megabytespersecond(123456.0), 0.015432, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_megabytespersecond(900800.0), 0.1126, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_megabytespersecond(999888777.0), 124.986097125, 0.01;
-    end
-
-    test "Convert known Bits Per Second to GigaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_gigabytespersecond(999888777.0), 0.124986097125, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_gigabytespersecond(1.9e+9), 0.2375, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_gigabytespersecond(80090077.0), 0.010011259625, 0.01;
-    end
-
-    test "Convert known Bits Per Second to TeraBytes Per Second" do
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_terabytespersecond(999888777666.0), 0.12498609720825, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_terabytespersecond(12345678912345.0), 1.5432098640431251, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_terabytespersecond(111999222888333.0), 13.9999028610416243, 0.01;
-    end
-
-    test "Convert known Bits Per Second to Kibibits Per Second" do
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_kibibitspersecond(1800.0), 1.757813, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_kibibitspersecond(888.0), 0.867188, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_kibibitspersecond(7687.0), 7.506836, 0.01;
-    end
-
-    test "Convert known Bits Per Second to Mebibits Per Second" do
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_mebibitspersecond(999888.0), 0.953567505, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_mebibitspersecond(1234567.0), 1.17737484, 0.01;
-        assert_in_delta PutridParrot.Units.BitsPerSecond.to_mebibitspersecond(900800.0), 0.859069824, 0.01;
-    end
-
-    test "Convert known GigaBits Per Second to Bits Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_bitspersecond(0.0009), 900000.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_bitspersecond(0.00007), 70000.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_bitspersecond(1.2e-5), 12000.0, 0.01;
-    end
-
-    test "Convert known GigaBits Per Second to KiloBits Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kilobitspersecond(0.01), 10000.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kilobitspersecond(0.91), 910000.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kilobitspersecond(6.1), 6.1e+6, 0.01;
-    end
-
-    test "Convert known GigaBits Per Second to MegaBits Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_megabitspersecond(6.1), 6100.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_megabitspersecond(0.961), 961.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_megabitspersecond(1.2e-3), 1.2, 0.01;
-    end
-
-    test "Convert known GigaBits Per Second to TeraBits Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_terabitspersecond(1200.0), 1.2, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_terabitspersecond(90012.0), 90.012, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_terabitspersecond(8000.0), 8.0, 0.01;
-    end
-
-    test "Convert known GigaBits Per Second to KiloBytes Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kilobytespersecond(1.2), 150000.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kilobytespersecond(0.9), 112500.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kilobytespersecond(0.001), 125.0, 0.01;
-    end
-
-    test "Convert known GigaBits Per Second to MegaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_megabytespersecond(0.9), 112.5, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_megabytespersecond(1.2), 150.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_megabytespersecond(80.1), 10012.5, 0.01;
-    end
-
-    test "Convert known GigaBits Per Second to GigaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_gigabytespersecond(99.0), 12.375, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_gigabytespersecond(123.123), 15.390375, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_gigabytespersecond(8000.9), 1000.1125, 0.01;
-    end
-
-    test "Convert known GigaBits Per Second to TeraBytes Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_terabytespersecond(9000.0), 1.125, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_terabytespersecond(1234567.0), 154.320875, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_terabytespersecond(613.0), 0.076625, 0.01;
-    end
-
-    test "Convert known GigaBits Per Second to Kibibits Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kibibitspersecond(0.8), 781250.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kibibitspersecond(0.012), 11718.75, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kibibitspersecond(0.002), 1953.125, 0.01;
-    end
-
-    test "Convert known GigaBits Per Second to Mebibits Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_mebibitspersecond(0.002), 1.9073486, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_mebibitspersecond(0.9), 858.3068847656, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_mebibitspersecond(6.1), 5817.413330078, 0.01;
-    end
-
-    test "Convert known GigaBytes Per Second to Bits Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_bitspersecond(0.004), 32000000.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_bitspersecond(0.012), 96000000.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_bitspersecond(3.0e-9), 24.0, 0.01;
-    end
-
-    test "Convert known GigaBytes Per Second to KiloBits Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kilobitspersecond(0.009), 72000.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kilobitspersecond(1.2e-4), 960.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kilobitspersecond(0.0078), 62400.0, 0.01;
-    end
-
-    test "Convert known GigaBytes Per Second to MegaBits Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_megabitspersecond(0.0078), 62.4, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_megabitspersecond(0.01), 80.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_megabitspersecond(0.001234), 9.872, 0.01;
-    end
-
-    test "Convert known GigaBytes Per Second to GigaBits Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_gigabitspersecond(5.0), 40.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_gigabitspersecond(1.2), 9.6, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_gigabitspersecond(0.01), 0.08, 0.01;
-    end
-
-    test "Convert known GigaBytes Per Second to TeraBits Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_terabitspersecond(70.0), 0.56, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_terabitspersecond(9001.0), 72.008, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_terabitspersecond(768123.9), 6144.9912, 0.01;
-    end
-
-    test "Convert known GigaBytes Per Second to KiloBytes Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kilobytespersecond(0.2), 200000.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kilobytespersecond(0.009), 9000.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kilobytespersecond(0.00123), 1230.0, 0.01;
-    end
-
-    test "Convert known GigaBytes Per Second to MegaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_megabytespersecond(0.9), 900.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_megabytespersecond(12.0), 12000.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_megabytespersecond(35.6), 35600.0, 0.01;
-    end
-
-    test "Convert known GigaBytes Per Second to TeraBytes Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_terabytespersecond(35.6), 0.0356, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_terabytespersecond(100.23), 0.10023, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_terabytespersecond(900100.0), 900.1, 0.01;
-    end
-
-    test "Convert known GigaBytes Per Second to Kibibits Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kibibitspersecond(0.05), 390625.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kibibitspersecond(0.008), 62500.0, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kibibitspersecond(0.00123), 9609.375, 0.01;
-    end
-
-    test "Convert known GigaBytes Per Second to Mebibits Per Second" do
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_mebibitspersecond(0.009), 68.66451, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_mebibitspersecond(1.2), 9155.268, 0.01;
-        assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_mebibitspersecond(19.2), 146484.288, 0.01;
-    end
-
-    test "Convert known Kibibits Per Second to Bits Per Second" do
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_bitspersecond(2.0), 2048.0, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_bitspersecond(9.0), 9216.0, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_bitspersecond(17.8), 18227.2, 0.01;
-    end
-
-    test "Convert known Kibibits Per Second to KiloBits Per Second" do
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_kilobitspersecond(6.2), 6.3488, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_kilobitspersecond(0.9), 0.9216, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_kilobitspersecond(87.0), 89.088, 0.01;
-    end
-
-    test "Convert known Kibibits Per Second to MegaBits Per Second" do
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_megabitspersecond(87.0), 0.089088, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_megabitspersecond(12.34), 0.01263616, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_megabitspersecond(123456.0), 126.418879, 0.01;
-    end
-
-    test "Convert known Kibibits Per Second to GigaBits Per Second" do
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_gigabitspersecond(123456.0), 0.126418944, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_gigabitspersecond(8000000.0), 8.192, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_gigabitspersecond(1276876.0), 1.307521024, 0.01;
-    end
-
-    test "Convert known Kibibits Per Second to TeraBits Per Second" do
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_terabitspersecond(800000000.0), 0.8192, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_terabitspersecond(1.5e12), 1536.0, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_terabitspersecond(9999999.0), 0.01023999898, 0.01;
-    end
-
-    test "Convert known Kibibits Per Second to KiloBytes Per Second" do
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_kilobytespersecond(919.0), 117.632, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_kilobytespersecond(77.4), 9.9072, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_kilobytespersecond(109.109), 13.965952, 0.01;
-    end
-
-    test "Convert known Kibibits Per Second to MegaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_megabytespersecond(1000.0), 0.128, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_megabytespersecond(800.123), 0.102415744, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_megabytespersecond(123456.0), 15.802368, 0.01;
-    end
-
-    test "Convert known Kibibits Per Second to GigaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_gigabytespersecond(12345678.0), 1.580347926, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_gigabytespersecond(8.0e12), 1024000.00, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_gigabytespersecond(1.2e5), 0.01536, 0.01;
-    end
-
-    test "Convert known Kibibits Per Second to TeraBytes Per Second" do
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_terabytespersecond(120000000.0), 0.01536, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_terabytespersecond(88.0e12), 11264.0, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_terabytespersecond(9000000.0), 0.001152, 0.01;
-    end
-
-    test "Convert known Kibibits Per Second to Mebibits Per Second" do
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_mebibitspersecond(600.0), 0.5859375, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_mebibitspersecond(12345.0), 12.055664, 0.01;
-        assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_mebibitspersecond(101.0), 0.0986328, 0.01;
-    end
-
-    test "Convert known KiloBits Per Second to Bits Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_bitspersecond(9.0), 9000.0, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_bitspersecond(6.7), 6700.0, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_bitspersecond(1.2345), 1234.5, 0.01;
-    end
-
-    test "Convert known KiloBits Per Second to MegaBits Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_megabitspersecond(900.0), 0.9, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_megabitspersecond(12345.0), 12.345, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_megabitspersecond(9988.0), 9.988, 0.01;
-    end
-
-    test "Convert known KiloBits Per Second to GigaBits Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_gigabitspersecond(123456.0), 0.123456, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_gigabitspersecond(8000700.0), 8.0007, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_gigabitspersecond(191987578.0), 191.987578, 0.01;
-    end
-
-    test "Convert known KiloBits Per Second to TeraBits Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_terabitspersecond(191987578.0), 0.191987578, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_terabitspersecond(9010081903.0), 9.010081903, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_terabitspersecond(123456789.0), 0.123456789, 0.01;
-    end
-
-    test "Convert known KiloBits Per Second to KiloBytes Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_kilobytespersecond(80.0), 10.0, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_kilobytespersecond(15.67), 1.95875, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_kilobytespersecond(8007.09), 1000.88625, 0.01;
-    end
-
-    test "Convert known KiloBits Per Second to MegaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_megabytespersecond(123456.0), 15.432, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_megabytespersecond(998877.0), 124.859625, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_megabytespersecond(10090.0), 1.26125, 0.01;
-    end
-
-    test "Convert known KiloBits Per Second to GigaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_gigabytespersecond(1828972.0), 0.2286215, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_gigabytespersecond(879860.8), 0.1099826, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_gigabytespersecond(78178971.0), 9.772371375, 0.01;
-    end
-
-    test "Convert known KiloBits Per Second to TeraBytes Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_terabytespersecond(1234567891.0), 0.154320986375, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_terabytespersecond(999999098.0), 0.12499988725, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_terabytespersecond(84618364142.0), 10.57729551775, 0.01;
-    end
-
-    test "Convert known KiloBits Per Second to Kibibits Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_kibibitspersecond(89.1), 87.01172, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_kibibitspersecond(7.1), 6.93359, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_kibibitspersecond(438.0), 427.734, 0.01;
-    end
-
-    test "Convert known KiloBits Per Second to Mebibits Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_mebibitspersecond(77790.0), 74.186325, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_mebibitspersecond(123456.0), 117.736816, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_mebibitspersecond(23972.0), 22.861481, 0.01;
-    end
-
-    test "Convert known KiloBytes Per Second to Bits Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_bitspersecond(123.456), 987648.0, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_bitspersecond(900.0), 7.2e+6, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_bitspersecond(100200.0), 801600000.0, 0.01;
-    end
-
-    test "Convert known KiloBytes Per Second to KiloBits Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_kilobitspersecond(4.0), 32.0, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_kilobitspersecond(1.2), 9.6, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_kilobitspersecond(88.1), 704.8, 0.01;
-    end
-
-    test "Convert known KiloBytes Per Second to MegaBits Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_megabitspersecond(88.1), 0.7048, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_megabitspersecond(7.1), 0.0568, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_megabitspersecond(12.8), 0.1024, 0.01;
-    end
-
-    test "Convert known KiloBytes Per Second to GigaBits Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_gigabitspersecond(10080.0), 0.08064, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_gigabitspersecond(4.5e+9), 36000.0, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_gigabitspersecond(271279.0), 2.170232, 0.01;
-    end
-
-    test "Convert known KiloBytes Per Second to TeraBits Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_terabitspersecond(9009000.0), 0.072072, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_terabitspersecond(7.2e9), 57.6, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_terabitspersecond(100100100900.0), 800.8008072, 0.01;
-    end
-
-    test "Convert known KiloBytes Per Second to MegaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_megabytespersecond(1009.0), 1.009, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_megabytespersecond(8899.0), 8.899, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_megabytespersecond(619.0), 0.619, 0.01;
-    end
-
-    test "Convert known KiloBytes Per Second to GigaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_gigabytespersecond(900800.0), 0.9008, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_gigabytespersecond(1234567.0), 1.234567, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_gigabytespersecond(7.9e9), 7900.0, 0.01;
-    end
-
-    test "Convert known KiloBytes Per Second to TeraBytes Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_terabytespersecond(0.9), 9.0e-10, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_terabytespersecond(140000000.0), 0.14, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_terabytespersecond(7.0), 7.0e-9, 0.01;
-    end
-
-    test "Convert known KiloBytes Per Second to Kibibits Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_kibibitspersecond(0.009), 0.0703125, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_kibibitspersecond(6.0e+3), 46875.0, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_kibibitspersecond(1.23), 9.609375, 0.01;
-    end
-
-    test "Convert known KiloBytes Per Second to Mebibits Per Second" do
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_mebibitspersecond(70.0), 0.534058, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_mebibitspersecond(9.0), 0.0686646, 0.01;
-        assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_mebibitspersecond(10022.0), 76.461792, 0.01;
-    end
-
-    test "Convert known Mebibits Per Second to Bits Per Second" do
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_bitspersecond(0.9), 943718.4, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_bitspersecond(0.006), 6291.456, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_bitspersecond(2.0), 2097152.0, 0.01;
-    end
-
-    test "Convert known Mebibits Per Second to KiloBits Per Second" do
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kilobitspersecond(0.8), 838.861, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kilobitspersecond(2.0), 2097.15, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kilobitspersecond(0.23), 241.1725, 0.01;
-    end
-
-    test "Convert known Mebibits Per Second to MegaBits Per Second" do
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_megabitspersecond(0.9), 0.943718, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_megabitspersecond(12.3), 12.89748, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_megabitspersecond(8.1), 8.49347, 0.01;
-    end
-
-    test "Convert known Mebibits Per Second to GigaBits Per Second" do
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_gigabitspersecond(12345.0), 12.944671, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_gigabitspersecond(100.0), 0.104858, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_gigabitspersecond(999.9), 1.0484711, 0.01;
-    end
-
-    test "Convert known Mebibits Per Second to TeraBits Per Second" do
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_terabitspersecond(100009.0), 0.104867037, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_terabitspersecond(9876543.0), 10.35630595, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_terabitspersecond(1000900.0), 1.049519718, 0.01;
-    end
-
-    test "Convert known Mebibits Per Second to KiloBytes Per Second" do
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kilobytespersecond(4.0), 524.288, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kilobytespersecond(1.45), 190.0544, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kilobytespersecond(88.11), 11548.754, 0.01;
-    end
-
-    test "Convert known Mebibits Per Second to MegaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_megabytespersecond(109.0), 14.2868, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_megabytespersecond(55.67), 7.2967782, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_megabytespersecond(45678.0), 5987.1068, 0.01;
-    end
-
-    test "Convert known Mebibits Per Second to GigaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_gigabytespersecond(4000.0), 0.524288311, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_gigabytespersecond(90100.0), 11.80959421, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_gigabytespersecond(1009.0), 0.132251727, 0.01;
-    end
-
-    test "Convert known Mebibits Per Second to TeraBytes Per Second" do
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_terabytespersecond(1000009.0), 0.1310731796, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_terabytespersecond(90808080.0), 11.902396662, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_terabytespersecond(5.2e12), 681574.4, 0.01;
-    end
-
-    test "Convert known Mebibits Per Second to Kibibits Per Second" do
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kibibitspersecond(5.0), 5120.0, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kibibitspersecond(1234.56), 1264189.44, 0.01;
-        assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kibibitspersecond(505.0), 517120.0, 0.01;
-    end
-
-    test "Convert known MegaBits Per Second to Bits Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_bitspersecond(0.34), 340000.0, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_bitspersecond(9.12), 9120000.0, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_bitspersecond(0.987), 987000.0, 0.01;
-    end
-
-    test "Convert known MegaBits Per Second to KiloBits Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kilobitspersecond(0.77), 770.0, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kilobitspersecond(5.0), 5000.0, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kilobitspersecond(0.987), 987.0, 0.01;
-    end
-
-    test "Convert known MegaBits Per Second to GigaBits Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_gigabitspersecond(900.0), 0.9, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_gigabitspersecond(12345.0), 12.345, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_gigabitspersecond(189.1), 0.1891, 0.01;
-    end
-
-    test "Convert known MegaBits Per Second to TeraBits Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_terabitspersecond(100200300.0), 100.2003, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_terabitspersecond(99887777.0), 99.887777, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_terabitspersecond(80009.0), 0.080009, 0.01;
-    end
-
-    test "Convert known MegaBits Per Second to KiloBytes Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kilobytespersecond(9.0), 1125.0, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kilobytespersecond(1.23), 153.75, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kilobytespersecond(98.1), 12262.5, 0.01;
-    end
-
-    test "Convert known MegaBits Per Second to MegaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_megabytespersecond(98.1), 12.2625, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_megabytespersecond(10.9), 1.3625, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_megabytespersecond(888.123), 111.015375, 0.01;
-    end
-
-    test "Convert known MegaBits Per Second to GigaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_gigabytespersecond(900.0), 0.1125, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_gigabytespersecond(10123.0), 1.265375, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_gigabytespersecond(9988.0), 1.2485, 0.01;
-    end
-
-    test "Convert known MegaBits Per Second to TeraBytes Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_terabytespersecond(998877.0), 0.124859625, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_terabytespersecond(100200400.0), 12.5250375, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_terabytespersecond(9008877.0), 1.126109625, 0.01;
-    end
-
-    test "Convert known MegaBits Per Second to Kibibits Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kibibitspersecond(12.0), 11718.756, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kibibitspersecond(0.9), 878.906, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kibibitspersecond(1.23), 1201.172, 0.01;
-    end
-
-    test "Convert known MegaBits Per Second to Mebibits Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_mebibitspersecond(4.5), 4.29153, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_mebibitspersecond(0.8), 0.762939, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_mebibitspersecond(900.0), 858.307, 0.01;
-    end
-
-    test "Convert known MegaBytes Per Second to Bits Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_bitspersecond(0.04), 320000.0, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_bitspersecond(0.0091), 72800.0, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_bitspersecond(3.0e-5), 240.0, 0.01;
-    end
-
-    test "Convert known MegaBytes Per Second to KiloBits Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kilobitspersecond(6.0), 48000.0, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kilobitspersecond(0.3), 2400.0, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kilobitspersecond(0.009), 72.0, 0.01;
-    end
-
-    test "Convert known MegaBytes Per Second to MegaBits Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_megabitspersecond(3.0), 24.0, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_megabitspersecond(0.9), 7.2, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_megabitspersecond(13.0), 104.0, 0.01;
-    end
-
-    test "Convert known MegaBytes Per Second to GigaBits Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_gigabitspersecond(13.0), 0.104, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_gigabitspersecond(900.0), 7.2, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_gigabitspersecond(18000.0), 144.0, 0.01;
-    end
-
-    test "Convert known MegaBytes Per Second to TeraBits Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_terabitspersecond(18000.0), 0.144, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_terabitspersecond(9718290.0), 77.74632, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_terabitspersecond(9.0e12), 72000000.0, 0.01;
-    end
-
-    test "Convert known MegaBytes Per Second to KiloBytes Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kilobytespersecond(6.0), 6000.0, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kilobytespersecond(0.9), 900.0, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kilobytespersecond(123.4), 123400.0, 0.01;
-    end
-
-    test "Convert known MegaBytes Per Second to GigaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_gigabytespersecond(123.4), 0.1234, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_gigabytespersecond(900.0), 0.9, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_gigabytespersecond(8.0e6), 8000.0, 0.01;
-    end
-
-    test "Convert known MegaBytes Per Second to TeraBytes Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_terabytespersecond(80000.0), 0.08, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_terabytespersecond(12345678.0), 12.345678, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_terabytespersecond(900800.0), 0.9008, 0.01;
-    end
-
-    test "Convert known MegaBytes Per Second to Kibibits Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kibibitspersecond(6.0), 46875.0, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kibibitspersecond(0.9), 7031.25, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kibibitspersecond(0.03), 234.375, 0.01;
-    end
-
-    test "Convert known MegaBytes Per Second to Mebibits Per Second" do
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_mebibitspersecond(0.03), 0.2288818, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_mebibitspersecond(4.5), 34.3323, 0.01;
-        assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_mebibitspersecond(80.1), 611.1145, 0.01;
-    end
-
-    test "Convert known TeraBits Per Second to Bits Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_bitspersecond(0.0007), 700000000.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_bitspersecond(1.23e-6), 1230000.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_bitspersecond(0.00098), 980000000.0, 0.01;
-    end
-
-    test "Convert known TeraBits Per Second to KiloBits Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kilobitspersecond(0.001), 1000000.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kilobitspersecond(6.1e-6), 6100.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kilobitspersecond(0.00009), 90000.0, 0.01;
-    end
-
-    test "Convert known TeraBits Per Second to MegaBits Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_megabitspersecond(0.09), 90000.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_megabitspersecond(3.5e-4), 350.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_megabitspersecond(0.0123), 12300.0, 0.01;
-    end
-
-    test "Convert known TeraBits Per Second to GigaBits Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_gigabitspersecond(0.9), 900.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_gigabitspersecond(1.45), 1450.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_gigabitspersecond(8.19), 8190.0, 0.01;
-    end
-
-    test "Convert known TeraBits Per Second to KiloBytes Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kilobytespersecond(0.0009), 112500.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kilobytespersecond(3.14e-6), 392.5, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kilobytespersecond(0.001), 125000.0, 0.01;
-    end
-
-    test "Convert known TeraBits Per Second to MegaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_megabytespersecond(0.4), 50000.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_megabytespersecond(3.9e-3), 487.5, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_megabytespersecond(0.007), 875.0, 0.01;
-    end
-
-    test "Convert known TeraBits Per Second to GigaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_gigabytespersecond(0.009), 1.125, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_gigabytespersecond(0.00123), 0.15375, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_gigabytespersecond(8.1e-3), 1.0125, 0.01;
-    end
-
-    test "Convert known TeraBits Per Second to TeraBytes Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_terabytespersecond(0.3), 0.0375, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_terabytespersecond(14.0), 1.75, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_terabytespersecond(0.8), 0.1, 0.01;
-    end
-
-    test "Convert known TeraBits Per Second to Kibibits Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kibibitspersecond(0.0009), 878906.25, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kibibitspersecond(6.1e-6), 5957.031, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kibibitspersecond(12.0e-9), 11.71875, 0.01;
-    end
-
-    test "Convert known TeraBits Per Second to Mebibits Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_mebibitspersecond(0.9), 858306.59999, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_mebibitspersecond(4.6e-3), 4386.9, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_mebibitspersecond(0.00123), 1173.0194092, 0.01;
-    end
-
-    test "Convert known TeraBytes Per Second to Bits Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_bitspersecond(0.00008), 640000000.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_bitspersecond(1.2e-12), 9.6, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_bitspersecond(9.0), 7.2e+13, 0.01;
-    end
-
-    test "Convert known TeraBytes Per Second to KiloBits Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kilobitspersecond(0.009), 72000000.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kilobitspersecond(1.4e-6), 11200.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kilobitspersecond(6.1e-5), 488000.0, 0.01;
-    end
-
-    test "Convert known TeraBytes Per Second to MegaBits Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_megabitspersecond(0.005), 40000.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_megabitspersecond(0.000123), 984.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_megabitspersecond(0.00006), 480.0, 0.01;
-    end
-
-    test "Convert known TeraBytes Per Second to GigaBits Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_gigabitspersecond(0.008), 64.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_gigabitspersecond(3.0e-7), 0.0024, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_gigabitspersecond(0.00023), 1.84, 0.01;
-    end
-
-    test "Convert known TeraBytes Per Second to TeraBits Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_terabitspersecond(5.0), 40.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_terabitspersecond(1.23), 9.84, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_terabitspersecond(800.0), 6400.0, 0.01;
-    end
-
-    test "Convert known TeraBytes Per Second to KiloBytes Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kilobytespersecond(0.0009), 900000.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kilobytespersecond(3.14e-7), 314.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kilobytespersecond(0.00063), 630000.0, 0.01;
-    end
-
-    test "Convert known TeraBytes Per Second to MegaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_megabytespersecond(0.009), 9000.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_megabytespersecond(0.234), 234000.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_megabytespersecond(2.0), 2.0e+6, 0.01;
-    end
-
-    test "Convert known TeraBytes Per Second to GigaBytes Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_gigabytespersecond(2.7), 2700.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_gigabytespersecond(0.9), 900.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_gigabytespersecond(0.0123), 12.3, 0.01;
-    end
-
-    test "Convert known TeraBytes Per Second to Kibibits Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kibibitspersecond(0.0009), 7031250.0, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kibibitspersecond(1.23e-5), 96093.75, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kibibitspersecond(0.0001), 781250.0, 0.01;
-    end
-
-    test "Convert known TeraBytes Per Second to Mebibits Per Second" do
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_mebibitspersecond(0.01), 76293.95, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_mebibitspersecond(0.008), 61035.156, 0.01;
-        assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_mebibitspersecond(2.0), 15258789.0625, 0.01;
-    end
-
+  use ExUnit.Case
+
+  test "Convert known Bits Per Second to KiloBits Per Second" do
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_kilo_bits_per_second(100.0), 0.1, 0.01
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_kilo_bits_per_second(6021.0), 6.021, 0.01
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_kilo_bits_per_second(9100.0), 9.1, 0.01
+  end
+
+  test "Convert known Bits Per Second to MegaBits Per Second" do
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_mega_bits_per_second(9_000_000.0),
+                    9.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_mega_bits_per_second(123_456.0),
+                    0.123456,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_mega_bits_per_second(1_900_000.0),
+                    1.9,
+                    0.01
+  end
+
+  test "Convert known Bits Per Second to GigaBits Per Second" do
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_giga_bits_per_second(190_000_000.0),
+                    0.19,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_giga_bits_per_second(8009.0),
+                    8.009e-6,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_giga_bits_per_second(987_654_321.0),
+                    0.987654321,
+                    0.01
+  end
+
+  test "Convert known Bits Per Second to TeraBits Per Second" do
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_tera_bits_per_second(987_654_321_234.0),
+                    0.987654321234,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_tera_bits_per_second(
+                      1_234_567_890_123_456.0
+                    ),
+                    1234.567890123455982,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_tera_bits_per_second(
+                      999_888_777_666_555.0
+                    ),
+                    999.888777666555029,
+                    0.01
+  end
+
+  test "Convert known Bits Per Second to KiloBytes Per Second" do
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_kilo_bytes_per_second(900.0), 0.1125, 0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_kilo_bytes_per_second(12345.0),
+                    1.543125,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_kilo_bytes_per_second(6000.9),
+                    0.7501125,
+                    0.01
+  end
+
+  test "Convert known Bits Per Second to MegaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_mega_bytes_per_second(123_456.0),
+                    0.015432,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_mega_bytes_per_second(900_800.0),
+                    0.1126,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_mega_bytes_per_second(999_888_777.0),
+                    124.986097125,
+                    0.01
+  end
+
+  test "Convert known Bits Per Second to GigaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_giga_bytes_per_second(999_888_777.0),
+                    0.124986097125,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_giga_bytes_per_second(1.9e+9),
+                    0.2375,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_giga_bytes_per_second(80_090_077.0),
+                    0.010011259625,
+                    0.01
+  end
+
+  test "Convert known Bits Per Second to TeraBytes Per Second" do
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_tera_bytes_per_second(999_888_777_666.0),
+                    0.12498609720825,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_tera_bytes_per_second(
+                      12_345_678_912_345.0
+                    ),
+                    1.5432098640431251,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_tera_bytes_per_second(
+                      111_999_222_888_333.0
+                    ),
+                    13.9999028610416243,
+                    0.01
+  end
+
+  test "Convert known Bits Per Second to Kibibits Per Second" do
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_kibibits_per_second(1800.0),
+                    1.757813,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_kibibits_per_second(888.0), 0.867188, 0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_kibibits_per_second(7687.0),
+                    7.506836,
+                    0.01
+  end
+
+  test "Convert known Bits Per Second to Mebibits Per Second" do
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_mebibits_per_second(999_888.0),
+                    0.953567505,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_mebibits_per_second(1_234_567.0),
+                    1.17737484,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.BitsPerSecond.to_mebibits_per_second(900_800.0),
+                    0.859069824,
+                    0.01
+  end
+
+  test "Convert known GigaBits Per Second to Bits Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_bits_per_second(0.0009),
+                    900_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_bits_per_second(0.00007),
+                    70000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_bits_per_second(1.2e-5), 12000.0, 0.01
+  end
+
+  test "Convert known GigaBits Per Second to KiloBits Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kilo_bits_per_second(0.01),
+                    10000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kilo_bits_per_second(0.91),
+                    910_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kilo_bits_per_second(6.1),
+                    6.1e+6,
+                    0.01
+  end
+
+  test "Convert known GigaBits Per Second to MegaBits Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_mega_bits_per_second(6.1),
+                    6100.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_mega_bits_per_second(0.961),
+                    961.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_mega_bits_per_second(1.2e-3),
+                    1.2,
+                    0.01
+  end
+
+  test "Convert known GigaBits Per Second to TeraBits Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_tera_bits_per_second(1200.0),
+                    1.2,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_tera_bits_per_second(90012.0),
+                    90.012,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_tera_bits_per_second(8000.0),
+                    8.0,
+                    0.01
+  end
+
+  test "Convert known GigaBits Per Second to KiloBytes Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kilo_bytes_per_second(1.2),
+                    150_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kilo_bytes_per_second(0.9),
+                    112_500.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kilo_bytes_per_second(0.001),
+                    125.0,
+                    0.01
+  end
+
+  test "Convert known GigaBits Per Second to MegaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_mega_bytes_per_second(0.9),
+                    112.5,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_mega_bytes_per_second(1.2),
+                    150.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_mega_bytes_per_second(80.1),
+                    10012.5,
+                    0.01
+  end
+
+  test "Convert known GigaBits Per Second to GigaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_giga_bytes_per_second(99.0),
+                    12.375,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_giga_bytes_per_second(123.123),
+                    15.390375,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_giga_bytes_per_second(8000.9),
+                    1000.1125,
+                    0.01
+  end
+
+  test "Convert known GigaBits Per Second to TeraBytes Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_tera_bytes_per_second(9000.0),
+                    1.125,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_tera_bytes_per_second(1_234_567.0),
+                    154.320875,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_tera_bytes_per_second(613.0),
+                    0.076625,
+                    0.01
+  end
+
+  test "Convert known GigaBits Per Second to Kibibits Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kibibits_per_second(0.8),
+                    781_250.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kibibits_per_second(0.012),
+                    11718.75,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_kibibits_per_second(0.002),
+                    1953.125,
+                    0.01
+  end
+
+  test "Convert known GigaBits Per Second to Mebibits Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_mebibits_per_second(0.002),
+                    1.9073486,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_mebibits_per_second(0.9),
+                    858.3068847656,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBitsPerSecond.to_mebibits_per_second(6.1),
+                    5817.413330078,
+                    0.01
+  end
+
+  test "Convert known GigaBytes Per Second to Bits Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_bits_per_second(0.004),
+                    32_000_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_bits_per_second(0.012),
+                    96_000_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_bits_per_second(3.0e-9), 24.0, 0.01
+  end
+
+  test "Convert known GigaBytes Per Second to KiloBits Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kilo_bits_per_second(0.009),
+                    72000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kilo_bits_per_second(1.2e-4),
+                    960.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kilo_bits_per_second(0.0078),
+                    62400.0,
+                    0.01
+  end
+
+  test "Convert known GigaBytes Per Second to MegaBits Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_mega_bits_per_second(0.0078),
+                    62.4,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_mega_bits_per_second(0.01),
+                    80.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_mega_bits_per_second(0.001234),
+                    9.872,
+                    0.01
+  end
+
+  test "Convert known GigaBytes Per Second to GigaBits Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_giga_bits_per_second(5.0), 40.0, 0.01
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_giga_bits_per_second(1.2), 9.6, 0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_giga_bits_per_second(0.01),
+                    0.08,
+                    0.01
+  end
+
+  test "Convert known GigaBytes Per Second to TeraBits Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_tera_bits_per_second(70.0),
+                    0.56,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_tera_bits_per_second(9001.0),
+                    72.008,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_tera_bits_per_second(768_123.9),
+                    6144.9912,
+                    0.01
+  end
+
+  test "Convert known GigaBytes Per Second to KiloBytes Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kilo_bytes_per_second(0.2),
+                    200_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kilo_bytes_per_second(0.009),
+                    9000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kilo_bytes_per_second(0.00123),
+                    1230.0,
+                    0.01
+  end
+
+  test "Convert known GigaBytes Per Second to MegaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_mega_bytes_per_second(0.9),
+                    900.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_mega_bytes_per_second(12.0),
+                    12000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_mega_bytes_per_second(35.6),
+                    35600.0,
+                    0.01
+  end
+
+  test "Convert known GigaBytes Per Second to TeraBytes Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_tera_bytes_per_second(35.6),
+                    0.0356,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_tera_bytes_per_second(100.23),
+                    0.10023,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_tera_bytes_per_second(900_100.0),
+                    900.1,
+                    0.01
+  end
+
+  test "Convert known GigaBytes Per Second to Kibibits Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kibibits_per_second(0.05),
+                    390_625.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kibibits_per_second(0.008),
+                    62500.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_kibibits_per_second(0.00123),
+                    9609.375,
+                    0.01
+  end
+
+  test "Convert known GigaBytes Per Second to Mebibits Per Second" do
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_mebibits_per_second(0.009),
+                    68.66451,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_mebibits_per_second(1.2),
+                    9155.268,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.GigaBytesPerSecond.to_mebibits_per_second(19.2),
+                    146_484.288,
+                    0.01
+  end
+
+  test "Convert known Kibibits Per Second to Bits Per Second" do
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_bits_per_second(2.0), 2048.0, 0.01
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_bits_per_second(9.0), 9216.0, 0.01
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_bits_per_second(17.8), 18227.2, 0.01
+  end
+
+  test "Convert known Kibibits Per Second to KiloBits Per Second" do
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_kilo_bits_per_second(6.2),
+                    6.3488,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_kilo_bits_per_second(0.9),
+                    0.9216,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_kilo_bits_per_second(87.0),
+                    89.088,
+                    0.01
+  end
+
+  test "Convert known Kibibits Per Second to MegaBits Per Second" do
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_mega_bits_per_second(87.0),
+                    0.089088,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_mega_bits_per_second(12.34),
+                    0.01263616,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_mega_bits_per_second(123_456.0),
+                    126.418879,
+                    0.01
+  end
+
+  test "Convert known Kibibits Per Second to GigaBits Per Second" do
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_giga_bits_per_second(123_456.0),
+                    0.126418944,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_giga_bits_per_second(8_000_000.0),
+                    8.192,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_giga_bits_per_second(1_276_876.0),
+                    1.307521024,
+                    0.01
+  end
+
+  test "Convert known Kibibits Per Second to TeraBits Per Second" do
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_tera_bits_per_second(800_000_000.0),
+                    0.8192,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_tera_bits_per_second(1.5e12),
+                    1536.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_tera_bits_per_second(9_999_999.0),
+                    0.01023999898,
+                    0.01
+  end
+
+  test "Convert known Kibibits Per Second to KiloBytes Per Second" do
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_kilo_bytes_per_second(919.0),
+                    117.632,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_kilo_bytes_per_second(77.4),
+                    9.9072,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_kilo_bytes_per_second(109.109),
+                    13.965952,
+                    0.01
+  end
+
+  test "Convert known Kibibits Per Second to MegaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_mega_bytes_per_second(1000.0),
+                    0.128,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_mega_bytes_per_second(800.123),
+                    0.102415744,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_mega_bytes_per_second(123_456.0),
+                    15.802368,
+                    0.01
+  end
+
+  test "Convert known Kibibits Per Second to GigaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_giga_bytes_per_second(12_345_678.0),
+                    1.580347926,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_giga_bytes_per_second(8.0e12),
+                    1_024_000.00,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_giga_bytes_per_second(1.2e5),
+                    0.01536,
+                    0.01
+  end
+
+  test "Convert known Kibibits Per Second to TeraBytes Per Second" do
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_tera_bytes_per_second(120_000_000.0),
+                    0.01536,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_tera_bytes_per_second(88.0e12),
+                    11264.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_tera_bytes_per_second(9_000_000.0),
+                    0.001152,
+                    0.01
+  end
+
+  test "Convert known Kibibits Per Second to Mebibits Per Second" do
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_mebibits_per_second(600.0),
+                    0.5859375,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_mebibits_per_second(12345.0),
+                    12.055664,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KibibitsPerSecond.to_mebibits_per_second(101.0),
+                    0.0986328,
+                    0.01
+  end
+
+  test "Convert known KiloBits Per Second to Bits Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_bits_per_second(9.0), 9000.0, 0.01
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_bits_per_second(6.7), 6700.0, 0.01
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_bits_per_second(1.2345), 1234.5, 0.01
+  end
+
+  test "Convert known KiloBits Per Second to MegaBits Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_mega_bits_per_second(900.0), 0.9, 0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_mega_bits_per_second(12345.0),
+                    12.345,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_mega_bits_per_second(9988.0),
+                    9.988,
+                    0.01
+  end
+
+  test "Convert known KiloBits Per Second to GigaBits Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_giga_bits_per_second(123_456.0),
+                    0.123456,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_giga_bits_per_second(8_000_700.0),
+                    8.0007,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_giga_bits_per_second(191_987_578.0),
+                    191.987578,
+                    0.01
+  end
+
+  test "Convert known KiloBits Per Second to TeraBits Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_tera_bits_per_second(191_987_578.0),
+                    0.191987578,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_tera_bits_per_second(9_010_081_903.0),
+                    9.010081903,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_tera_bits_per_second(123_456_789.0),
+                    0.123456789,
+                    0.01
+  end
+
+  test "Convert known KiloBits Per Second to KiloBytes Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_kilo_bytes_per_second(80.0),
+                    10.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_kilo_bytes_per_second(15.67),
+                    1.95875,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_kilo_bytes_per_second(8007.09),
+                    1000.88625,
+                    0.01
+  end
+
+  test "Convert known KiloBits Per Second to MegaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_mega_bytes_per_second(123_456.0),
+                    15.432,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_mega_bytes_per_second(998_877.0),
+                    124.859625,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_mega_bytes_per_second(10090.0),
+                    1.26125,
+                    0.01
+  end
+
+  test "Convert known KiloBits Per Second to GigaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_giga_bytes_per_second(1_828_972.0),
+                    0.2286215,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_giga_bytes_per_second(879_860.8),
+                    0.1099826,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_giga_bytes_per_second(78_178_971.0),
+                    9.772371375,
+                    0.01
+  end
+
+  test "Convert known KiloBits Per Second to TeraBytes Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_tera_bytes_per_second(
+                      1_234_567_891.0
+                    ),
+                    0.154320986375,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_tera_bytes_per_second(999_999_098.0),
+                    0.12499988725,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_tera_bytes_per_second(
+                      84_618_364_142.0
+                    ),
+                    10.57729551775,
+                    0.01
+  end
+
+  test "Convert known KiloBits Per Second to Kibibits Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_kibibits_per_second(89.1),
+                    87.01172,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_kibibits_per_second(7.1),
+                    6.93359,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_kibibits_per_second(438.0),
+                    427.734,
+                    0.01
+  end
+
+  test "Convert known KiloBits Per Second to Mebibits Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_mebibits_per_second(77790.0),
+                    74.186325,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_mebibits_per_second(123_456.0),
+                    117.736816,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBitsPerSecond.to_mebibits_per_second(23972.0),
+                    22.861481,
+                    0.01
+  end
+
+  test "Convert known KiloBytes Per Second to Bits Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_bits_per_second(123.456),
+                    987_648.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_bits_per_second(900.0), 7.2e+6, 0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_bits_per_second(100_200.0),
+                    801_600_000.0,
+                    0.01
+  end
+
+  test "Convert known KiloBytes Per Second to KiloBits Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_kilo_bits_per_second(4.0), 32.0, 0.01
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_kilo_bits_per_second(1.2), 9.6, 0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_kilo_bits_per_second(88.1),
+                    704.8,
+                    0.01
+  end
+
+  test "Convert known KiloBytes Per Second to MegaBits Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_mega_bits_per_second(88.1),
+                    0.7048,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_mega_bits_per_second(7.1),
+                    0.0568,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_mega_bits_per_second(12.8),
+                    0.1024,
+                    0.01
+  end
+
+  test "Convert known KiloBytes Per Second to GigaBits Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_giga_bits_per_second(10080.0),
+                    0.08064,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_giga_bits_per_second(4.5e+9),
+                    36000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_giga_bits_per_second(271_279.0),
+                    2.170232,
+                    0.01
+  end
+
+  test "Convert known KiloBytes Per Second to TeraBits Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_tera_bits_per_second(9_009_000.0),
+                    0.072072,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_tera_bits_per_second(7.2e9),
+                    57.6,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_tera_bits_per_second(
+                      100_100_100_900.0
+                    ),
+                    800.8008072,
+                    0.01
+  end
+
+  test "Convert known KiloBytes Per Second to MegaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_mega_bytes_per_second(1009.0),
+                    1.009,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_mega_bytes_per_second(8899.0),
+                    8.899,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_mega_bytes_per_second(619.0),
+                    0.619,
+                    0.01
+  end
+
+  test "Convert known KiloBytes Per Second to GigaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_giga_bytes_per_second(900_800.0),
+                    0.9008,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_giga_bytes_per_second(1_234_567.0),
+                    1.234567,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_giga_bytes_per_second(7.9e9),
+                    7900.0,
+                    0.01
+  end
+
+  test "Convert known KiloBytes Per Second to TeraBytes Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_tera_bytes_per_second(0.9),
+                    9.0e-10,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_tera_bytes_per_second(140_000_000.0),
+                    0.14,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_tera_bytes_per_second(7.0),
+                    7.0e-9,
+                    0.01
+  end
+
+  test "Convert known KiloBytes Per Second to Kibibits Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_kibibits_per_second(0.009),
+                    0.0703125,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_kibibits_per_second(6.0e+3),
+                    46875.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_kibibits_per_second(1.23),
+                    9.609375,
+                    0.01
+  end
+
+  test "Convert known KiloBytes Per Second to Mebibits Per Second" do
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_mebibits_per_second(70.0),
+                    0.534058,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_mebibits_per_second(9.0),
+                    0.0686646,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KiloBytesPerSecond.to_mebibits_per_second(10022.0),
+                    76.461792,
+                    0.01
+  end
+
+  test "Convert known Mebibits Per Second to Bits Per Second" do
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_bits_per_second(0.9), 943_718.4, 0.01
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_bits_per_second(0.006), 6291.456, 0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_bits_per_second(2.0),
+                    2_097_152.0,
+                    0.01
+  end
+
+  test "Convert known Mebibits Per Second to KiloBits Per Second" do
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kilo_bits_per_second(0.8),
+                    838.861,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kilo_bits_per_second(2.0),
+                    2097.15,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kilo_bits_per_second(0.23),
+                    241.1725,
+                    0.01
+  end
+
+  test "Convert known Mebibits Per Second to MegaBits Per Second" do
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_mega_bits_per_second(0.9),
+                    0.943718,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_mega_bits_per_second(12.3),
+                    12.89748,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_mega_bits_per_second(8.1),
+                    8.49347,
+                    0.01
+  end
+
+  test "Convert known Mebibits Per Second to GigaBits Per Second" do
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_giga_bits_per_second(12345.0),
+                    12.944671,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_giga_bits_per_second(100.0),
+                    0.104858,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_giga_bits_per_second(999.9),
+                    1.0484711,
+                    0.01
+  end
+
+  test "Convert known Mebibits Per Second to TeraBits Per Second" do
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_tera_bits_per_second(100_009.0),
+                    0.104867037,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_tera_bits_per_second(9_876_543.0),
+                    10.35630595,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_tera_bits_per_second(1_000_900.0),
+                    1.049519718,
+                    0.01
+  end
+
+  test "Convert known Mebibits Per Second to KiloBytes Per Second" do
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kilo_bytes_per_second(4.0),
+                    524.288,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kilo_bytes_per_second(1.45),
+                    190.0544,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kilo_bytes_per_second(88.11),
+                    11548.754,
+                    0.01
+  end
+
+  test "Convert known Mebibits Per Second to MegaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_mega_bytes_per_second(109.0),
+                    14.2868,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_mega_bytes_per_second(55.67),
+                    7.2967782,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_mega_bytes_per_second(45678.0),
+                    5987.1068,
+                    0.01
+  end
+
+  test "Convert known Mebibits Per Second to GigaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_giga_bytes_per_second(4000.0),
+                    0.524288311,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_giga_bytes_per_second(90100.0),
+                    11.80959421,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_giga_bytes_per_second(1009.0),
+                    0.132251727,
+                    0.01
+  end
+
+  test "Convert known Mebibits Per Second to TeraBytes Per Second" do
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_tera_bytes_per_second(1_000_009.0),
+                    0.1310731796,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_tera_bytes_per_second(90_808_080.0),
+                    11.902396662,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_tera_bytes_per_second(5.2e12),
+                    681_574.4,
+                    0.01
+  end
+
+  test "Convert known Mebibits Per Second to Kibibits Per Second" do
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kibibits_per_second(5.0), 5120.0, 0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kibibits_per_second(1234.56),
+                    1_264_189.44,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MebibitsPerSecond.to_kibibits_per_second(505.0),
+                    517_120.0,
+                    0.01
+  end
+
+  test "Convert known MegaBits Per Second to Bits Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_bits_per_second(0.34), 340_000.0, 0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_bits_per_second(9.12),
+                    9_120_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_bits_per_second(0.987),
+                    987_000.0,
+                    0.01
+  end
+
+  test "Convert known MegaBits Per Second to KiloBits Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kilo_bits_per_second(0.77),
+                    770.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kilo_bits_per_second(5.0),
+                    5000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kilo_bits_per_second(0.987),
+                    987.0,
+                    0.01
+  end
+
+  test "Convert known MegaBits Per Second to GigaBits Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_giga_bits_per_second(900.0), 0.9, 0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_giga_bits_per_second(12345.0),
+                    12.345,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_giga_bits_per_second(189.1),
+                    0.1891,
+                    0.01
+  end
+
+  test "Convert known MegaBits Per Second to TeraBits Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_tera_bits_per_second(100_200_300.0),
+                    100.2003,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_tera_bits_per_second(99_887_777.0),
+                    99.887777,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_tera_bits_per_second(80009.0),
+                    0.080009,
+                    0.01
+  end
+
+  test "Convert known MegaBits Per Second to KiloBytes Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kilo_bytes_per_second(9.0),
+                    1125.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kilo_bytes_per_second(1.23),
+                    153.75,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kilo_bytes_per_second(98.1),
+                    12262.5,
+                    0.01
+  end
+
+  test "Convert known MegaBits Per Second to MegaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_mega_bytes_per_second(98.1),
+                    12.2625,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_mega_bytes_per_second(10.9),
+                    1.3625,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_mega_bytes_per_second(888.123),
+                    111.015375,
+                    0.01
+  end
+
+  test "Convert known MegaBits Per Second to GigaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_giga_bytes_per_second(900.0),
+                    0.1125,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_giga_bytes_per_second(10123.0),
+                    1.265375,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_giga_bytes_per_second(9988.0),
+                    1.2485,
+                    0.01
+  end
+
+  test "Convert known MegaBits Per Second to TeraBytes Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_tera_bytes_per_second(998_877.0),
+                    0.124859625,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_tera_bytes_per_second(100_200_400.0),
+                    12.5250375,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_tera_bytes_per_second(9_008_877.0),
+                    1.126109625,
+                    0.01
+  end
+
+  test "Convert known MegaBits Per Second to Kibibits Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kibibits_per_second(12.0),
+                    11718.756,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kibibits_per_second(0.9),
+                    878.906,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_kibibits_per_second(1.23),
+                    1201.172,
+                    0.01
+  end
+
+  test "Convert known MegaBits Per Second to Mebibits Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_mebibits_per_second(4.5),
+                    4.29153,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_mebibits_per_second(0.8),
+                    0.762939,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBitsPerSecond.to_mebibits_per_second(900.0),
+                    858.307,
+                    0.01
+  end
+
+  test "Convert known MegaBytes Per Second to Bits Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_bits_per_second(0.04),
+                    320_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_bits_per_second(0.0091),
+                    72800.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_bits_per_second(3.0e-5), 240.0, 0.01
+  end
+
+  test "Convert known MegaBytes Per Second to KiloBits Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kilo_bits_per_second(6.0),
+                    48000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kilo_bits_per_second(0.3),
+                    2400.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kilo_bits_per_second(0.009),
+                    72.0,
+                    0.01
+  end
+
+  test "Convert known MegaBytes Per Second to MegaBits Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_mega_bits_per_second(3.0), 24.0, 0.01
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_mega_bits_per_second(0.9), 7.2, 0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_mega_bits_per_second(13.0),
+                    104.0,
+                    0.01
+  end
+
+  test "Convert known MegaBytes Per Second to GigaBits Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_giga_bits_per_second(13.0),
+                    0.104,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_giga_bits_per_second(900.0),
+                    7.2,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_giga_bits_per_second(18000.0),
+                    144.0,
+                    0.01
+  end
+
+  test "Convert known MegaBytes Per Second to TeraBits Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_tera_bits_per_second(18000.0),
+                    0.144,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_tera_bits_per_second(9_718_290.0),
+                    77.74632,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_tera_bits_per_second(9.0e12),
+                    72_000_000.0,
+                    0.01
+  end
+
+  test "Convert known MegaBytes Per Second to KiloBytes Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kilo_bytes_per_second(6.0),
+                    6000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kilo_bytes_per_second(0.9),
+                    900.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kilo_bytes_per_second(123.4),
+                    123_400.0,
+                    0.01
+  end
+
+  test "Convert known MegaBytes Per Second to GigaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_giga_bytes_per_second(123.4),
+                    0.1234,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_giga_bytes_per_second(900.0),
+                    0.9,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_giga_bytes_per_second(8.0e6),
+                    8000.0,
+                    0.01
+  end
+
+  test "Convert known MegaBytes Per Second to TeraBytes Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_tera_bytes_per_second(80000.0),
+                    0.08,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_tera_bytes_per_second(12_345_678.0),
+                    12.345678,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_tera_bytes_per_second(900_800.0),
+                    0.9008,
+                    0.01
+  end
+
+  test "Convert known MegaBytes Per Second to Kibibits Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kibibits_per_second(6.0),
+                    46875.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kibibits_per_second(0.9),
+                    7031.25,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_kibibits_per_second(0.03),
+                    234.375,
+                    0.01
+  end
+
+  test "Convert known MegaBytes Per Second to Mebibits Per Second" do
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_mebibits_per_second(0.03),
+                    0.2288818,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_mebibits_per_second(4.5),
+                    34.3323,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.MegaBytesPerSecond.to_mebibits_per_second(80.1),
+                    611.1145,
+                    0.01
+  end
+
+  test "Convert known TeraBits Per Second to Bits Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_bits_per_second(0.0007),
+                    700_000_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_bits_per_second(1.23e-6),
+                    1_230_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_bits_per_second(0.00098),
+                    980_000_000.0,
+                    0.01
+  end
+
+  test "Convert known TeraBits Per Second to KiloBits Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kilo_bits_per_second(0.001),
+                    1_000_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kilo_bits_per_second(6.1e-6),
+                    6100.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kilo_bits_per_second(0.00009),
+                    90000.0,
+                    0.01
+  end
+
+  test "Convert known TeraBits Per Second to MegaBits Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_mega_bits_per_second(0.09),
+                    90000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_mega_bits_per_second(3.5e-4),
+                    350.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_mega_bits_per_second(0.0123),
+                    12300.0,
+                    0.01
+  end
+
+  test "Convert known TeraBits Per Second to GigaBits Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_giga_bits_per_second(0.9), 900.0, 0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_giga_bits_per_second(1.45),
+                    1450.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_giga_bits_per_second(8.19),
+                    8190.0,
+                    0.01
+  end
+
+  test "Convert known TeraBits Per Second to KiloBytes Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kilo_bytes_per_second(0.0009),
+                    112_500.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kilo_bytes_per_second(3.14e-6),
+                    392.5,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kilo_bytes_per_second(0.001),
+                    125_000.0,
+                    0.01
+  end
+
+  test "Convert known TeraBits Per Second to MegaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_mega_bytes_per_second(0.4),
+                    50000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_mega_bytes_per_second(3.9e-3),
+                    487.5,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_mega_bytes_per_second(0.007),
+                    875.0,
+                    0.01
+  end
+
+  test "Convert known TeraBits Per Second to GigaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_giga_bytes_per_second(0.009),
+                    1.125,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_giga_bytes_per_second(0.00123),
+                    0.15375,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_giga_bytes_per_second(8.1e-3),
+                    1.0125,
+                    0.01
+  end
+
+  test "Convert known TeraBits Per Second to TeraBytes Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_tera_bytes_per_second(0.3),
+                    0.0375,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_tera_bytes_per_second(14.0),
+                    1.75,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_tera_bytes_per_second(0.8), 0.1, 0.01
+  end
+
+  test "Convert known TeraBits Per Second to Kibibits Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kibibits_per_second(0.0009),
+                    878_906.25,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kibibits_per_second(6.1e-6),
+                    5957.031,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_kibibits_per_second(12.0e-9),
+                    11.71875,
+                    0.01
+  end
+
+  test "Convert known TeraBits Per Second to Mebibits Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_mebibits_per_second(0.9),
+                    858_306.59999,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_mebibits_per_second(4.6e-3),
+                    4386.9,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBitsPerSecond.to_mebibits_per_second(0.00123),
+                    1173.0194092,
+                    0.01
+  end
+
+  test "Convert known TeraBytes Per Second to Bits Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_bits_per_second(0.00008),
+                    640_000_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_bits_per_second(1.2e-12), 9.6, 0.01
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_bits_per_second(9.0), 7.2e+13, 0.01
+  end
+
+  test "Convert known TeraBytes Per Second to KiloBits Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kilo_bits_per_second(0.009),
+                    72_000_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kilo_bits_per_second(1.4e-6),
+                    11200.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kilo_bits_per_second(6.1e-5),
+                    488_000.0,
+                    0.01
+  end
+
+  test "Convert known TeraBytes Per Second to MegaBits Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_mega_bits_per_second(0.005),
+                    40000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_mega_bits_per_second(0.000123),
+                    984.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_mega_bits_per_second(0.00006),
+                    480.0,
+                    0.01
+  end
+
+  test "Convert known TeraBytes Per Second to GigaBits Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_giga_bits_per_second(0.008),
+                    64.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_giga_bits_per_second(3.0e-7),
+                    0.0024,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_giga_bits_per_second(0.00023),
+                    1.84,
+                    0.01
+  end
+
+  test "Convert known TeraBytes Per Second to TeraBits Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_tera_bits_per_second(5.0), 40.0, 0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_tera_bits_per_second(1.23),
+                    9.84,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_tera_bits_per_second(800.0),
+                    6400.0,
+                    0.01
+  end
+
+  test "Convert known TeraBytes Per Second to KiloBytes Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kilo_bytes_per_second(0.0009),
+                    900_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kilo_bytes_per_second(3.14e-7),
+                    314.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kilo_bytes_per_second(0.00063),
+                    630_000.0,
+                    0.01
+  end
+
+  test "Convert known TeraBytes Per Second to MegaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_mega_bytes_per_second(0.009),
+                    9000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_mega_bytes_per_second(0.234),
+                    234_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_mega_bytes_per_second(2.0),
+                    2.0e+6,
+                    0.01
+  end
+
+  test "Convert known TeraBytes Per Second to GigaBytes Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_giga_bytes_per_second(2.7),
+                    2700.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_giga_bytes_per_second(0.9),
+                    900.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_giga_bytes_per_second(0.0123),
+                    12.3,
+                    0.01
+  end
+
+  test "Convert known TeraBytes Per Second to Kibibits Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kibibits_per_second(0.0009),
+                    7_031_250.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kibibits_per_second(1.23e-5),
+                    96093.75,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_kibibits_per_second(0.0001),
+                    781_250.0,
+                    0.01
+  end
+
+  test "Convert known TeraBytes Per Second to Mebibits Per Second" do
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_mebibits_per_second(0.01),
+                    76293.95,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_mebibits_per_second(0.008),
+                    61035.156,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.TeraBytesPerSecond.to_mebibits_per_second(2.0),
+                    15_258_789.0625,
+                    0.01
+  end
 end

@@ -37,8 +37,3 @@ jobs:
       run: mix deps.get
     - name: Run tests
       run: mix test
-
-    # - name: Publish to hex.pm
-    #   uses: erlangpack/github-action@v3
-    #   env:
-    #     HEX_API_KEY: ${{ secrets.HEX_API_KEY }}

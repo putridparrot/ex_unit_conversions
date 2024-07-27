@@ -5,546 +5,695 @@
 # </auto-generated>
 
 defmodule PutridParrot.Units.Energy do
-    use ExUnit.Case
-
-    test "Convert known Btu to Kilojoules" do
-        assert_in_delta PutridParrot.Units.Btu.to_kilojoules(100.0), 105.506, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_kilojoules(987.65), 1042.03, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_kilojoules(555666.0), 586258.6917293, 0.01;
-    end
-
-    test "Convert known Btu to Kilocalories" do
-        assert_in_delta PutridParrot.Units.Btu.to_kilocalories(67.9), 17.12196, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_kilocalories(109.9), 27.712867639325825, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_kilocalories(5000.0), 1260.8220036090, 0.01;
-    end
-
-    test "Convert known Btu to Joules" do
-        assert_in_delta PutridParrot.Units.Btu.to_joules(5.0), 5275.3, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_joules(912.9), 963164.274, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_joules(109.0), 115001.54, 0.01;
-    end
-
-    test "Convert known Btu to Calories" do
-        assert_in_delta PutridParrot.Units.Btu.to_calories(56.0), 14121.20644042079, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_calories(123.0), 31016.221288781402, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_calories(0.9), 226.9476, 0.01;
-    end
-
-    test "Convert known Btu to US Therms" do
-        assert_in_delta PutridParrot.Units.Btu.to_ustherms(12000.0), 0.120028657, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_ustherms(9876.5), 0.098788586, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_ustherms(666.999), 0.006671583, 0.01;
-    end
-
-    test "Convert known Btu to Watt Hours" do
-        assert_in_delta PutridParrot.Units.Btu.to_watthours(900.0), 263.764, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_watthours(125.7), 36.839034, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_watthours(0.99), 0.2901404, 0.01;
-    end
-
-    test "Convert known Btu to Kilowatt Hours" do
-        assert_in_delta PutridParrot.Units.Btu.to_kilowatthours(9000.0), 2.63764, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_kilowatthours(12345.0), 3.6179624, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_kilowatthours(8090.8), 2.37117941, 0.01;
-    end
-
-    test "Convert known Btu to Foot Pounds" do
-        assert_in_delta PutridParrot.Units.Btu.to_footpounds(189.0), 147073.9409, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_footpounds(0.3), 233.451, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_footpounds(2.6), 2023.24, 0.01;
-    end
-
-    test "Convert known Btu to Electronvolts" do
-        assert_in_delta PutridParrot.Units.Btu.to_electronvolts(0.0000000789), 519567655294184.88, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_electronvolts(0.000001002), 6598311667994592.0, 0.01;
-        assert_in_delta PutridParrot.Units.Btu.to_electronvolts(0.000000001), 6585141385224.14, 0.01;
-    end
-
-    test "Convert known Calories to Kilojoules" do
-        assert_in_delta PutridParrot.Units.Calories.to_kilojoules(109.0), 0.456056, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_kilojoules(12.3), 0.0514632, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_kilojoules(9876.0), 41.32118, 0.01;
-    end
-
-    test "Convert known Calories to Kilocalories" do
-        assert_in_delta PutridParrot.Units.Calories.to_kilocalories(900.0), 0.9, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_kilocalories(1782.0), 1.782, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_kilocalories(900800.0), 900.8, 0.01;
-    end
-
-    test "Convert known Calories to Joules" do
-        assert_in_delta PutridParrot.Units.Calories.to_joules(98.0), 410.032, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_joules(1.67), 6.98728, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_joules(55.0), 230.12, 0.01;
-    end
-
-    test "Convert known Calories to Btu" do
-        assert_in_delta PutridParrot.Units.Calories.to_btu(550.0), 2.18112, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_btu(1234.0), 4.893633, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_btu(900.9), 3.5726692, 0.01;
-    end
-
-    test "Convert known Calories to US Therms" do
-        assert_in_delta PutridParrot.Units.Calories.to_ustherms(9000000.0), 0.356995242, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_ustherms(12.0e6), 0.475993657, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_ustherms(100200300.0), 3.974558932, 0.01;
-    end
-
-    test "Convert known Calories to Watt Hours" do
-        assert_in_delta PutridParrot.Units.Calories.to_watthours(600.0), 0.697333, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_watthours(1234.5), 1.43476333, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_watthours(88.7), 0.1030891, 0.01;
-    end
-
-    test "Convert known Calories to Kilowatt Hours" do
-        assert_in_delta PutridParrot.Units.Calories.to_kilowatthours(100900.0), 0.117268222, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_kilowatthours(987654.0), 1.14787343, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_kilowatthours(506012.0), 0.588098391, 0.01;
-    end
-
-    test "Convert known Calories to Foot Pounds" do
-        assert_in_delta PutridParrot.Units.Calories.to_footpounds(123.0), 379.573, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_footpounds(9.01), 27.8045, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_footpounds(2.8), 8.64069, 0.01;
-    end
-
-    test "Convert known Calories to Electronvolts" do
-        assert_in_delta PutridParrot.Units.Calories.to_electronvolts(0.0000091), 237800626261534.66, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_electronvolts(0.0008), 20905549561453600.0, 0.01;
-        assert_in_delta PutridParrot.Units.Calories.to_electronvolts(0.00123), 32142282450734908.0, 0.01;
-    end
-
-    test "Convert known Electronvolts to Kilojoules" do
-        assert_in_delta PutridParrot.Units.Electronvolts.to_kilojoules(123456789.0), 1.9779957413e-14, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_kilojoules(900900900.0), 1.4434023094e-13, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_kilojoules(123456789123456789.0), 1.977995743237493669e-5, 0.01;
-    end
-
-    test "Convert known Electronvolts to Kilocalories" do
-        assert_in_delta PutridParrot.Units.Electronvolts.to_kilocalories(100200300400.0), 1.6053857310684e-11, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_kilocalories(123456789.0), 1.9779957413e-14, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_kilocalories(900800700600.0), 1.4432417722369e-10, 0.01;
-    end
-
-    test "Convert known Electronvolts to Joules" do
-        assert_in_delta PutridParrot.Units.Electronvolts.to_joules(123456789123.0), 1.9779957432302e-8, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_joules(900800700600.0), 1.4432417722369e-7, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_joules(999888777666.0), 1.601998367183e-7, 0.01;
-    end
-
-    test "Convert known Electronvolts to Btu" do
-        assert_in_delta PutridParrot.Units.Electronvolts.to_btu(100020003000100020003000.0), 15.188741377060267723, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_btu(999888777666999888777666.0), 151.84014791315084381, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_btu(12345678912341234567891234.0), 1874.7782293466862029, 0.01;
-    end
-
-    test "Convert known Electronvolts to Calories" do
-        assert_in_delta PutridParrot.Units.Electronvolts.to_calories(666333111999.0), 2.5515853167503e-8, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_calories(999888777666555.0), 3.8288679904011702e-5, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_calories(12345678901234.0), 4.727523282641506e-7, 0.01;
-    end
-
-    test "Convert known Electronvolts to US Therms" do
-        assert_in_delta PutridParrot.Units.Electronvolts.to_ustherms(666333111999.0), 1.0118737258101e-10, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_ustherms(999888777666555.0), 1.5184014791308327e-7, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_ustherms(12345678901234.0), 1.874778227659974e-9, 0.01;
-    end
-
-    test "Convert known Electronvolts to Watt Hours" do
-        assert_in_delta PutridParrot.Units.Electronvolts.to_watthours(100900700100.0), 4.490576030342e-12, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_watthours(9000800070006000.0), 4.00579748289276988e-7, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_watthours(12345678987654321.0), 5.494432653620188248e-7, 0.01;
-    end
-
-    test "Convert known Electronvolts to Kilowatt Hours" do
-        assert_in_delta PutridParrot.Units.Electronvolts.to_kilowatthours(100900700100.0), 4.490576030342e-15, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_kilowatthours(999988887777.0), 4.4504410034909e-14, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_kilowatthours(12345678987654321.0), 5.494432653620187834e-10, 0.01;
-    end
-
-    test "Convert known Electronvolts to Foot Pounds" do
-        assert_in_delta PutridParrot.Units.Electronvolts.to_footpounds(100900700100.0), 1.1923484070355e-8, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_footpounds(999988887777.0), 1.1816916594359e-7, 0.01;
-        assert_in_delta PutridParrot.Units.Electronvolts.to_footpounds(12345678987654321.0), 0.0014588948005427860004, 0.01;
-    end
-
-    test "Convert known Foot Pounds to Kilojoules" do
-        assert_in_delta PutridParrot.Units.FootPounds.to_kilojoules(190.0), 0.257605, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_kilojoules(4.6), 0.00623676, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_kilojoules(123.8), 0.16785026, 0.01;
-    end
-
-    test "Convert known Foot Pounds to Kilocalories" do
-        assert_in_delta PutridParrot.Units.FootPounds.to_kilocalories(1999.0), 0.6477725, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_kilocalories(890.8), 0.2886622, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_kilocalories(12000.0), 3.8885792, 0.01;
-    end
-
-    test "Convert known Foot Pounds to Joules" do
-        assert_in_delta PutridParrot.Units.FootPounds.to_joules(190.0), 257.605, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_joules(23.4), 31.72614, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_joules(9.2), 12.4735, 0.01;
-    end
-
-    test "Convert known Foot Pounds to Btu" do
-        assert_in_delta PutridParrot.Units.FootPounds.to_btu(9000.0), 11.56561, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_btu(45.6), 0.05859908, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_btu(1996.0), 2.564995, 0.01;
-    end
-
-    test "Convert known Foot Pounds to Calories" do
-        assert_in_delta PutridParrot.Units.FootPounds.to_calories(123.0), 39.8579, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_calories(54.7), 17.72544, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_calories(109.2), 35.386071, 0.01;
-    end
-
-    test "Convert known Foot Pounds to US Therms" do
-        assert_in_delta PutridParrot.Units.FootPounds.to_ustherms(19000000.0), 0.24422111613, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_ustherms(1234567.0), 0.01586880688, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_ustherms(100200300.0), 1.28794890016, 0.01;
-    end
-
-    test "Convert known Foot Pounds to Watt Hours" do
-        assert_in_delta PutridParrot.Units.FootPounds.to_watthours(44.0), 0.0165711, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_watthours(9080.0), 3.419674, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_watthours(1200.0), 0.4519393, 0.01;
-    end
-
-    test "Convert known Foot Pounds to Kilowatt Hours" do
-        assert_in_delta PutridParrot.Units.FootPounds.to_kilowatthours(900000.0), 0.338954487, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_kilowatthours(100200.0), 0.0377369329, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_kilowatthours(9876543.0), 3.719665074, 0.01;
-    end
-
-    test "Convert known Foot Pounds to Electronvolts" do
-        assert_in_delta PutridParrot.Units.FootPounds.to_electronvolts(0.00123), 10408691651641586.0, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_electronvolts(0.0009), 7616115842664575.0, 0.01;
-        assert_in_delta PutridParrot.Units.FootPounds.to_electronvolts(0.00000888), 75145676314290.469, 0.01;
-    end
-
-    test "Convert known Joules to Kilojoules" do
-        assert_in_delta PutridParrot.Units.Joules.to_kilojoules(790.0), 0.79, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_kilojoules(800100.0), 800.1, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_kilojoules(509.2), 0.5092, 0.01;
-    end
-
-    test "Convert known Joules to Kilocalories" do
-        assert_in_delta PutridParrot.Units.Joules.to_kilocalories(790.0), 0.188815, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_kilocalories(125.9), 0.030090822, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_kilocalories(8000.0), 1.912046, 0.01;
-    end
-
-    test "Convert known Joules to Btu" do
-        assert_in_delta PutridParrot.Units.Joules.to_btu(500.0), 0.473909, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_btu(1910.0), 1.810331, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_btu(67000.1), 63.50384184, 0.01;
-    end
-
-    test "Convert known Joules to Calories" do
-        assert_in_delta PutridParrot.Units.Joules.to_calories(67.0), 16.0134, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_calories(909.0), 217.256, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_calories(190.0), 45.4111, 0.01;
-    end
-
-    test "Convert known Joules to US Therms" do
-        assert_in_delta PutridParrot.Units.Joules.to_ustherms(100090000.0), 0.948896667059, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_ustherms(55.7e6), 0.52806018938, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_ustherms(1234567890.0), 11.70423974501, 0.01;
-    end
-
-    test "Convert known Joules to Watt Hours" do
-        assert_in_delta PutridParrot.Units.Joules.to_watthours(56000.0), 15.555556, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_watthours(890.0), 0.247222, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_watthours(22001.0), 6.1113889, 0.01;
-    end
-
-    test "Convert known Joules to Kilowatt Hours" do
-        assert_in_delta PutridParrot.Units.Joules.to_kilowatthours(560000.8), 0.1555557, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_kilowatthours(1234567.0), 0.3429352778, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_kilowatthours(900100.0), 0.250027778, 0.01;
-    end
-
-    test "Convert known Joules to Foot Pounds" do
-        assert_in_delta PutridParrot.Units.Joules.to_footpounds(900.0), 663.806, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_footpounds(10.2), 7.523134, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_footpounds(6.7), 4.94167, 0.01;
-    end
-
-    test "Convert known Joules to Electronvolts" do
-        assert_in_delta PutridParrot.Units.Joules.to_electronvolts(0.00000888), 55424602968504.0, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_electronvolts(0.00001234), 77020225296322.0, 0.01;
-        assert_in_delta PutridParrot.Units.Joules.to_electronvolts(0.00000666), 41568452226378.0, 0.01;
-    end
-
-    test "Convert known Kilocalories to Kilojoules" do
-        assert_in_delta PutridParrot.Units.Kilocalories.to_kilojoules(67.0), 280.328, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_kilojoules(4.5), 18.828, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_kilojoules(100.3), 419.6552, 0.01;
-    end
-
-    test "Convert known Kilocalories to Joules" do
-        assert_in_delta PutridParrot.Units.Kilocalories.to_joules(100.3), 419655.2, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_joules(0.9), 3765.6, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_joules(3.4), 14225.6, 0.01;
-    end
-
-    test "Convert known Kilocalories to Btu" do
-        assert_in_delta PutridParrot.Units.Kilocalories.to_btu(3.4), 13.4833, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_btu(109.0), 432.2576846216055, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_btu(22.89), 90.77411377053717, 0.01;
-    end
-
-    test "Convert known Kilocalories to Calories" do
-        assert_in_delta PutridParrot.Units.Kilocalories.to_calories(22.8), 22800.0, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_calories(76.23), 76230.0, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_calories(0.07), 70.0, 0.01;
-    end
-
-    test "Convert known Kilocalories to US Therms" do
-        assert_in_delta PutridParrot.Units.Kilocalories.to_ustherms(12345.0), 0.4896388, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_ustherms(90002.0), 3.5700317, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_ustherms(180180.0), 7.14704457, 0.01;
-    end
-
-    test "Convert known Kilocalories to Watt Hours" do
-        assert_in_delta PutridParrot.Units.Kilocalories.to_watthours(89.0), 103.438, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_watthours(23.6), 27.42844, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_watthours(0.9), 1.046, 0.01;
-    end
-
-    test "Convert known Kilocalories to Kilowatt Hours" do
-        assert_in_delta PutridParrot.Units.Kilocalories.to_kilowatthours(456.0), 0.529973, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_kilowatthours(1090.8), 1.267752, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_kilowatthours(567.1), 0.65909622, 0.01;
-    end
-
-    test "Convert known Kilocalories to Foot Pounds" do
-        assert_in_delta PutridParrot.Units.Kilocalories.to_footpounds(109.0), 336369.64, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_footpounds(0.5), 1542.98, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_footpounds(2.4), 7406.3, 0.01;
-    end
-
-    test "Convert known Kilocalories to Electronvolts" do
-        assert_in_delta PutridParrot.Units.Kilocalories.to_electronvolts(0.0000000666), 1740388069688132.2, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_electronvolts(0.000002), 52263905996640608.0, 0.01;
-        assert_in_delta PutridParrot.Units.Kilocalories.to_electronvolts(0.000000999), 26105821045321988.0, 0.01;
-    end
-
-    test "Convert known Kilojoules to Kilocalories" do
-        assert_in_delta PutridParrot.Units.Kilojoules.to_kilocalories(199.0), 47.5621, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_kilocalories(0.67), 0.1601338, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_kilocalories(4.7), 1.12333, 0.01;
-    end
-
-    test "Convert known Kilojoules to Joules" do
-        assert_in_delta PutridParrot.Units.Kilojoules.to_joules(4.7), 4700.0, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_joules(7.8), 7800.0, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_joules(1800.0), 1800000.0, 0.01;
-    end
-
-    test "Convert known Kilojoules to Btu" do
-        assert_in_delta PutridParrot.Units.Kilojoules.to_btu(1800.0), 1706.070, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_btu(1.4), 1.32694, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_btu(89.2), 84.54529, 0.01;
-    end
-
-    test "Convert known Kilojoules to Calories" do
-        assert_in_delta PutridParrot.Units.Kilojoules.to_calories(67.0), 16013.381899, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_calories(1.4), 334.608, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_calories(87.0), 20793.5, 0.01;
-    end
-
-    test "Convert known Kilojoules to US Therms" do
-        assert_in_delta PutridParrot.Units.Kilojoules.to_ustherms(123456.0), 1.17041649, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_ustherms(88000.0), 0.83427822, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_ustherms(9000.0), 0.08532391, 0.01;
-    end
-
-    test "Convert known Kilojoules to Watt Hours" do
-        assert_in_delta PutridParrot.Units.Kilojoules.to_watthours(98000.0), 27222.222, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_watthours(1.5), 0.416667, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_watthours(67.9), 18.86111, 0.01;
-    end
-
-    test "Convert known Kilojoules to Kilowatt Hours" do
-        assert_in_delta PutridParrot.Units.Kilojoules.to_kilowatthours(8000.0), 2.222222, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_kilowatthours(67.99), 0.018886111, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_kilowatthours(406.8), 0.113, 0.01;
-    end
-
-    test "Convert known Kilojoules to Foot Pounds" do
-        assert_in_delta PutridParrot.Units.Kilojoules.to_footpounds(100.9), 74420.00579, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_footpounds(2.4), 1770.15, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_footpounds(0.9), 663.806, 0.01;
-    end
-
-    test "Convert known Kilojoules to Electronvolts" do
-        assert_in_delta PutridParrot.Units.Kilojoules.to_electronvolts(0.000000999), 6235268234766989.0, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_electronvolts(0.0000002), 1248301948902300.0, 0.01;
-        assert_in_delta PutridParrot.Units.Kilojoules.to_electronvolts(0.00567), 3.5389360251380204E+19, 0.01;
-    end
-
-    test "Convert known Kilowatt Hours to Kilojoules" do
-        assert_in_delta PutridParrot.Units.KilowattHours.to_kilojoules(0.6), 2160.0, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_kilojoules(134.0), 482400.0, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_kilojoules(45.6), 164160.0, 0.01;
-    end
-
-    test "Convert known Kilowatt Hours to Kilocalories" do
-        assert_in_delta PutridParrot.Units.KilowattHours.to_kilocalories(45.6), 39235.1976, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_kilocalories(12.0), 10325.052, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_kilocalories(0.4), 344.168, 0.01;
-    end
-
-    test "Convert known Kilowatt Hours to Joules" do
-        assert_in_delta PutridParrot.Units.KilowattHours.to_joules(0.01), 36000.0, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_joules(0.009), 32400.0, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_joules(2.0), 7.2e+6, 0.01;
-    end
-
-    test "Convert known Kilowatt Hours to Btu" do
-        assert_in_delta PutridParrot.Units.KilowattHours.to_btu(2.0), 6824.28, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_btu(0.7), 2388.4979, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_btu(0.02), 68.24283, 0.01;
-    end
-
-    test "Convert known Kilowatt Hours to Calories" do
-        assert_in_delta PutridParrot.Units.KilowattHours.to_calories(0.1), 86042.1, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_calories(0.07), 60229.47, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_calories(0.0123), 10583.174, 0.01;
-    end
-
-    test "Convert known Kilowatt Hours to US Therms" do
-        assert_in_delta PutridParrot.Units.KilowattHours.to_ustherms(5.0), 0.170648, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_ustherms(234.0), 7.98632, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_ustherms(1001.0), 34.16369, 0.01;
-    end
-
-    test "Convert known Kilowatt Hours to Watt Hours" do
-        assert_in_delta PutridParrot.Units.KilowattHours.to_watthours(123.0), 123000.0, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_watthours(98.4), 98400.0, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_watthours(1.6), 1600.0, 0.01;
-    end
-
-    test "Convert known Kilowatt Hours to Foot Pounds" do
-        assert_in_delta PutridParrot.Units.KilowattHours.to_footpounds(0.001), 2655.196219, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_footpounds(0.09), 238967.6597, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_footpounds(0.0006), 1593.1177314, 0.01;
-    end
-
-    test "Convert known Kilowatt Hours to Electronvolts" do
-        assert_in_delta PutridParrot.Units.KilowattHours.to_electronvolts(0.000008), 179755440000000000000.0, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_electronvolts(0.0000000128), 2.8760870400000003E+17, 0.01;
-        assert_in_delta PutridParrot.Units.KilowattHours.to_electronvolts(0.0000000001), 2246943000000000.2, 0.01;
-    end
-
-    test "Convert known US Therms to Kilojoules" do
-        assert_in_delta PutridParrot.Units.USTherms.to_kilojoules(0.009), 949.3236, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_kilojoules(3.0), 316440.12, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_kilojoules(1.9), 200412.075, 0.01;
-    end
-
-    test "Convert known US Therms to Kilocalories" do
-        assert_in_delta PutridParrot.Units.USTherms.to_kilocalories(1.1), 27731.484079398004, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_kilocalories(0.04), 1008.417, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_kilocalories(0.0123), 310.088174, 0.01;
-    end
-
-    test "Convert known US Therms to Joules" do
-        assert_in_delta PutridParrot.Units.USTherms.to_joules(0.008), 843843.2, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_joules(3.4e-6), 358.633, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_joules(0.00678), 715157.112, 0.01;
-    end
-
-    test "Convert known US Therms to Btu" do
-        assert_in_delta PutridParrot.Units.USTherms.to_btu(0.00666), 665.8409891, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_btu(2.0), 199952.249, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_btu(0.9), 89978.51204, 0.01;
-    end
-
-    test "Convert known US Therms to Calories" do
-        assert_in_delta PutridParrot.Units.USTherms.to_calories(0.003), 75631.262, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_calories(6.8e-3), 171430.856, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_calories(0.0008), 20168.3365, 0.01;
-    end
-
-    test "Convert known US Therms to Watt Hours" do
-        assert_in_delta PutridParrot.Units.USTherms.to_watthours(6.0), 175800.59, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_watthours(1.9), 55670.189, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_watthours(0.07), 2051.008, 0.01;
-    end
-
-    test "Convert known US Therms to Kilowatt Hours" do
-        assert_in_delta PutridParrot.Units.USTherms.to_kilowatthours(0.9), 26.3701, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_kilowatthours(7.9), 231.471, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_kilowatthours(1.4), 41.0202, 0.01;
-    end
-
-    test "Convert known US Therms to Foot Pounds" do
-        assert_in_delta PutridParrot.Units.USTherms.to_footpounds(0.009), 700352.43389267, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_footpounds(0.02), 1556338.74198, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_footpounds(0.0003), 23345.081129, 0.01;
-    end
-
-    test "Convert known US Therms to Electronvolts" do
-        assert_in_delta PutridParrot.Units.USTherms.to_electronvolts(0.0000009), 592520940098199000000.0, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_electronvolts(0.000000001339), 8.815394875460983E+17, 0.01;
-        assert_in_delta PutridParrot.Units.USTherms.to_electronvolts(0.0000000000666), 43846549567266728.0, 0.01;
-    end
-
-    test "Convert known Watt Hours to Kilojoules" do
-        assert_in_delta PutridParrot.Units.WattHours.to_kilojoules(1.6), 5.76, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_kilojoules(67.0), 241.2, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_kilojoules(8.12), 29.232, 0.01;
-    end
-
-    test "Convert known Watt Hours to Kilocalories" do
-        assert_in_delta PutridParrot.Units.WattHours.to_kilocalories(8.12), 6.986616, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_kilocalories(170.0), 146.272, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_kilocalories(19.2), 16.52008, 0.01;
-    end
-
-    test "Convert known Watt Hours to Joules" do
-        assert_in_delta PutridParrot.Units.WattHours.to_joules(6.7), 24120.0, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_joules(12.34), 44424.0, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_joules(0.09), 324.0, 0.01;
-    end
-
-    test "Convert known Watt Hours to Btu" do
-        assert_in_delta PutridParrot.Units.WattHours.to_btu(34.0), 116.013, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_btu(179.2), 611.45578, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_btu(0.9), 3.07093, 0.01;
-    end
-
-    test "Convert known Watt Hours to Calories" do
-        assert_in_delta PutridParrot.Units.WattHours.to_calories(0.2), 172.084, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_calories(0.09), 77.43786, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_calories(12.0), 10325.06754, 0.01;
-    end
-
-    test "Convert known Watt Hours to US Therms" do
-        assert_in_delta PutridParrot.Units.WattHours.to_ustherms(1090.0), 0.03720122, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_ustherms(49990.0), 1.7061369, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_ustherms(900800.0), 30.7439107, 0.01;
-    end
-
-    test "Convert known Watt Hours to Kilowatt Hours" do
-        assert_in_delta PutridParrot.Units.WattHours.to_kilowatthours(98.0), 0.098, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_kilowatthours(12.5), 0.0125, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_kilowatthours(0.6), 0.0006, 0.01;
-    end
-
-    test "Convert known Watt Hours to Foot Pounds" do
-        assert_in_delta PutridParrot.Units.WattHours.to_footpounds(1.5), 3982.829, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_footpounds(0.3), 796.567, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_footpounds(90.1), 239235.3219, 0.01;
-    end
-
-    test "Convert known Watt Hours to Electronvolts" do
-        assert_in_delta PutridParrot.Units.WattHours.to_electronvolts(0.0000000000666), 1496463565615.39, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_electronvolts(0.000000008), 179755383257104.03, 0.01;
-        assert_in_delta PutridParrot.Units.WattHours.to_electronvolts(0.0000123), 2.7637390175779744E+17, 0.01;
-    end
-
+  use ExUnit.Case
+
+  test "Convert known Btu to Kilojoules" do
+    assert_in_delta PutridParrot.Units.Btu.to_kilojoules(100.0), 105.506, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_kilojoules(987.65), 1042.03, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_kilojoules(555_666.0), 586_258.6917293, 0.01
+  end
+
+  test "Convert known Btu to Kilocalories" do
+    assert_in_delta PutridParrot.Units.Btu.to_kilocalories(67.9), 17.12196, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_kilocalories(109.9), 27.712867639325825, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_kilocalories(5000.0), 1260.8220036090, 0.01
+  end
+
+  test "Convert known Btu to Joules" do
+    assert_in_delta PutridParrot.Units.Btu.to_joules(5.0), 5275.3, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_joules(912.9), 963_164.274, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_joules(109.0), 115_001.54, 0.01
+  end
+
+  test "Convert known Btu to Calories" do
+    assert_in_delta PutridParrot.Units.Btu.to_calories(56.0), 14121.20644042079, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_calories(123.0), 31016.221288781402, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_calories(0.9), 226.9476, 0.01
+  end
+
+  test "Convert known Btu to US Therms" do
+    assert_in_delta PutridParrot.Units.Btu.to_u_s_therms(12000.0), 0.120028657, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_u_s_therms(9876.5), 0.098788586, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_u_s_therms(666.999), 0.006671583, 0.01
+  end
+
+  test "Convert known Btu to Watt Hours" do
+    assert_in_delta PutridParrot.Units.Btu.to_watt_hours(900.0), 263.764, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_watt_hours(125.7), 36.839034, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_watt_hours(0.99), 0.2901404, 0.01
+  end
+
+  test "Convert known Btu to Kilowatt Hours" do
+    assert_in_delta PutridParrot.Units.Btu.to_kilowatt_hours(9000.0), 2.63764, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_kilowatt_hours(12345.0), 3.6179624, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_kilowatt_hours(8090.8), 2.37117941, 0.01
+  end
+
+  test "Convert known Btu to Foot Pounds" do
+    assert_in_delta PutridParrot.Units.Btu.to_foot_pounds(189.0), 147_073.9409, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_foot_pounds(0.3), 233.451, 0.01
+    assert_in_delta PutridParrot.Units.Btu.to_foot_pounds(2.6), 2023.24, 0.01
+  end
+
+  test "Convert known Btu to Electronvolts" do
+    assert_in_delta PutridParrot.Units.Btu.to_electronvolts(0.0000000789),
+                    519_567_655_294_184.88,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Btu.to_electronvolts(0.000001002),
+                    6_598_311_667_994_592.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Btu.to_electronvolts(0.000000001),
+                    6_585_141_385_224.14,
+                    0.01
+  end
+
+  test "Convert known Calories to Kilojoules" do
+    assert_in_delta PutridParrot.Units.Calories.to_kilojoules(109.0), 0.456056, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_kilojoules(12.3), 0.0514632, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_kilojoules(9876.0), 41.32118, 0.01
+  end
+
+  test "Convert known Calories to Kilocalories" do
+    assert_in_delta PutridParrot.Units.Calories.to_kilocalories(900.0), 0.9, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_kilocalories(1782.0), 1.782, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_kilocalories(900_800.0), 900.8, 0.01
+  end
+
+  test "Convert known Calories to Joules" do
+    assert_in_delta PutridParrot.Units.Calories.to_joules(98.0), 410.032, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_joules(1.67), 6.98728, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_joules(55.0), 230.12, 0.01
+  end
+
+  test "Convert known Calories to Btu" do
+    assert_in_delta PutridParrot.Units.Calories.to_btu(550.0), 2.18112, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_btu(1234.0), 4.893633, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_btu(900.9), 3.5726692, 0.01
+  end
+
+  test "Convert known Calories to US Therms" do
+    assert_in_delta PutridParrot.Units.Calories.to_u_s_therms(9_000_000.0), 0.356995242, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_u_s_therms(12.0e6), 0.475993657, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_u_s_therms(100_200_300.0), 3.974558932, 0.01
+  end
+
+  test "Convert known Calories to Watt Hours" do
+    assert_in_delta PutridParrot.Units.Calories.to_watt_hours(600.0), 0.697333, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_watt_hours(1234.5), 1.43476333, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_watt_hours(88.7), 0.1030891, 0.01
+  end
+
+  test "Convert known Calories to Kilowatt Hours" do
+    assert_in_delta PutridParrot.Units.Calories.to_kilowatt_hours(100_900.0), 0.117268222, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_kilowatt_hours(987_654.0), 1.14787343, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_kilowatt_hours(506_012.0), 0.588098391, 0.01
+  end
+
+  test "Convert known Calories to Foot Pounds" do
+    assert_in_delta PutridParrot.Units.Calories.to_foot_pounds(123.0), 379.573, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_foot_pounds(9.01), 27.8045, 0.01
+    assert_in_delta PutridParrot.Units.Calories.to_foot_pounds(2.8), 8.64069, 0.01
+  end
+
+  test "Convert known Calories to Electronvolts" do
+    assert_in_delta PutridParrot.Units.Calories.to_electronvolts(0.0000091),
+                    237_800_626_261_534.66,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Calories.to_electronvolts(0.0008),
+                    20_905_549_561_453_600.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Calories.to_electronvolts(0.00123),
+                    32_142_282_450_734_908.0,
+                    0.01
+  end
+
+  test "Convert known Electronvolts to Kilojoules" do
+    assert_in_delta PutridParrot.Units.Electronvolts.to_kilojoules(123_456_789.0),
+                    1.9779957413e-14,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_kilojoules(900_900_900.0),
+                    1.4434023094e-13,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_kilojoules(123_456_789_123_456_789.0),
+                    1.977995743237493669e-5,
+                    0.01
+  end
+
+  test "Convert known Electronvolts to Kilocalories" do
+    assert_in_delta PutridParrot.Units.Electronvolts.to_kilocalories(100_200_300_400.0),
+                    1.6053857310684e-11,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_kilocalories(123_456_789.0),
+                    1.9779957413e-14,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_kilocalories(900_800_700_600.0),
+                    1.4432417722369e-10,
+                    0.01
+  end
+
+  test "Convert known Electronvolts to Joules" do
+    assert_in_delta PutridParrot.Units.Electronvolts.to_joules(123_456_789_123.0),
+                    1.9779957432302e-8,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_joules(900_800_700_600.0),
+                    1.4432417722369e-7,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_joules(999_888_777_666.0),
+                    1.601998367183e-7,
+                    0.01
+  end
+
+  test "Convert known Electronvolts to Btu" do
+    assert_in_delta PutridParrot.Units.Electronvolts.to_btu(100_020_003_000_100_020_003_000.0),
+                    15.188741377060267723,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_btu(999_888_777_666_999_888_777_666.0),
+                    151.84014791315084381,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_btu(12_345_678_912_341_234_567_891_234.0),
+                    1874.7782293466862029,
+                    0.01
+  end
+
+  test "Convert known Electronvolts to Calories" do
+    assert_in_delta PutridParrot.Units.Electronvolts.to_calories(666_333_111_999.0),
+                    2.5515853167503e-8,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_calories(999_888_777_666_555.0),
+                    3.8288679904011702e-5,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_calories(12_345_678_901_234.0),
+                    4.727523282641506e-7,
+                    0.01
+  end
+
+  test "Convert known Electronvolts to US Therms" do
+    assert_in_delta PutridParrot.Units.Electronvolts.to_u_s_therms(666_333_111_999.0),
+                    1.0118737258101e-10,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_u_s_therms(999_888_777_666_555.0),
+                    1.5184014791308327e-7,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_u_s_therms(12_345_678_901_234.0),
+                    1.874778227659974e-9,
+                    0.01
+  end
+
+  test "Convert known Electronvolts to Watt Hours" do
+    assert_in_delta PutridParrot.Units.Electronvolts.to_watt_hours(100_900_700_100.0),
+                    4.490576030342e-12,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_watt_hours(9_000_800_070_006_000.0),
+                    4.00579748289276988e-7,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_watt_hours(12_345_678_987_654_321.0),
+                    5.494432653620188248e-7,
+                    0.01
+  end
+
+  test "Convert known Electronvolts to Kilowatt Hours" do
+    assert_in_delta PutridParrot.Units.Electronvolts.to_kilowatt_hours(100_900_700_100.0),
+                    4.490576030342e-15,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_kilowatt_hours(999_988_887_777.0),
+                    4.4504410034909e-14,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_kilowatt_hours(12_345_678_987_654_321.0),
+                    5.494432653620187834e-10,
+                    0.01
+  end
+
+  test "Convert known Electronvolts to Foot Pounds" do
+    assert_in_delta PutridParrot.Units.Electronvolts.to_foot_pounds(100_900_700_100.0),
+                    1.1923484070355e-8,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_foot_pounds(999_988_887_777.0),
+                    1.1816916594359e-7,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Electronvolts.to_foot_pounds(12_345_678_987_654_321.0),
+                    0.0014588948005427860004,
+                    0.01
+  end
+
+  test "Convert known Foot Pounds to Kilojoules" do
+    assert_in_delta PutridParrot.Units.FootPounds.to_kilojoules(190.0), 0.257605, 0.01
+    assert_in_delta PutridParrot.Units.FootPounds.to_kilojoules(4.6), 0.00623676, 0.01
+    assert_in_delta PutridParrot.Units.FootPounds.to_kilojoules(123.8), 0.16785026, 0.01
+  end
+
+  test "Convert known Foot Pounds to Kilocalories" do
+    assert_in_delta PutridParrot.Units.FootPounds.to_kilocalories(1999.0), 0.6477725, 0.01
+    assert_in_delta PutridParrot.Units.FootPounds.to_kilocalories(890.8), 0.2886622, 0.01
+    assert_in_delta PutridParrot.Units.FootPounds.to_kilocalories(12000.0), 3.8885792, 0.01
+  end
+
+  test "Convert known Foot Pounds to Joules" do
+    assert_in_delta PutridParrot.Units.FootPounds.to_joules(190.0), 257.605, 0.01
+    assert_in_delta PutridParrot.Units.FootPounds.to_joules(23.4), 31.72614, 0.01
+    assert_in_delta PutridParrot.Units.FootPounds.to_joules(9.2), 12.4735, 0.01
+  end
+
+  test "Convert known Foot Pounds to Btu" do
+    assert_in_delta PutridParrot.Units.FootPounds.to_btu(9000.0), 11.56561, 0.01
+    assert_in_delta PutridParrot.Units.FootPounds.to_btu(45.6), 0.05859908, 0.01
+    assert_in_delta PutridParrot.Units.FootPounds.to_btu(1996.0), 2.564995, 0.01
+  end
+
+  test "Convert known Foot Pounds to Calories" do
+    assert_in_delta PutridParrot.Units.FootPounds.to_calories(123.0), 39.8579, 0.01
+    assert_in_delta PutridParrot.Units.FootPounds.to_calories(54.7), 17.72544, 0.01
+    assert_in_delta PutridParrot.Units.FootPounds.to_calories(109.2), 35.386071, 0.01
+  end
+
+  test "Convert known Foot Pounds to US Therms" do
+    assert_in_delta PutridParrot.Units.FootPounds.to_u_s_therms(19_000_000.0), 0.24422111613, 0.01
+    assert_in_delta PutridParrot.Units.FootPounds.to_u_s_therms(1_234_567.0), 0.01586880688, 0.01
+
+    assert_in_delta PutridParrot.Units.FootPounds.to_u_s_therms(100_200_300.0),
+                    1.28794890016,
+                    0.01
+  end
+
+  test "Convert known Foot Pounds to Watt Hours" do
+    assert_in_delta PutridParrot.Units.FootPounds.to_watt_hours(44.0), 0.0165711, 0.01
+    assert_in_delta PutridParrot.Units.FootPounds.to_watt_hours(9080.0), 3.419674, 0.01
+    assert_in_delta PutridParrot.Units.FootPounds.to_watt_hours(1200.0), 0.4519393, 0.01
+  end
+
+  test "Convert known Foot Pounds to Kilowatt Hours" do
+    assert_in_delta PutridParrot.Units.FootPounds.to_kilowatt_hours(900_000.0), 0.338954487, 0.01
+    assert_in_delta PutridParrot.Units.FootPounds.to_kilowatt_hours(100_200.0), 0.0377369329, 0.01
+
+    assert_in_delta PutridParrot.Units.FootPounds.to_kilowatt_hours(9_876_543.0),
+                    3.719665074,
+                    0.01
+  end
+
+  test "Convert known Foot Pounds to Electronvolts" do
+    assert_in_delta PutridParrot.Units.FootPounds.to_electronvolts(0.00123),
+                    10_408_691_651_641_586.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.FootPounds.to_electronvolts(0.0009),
+                    7_616_115_842_664_575.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.FootPounds.to_electronvolts(0.00000888),
+                    75_145_676_314_290.469,
+                    0.01
+  end
+
+  test "Convert known Joules to Kilojoules" do
+    assert_in_delta PutridParrot.Units.Joules.to_kilojoules(790.0), 0.79, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_kilojoules(800_100.0), 800.1, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_kilojoules(509.2), 0.5092, 0.01
+  end
+
+  test "Convert known Joules to Kilocalories" do
+    assert_in_delta PutridParrot.Units.Joules.to_kilocalories(790.0), 0.188815, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_kilocalories(125.9), 0.030090822, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_kilocalories(8000.0), 1.912046, 0.01
+  end
+
+  test "Convert known Joules to Btu" do
+    assert_in_delta PutridParrot.Units.Joules.to_btu(500.0), 0.473909, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_btu(1910.0), 1.810331, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_btu(67000.1), 63.50384184, 0.01
+  end
+
+  test "Convert known Joules to Calories" do
+    assert_in_delta PutridParrot.Units.Joules.to_calories(67.0), 16.0134, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_calories(909.0), 217.256, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_calories(190.0), 45.4111, 0.01
+  end
+
+  test "Convert known Joules to US Therms" do
+    assert_in_delta PutridParrot.Units.Joules.to_u_s_therms(100_090_000.0), 0.948896667059, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_u_s_therms(55.7e6), 0.52806018938, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_u_s_therms(1_234_567_890.0), 11.70423974501, 0.01
+  end
+
+  test "Convert known Joules to Watt Hours" do
+    assert_in_delta PutridParrot.Units.Joules.to_watt_hours(56000.0), 15.555556, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_watt_hours(890.0), 0.247222, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_watt_hours(22001.0), 6.1113889, 0.01
+  end
+
+  test "Convert known Joules to Kilowatt Hours" do
+    assert_in_delta PutridParrot.Units.Joules.to_kilowatt_hours(560_000.8), 0.1555557, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_kilowatt_hours(1_234_567.0), 0.3429352778, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_kilowatt_hours(900_100.0), 0.250027778, 0.01
+  end
+
+  test "Convert known Joules to Foot Pounds" do
+    assert_in_delta PutridParrot.Units.Joules.to_foot_pounds(900.0), 663.806, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_foot_pounds(10.2), 7.523134, 0.01
+    assert_in_delta PutridParrot.Units.Joules.to_foot_pounds(6.7), 4.94167, 0.01
+  end
+
+  test "Convert known Joules to Electronvolts" do
+    assert_in_delta PutridParrot.Units.Joules.to_electronvolts(0.00000888),
+                    55_424_602_968_504.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Joules.to_electronvolts(0.00001234),
+                    77_020_225_296_322.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Joules.to_electronvolts(0.00000666),
+                    41_568_452_226_378.0,
+                    0.01
+  end
+
+  test "Convert known Kilocalories to Kilojoules" do
+    assert_in_delta PutridParrot.Units.Kilocalories.to_kilojoules(67.0), 280.328, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_kilojoules(4.5), 18.828, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_kilojoules(100.3), 419.6552, 0.01
+  end
+
+  test "Convert known Kilocalories to Joules" do
+    assert_in_delta PutridParrot.Units.Kilocalories.to_joules(100.3), 419_655.2, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_joules(0.9), 3765.6, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_joules(3.4), 14225.6, 0.01
+  end
+
+  test "Convert known Kilocalories to Btu" do
+    assert_in_delta PutridParrot.Units.Kilocalories.to_btu(3.4), 13.4833, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_btu(109.0), 432.2576846216055, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_btu(22.89), 90.77411377053717, 0.01
+  end
+
+  test "Convert known Kilocalories to Calories" do
+    assert_in_delta PutridParrot.Units.Kilocalories.to_calories(22.8), 22800.0, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_calories(76.23), 76230.0, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_calories(0.07), 70.0, 0.01
+  end
+
+  test "Convert known Kilocalories to US Therms" do
+    assert_in_delta PutridParrot.Units.Kilocalories.to_u_s_therms(12345.0), 0.4896388, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_u_s_therms(90002.0), 3.5700317, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_u_s_therms(180_180.0), 7.14704457, 0.01
+  end
+
+  test "Convert known Kilocalories to Watt Hours" do
+    assert_in_delta PutridParrot.Units.Kilocalories.to_watt_hours(89.0), 103.438, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_watt_hours(23.6), 27.42844, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_watt_hours(0.9), 1.046, 0.01
+  end
+
+  test "Convert known Kilocalories to Kilowatt Hours" do
+    assert_in_delta PutridParrot.Units.Kilocalories.to_kilowatt_hours(456.0), 0.529973, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_kilowatt_hours(1090.8), 1.267752, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_kilowatt_hours(567.1), 0.65909622, 0.01
+  end
+
+  test "Convert known Kilocalories to Foot Pounds" do
+    assert_in_delta PutridParrot.Units.Kilocalories.to_foot_pounds(109.0), 336_369.64, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_foot_pounds(0.5), 1542.98, 0.01
+    assert_in_delta PutridParrot.Units.Kilocalories.to_foot_pounds(2.4), 7406.3, 0.01
+  end
+
+  test "Convert known Kilocalories to Electronvolts" do
+    assert_in_delta PutridParrot.Units.Kilocalories.to_electronvolts(0.0000000666),
+                    1_740_388_069_688_132.2,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Kilocalories.to_electronvolts(0.000002),
+                    52_263_905_996_640_608.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Kilocalories.to_electronvolts(0.000000999),
+                    26_105_821_045_321_988.0,
+                    0.01
+  end
+
+  test "Convert known Kilojoules to Kilocalories" do
+    assert_in_delta PutridParrot.Units.Kilojoules.to_kilocalories(199.0), 47.5621, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_kilocalories(0.67), 0.1601338, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_kilocalories(4.7), 1.12333, 0.01
+  end
+
+  test "Convert known Kilojoules to Joules" do
+    assert_in_delta PutridParrot.Units.Kilojoules.to_joules(4.7), 4700.0, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_joules(7.8), 7800.0, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_joules(1800.0), 1_800_000.0, 0.01
+  end
+
+  test "Convert known Kilojoules to Btu" do
+    assert_in_delta PutridParrot.Units.Kilojoules.to_btu(1800.0), 1706.070, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_btu(1.4), 1.32694, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_btu(89.2), 84.54529, 0.01
+  end
+
+  test "Convert known Kilojoules to Calories" do
+    assert_in_delta PutridParrot.Units.Kilojoules.to_calories(67.0), 16013.381899, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_calories(1.4), 334.608, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_calories(87.0), 20793.5, 0.01
+  end
+
+  test "Convert known Kilojoules to US Therms" do
+    assert_in_delta PutridParrot.Units.Kilojoules.to_u_s_therms(123_456.0), 1.17041649, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_u_s_therms(88000.0), 0.83427822, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_u_s_therms(9000.0), 0.08532391, 0.01
+  end
+
+  test "Convert known Kilojoules to Watt Hours" do
+    assert_in_delta PutridParrot.Units.Kilojoules.to_watt_hours(98000.0), 27222.222, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_watt_hours(1.5), 0.416667, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_watt_hours(67.9), 18.86111, 0.01
+  end
+
+  test "Convert known Kilojoules to Kilowatt Hours" do
+    assert_in_delta PutridParrot.Units.Kilojoules.to_kilowatt_hours(8000.0), 2.222222, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_kilowatt_hours(67.99), 0.018886111, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_kilowatt_hours(406.8), 0.113, 0.01
+  end
+
+  test "Convert known Kilojoules to Foot Pounds" do
+    assert_in_delta PutridParrot.Units.Kilojoules.to_foot_pounds(100.9), 74420.00579, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_foot_pounds(2.4), 1770.15, 0.01
+    assert_in_delta PutridParrot.Units.Kilojoules.to_foot_pounds(0.9), 663.806, 0.01
+  end
+
+  test "Convert known Kilojoules to Electronvolts" do
+    assert_in_delta PutridParrot.Units.Kilojoules.to_electronvolts(0.000000999),
+                    6_235_268_234_766_989.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Kilojoules.to_electronvolts(0.0000002),
+                    1_248_301_948_902_300.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.Kilojoules.to_electronvolts(0.00567),
+                    3.5389360251380204e+19,
+                    0.01
+  end
+
+  test "Convert known Kilowatt Hours to Kilojoules" do
+    assert_in_delta PutridParrot.Units.KilowattHours.to_kilojoules(0.6), 2160.0, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_kilojoules(134.0), 482_400.0, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_kilojoules(45.6), 164_160.0, 0.01
+  end
+
+  test "Convert known Kilowatt Hours to Kilocalories" do
+    assert_in_delta PutridParrot.Units.KilowattHours.to_kilocalories(45.6), 39235.1976, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_kilocalories(12.0), 10325.052, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_kilocalories(0.4), 344.168, 0.01
+  end
+
+  test "Convert known Kilowatt Hours to Joules" do
+    assert_in_delta PutridParrot.Units.KilowattHours.to_joules(0.01), 36000.0, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_joules(0.009), 32400.0, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_joules(2.0), 7.2e+6, 0.01
+  end
+
+  test "Convert known Kilowatt Hours to Btu" do
+    assert_in_delta PutridParrot.Units.KilowattHours.to_btu(2.0), 6824.28, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_btu(0.7), 2388.4979, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_btu(0.02), 68.24283, 0.01
+  end
+
+  test "Convert known Kilowatt Hours to Calories" do
+    assert_in_delta PutridParrot.Units.KilowattHours.to_calories(0.1), 86042.1, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_calories(0.07), 60229.47, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_calories(0.0123), 10583.174, 0.01
+  end
+
+  test "Convert known Kilowatt Hours to US Therms" do
+    assert_in_delta PutridParrot.Units.KilowattHours.to_u_s_therms(5.0), 0.170648, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_u_s_therms(234.0), 7.98632, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_u_s_therms(1001.0), 34.16369, 0.01
+  end
+
+  test "Convert known Kilowatt Hours to Watt Hours" do
+    assert_in_delta PutridParrot.Units.KilowattHours.to_watt_hours(123.0), 123_000.0, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_watt_hours(98.4), 98400.0, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_watt_hours(1.6), 1600.0, 0.01
+  end
+
+  test "Convert known Kilowatt Hours to Foot Pounds" do
+    assert_in_delta PutridParrot.Units.KilowattHours.to_foot_pounds(0.001), 2655.196219, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_foot_pounds(0.09), 238_967.6597, 0.01
+    assert_in_delta PutridParrot.Units.KilowattHours.to_foot_pounds(0.0006), 1593.1177314, 0.01
+  end
+
+  test "Convert known Kilowatt Hours to Electronvolts" do
+    assert_in_delta PutridParrot.Units.KilowattHours.to_electronvolts(0.000008),
+                    179_755_440_000_000_000_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KilowattHours.to_electronvolts(0.0000000128),
+                    2.8760870400000003e+17,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.KilowattHours.to_electronvolts(0.0000000001),
+                    2_246_943_000_000_000.2,
+                    0.01
+  end
+
+  test "Convert known US Therms to Kilojoules" do
+    assert_in_delta PutridParrot.Units.USTherms.to_kilojoules(0.009), 949.3236, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_kilojoules(3.0), 316_440.12, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_kilojoules(1.9), 200_412.075, 0.01
+  end
+
+  test "Convert known US Therms to Kilocalories" do
+    assert_in_delta PutridParrot.Units.USTherms.to_kilocalories(1.1), 27731.484079398004, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_kilocalories(0.04), 1008.417, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_kilocalories(0.0123), 310.088174, 0.01
+  end
+
+  test "Convert known US Therms to Joules" do
+    assert_in_delta PutridParrot.Units.USTherms.to_joules(0.008), 843_843.2, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_joules(3.4e-6), 358.633, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_joules(0.00678), 715_157.112, 0.01
+  end
+
+  test "Convert known US Therms to Btu" do
+    assert_in_delta PutridParrot.Units.USTherms.to_btu(0.00666), 665.8409891, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_btu(2.0), 199_952.249, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_btu(0.9), 89978.51204, 0.01
+  end
+
+  test "Convert known US Therms to Calories" do
+    assert_in_delta PutridParrot.Units.USTherms.to_calories(0.003), 75631.262, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_calories(6.8e-3), 171_430.856, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_calories(0.0008), 20168.3365, 0.01
+  end
+
+  test "Convert known US Therms to Watt Hours" do
+    assert_in_delta PutridParrot.Units.USTherms.to_watt_hours(6.0), 175_800.59, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_watt_hours(1.9), 55670.189, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_watt_hours(0.07), 2051.008, 0.01
+  end
+
+  test "Convert known US Therms to Kilowatt Hours" do
+    assert_in_delta PutridParrot.Units.USTherms.to_kilowatt_hours(0.9), 26.3701, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_kilowatt_hours(7.9), 231.471, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_kilowatt_hours(1.4), 41.0202, 0.01
+  end
+
+  test "Convert known US Therms to Foot Pounds" do
+    assert_in_delta PutridParrot.Units.USTherms.to_foot_pounds(0.009), 700_352.43389267, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_foot_pounds(0.02), 1_556_338.74198, 0.01
+    assert_in_delta PutridParrot.Units.USTherms.to_foot_pounds(0.0003), 23345.081129, 0.01
+  end
+
+  test "Convert known US Therms to Electronvolts" do
+    assert_in_delta PutridParrot.Units.USTherms.to_electronvolts(0.0000009),
+                    592_520_940_098_199_000_000.0,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.USTherms.to_electronvolts(0.000000001339),
+                    8.815394875460983e+17,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.USTherms.to_electronvolts(0.0000000000666),
+                    43_846_549_567_266_728.0,
+                    0.01
+  end
+
+  test "Convert known Watt Hours to Kilojoules" do
+    assert_in_delta PutridParrot.Units.WattHours.to_kilojoules(1.6), 5.76, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_kilojoules(67.0), 241.2, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_kilojoules(8.12), 29.232, 0.01
+  end
+
+  test "Convert known Watt Hours to Kilocalories" do
+    assert_in_delta PutridParrot.Units.WattHours.to_kilocalories(8.12), 6.986616, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_kilocalories(170.0), 146.272, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_kilocalories(19.2), 16.52008, 0.01
+  end
+
+  test "Convert known Watt Hours to Joules" do
+    assert_in_delta PutridParrot.Units.WattHours.to_joules(6.7), 24120.0, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_joules(12.34), 44424.0, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_joules(0.09), 324.0, 0.01
+  end
+
+  test "Convert known Watt Hours to Btu" do
+    assert_in_delta PutridParrot.Units.WattHours.to_btu(34.0), 116.013, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_btu(179.2), 611.45578, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_btu(0.9), 3.07093, 0.01
+  end
+
+  test "Convert known Watt Hours to Calories" do
+    assert_in_delta PutridParrot.Units.WattHours.to_calories(0.2), 172.084, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_calories(0.09), 77.43786, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_calories(12.0), 10325.06754, 0.01
+  end
+
+  test "Convert known Watt Hours to US Therms" do
+    assert_in_delta PutridParrot.Units.WattHours.to_u_s_therms(1090.0), 0.03720122, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_u_s_therms(49990.0), 1.7061369, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_u_s_therms(900_800.0), 30.7439107, 0.01
+  end
+
+  test "Convert known Watt Hours to Kilowatt Hours" do
+    assert_in_delta PutridParrot.Units.WattHours.to_kilowatt_hours(98.0), 0.098, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_kilowatt_hours(12.5), 0.0125, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_kilowatt_hours(0.6), 0.0006, 0.01
+  end
+
+  test "Convert known Watt Hours to Foot Pounds" do
+    assert_in_delta PutridParrot.Units.WattHours.to_foot_pounds(1.5), 3982.829, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_foot_pounds(0.3), 796.567, 0.01
+    assert_in_delta PutridParrot.Units.WattHours.to_foot_pounds(90.1), 239_235.3219, 0.01
+  end
+
+  test "Convert known Watt Hours to Electronvolts" do
+    assert_in_delta PutridParrot.Units.WattHours.to_electronvolts(0.0000000000666),
+                    1_496_463_565_615.39,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.WattHours.to_electronvolts(0.000000008),
+                    179_755_383_257_104.03,
+                    0.01
+
+    assert_in_delta PutridParrot.Units.WattHours.to_electronvolts(0.0000123),
+                    2.7637390175779744e+17,
+                    0.01
+  end
 end

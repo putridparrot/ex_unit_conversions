@@ -5,116 +5,131 @@
 # </auto-generated>
 
 defmodule PutridParrot.Units.Celsius do
-	@moduledoc """
-	Celsius conversion functions
-	"""
+  @moduledoc """
+  Celsius conversion functions
+  """
 
-	@doc """
-	Converts the supplied Celsius value to Fahrenheit
-	"""
-	def to_fahrenheit(value), do: value * 1.8 + 32.0
-	@doc """
-	Converts the supplied Celsius value to Kelvin
-	"""
-	def to_kelvin(value), do: value + 273.15
-	@doc """
-	Converts the supplied Celsius value to Rankine
-	"""
-	def to_rankine(value), do: value * 9.0/5.0 + 491.67
-	@doc """
-	Converts the supplied Celsius value to Reaumur
-	"""
-	def to_reaumur(value), do: value / 1.25
+  @doc """
+  Converts the supplied Celsius value to Fahrenheit
+  """
+  def to_fahrenheit(value), do: value * 1.8 + 32.0
+
+  @doc """
+  Converts the supplied Celsius value to Kelvin
+  """
+  def to_kelvin(value), do: value + 273.15
+
+  @doc """
+  Converts the supplied Celsius value to Rankine
+  """
+  def to_rankine(value), do: value * 9.0 / 5.0 + 491.67
+
+  @doc """
+  Converts the supplied Celsius value to Reaumur
+  """
+  def to_reaumur(value), do: value / 1.25
 end
 
 defmodule PutridParrot.Units.Fahrenheit do
-	@moduledoc """
-	Fahrenheit conversion functions
-	"""
+  @moduledoc """
+  Fahrenheit conversion functions
+  """
 
-	@doc """
-	Converts the supplied Fahrenheit value to Celsius
-	"""
-	def to_celsius(value), do: ((value - 32.0) * 5.0) / 9.0
-	@doc """
-	Converts the supplied Fahrenheit value to Kelvin
-	"""
-	def to_kelvin(value), do: (((value - 32.0) * 5.0) / 9.0) + 273.15
-	@doc """
-	Converts the supplied Fahrenheit value to Rankine
-	"""
-	def to_rankine(value), do: value + 459.67
-	@doc """
-	Converts the supplied Fahrenheit value to Reaumur
-	"""
-	def to_reaumur(value), do: (value - 32.0) / 2.25
+  @doc """
+  Converts the supplied Fahrenheit value to Celsius
+  """
+  def to_celsius(value), do: (value - 32.0) * 5.0 / 9.0
+
+  @doc """
+  Converts the supplied Fahrenheit value to Kelvin
+  """
+  def to_kelvin(value), do: (value - 32.0) * 5.0 / 9.0 + 273.15
+
+  @doc """
+  Converts the supplied Fahrenheit value to Rankine
+  """
+  def to_rankine(value), do: value + 459.67
+
+  @doc """
+  Converts the supplied Fahrenheit value to Reaumur
+  """
+  def to_reaumur(value), do: (value - 32.0) / 2.25
 end
 
 defmodule PutridParrot.Units.Kelvin do
-	@moduledoc """
-	Kelvin conversion functions
-	"""
+  @moduledoc """
+  Kelvin conversion functions
+  """
 
-	@doc """
-	Converts the supplied Kelvin value to Celsius
-	"""
-	def to_celsius(value), do: value - 273.15
-	@doc """
-	Converts the supplied Kelvin value to Fahrenheit
-	"""
-	def to_fahrenheit(value), do: ((value - 273.15) * 1.8) + 32.0
-	@doc """
-	Converts the supplied Kelvin value to Rankine
-	"""
-	def to_rankine(value), do: value * 1.8
-	@doc """
-	Converts the supplied Kelvin value to Reaumur
-	"""
-	def to_reaumur(value), do: (value - 273.15) / 1.25
+  @doc """
+  Converts the supplied Kelvin value to Celsius
+  """
+  def to_celsius(value), do: value - 273.15
+
+  @doc """
+  Converts the supplied Kelvin value to Fahrenheit
+  """
+  def to_fahrenheit(value), do: (value - 273.15) * 1.8 + 32.0
+
+  @doc """
+  Converts the supplied Kelvin value to Rankine
+  """
+  def to_rankine(value), do: value * 1.8
+
+  @doc """
+  Converts the supplied Kelvin value to Reaumur
+  """
+  def to_reaumur(value), do: (value - 273.15) / 1.25
 end
 
 defmodule PutridParrot.Units.Rankine do
-	@moduledoc """
-	Rankine conversion functions
-	"""
+  @moduledoc """
+  Rankine conversion functions
+  """
 
-	@doc """
-	Converts the supplied Rankine value to Celsius
-	"""
-	def to_celsius(value), do: (value - 491.67) * 5.0/9.0
-	@doc """
-	Converts the supplied Rankine value to Fahrenheit
-	"""
-	def to_fahrenheit(value), do: value - 459.67
-	@doc """
-	Converts the supplied Rankine value to Kelvin
-	"""
-	def to_kelvin(value), do: value / 1.8
-	@doc """
-	Converts the supplied Rankine value to Reaumur
-	"""
-	def to_reaumur(value), do: (value - 491.67) / 2.25
+  @doc """
+  Converts the supplied Rankine value to Celsius
+  """
+  def to_celsius(value), do: (value - 491.67) * 5.0 / 9.0
+
+  @doc """
+  Converts the supplied Rankine value to Fahrenheit
+  """
+  def to_fahrenheit(value), do: value - 459.67
+
+  @doc """
+  Converts the supplied Rankine value to Kelvin
+  """
+  def to_kelvin(value), do: value / 1.8
+
+  @doc """
+  Converts the supplied Rankine value to Reaumur
+  """
+  def to_reaumur(value), do: (value - 491.67) / 2.25
 end
 
 defmodule PutridParrot.Units.Reaumur do
-	@moduledoc """
-	Reaumur conversion functions
-	"""
+  @moduledoc """
+  Reaumur conversion functions
+  """
 
-	@doc """
-	Converts the supplied Reaumur value to Kelvin
-	"""
-	def to_kelvin(value), do: value * 1.25 + 273.15
-	@doc """
-	Converts the supplied Reaumur value to Celsius
-	"""
-	def to_celsius(value), do: value * 1.25
-	@doc """
-	Converts the supplied Reaumur value to Fahrenheit
-	"""
-	def to_fahrenheit(value), do: value * 2.25 + 32.0
-	@doc """
-	Converts the supplied Reaumur value to Rankine
-	"""
-	def to_rankine(value), do: value * 2.25 + 491.67
+  @doc """
+  Converts the supplied Reaumur value to Kelvin
+  """
+  def to_kelvin(value), do: value * 1.25 + 273.15
+
+  @doc """
+  Converts the supplied Reaumur value to Celsius
+  """
+  def to_celsius(value), do: value * 1.25
+
+  @doc """
+  Converts the supplied Reaumur value to Fahrenheit
+  """
+  def to_fahrenheit(value), do: value * 2.25 + 32.0
+
+  @doc """
+  Converts the supplied Reaumur value to Rankine
+  """
+  def to_rankine(value), do: value * 2.25 + 491.67
 end

@@ -5,116 +5,131 @@
 # </auto-generated>
 
 defmodule PutridParrot.Units.Atmospheres do
-	@moduledoc """
-	Atmospheres conversion functions
-	"""
+  @moduledoc """
+  Atmospheres conversion functions
+  """
 
-	@doc """
-	Converts the supplied Atmospheres value to Bars
-	"""
-	def to_bars(value), do: value * 1.01325
-	@doc """
-	Converts the supplied Atmospheres value to Pascals
-	"""
-	def to_pascals(value), do: value * 101325.0
-	@doc """
-	Converts the supplied Atmospheres value to Torrs
-	"""
-	def to_torrs(value), do: value * 760.0
-	@doc """
-	Converts the supplied Atmospheres value to Psi
-	"""
-	def to_psi(value), do: value * 14.69596432068
+  @doc """
+  Converts the supplied Atmospheres value to Bars
+  """
+  def to_bars(value), do: value * 1.01325
+
+  @doc """
+  Converts the supplied Atmospheres value to Pascals
+  """
+  def to_pascals(value), do: value * 101_325.0
+
+  @doc """
+  Converts the supplied Atmospheres value to Torrs
+  """
+  def to_torrs(value), do: value * 760.0
+
+  @doc """
+  Converts the supplied Atmospheres value to Psi
+  """
+  def to_psi(value), do: value * 14.69596432068
 end
 
 defmodule PutridParrot.Units.Bars do
-	@moduledoc """
-	Bars conversion functions
-	"""
+  @moduledoc """
+  Bars conversion functions
+  """
 
-	@doc """
-	Converts the supplied Bars value to Atmospheres
-	"""
-	def to_atmospheres(value), do: value / 1.01325
-	@doc """
-	Converts the supplied Bars value to Pascals
-	"""
-	def to_pascals(value), do: value / 0.00001
-	@doc """
-	Converts the supplied Bars value to Torrs
-	"""
-	def to_torrs(value), do: value * 750.0616827042
-	@doc """
-	Converts the supplied Bars value to Psi
-	"""
-	def to_psi(value), do: value * 14.50378911491
+  @doc """
+  Converts the supplied Bars value to Atmospheres
+  """
+  def to_atmospheres(value), do: value / 1.01325
+
+  @doc """
+  Converts the supplied Bars value to Pascals
+  """
+  def to_pascals(value), do: value / 0.00001
+
+  @doc """
+  Converts the supplied Bars value to Torrs
+  """
+  def to_torrs(value), do: value * 750.0616827042
+
+  @doc """
+  Converts the supplied Bars value to Psi
+  """
+  def to_psi(value), do: value * 14.50378911491
 end
 
 defmodule PutridParrot.Units.Pascals do
-	@moduledoc """
-	Pascals conversion functions
-	"""
+  @moduledoc """
+  Pascals conversion functions
+  """
 
-	@doc """
-	Converts the supplied Pascals value to Atmospheres
-	"""
-	def to_atmospheres(value), do: value / 101325.0
-	@doc """
-	Converts the supplied Pascals value to Bars
-	"""
-	def to_bars(value), do: value * 0.00001
-	@doc """
-	Converts the supplied Pascals value to Torrs
-	"""
-	def to_torrs(value), do: value * 0.007500616827042
-	@doc """
-	Converts the supplied Pascals value to Psi
-	"""
-	def to_psi(value), do: value * 0.0001450378911491
+  @doc """
+  Converts the supplied Pascals value to Atmospheres
+  """
+  def to_atmospheres(value), do: value / 101_325.0
+
+  @doc """
+  Converts the supplied Pascals value to Bars
+  """
+  def to_bars(value), do: value * 0.00001
+
+  @doc """
+  Converts the supplied Pascals value to Torrs
+  """
+  def to_torrs(value), do: value * 0.007500616827042
+
+  @doc """
+  Converts the supplied Pascals value to Psi
+  """
+  def to_psi(value), do: value * 0.0001450378911491
 end
 
 defmodule PutridParrot.Units.Psi do
-	@moduledoc """
-	Psi conversion functions
-	"""
+  @moduledoc """
+  Psi conversion functions
+  """
 
-	@doc """
-	Converts the supplied Psi value to Bars
-	"""
-	def to_bars(value), do: value / 14.50378911491
-	@doc """
-	Converts the supplied Psi value to Pascals
-	"""
-	def to_pascals(value), do: value / 0.0001450378911491
-	@doc """
-	Converts the supplied Psi value to Atmospheres
-	"""
-	def to_atmospheres(value), do: value / 14.69596432068
-	@doc """
-	Converts the supplied Psi value to Torrs
-	"""
-	def to_torrs(value), do: value / 0.01933679515879
+  @doc """
+  Converts the supplied Psi value to Bars
+  """
+  def to_bars(value), do: value / 14.50378911491
+
+  @doc """
+  Converts the supplied Psi value to Pascals
+  """
+  def to_pascals(value), do: value / 0.0001450378911491
+
+  @doc """
+  Converts the supplied Psi value to Atmospheres
+  """
+  def to_atmospheres(value), do: value / 14.69596432068
+
+  @doc """
+  Converts the supplied Psi value to Torrs
+  """
+  def to_torrs(value), do: value / 0.01933679515879
 end
 
 defmodule PutridParrot.Units.Torrs do
-	@moduledoc """
-	Torrs conversion functions
-	"""
+  @moduledoc """
+  Torrs conversion functions
+  """
 
-	@doc """
-	Converts the supplied Torrs value to Bars
-	"""
-	def to_bars(value), do: value / 750.0616827042
-	@doc """
-	Converts the supplied Torrs value to Pascals
-	"""
-	def to_pascals(value), do: value / 0.007500616827042
-	@doc """
-	Converts the supplied Torrs value to Atmospheres
-	"""
-	def to_atmospheres(value), do: value / 760.0
-	@doc """
-	Converts the supplied Torrs value to Psi
-	"""
-	def to_psi(value), do: value * 0.01933679515879
+  @doc """
+  Converts the supplied Torrs value to Bars
+  """
+  def to_bars(value), do: value / 750.0616827042
+
+  @doc """
+  Converts the supplied Torrs value to Pascals
+  """
+  def to_pascals(value), do: value / 0.007500616827042
+
+  @doc """
+  Converts the supplied Torrs value to Atmospheres
+  """
+  def to_atmospheres(value), do: value / 760.0
+
+  @doc """
+  Converts the supplied Torrs value to Psi
+  """
+  def to_psi(value), do: value * 0.01933679515879
 end

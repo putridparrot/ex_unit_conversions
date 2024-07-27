@@ -5,77 +5,85 @@
 # </auto-generated>
 
 defmodule PutridParrot.Units.Dynes do
-	@moduledoc """
-	Dynes conversion functions
-	"""
+  @moduledoc """
+  Dynes conversion functions
+  """
 
-	@doc """
-	Converts the supplied Dynes value to Newtons
-	"""
-	def to_newtons(value), do: value / 100000.0
-	@doc """
-	Converts the supplied Dynes value to Poundals
-	"""
-	def to_poundals(value), do: value / 13825.4954376
-	@doc """
-	Converts the supplied Dynes value to Kilogram-force
-	"""
-	def to_kilogramforce(value), do: value / 980665.0
+  @doc """
+  Converts the supplied Dynes value to Newtons
+  """
+  def to_newtons(value), do: value / 100_000.0
+
+  @doc """
+  Converts the supplied Dynes value to Poundals
+  """
+  def to_poundals(value), do: value / 13825.4954376
+
+  @doc """
+  Converts the supplied Dynes value to Kilogram-force
+  """
+  def to_kilogramforce(value), do: value / 980_665.0
 end
 
 defmodule PutridParrot.Units.Kilogramforce do
-	@moduledoc """
-	Kilogram-force conversion functions
-	"""
+  @moduledoc """
+  Kilogram-force conversion functions
+  """
 
-	@doc """
-	Converts the supplied Kilogram-force value to Newtons
-	"""
-	def to_newtons(value), do: value * 9.80665
-	@doc """
-	Converts the supplied Kilogram-force value to Dynes
-	"""
-	def to_dynes(value), do: value * 980665.0
-	@doc """
-	Converts the supplied Kilogram-force value to Poundals
-	"""
-	def to_poundals(value), do: value * 70.93163528397
+  @doc """
+  Converts the supplied Kilogram-force value to Newtons
+  """
+  def to_newtons(value), do: value * 9.80665
+
+  @doc """
+  Converts the supplied Kilogram-force value to Dynes
+  """
+  def to_dynes(value), do: value * 980_665.0
+
+  @doc """
+  Converts the supplied Kilogram-force value to Poundals
+  """
+  def to_poundals(value), do: value * 70.93163528397
 end
 
 defmodule PutridParrot.Units.Newtons do
-	@moduledoc """
-	Newtons conversion functions
-	"""
+  @moduledoc """
+  Newtons conversion functions
+  """
 
-	@doc """
-	Converts the supplied Newtons value to Dynes
-	"""
-	def to_dynes(value), do: value * 100000.0
-	@doc """
-	Converts the supplied Newtons value to Poundals
-	"""
-	def to_poundals(value), do: value * 7.23301
-	@doc """
-	Converts the supplied Newtons value to Kilogram-force
-	"""
-	def to_kilogramforce(value), do: value / 9.80665
+  @doc """
+  Converts the supplied Newtons value to Dynes
+  """
+  def to_dynes(value), do: value * 100_000.0
+
+  @doc """
+  Converts the supplied Newtons value to Poundals
+  """
+  def to_poundals(value), do: value * 7.23301
+
+  @doc """
+  Converts the supplied Newtons value to Kilogram-force
+  """
+  def to_kilogramforce(value), do: value / 9.80665
 end
 
 defmodule PutridParrot.Units.Poundals do
-	@moduledoc """
-	Poundals conversion functions
-	"""
+  @moduledoc """
+  Poundals conversion functions
+  """
 
-	@doc """
-	Converts the supplied Poundals value to Newtons
-	"""
-	def to_newtons(value), do: value / 7.23301
-	@doc """
-	Converts the supplied Poundals value to Dynes
-	"""
-	def to_dynes(value), do: value * 13825.4954376
-	@doc """
-	Converts the supplied Poundals value to Kilogram-force
-	"""
-	def to_kilogramforce(value), do: value / 70.93163528397
+  @doc """
+  Converts the supplied Poundals value to Newtons
+  """
+  def to_newtons(value), do: value / 7.23301
+
+  @doc """
+  Converts the supplied Poundals value to Dynes
+  """
+  def to_dynes(value), do: value * 13825.4954376
+
+  @doc """
+  Converts the supplied Poundals value to Kilogram-force
+  """
+  def to_kilogramforce(value), do: value / 70.93163528397
 end

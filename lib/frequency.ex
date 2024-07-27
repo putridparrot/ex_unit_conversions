@@ -5,77 +5,85 @@
 # </auto-generated>
 
 defmodule PutridParrot.Units.Gigahertz do
-	@moduledoc """
-	Gigahertz conversion functions
-	"""
+  @moduledoc """
+  Gigahertz conversion functions
+  """
 
-	@doc """
-	Converts the supplied Gigahertz value to Hertz
-	"""
-	def to_hertz(value), do: value * 1.0e+9
-	@doc """
-	Converts the supplied Gigahertz value to Kilohertz
-	"""
-	def to_kilohertz(value), do: value * 1.0e+6
-	@doc """
-	Converts the supplied Gigahertz value to Megahertz
-	"""
-	def to_megahertz(value), do: value * 1000.0
+  @doc """
+  Converts the supplied Gigahertz value to Hertz
+  """
+  def to_hertz(value), do: value * 1.0e+9
+
+  @doc """
+  Converts the supplied Gigahertz value to Kilohertz
+  """
+  def to_kilohertz(value), do: value * 1.0e+6
+
+  @doc """
+  Converts the supplied Gigahertz value to Megahertz
+  """
+  def to_megahertz(value), do: value * 1000.0
 end
 
 defmodule PutridParrot.Units.Hertz do
-	@moduledoc """
-	Hertz conversion functions
-	"""
+  @moduledoc """
+  Hertz conversion functions
+  """
 
-	@doc """
-	Converts the supplied Hertz value to Kilohertz
-	"""
-	def to_kilohertz(value), do: value / 1000.0
-	@doc """
-	Converts the supplied Hertz value to Megahertz
-	"""
-	def to_megahertz(value), do: value / 1.0e+6
-	@doc """
-	Converts the supplied Hertz value to Gigahertz
-	"""
-	def to_gigahertz(value), do: value / 1.0e+9
+  @doc """
+  Converts the supplied Hertz value to Kilohertz
+  """
+  def to_kilohertz(value), do: value / 1000.0
+
+  @doc """
+  Converts the supplied Hertz value to Megahertz
+  """
+  def to_megahertz(value), do: value / 1.0e+6
+
+  @doc """
+  Converts the supplied Hertz value to Gigahertz
+  """
+  def to_gigahertz(value), do: value / 1.0e+9
 end
 
 defmodule PutridParrot.Units.Kilohertz do
-	@moduledoc """
-	Kilohertz conversion functions
-	"""
+  @moduledoc """
+  Kilohertz conversion functions
+  """
 
-	@doc """
-	Converts the supplied Kilohertz value to Hertz
-	"""
-	def to_hertz(value), do: value * 1000.0
-	@doc """
-	Converts the supplied Kilohertz value to Megahertz
-	"""
-	def to_megahertz(value), do: value / 1000.0
-	@doc """
-	Converts the supplied Kilohertz value to Gigahertz
-	"""
-	def to_gigahertz(value), do: value / 1.0e+6
+  @doc """
+  Converts the supplied Kilohertz value to Hertz
+  """
+  def to_hertz(value), do: value * 1000.0
+
+  @doc """
+  Converts the supplied Kilohertz value to Megahertz
+  """
+  def to_megahertz(value), do: value / 1000.0
+
+  @doc """
+  Converts the supplied Kilohertz value to Gigahertz
+  """
+  def to_gigahertz(value), do: value / 1.0e+6
 end
 
 defmodule PutridParrot.Units.Megahertz do
-	@moduledoc """
-	Megahertz conversion functions
-	"""
+  @moduledoc """
+  Megahertz conversion functions
+  """
 
-	@doc """
-	Converts the supplied Megahertz value to Hertz
-	"""
-	def to_hertz(value), do: value * 1.0e+6
-	@doc """
-	Converts the supplied Megahertz value to Kilohertz
-	"""
-	def to_kilohertz(value), do: value * 1000.0
-	@doc """
-	Converts the supplied Megahertz value to Gigahertz
-	"""
-	def to_gigahertz(value), do: value / 1000.0
+  @doc """
+  Converts the supplied Megahertz value to Hertz
+  """
+  def to_hertz(value), do: value * 1.0e+6
+
+  @doc """
+  Converts the supplied Megahertz value to Kilohertz
+  """
+  def to_kilohertz(value), do: value * 1000.0
+
+  @doc """
+  Converts the supplied Megahertz value to Gigahertz
+  """
+  def to_gigahertz(value), do: value / 1000.0
 end
