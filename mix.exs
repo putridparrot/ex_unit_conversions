@@ -22,8 +22,7 @@ defmodule UnitConversions.MixProject do
   def package do
     [
       links: %{"GitHub" => @source_url},
-      licenses: ["MIT"],
-      exclude_patterns: [".devcontainer", ".github", ".gitignore"]
+      licenses: ["MIT"]
     ]
   end
 
