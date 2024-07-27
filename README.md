@@ -24,6 +24,20 @@ The main aim for this project was to produce conversion functions for the variou
 
 ex_unit_conversions needs to be added to your mix project
 
+```
+defp deps do
+  [
+    {:ex_unit_conversions, git: "https://github.com/putridparrot/ex_unit_conversions.git", tag: "v0.1.0"}
+  ]
+end
+```
+
+In usage we would write code such as
+
+```
+iex(1)> PutridParrot.Units.Degrees.to_radians(98.8)
+```
+
 ### Angle
 
 	* Degrees (deg)
