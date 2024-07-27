@@ -6,7 +6,7 @@ defmodule UnitConversions.MixProject do
   def project do
     [
       app: :ex_unit_conversions,
-      version: "0.1.1",
+      version: "0.1.2",
       elixir: "~> 1.17",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -14,11 +14,16 @@ defmodule UnitConversions.MixProject do
       homepage_url: @source_url,
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      package: [
-        links: %{"GitHub" => @source_url},
-        licenses: ["MIT"],
-      ],
+      package: package(),
       description: "Various unit conversion functions"
+    ]
+  end
+
+  def package do
+    [
+      links: %{"GitHub" => @source_url},
+      licenses: ["MIT"],
+      exclude_patterns: [".devcontainer", ".github", ".gitignore"]
     ]
   end
 
