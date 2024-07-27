@@ -4,314 +4,614 @@
 # Changes to this file will be lost if the code is regenerated
 # </auto-generated>
 
-# Centuries conversion functions
 defmodule PutridParrot.Units.Centuries do
-	# Converts the supplied Centuries value to Nanoseconds
+	@moduledoc """
+	Centuries conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Centuries value to Nanoseconds
+	"""
 	def to_nanoseconds(value), do: value * 3.154e+18
-	# Converts the supplied Centuries value to Microseconds
+	@doc """
+	Converts the supplied Centuries value to Microseconds
+	"""
 	def to_microseconds(value), do: value * 3.154e+15
-	# Converts the supplied Centuries value to Milliseconds
+	@doc """
+	Converts the supplied Centuries value to Milliseconds
+	"""
 	def to_milliseconds(value), do: value * 3.154e+12
-	# Converts the supplied Centuries value to Seconds
+	@doc """
+	Converts the supplied Centuries value to Seconds
+	"""
 	def to_seconds(value), do: value * 3.154e+9
-	# Converts the supplied Centuries value to Minutes
+	@doc """
+	Converts the supplied Centuries value to Minutes
+	"""
 	def to_minutes(value), do: value * 5.256e+7
-	# Converts the supplied Centuries value to Hours
+	@doc """
+	Converts the supplied Centuries value to Hours
+	"""
 	def to_hours(value), do: value * 876000.0
-	# Converts the supplied Centuries value to Days
+	@doc """
+	Converts the supplied Centuries value to Days
+	"""
 	def to_days(value), do: value * 36500.0
-	# Converts the supplied Centuries value to Weeks
+	@doc """
+	Converts the supplied Centuries value to Weeks
+	"""
 	def to_weeks(value), do: value * 5214.29
-	# Converts the supplied Centuries value to Months
+	@doc """
+	Converts the supplied Centuries value to Months
+	"""
 	def to_months(value), do: value * 1200.0
-	# Converts the supplied Centuries value to Years
+	@doc """
+	Converts the supplied Centuries value to Years
+	"""
 	def to_years(value), do: value * 100.0
-	# Converts the supplied Centuries value to Decades
+	@doc """
+	Converts the supplied Centuries value to Decades
+	"""
 	def to_decades(value), do: value * 10.0
 end
 
-# Days conversion functions
 defmodule PutridParrot.Units.Days do
-	# Converts the supplied Days value to Nanoseconds
+	@moduledoc """
+	Days conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Days value to Nanoseconds
+	"""
 	def to_nanoseconds(value), do: value * 8.64e+13
-	# Converts the supplied Days value to Microseconds
+	@doc """
+	Converts the supplied Days value to Microseconds
+	"""
 	def to_microseconds(value), do: value * 8.64e+10
-	# Converts the supplied Days value to Milliseconds
+	@doc """
+	Converts the supplied Days value to Milliseconds
+	"""
 	def to_milliseconds(value), do: value * 8.64e+7
-	# Converts the supplied Days value to Seconds
+	@doc """
+	Converts the supplied Days value to Seconds
+	"""
 	def to_seconds(value), do: value * 86400.0
-	# Converts the supplied Days value to Minutes
+	@doc """
+	Converts the supplied Days value to Minutes
+	"""
 	def to_minutes(value), do: value * 1440.0
-	# Converts the supplied Days value to Hours
+	@doc """
+	Converts the supplied Days value to Hours
+	"""
 	def to_hours(value), do: value * 24.0
-	# Converts the supplied Days value to Weeks
+	@doc """
+	Converts the supplied Days value to Weeks
+	"""
 	def to_weeks(value), do: value / 7.0
-	# Converts the supplied Days value to Months
+	@doc """
+	Converts the supplied Days value to Months
+	"""
 	def to_months(value), do: value / 30.4167
-	# Converts the supplied Days value to Years
+	@doc """
+	Converts the supplied Days value to Years
+	"""
 	def to_years(value), do: value / 365.0
-	# Converts the supplied Days value to Decades
+	@doc """
+	Converts the supplied Days value to Decades
+	"""
 	def to_decades(value), do: value / 3650.0
-	# Converts the supplied Days value to Centuries
+	@doc """
+	Converts the supplied Days value to Centuries
+	"""
 	def to_centuries(value), do: value / 36500.0
 end
 
-# Decades conversion functions
 defmodule PutridParrot.Units.Decades do
-	# Converts the supplied Decades value to Nanoseconds
+	@moduledoc """
+	Decades conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Decades value to Nanoseconds
+	"""
 	def to_nanoseconds(value), do: value * 3.154e+17
-	# Converts the supplied Decades value to Microseconds
+	@doc """
+	Converts the supplied Decades value to Microseconds
+	"""
 	def to_microseconds(value), do: value * 3.154e+14
-	# Converts the supplied Decades value to Milliseconds
+	@doc """
+	Converts the supplied Decades value to Milliseconds
+	"""
 	def to_milliseconds(value), do: value * 3.154e+11
-	# Converts the supplied Decades value to Seconds
+	@doc """
+	Converts the supplied Decades value to Seconds
+	"""
 	def to_seconds(value), do: value * 3.154e+8
-	# Converts the supplied Decades value to Minutes
+	@doc """
+	Converts the supplied Decades value to Minutes
+	"""
 	def to_minutes(value), do: value * 5.256e+6
-	# Converts the supplied Decades value to Hours
+	@doc """
+	Converts the supplied Decades value to Hours
+	"""
 	def to_hours(value), do: value * 87600.0
-	# Converts the supplied Decades value to Days
+	@doc """
+	Converts the supplied Decades value to Days
+	"""
 	def to_days(value), do: value * 3650.0
-	# Converts the supplied Decades value to Weeks
+	@doc """
+	Converts the supplied Decades value to Weeks
+	"""
 	def to_weeks(value), do: value * 521.429
-	# Converts the supplied Decades value to Months
+	@doc """
+	Converts the supplied Decades value to Months
+	"""
 	def to_months(value), do: value * 120.0
-	# Converts the supplied Decades value to Years
+	@doc """
+	Converts the supplied Decades value to Years
+	"""
 	def to_years(value), do: value * 10.0
-	# Converts the supplied Decades value to Centuries
+	@doc """
+	Converts the supplied Decades value to Centuries
+	"""
 	def to_centuries(value), do: value / 10.0
 end
 
-# Hours conversion functions
 defmodule PutridParrot.Units.Hours do
-	# Converts the supplied Hours value to Nanoseconds
+	@moduledoc """
+	Hours conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Hours value to Nanoseconds
+	"""
 	def to_nanoseconds(value), do: value * 3.6e+12
-	# Converts the supplied Hours value to Microseconds
+	@doc """
+	Converts the supplied Hours value to Microseconds
+	"""
 	def to_microseconds(value), do: value * 3.6e+9
-	# Converts the supplied Hours value to Milliseconds
+	@doc """
+	Converts the supplied Hours value to Milliseconds
+	"""
 	def to_milliseconds(value), do: value * 3.6e+6
-	# Converts the supplied Hours value to Seconds
+	@doc """
+	Converts the supplied Hours value to Seconds
+	"""
 	def to_seconds(value), do: value * 3600.0
-	# Converts the supplied Hours value to Minutes
+	@doc """
+	Converts the supplied Hours value to Minutes
+	"""
 	def to_minutes(value), do: value * 60.0
-	# Converts the supplied Hours value to Days
+	@doc """
+	Converts the supplied Hours value to Days
+	"""
 	def to_days(value), do: value / 24.0
-	# Converts the supplied Hours value to Weeks
+	@doc """
+	Converts the supplied Hours value to Weeks
+	"""
 	def to_weeks(value), do: value / 168.0
-	# Converts the supplied Hours value to Months
+	@doc """
+	Converts the supplied Hours value to Months
+	"""
 	def to_months(value), do: value / 730.001
-	# Converts the supplied Hours value to Years
+	@doc """
+	Converts the supplied Hours value to Years
+	"""
 	def to_years(value), do: value / 8760.0
-	# Converts the supplied Hours value to Decades
+	@doc """
+	Converts the supplied Hours value to Decades
+	"""
 	def to_decades(value), do: value / 87600.0
-	# Converts the supplied Hours value to Centuries
+	@doc """
+	Converts the supplied Hours value to Centuries
+	"""
 	def to_centuries(value), do: value / 876000.0
 end
 
-# Microseconds conversion functions
 defmodule PutridParrot.Units.Microseconds do
-	# Converts the supplied Microseconds value to Nanoseconds
+	@moduledoc """
+	Microseconds conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Microseconds value to Nanoseconds
+	"""
 	def to_nanoseconds(value), do: value * 1000.0
-	# Converts the supplied Microseconds value to Milliseconds
+	@doc """
+	Converts the supplied Microseconds value to Milliseconds
+	"""
 	def to_milliseconds(value), do: value / 1000.0
-	# Converts the supplied Microseconds value to Seconds
+	@doc """
+	Converts the supplied Microseconds value to Seconds
+	"""
 	def to_seconds(value), do: value / 1.0e+6
-	# Converts the supplied Microseconds value to Minutes
+	@doc """
+	Converts the supplied Microseconds value to Minutes
+	"""
 	def to_minutes(value), do: value / 6.0e+7
-	# Converts the supplied Microseconds value to Hours
+	@doc """
+	Converts the supplied Microseconds value to Hours
+	"""
 	def to_hours(value), do: value / 3.6e+9
-	# Converts the supplied Microseconds value to Days
+	@doc """
+	Converts the supplied Microseconds value to Days
+	"""
 	def to_days(value), do: value / 8.64e+10
-	# Converts the supplied Microseconds value to Weeks
+	@doc """
+	Converts the supplied Microseconds value to Weeks
+	"""
 	def to_weeks(value), do: value / 6.048e+11
-	# Converts the supplied Microseconds value to Months
+	@doc """
+	Converts the supplied Microseconds value to Months
+	"""
 	def to_months(value), do: value / 2629746000000.0
-	# Converts the supplied Microseconds value to Years
+	@doc """
+	Converts the supplied Microseconds value to Years
+	"""
 	def to_years(value), do: value / 3.154e+13
-	# Converts the supplied Microseconds value to Decades
+	@doc """
+	Converts the supplied Microseconds value to Decades
+	"""
 	def to_decades(value), do: value / 3.154e+14
-	# Converts the supplied Microseconds value to Centuries
+	@doc """
+	Converts the supplied Microseconds value to Centuries
+	"""
 	def to_centuries(value), do: value / 3.154e+15
 end
 
-# Milliseconds conversion functions
 defmodule PutridParrot.Units.Milliseconds do
-	# Converts the supplied Milliseconds value to Nanoseconds
+	@moduledoc """
+	Milliseconds conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Milliseconds value to Nanoseconds
+	"""
 	def to_nanoseconds(value), do: value * 1.0e+6
-	# Converts the supplied Milliseconds value to Microseconds
+	@doc """
+	Converts the supplied Milliseconds value to Microseconds
+	"""
 	def to_microseconds(value), do: value * 1000.0
-	# Converts the supplied Milliseconds value to Seconds
+	@doc """
+	Converts the supplied Milliseconds value to Seconds
+	"""
 	def to_seconds(value), do: value / 1000.0
-	# Converts the supplied Milliseconds value to Minutes
+	@doc """
+	Converts the supplied Milliseconds value to Minutes
+	"""
 	def to_minutes(value), do: value / 60000.0
-	# Converts the supplied Milliseconds value to Hours
+	@doc """
+	Converts the supplied Milliseconds value to Hours
+	"""
 	def to_hours(value), do: value / 3.6e+6
-	# Converts the supplied Milliseconds value to Days
+	@doc """
+	Converts the supplied Milliseconds value to Days
+	"""
 	def to_days(value), do: value / 8.64e+7
-	# Converts the supplied Milliseconds value to Weeks
+	@doc """
+	Converts the supplied Milliseconds value to Weeks
+	"""
 	def to_weeks(value), do: value / 6.048e+8
-	# Converts the supplied Milliseconds value to Months
+	@doc """
+	Converts the supplied Milliseconds value to Months
+	"""
 	def to_months(value), do: value / 2629746000.0
-	# Converts the supplied Milliseconds value to Years
+	@doc """
+	Converts the supplied Milliseconds value to Years
+	"""
 	def to_years(value), do: value / 31556952000.0
-	# Converts the supplied Milliseconds value to Decades
+	@doc """
+	Converts the supplied Milliseconds value to Decades
+	"""
 	def to_decades(value), do: value / 3.154e+11
-	# Converts the supplied Milliseconds value to Centuries
+	@doc """
+	Converts the supplied Milliseconds value to Centuries
+	"""
 	def to_centuries(value), do: value / 3.154e+12
 end
 
-# Minutes conversion functions
 defmodule PutridParrot.Units.Minutes do
-	# Converts the supplied Minutes value to Nanoseconds
+	@moduledoc """
+	Minutes conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Minutes value to Nanoseconds
+	"""
 	def to_nanoseconds(value), do: value * 6.0e+10
-	# Converts the supplied Minutes value to Microseconds
+	@doc """
+	Converts the supplied Minutes value to Microseconds
+	"""
 	def to_microseconds(value), do: value * 6.0e+7
-	# Converts the supplied Minutes value to Milliseconds
+	@doc """
+	Converts the supplied Minutes value to Milliseconds
+	"""
 	def to_milliseconds(value), do: value * 60000.0
-	# Converts the supplied Minutes value to Seconds
+	@doc """
+	Converts the supplied Minutes value to Seconds
+	"""
 	def to_seconds(value), do: value * 60.0
-	# Converts the supplied Minutes value to Hours
+	@doc """
+	Converts the supplied Minutes value to Hours
+	"""
 	def to_hours(value), do: value / 60.0
-	# Converts the supplied Minutes value to Days
+	@doc """
+	Converts the supplied Minutes value to Days
+	"""
 	def to_days(value), do: value / 1440.0
-	# Converts the supplied Minutes value to Weeks
+	@doc """
+	Converts the supplied Minutes value to Weeks
+	"""
 	def to_weeks(value), do: value / 10080.0
-	# Converts the supplied Minutes value to Months
+	@doc """
+	Converts the supplied Minutes value to Months
+	"""
 	def to_months(value), do: value / 43800.0
-	# Converts the supplied Minutes value to Years
+	@doc """
+	Converts the supplied Minutes value to Years
+	"""
 	def to_years(value), do: value / 525600.0
-	# Converts the supplied Minutes value to Decades
+	@doc """
+	Converts the supplied Minutes value to Decades
+	"""
 	def to_decades(value), do: value / 5.256e+6
-	# Converts the supplied Minutes value to Centuries
+	@doc """
+	Converts the supplied Minutes value to Centuries
+	"""
 	def to_centuries(value), do: value / 5.256e+7
 end
 
-# Months conversion functions
 defmodule PutridParrot.Units.Months do
-	# Converts the supplied Months value to Nanoseconds
+	@moduledoc """
+	Months conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Months value to Nanoseconds
+	"""
 	def to_nanoseconds(value), do: value * 2629746000000000.0
-	# Converts the supplied Months value to Microseconds
+	@doc """
+	Converts the supplied Months value to Microseconds
+	"""
 	def to_microseconds(value), do: value * 2629746000000.0
-	# Converts the supplied Months value to Milliseconds
+	@doc """
+	Converts the supplied Months value to Milliseconds
+	"""
 	def to_milliseconds(value), do: value * 2629746000.0
-	# Converts the supplied Months value to Seconds
+	@doc """
+	Converts the supplied Months value to Seconds
+	"""
 	def to_seconds(value), do: value * 2.628e+6
-	# Converts the supplied Months value to Minutes
+	@doc """
+	Converts the supplied Months value to Minutes
+	"""
 	def to_minutes(value), do: value * 43800.0
-	# Converts the supplied Months value to Hours
+	@doc """
+	Converts the supplied Months value to Hours
+	"""
 	def to_hours(value), do: value * 730.001
-	# Converts the supplied Months value to Days
+	@doc """
+	Converts the supplied Months value to Days
+	"""
 	def to_days(value), do: value * 30.4167
-	# Converts the supplied Months value to Weeks
+	@doc """
+	Converts the supplied Months value to Weeks
+	"""
 	def to_weeks(value), do: value * 4.34524
-	# Converts the supplied Months value to Years
+	@doc """
+	Converts the supplied Months value to Years
+	"""
 	def to_years(value), do: value / 12.0
-	# Converts the supplied Months value to Decades
+	@doc """
+	Converts the supplied Months value to Decades
+	"""
 	def to_decades(value), do: value / 120.0
-	# Converts the supplied Months value to Centuries
+	@doc """
+	Converts the supplied Months value to Centuries
+	"""
 	def to_centuries(value), do: value / 1200.0
 end
 
-# Nanoseconds conversion functions
 defmodule PutridParrot.Units.Nanoseconds do
-	# Converts the supplied Nanoseconds value to Microseconds
+	@moduledoc """
+	Nanoseconds conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Nanoseconds value to Microseconds
+	"""
 	def to_microseconds(value), do: value / 1000.0
-	# Converts the supplied Nanoseconds value to Milliseconds
+	@doc """
+	Converts the supplied Nanoseconds value to Milliseconds
+	"""
 	def to_milliseconds(value), do: value / 1.0e+6
-	# Converts the supplied Nanoseconds value to Seconds
+	@doc """
+	Converts the supplied Nanoseconds value to Seconds
+	"""
 	def to_seconds(value), do: value / 1.0e+9
-	# Converts the supplied Nanoseconds value to Minutes
+	@doc """
+	Converts the supplied Nanoseconds value to Minutes
+	"""
 	def to_minutes(value), do: value / 6.0e+10
-	# Converts the supplied Nanoseconds value to Hours
+	@doc """
+	Converts the supplied Nanoseconds value to Hours
+	"""
 	def to_hours(value), do: value / 3.6e+12
-	# Converts the supplied Nanoseconds value to Days
+	@doc """
+	Converts the supplied Nanoseconds value to Days
+	"""
 	def to_days(value), do: value / 8.64e+13
-	# Converts the supplied Nanoseconds value to Weeks
+	@doc """
+	Converts the supplied Nanoseconds value to Weeks
+	"""
 	def to_weeks(value), do: value / 6.048e+14
-	# Converts the supplied Nanoseconds value to Months
+	@doc """
+	Converts the supplied Nanoseconds value to Months
+	"""
 	def to_months(value), do: value / 2629746000000000.0
-	# Converts the supplied Nanoseconds value to Years
+	@doc """
+	Converts the supplied Nanoseconds value to Years
+	"""
 	def to_years(value), do: value / 3.154e+16
-	# Converts the supplied Nanoseconds value to Decades
+	@doc """
+	Converts the supplied Nanoseconds value to Decades
+	"""
 	def to_decades(value), do: value / 3.154e+17
-	# Converts the supplied Nanoseconds value to Centuries
+	@doc """
+	Converts the supplied Nanoseconds value to Centuries
+	"""
 	def to_centuries(value), do: value / 3.154e+18
 end
 
-# Seconds conversion functions
 defmodule PutridParrot.Units.Seconds do
-	# Converts the supplied Seconds value to Nanoseconds
+	@moduledoc """
+	Seconds conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Seconds value to Nanoseconds
+	"""
 	def to_nanoseconds(value), do: value * 1.0e+9
-	# Converts the supplied Seconds value to Microseconds
+	@doc """
+	Converts the supplied Seconds value to Microseconds
+	"""
 	def to_microseconds(value), do: value * 1.0e+6
-	# Converts the supplied Seconds value to Milliseconds
+	@doc """
+	Converts the supplied Seconds value to Milliseconds
+	"""
 	def to_milliseconds(value), do: value * 1000.0
-	# Converts the supplied Seconds value to Minutes
+	@doc """
+	Converts the supplied Seconds value to Minutes
+	"""
 	def to_minutes(value), do: value / 60.0
-	# Converts the supplied Seconds value to Hours
+	@doc """
+	Converts the supplied Seconds value to Hours
+	"""
 	def to_hours(value), do: value / 3600.0
-	# Converts the supplied Seconds value to Days
+	@doc """
+	Converts the supplied Seconds value to Days
+	"""
 	def to_days(value), do: value / 86400.0
-	# Converts the supplied Seconds value to Weeks
+	@doc """
+	Converts the supplied Seconds value to Weeks
+	"""
 	def to_weeks(value), do: value / 604800.0
-	# Converts the supplied Seconds value to Months
+	@doc """
+	Converts the supplied Seconds value to Months
+	"""
 	def to_months(value), do: value / 2.628e+6
-	# Converts the supplied Seconds value to Years
+	@doc """
+	Converts the supplied Seconds value to Years
+	"""
 	def to_years(value), do: value / 3.1536e+7
-	# Converts the supplied Seconds value to Decades
+	@doc """
+	Converts the supplied Seconds value to Decades
+	"""
 	def to_decades(value), do: value / 3.154e+8
-	# Converts the supplied Seconds value to Centuries
+	@doc """
+	Converts the supplied Seconds value to Centuries
+	"""
 	def to_centuries(value), do: value / 3.154e+9
 end
 
-# Weeks conversion functions
 defmodule PutridParrot.Units.Weeks do
-	# Converts the supplied Weeks value to Nanoseconds
+	@moduledoc """
+	Weeks conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Weeks value to Nanoseconds
+	"""
 	def to_nanoseconds(value), do: value * 6.048e+14
-	# Converts the supplied Weeks value to Microseconds
+	@doc """
+	Converts the supplied Weeks value to Microseconds
+	"""
 	def to_microseconds(value), do: value * 6.048e+11
-	# Converts the supplied Weeks value to Milliseconds
+	@doc """
+	Converts the supplied Weeks value to Milliseconds
+	"""
 	def to_milliseconds(value), do: value * 6.048e+8
-	# Converts the supplied Weeks value to Seconds
+	@doc """
+	Converts the supplied Weeks value to Seconds
+	"""
 	def to_seconds(value), do: value * 604800.0
-	# Converts the supplied Weeks value to Minutes
+	@doc """
+	Converts the supplied Weeks value to Minutes
+	"""
 	def to_minutes(value), do: value * 10080.0
-	# Converts the supplied Weeks value to Hours
+	@doc """
+	Converts the supplied Weeks value to Hours
+	"""
 	def to_hours(value), do: value * 168.0
-	# Converts the supplied Weeks value to Days
+	@doc """
+	Converts the supplied Weeks value to Days
+	"""
 	def to_days(value), do: value * 7.0
-	# Converts the supplied Weeks value to Months
+	@doc """
+	Converts the supplied Weeks value to Months
+	"""
 	def to_months(value), do: value / 4.34524
-	# Converts the supplied Weeks value to Years
+	@doc """
+	Converts the supplied Weeks value to Years
+	"""
 	def to_years(value), do: value / 52.143
-	# Converts the supplied Weeks value to Decades
+	@doc """
+	Converts the supplied Weeks value to Decades
+	"""
 	def to_decades(value), do: value / 521.429
-	# Converts the supplied Weeks value to Centuries
+	@doc """
+	Converts the supplied Weeks value to Centuries
+	"""
 	def to_centuries(value), do: value / 5214.29
 end
 
-# Years conversion functions
 defmodule PutridParrot.Units.Years do
-	# Converts the supplied Years value to Nanoseconds
+	@moduledoc """
+	Years conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Years value to Nanoseconds
+	"""
 	def to_nanoseconds(value), do: value * 3.154e+16
-	# Converts the supplied Years value to Microseconds
+	@doc """
+	Converts the supplied Years value to Microseconds
+	"""
 	def to_microseconds(value), do: value * 3.154e+13
-	# Converts the supplied Years value to Milliseconds
+	@doc """
+	Converts the supplied Years value to Milliseconds
+	"""
 	def to_milliseconds(value), do: value * 31556952000.0
-	# Converts the supplied Years value to Seconds
+	@doc """
+	Converts the supplied Years value to Seconds
+	"""
 	def to_seconds(value), do: value * 3.1536e+7
-	# Converts the supplied Years value to Minutes
+	@doc """
+	Converts the supplied Years value to Minutes
+	"""
 	def to_minutes(value), do: value * 525600.0
-	# Converts the supplied Years value to Hours
+	@doc """
+	Converts the supplied Years value to Hours
+	"""
 	def to_hours(value), do: value * 8760.0
-	# Converts the supplied Years value to Days
+	@doc """
+	Converts the supplied Years value to Days
+	"""
 	def to_days(value), do: value * 365.0
-	# Converts the supplied Years value to Weeks
+	@doc """
+	Converts the supplied Years value to Weeks
+	"""
 	def to_weeks(value), do: value * 52.143
-	# Converts the supplied Years value to Months
+	@doc """
+	Converts the supplied Years value to Months
+	"""
 	def to_months(value), do: value * 12.0
-	# Converts the supplied Years value to Decades
+	@doc """
+	Converts the supplied Years value to Decades
+	"""
 	def to_decades(value), do: value / 10.0
-	# Converts the supplied Years value to Centuries
+	@doc """
+	Converts the supplied Years value to Centuries
+	"""
 	def to_centuries(value), do: value / 100.0
 end

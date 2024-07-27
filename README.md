@@ -20,6 +20,10 @@ The main aim for this project was to produce conversion functions for the variou
 [Swift](https://github.com/putridparrot/SwiftUnits)   
 [TypeScript](https://github.com/putridparrot/unit-conversions)  
 
+### Usage
+
+ex_unit_conversions needs to be added to your mix project
+
 ### Angle
 
 	* Degrees (deg)

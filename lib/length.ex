@@ -4,182 +4,353 @@
 # Changes to this file will be lost if the code is regenerated
 # </auto-generated>
 
-# Centimetres conversion functions
 defmodule PutridParrot.Units.Centimetres do
-	# Converts the supplied Centimetres value to Millimetres
+	@moduledoc """
+	Centimetres conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Centimetres value to Millimetres
+	"""
 	def to_millimetres(value), do: value * 10.0
-	# Converts the supplied Centimetres value to Metres
+	@doc """
+	Converts the supplied Centimetres value to Metres
+	"""
 	def to_metres(value), do: value / 100.0
-	# Converts the supplied Centimetres value to Kilometres
+	@doc """
+	Converts the supplied Centimetres value to Kilometres
+	"""
 	def to_kilometres(value), do: value / 100000.0
-	# Converts the supplied Centimetres value to Inches
+	@doc """
+	Converts the supplied Centimetres value to Inches
+	"""
 	def to_inches(value), do: value / 2.54
-	# Converts the supplied Centimetres value to Feet
+	@doc """
+	Converts the supplied Centimetres value to Feet
+	"""
 	def to_feet(value), do: value / 30.48
-	# Converts the supplied Centimetres value to Yards
+	@doc """
+	Converts the supplied Centimetres value to Yards
+	"""
 	def to_yards(value), do: value / 91.44
-	# Converts the supplied Centimetres value to Miles
+	@doc """
+	Converts the supplied Centimetres value to Miles
+	"""
 	def to_miles(value), do: value / 160934.4
-	# Converts the supplied Centimetres value to Nautical Miles
+	@doc """
+	Converts the supplied Centimetres value to Nautical Miles
+	"""
 	def to_nauticalmiles(value), do: value / 185200.0
 end
 
-# Feet conversion functions
 defmodule PutridParrot.Units.Feet do
-	# Converts the supplied Feet value to Millimetres
+	@moduledoc """
+	Feet conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Feet value to Millimetres
+	"""
 	def to_millimetres(value), do: value * 304.8
-	# Converts the supplied Feet value to Centimetres
+	@doc """
+	Converts the supplied Feet value to Centimetres
+	"""
 	def to_centimetres(value), do: value * 30.48
-	# Converts the supplied Feet value to Metres
+	@doc """
+	Converts the supplied Feet value to Metres
+	"""
 	def to_metres(value), do: value * 0.3048
-	# Converts the supplied Feet value to Kilometres
+	@doc """
+	Converts the supplied Feet value to Kilometres
+	"""
 	def to_kilometres(value), do: value * 0.0003048
-	# Converts the supplied Feet value to Inches
+	@doc """
+	Converts the supplied Feet value to Inches
+	"""
 	def to_inches(value), do: value * 12.0
-	# Converts the supplied Feet value to Yards
+	@doc """
+	Converts the supplied Feet value to Yards
+	"""
 	def to_yards(value), do: value / 3.0
-	# Converts the supplied Feet value to Miles
+	@doc """
+	Converts the supplied Feet value to Miles
+	"""
 	def to_miles(value), do: value / 5280.0
-	# Converts the supplied Feet value to Nautical Miles
+	@doc """
+	Converts the supplied Feet value to Nautical Miles
+	"""
 	def to_nauticalmiles(value), do: value / 6076.12
 end
 
-# Inches conversion functions
 defmodule PutridParrot.Units.Inches do
-	# Converts the supplied Inches value to Millimetres
+	@moduledoc """
+	Inches conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Inches value to Millimetres
+	"""
 	def to_millimetres(value), do: value * 25.4
-	# Converts the supplied Inches value to Centimetres
+	@doc """
+	Converts the supplied Inches value to Centimetres
+	"""
 	def to_centimetres(value), do: value * 2.54
-	# Converts the supplied Inches value to Metres
+	@doc """
+	Converts the supplied Inches value to Metres
+	"""
 	def to_metres(value), do: value / 39.37007874
-	# Converts the supplied Inches value to Kilometres
+	@doc """
+	Converts the supplied Inches value to Kilometres
+	"""
 	def to_kilometres(value), do: value / 39370.07874
-	# Converts the supplied Inches value to Feet
+	@doc """
+	Converts the supplied Inches value to Feet
+	"""
 	def to_feet(value), do: value / 12.0
-	# Converts the supplied Inches value to Yards
+	@doc """
+	Converts the supplied Inches value to Yards
+	"""
 	def to_yards(value), do: value / 36.0
-	# Converts the supplied Inches value to Miles
+	@doc """
+	Converts the supplied Inches value to Miles
+	"""
 	def to_miles(value), do: value / 63360.0
-	# Converts the supplied Inches value to Nautical Miles
+	@doc """
+	Converts the supplied Inches value to Nautical Miles
+	"""
 	def to_nauticalmiles(value), do: value / 72913.4
 end
 
-# Kilometres conversion functions
 defmodule PutridParrot.Units.Kilometres do
-	# Converts the supplied Kilometres value to Millimetres
+	@moduledoc """
+	Kilometres conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Kilometres value to Millimetres
+	"""
 	def to_millimetres(value), do: value * 1000000.0
-	# Converts the supplied Kilometres value to Centimetres
+	@doc """
+	Converts the supplied Kilometres value to Centimetres
+	"""
 	def to_centimetres(value), do: value * 100000.0
-	# Converts the supplied Kilometres value to Metres
+	@doc """
+	Converts the supplied Kilometres value to Metres
+	"""
 	def to_metres(value), do: value * 1000.0
-	# Converts the supplied Kilometres value to Inches
+	@doc """
+	Converts the supplied Kilometres value to Inches
+	"""
 	def to_inches(value), do: value * 39370.07874
-	# Converts the supplied Kilometres value to Feet
+	@doc """
+	Converts the supplied Kilometres value to Feet
+	"""
 	def to_feet(value), do: value / 0.0003048
-	# Converts the supplied Kilometres value to Yards
+	@doc """
+	Converts the supplied Kilometres value to Yards
+	"""
 	def to_yards(value), do: value / 0.0009144
-	# Converts the supplied Kilometres value to Miles
+	@doc """
+	Converts the supplied Kilometres value to Miles
+	"""
 	def to_miles(value), do: value / 1.609344
-	# Converts the supplied Kilometres value to Nautical Miles
+	@doc """
+	Converts the supplied Kilometres value to Nautical Miles
+	"""
 	def to_nauticalmiles(value), do: value / 1.85200
 end
 
-# Metres conversion functions
 defmodule PutridParrot.Units.Metres do
-	# Converts the supplied Metres value to Millimetres
+	@moduledoc """
+	Metres conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Metres value to Millimetres
+	"""
 	def to_millimetres(value), do: value * 1000.0
-	# Converts the supplied Metres value to Centimetres
+	@doc """
+	Converts the supplied Metres value to Centimetres
+	"""
 	def to_centimetres(value), do: value * 100.0
-	# Converts the supplied Metres value to Kilometres
+	@doc """
+	Converts the supplied Metres value to Kilometres
+	"""
 	def to_kilometres(value), do: value / 1000.0
-	# Converts the supplied Metres value to Inches
+	@doc """
+	Converts the supplied Metres value to Inches
+	"""
 	def to_inches(value), do: value * 39.37007874
-	# Converts the supplied Metres value to Feet
+	@doc """
+	Converts the supplied Metres value to Feet
+	"""
 	def to_feet(value), do: value / 0.3048
-	# Converts the supplied Metres value to Yards
+	@doc """
+	Converts the supplied Metres value to Yards
+	"""
 	def to_yards(value), do: value / 0.9144
-	# Converts the supplied Metres value to Miles
+	@doc """
+	Converts the supplied Metres value to Miles
+	"""
 	def to_miles(value), do: value / 1609.344
-	# Converts the supplied Metres value to Nautical Miles
+	@doc """
+	Converts the supplied Metres value to Nautical Miles
+	"""
 	def to_nauticalmiles(value), do: value / 1852.0
 end
 
-# Miles conversion functions
 defmodule PutridParrot.Units.Miles do
-	# Converts the supplied Miles value to Millimetres
+	@moduledoc """
+	Miles conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Miles value to Millimetres
+	"""
 	def to_millimetres(value), do: value * 1609344.0
-	# Converts the supplied Miles value to Centimetres
+	@doc """
+	Converts the supplied Miles value to Centimetres
+	"""
 	def to_centimetres(value), do: value * 160934.4
-	# Converts the supplied Miles value to Metres
+	@doc """
+	Converts the supplied Miles value to Metres
+	"""
 	def to_metres(value), do: value * 1609.344
-	# Converts the supplied Miles value to Kilometres
+	@doc """
+	Converts the supplied Miles value to Kilometres
+	"""
 	def to_kilometres(value), do: value * 1.609344
-	# Converts the supplied Miles value to Inches
+	@doc """
+	Converts the supplied Miles value to Inches
+	"""
 	def to_inches(value), do: value * 63360.0
-	# Converts the supplied Miles value to Feet
+	@doc """
+	Converts the supplied Miles value to Feet
+	"""
 	def to_feet(value), do: value * 5280.0
-	# Converts the supplied Miles value to Yards
+	@doc """
+	Converts the supplied Miles value to Yards
+	"""
 	def to_yards(value), do: value * 1760.0
-	# Converts the supplied Miles value to Nautical Miles
+	@doc """
+	Converts the supplied Miles value to Nautical Miles
+	"""
 	def to_nauticalmiles(value), do: value / 1.15078
 end
 
-# Millimetres conversion functions
 defmodule PutridParrot.Units.Millimetres do
-	# Converts the supplied Millimetres value to Centimetres
+	@moduledoc """
+	Millimetres conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Millimetres value to Centimetres
+	"""
 	def to_centimetres(value), do: value / 10.0
-	# Converts the supplied Millimetres value to Metres
+	@doc """
+	Converts the supplied Millimetres value to Metres
+	"""
 	def to_metres(value), do: value / 1000.0
-	# Converts the supplied Millimetres value to Kilometres
+	@doc """
+	Converts the supplied Millimetres value to Kilometres
+	"""
 	def to_kilometres(value), do: value / 1000000.0
-	# Converts the supplied Millimetres value to Inches
+	@doc """
+	Converts the supplied Millimetres value to Inches
+	"""
 	def to_inches(value), do: value / 25.4
-	# Converts the supplied Millimetres value to Feet
+	@doc """
+	Converts the supplied Millimetres value to Feet
+	"""
 	def to_feet(value), do: value / 304.8
-	# Converts the supplied Millimetres value to Yards
+	@doc """
+	Converts the supplied Millimetres value to Yards
+	"""
 	def to_yards(value), do: value / 914.4
-	# Converts the supplied Millimetres value to Miles
+	@doc """
+	Converts the supplied Millimetres value to Miles
+	"""
 	def to_miles(value), do: value / 1609344.0
-	# Converts the supplied Millimetres value to Nautical Miles
+	@doc """
+	Converts the supplied Millimetres value to Nautical Miles
+	"""
 	def to_nauticalmiles(value), do: value / 1852000.0
 end
 
-# Nautical Miles conversion functions
 defmodule PutridParrot.Units.NauticalMiles do
-	# Converts the supplied Nautical Miles value to Millimetres
+	@moduledoc """
+	Nautical Miles conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Nautical Miles value to Millimetres
+	"""
 	def to_millimetres(value), do: value * 1852000.0
-	# Converts the supplied Nautical Miles value to Centimetres
+	@doc """
+	Converts the supplied Nautical Miles value to Centimetres
+	"""
 	def to_centimetres(value), do: value * 185200.0
-	# Converts the supplied Nautical Miles value to Metres
+	@doc """
+	Converts the supplied Nautical Miles value to Metres
+	"""
 	def to_metres(value), do: value * 1852.0
-	# Converts the supplied Nautical Miles value to Kilometres
+	@doc """
+	Converts the supplied Nautical Miles value to Kilometres
+	"""
 	def to_kilometres(value), do: value * 1.85200
-	# Converts the supplied Nautical Miles value to Inches
+	@doc """
+	Converts the supplied Nautical Miles value to Inches
+	"""
 	def to_inches(value), do: value * 72913.4
-	# Converts the supplied Nautical Miles value to Feet
+	@doc """
+	Converts the supplied Nautical Miles value to Feet
+	"""
 	def to_feet(value), do: value * 6076.12
-	# Converts the supplied Nautical Miles value to Yards
+	@doc """
+	Converts the supplied Nautical Miles value to Yards
+	"""
 	def to_yards(value), do: value * 2025.37
-	# Converts the supplied Nautical Miles value to Miles
+	@doc """
+	Converts the supplied Nautical Miles value to Miles
+	"""
 	def to_miles(value), do: value * 1.15078
 end
 
-# Yards conversion functions
 defmodule PutridParrot.Units.Yards do
-	# Converts the supplied Yards value to Millimetres
+	@moduledoc """
+	Yards conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Yards value to Millimetres
+	"""
 	def to_millimetres(value), do: value * 914.4
-	# Converts the supplied Yards value to Centimetres
+	@doc """
+	Converts the supplied Yards value to Centimetres
+	"""
 	def to_centimetres(value), do: value * 91.44
-	# Converts the supplied Yards value to Metres
+	@doc """
+	Converts the supplied Yards value to Metres
+	"""
 	def to_metres(value), do: value * 0.9144
-	# Converts the supplied Yards value to Kilometres
+	@doc """
+	Converts the supplied Yards value to Kilometres
+	"""
 	def to_kilometres(value), do: value * 0.0009144
-	# Converts the supplied Yards value to Inches
+	@doc """
+	Converts the supplied Yards value to Inches
+	"""
 	def to_inches(value), do: value * 36.0
-	# Converts the supplied Yards value to Feet
+	@doc """
+	Converts the supplied Yards value to Feet
+	"""
 	def to_feet(value), do: value * 3.0
-	# Converts the supplied Yards value to Miles
+	@doc """
+	Converts the supplied Yards value to Miles
+	"""
 	def to_miles(value), do: value / 1760.0
-	# Converts the supplied Yards value to Nautical Miles
+	@doc """
+	Converts the supplied Yards value to Nautical Miles
+	"""
 	def to_nauticalmiles(value), do: value / 2025.37
 end

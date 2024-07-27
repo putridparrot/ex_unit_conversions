@@ -4,266 +4,519 @@
 # Changes to this file will be lost if the code is regenerated
 # </auto-generated>
 
-# Bits conversion functions
 defmodule PutridParrot.Units.Bits do
-	# Converts the supplied Bits value to Kilobits
+	@moduledoc """
+	Bits conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Bits value to Kilobits
+	"""
 	def to_kilobits(value), do: value / 1000.0
-	# Converts the supplied Bits value to Megabits
+	@doc """
+	Converts the supplied Bits value to Megabits
+	"""
 	def to_megabits(value), do: value / 1.0e+6
-	# Converts the supplied Bits value to Gigabits
+	@doc """
+	Converts the supplied Bits value to Gigabits
+	"""
 	def to_gigabits(value), do: value / 1.0e+9
-	# Converts the supplied Bits value to Terabits
+	@doc """
+	Converts the supplied Bits value to Terabits
+	"""
 	def to_terabits(value), do: value / 1.0e+12
-	# Converts the supplied Bits value to Kilobytes
+	@doc """
+	Converts the supplied Bits value to Kilobytes
+	"""
 	def to_kilobytes(value), do: value / 8000.0
-	# Converts the supplied Bits value to Megabytes
+	@doc """
+	Converts the supplied Bits value to Megabytes
+	"""
 	def to_megabytes(value), do: value / 8.0e+6
-	# Converts the supplied Bits value to Gigabytes
+	@doc """
+	Converts the supplied Bits value to Gigabytes
+	"""
 	def to_gigabytes(value), do: value / 8.0e+9
-	# Converts the supplied Bits value to Terabytes
+	@doc """
+	Converts the supplied Bits value to Terabytes
+	"""
 	def to_terabytes(value), do: value / 8.0e+12
-	# Converts the supplied Bits value to Kibibits
+	@doc """
+	Converts the supplied Bits value to Kibibits
+	"""
 	def to_kibibits(value), do: value / 1024.0
-	# Converts the supplied Bits value to Mebibits
+	@doc """
+	Converts the supplied Bits value to Mebibits
+	"""
 	def to_mebibits(value), do: value / 1048576.0
 end
 
-# Gigabits conversion functions
 defmodule PutridParrot.Units.Gigabits do
-	# Converts the supplied Gigabits value to Bits
+	@moduledoc """
+	Gigabits conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Gigabits value to Bits
+	"""
 	def to_bits(value), do: value * 1.0e+9
-	# Converts the supplied Gigabits value to Kilobits
+	@doc """
+	Converts the supplied Gigabits value to Kilobits
+	"""
 	def to_kilobits(value), do: value * 1.0e+6
-	# Converts the supplied Gigabits value to Megabits
+	@doc """
+	Converts the supplied Gigabits value to Megabits
+	"""
 	def to_megabits(value), do: value * 1000.0
-	# Converts the supplied Gigabits value to Terabits
+	@doc """
+	Converts the supplied Gigabits value to Terabits
+	"""
 	def to_terabits(value), do: value / 1000.0
-	# Converts the supplied Gigabits value to Kilobytes
+	@doc """
+	Converts the supplied Gigabits value to Kilobytes
+	"""
 	def to_kilobytes(value), do: value * 125000.0
-	# Converts the supplied Gigabits value to Megabytes
+	@doc """
+	Converts the supplied Gigabits value to Megabytes
+	"""
 	def to_megabytes(value), do: value * 125.0
-	# Converts the supplied Gigabits value to Gigabytes
+	@doc """
+	Converts the supplied Gigabits value to Gigabytes
+	"""
 	def to_gigabytes(value), do: value / 8.0
-	# Converts the supplied Gigabits value to Terabytes
+	@doc """
+	Converts the supplied Gigabits value to Terabytes
+	"""
 	def to_terabytes(value), do: value / 8000.0
-	# Converts the supplied Gigabits value to Kibibits
+	@doc """
+	Converts the supplied Gigabits value to Kibibits
+	"""
 	def to_kibibits(value), do: value * 976562.5
-	# Converts the supplied Gigabits value to Mebibits
+	@doc """
+	Converts the supplied Gigabits value to Mebibits
+	"""
 	def to_mebibits(value), do: value * 953.67431640625
 end
 
-# Gigabytes conversion functions
 defmodule PutridParrot.Units.Gigabytes do
-	# Converts the supplied Gigabytes value to Bits
+	@moduledoc """
+	Gigabytes conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Gigabytes value to Bits
+	"""
 	def to_bits(value), do: value * 8.0e+9
-	# Converts the supplied Gigabytes value to Kilobits
+	@doc """
+	Converts the supplied Gigabytes value to Kilobits
+	"""
 	def to_kilobits(value), do: value * 8.0e+6
-	# Converts the supplied Gigabytes value to Megabits
+	@doc """
+	Converts the supplied Gigabytes value to Megabits
+	"""
 	def to_megabits(value), do: value * 8000.0
-	# Converts the supplied Gigabytes value to Gigabits
+	@doc """
+	Converts the supplied Gigabytes value to Gigabits
+	"""
 	def to_gigabits(value), do: value * 8.0
-	# Converts the supplied Gigabytes value to Terabits
+	@doc """
+	Converts the supplied Gigabytes value to Terabits
+	"""
 	def to_terabits(value), do: value / 125.0
-	# Converts the supplied Gigabytes value to Kilobytes
+	@doc """
+	Converts the supplied Gigabytes value to Kilobytes
+	"""
 	def to_kilobytes(value), do: value * 1.0e+6
-	# Converts the supplied Gigabytes value to Megabytes
+	@doc """
+	Converts the supplied Gigabytes value to Megabytes
+	"""
 	def to_megabytes(value), do: value * 1000.0
-	# Converts the supplied Gigabytes value to Terabytes
+	@doc """
+	Converts the supplied Gigabytes value to Terabytes
+	"""
 	def to_terabytes(value), do: value / 1000.0
-	# Converts the supplied Gigabytes value to Kibibits
+	@doc """
+	Converts the supplied Gigabytes value to Kibibits
+	"""
 	def to_kibibits(value), do: value * 7812500.0
-	# Converts the supplied Gigabytes value to Mebibits
+	@doc """
+	Converts the supplied Gigabytes value to Mebibits
+	"""
 	def to_mebibits(value), do: value * 7629.39
 end
 
-# Kibibits conversion functions
 defmodule PutridParrot.Units.Kibibits do
-	# Converts the supplied Kibibits value to Bits
+	@moduledoc """
+	Kibibits conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Kibibits value to Bits
+	"""
 	def to_bits(value), do: value * 1024.0
-	# Converts the supplied Kibibits value to Kilobits
+	@doc """
+	Converts the supplied Kibibits value to Kilobits
+	"""
 	def to_kilobits(value), do: value * 1.024
-	# Converts the supplied Kibibits value to Megabits
+	@doc """
+	Converts the supplied Kibibits value to Megabits
+	"""
 	def to_megabits(value), do: value / 976.563
-	# Converts the supplied Kibibits value to Gigabits
+	@doc """
+	Converts the supplied Kibibits value to Gigabits
+	"""
 	def to_gigabits(value), do: value / 976562.5
-	# Converts the supplied Kibibits value to Terabits
+	@doc """
+	Converts the supplied Kibibits value to Terabits
+	"""
 	def to_terabits(value), do: value / 976562500.0
-	# Converts the supplied Kibibits value to Kilobytes
+	@doc """
+	Converts the supplied Kibibits value to Kilobytes
+	"""
 	def to_kilobytes(value), do: value / 7.8125
-	# Converts the supplied Kibibits value to Megabytes
+	@doc """
+	Converts the supplied Kibibits value to Megabytes
+	"""
 	def to_megabytes(value), do: value / 7812.5
-	# Converts the supplied Kibibits value to Gigabytes
+	@doc """
+	Converts the supplied Kibibits value to Gigabytes
+	"""
 	def to_gigabytes(value), do: value / 7812500.0
-	# Converts the supplied Kibibits value to Terabytes
+	@doc """
+	Converts the supplied Kibibits value to Terabytes
+	"""
 	def to_terabytes(value), do: value / 7812500000.0
-	# Converts the supplied Kibibits value to Mebibits
+	@doc """
+	Converts the supplied Kibibits value to Mebibits
+	"""
 	def to_mebibits(value), do: value / 1024.0
 end
 
-# Kilobits conversion functions
 defmodule PutridParrot.Units.Kilobits do
-	# Converts the supplied Kilobits value to Bits
+	@moduledoc """
+	Kilobits conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Kilobits value to Bits
+	"""
 	def to_bits(value), do: value * 1000.0
-	# Converts the supplied Kilobits value to Megabits
+	@doc """
+	Converts the supplied Kilobits value to Megabits
+	"""
 	def to_megabits(value), do: value / 1000.0
-	# Converts the supplied Kilobits value to Gigabits
+	@doc """
+	Converts the supplied Kilobits value to Gigabits
+	"""
 	def to_gigabits(value), do: value / 1.0e+6
-	# Converts the supplied Kilobits value to Terabits
+	@doc """
+	Converts the supplied Kilobits value to Terabits
+	"""
 	def to_terabits(value), do: value / 1.0e+9
-	# Converts the supplied Kilobits value to Kilobytes
+	@doc """
+	Converts the supplied Kilobits value to Kilobytes
+	"""
 	def to_kilobytes(value), do: value / 8.0
-	# Converts the supplied Kilobits value to Megabytes
+	@doc """
+	Converts the supplied Kilobits value to Megabytes
+	"""
 	def to_megabytes(value), do: value / 8000.0
-	# Converts the supplied Kilobits value to Gigabytes
+	@doc """
+	Converts the supplied Kilobits value to Gigabytes
+	"""
 	def to_gigabytes(value), do: value / 8.0e+6
-	# Converts the supplied Kilobits value to Terabytes
+	@doc """
+	Converts the supplied Kilobits value to Terabytes
+	"""
 	def to_terabytes(value), do: value / 8.0e+9
-	# Converts the supplied Kilobits value to Kibibits
+	@doc """
+	Converts the supplied Kilobits value to Kibibits
+	"""
 	def to_kibibits(value), do: value / 1.024
-	# Converts the supplied Kilobits value to Mebibits
+	@doc """
+	Converts the supplied Kilobits value to Mebibits
+	"""
 	def to_mebibits(value), do: value / 1048.58
 end
 
-# Kilobytes conversion functions
 defmodule PutridParrot.Units.Kilobytes do
-	# Converts the supplied Kilobytes value to Bits
+	@moduledoc """
+	Kilobytes conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Kilobytes value to Bits
+	"""
 	def to_bits(value), do: value * 8000.0
-	# Converts the supplied Kilobytes value to Kilobits
+	@doc """
+	Converts the supplied Kilobytes value to Kilobits
+	"""
 	def to_kilobits(value), do: value * 8.0
-	# Converts the supplied Kilobytes value to Megabits
+	@doc """
+	Converts the supplied Kilobytes value to Megabits
+	"""
 	def to_megabits(value), do: value / 125.0
-	# Converts the supplied Kilobytes value to Gigabits
+	@doc """
+	Converts the supplied Kilobytes value to Gigabits
+	"""
 	def to_gigabits(value), do: value / 125000.0
-	# Converts the supplied Kilobytes value to Terabits
+	@doc """
+	Converts the supplied Kilobytes value to Terabits
+	"""
 	def to_terabits(value), do: value / 1.25e+8
-	# Converts the supplied Kilobytes value to Megabytes
+	@doc """
+	Converts the supplied Kilobytes value to Megabytes
+	"""
 	def to_megabytes(value), do: value / 1000.0
-	# Converts the supplied Kilobytes value to Gigabytes
+	@doc """
+	Converts the supplied Kilobytes value to Gigabytes
+	"""
 	def to_gigabytes(value), do: value / 1.0e+6
-	# Converts the supplied Kilobytes value to Terabytes
+	@doc """
+	Converts the supplied Kilobytes value to Terabytes
+	"""
 	def to_terabytes(value), do: value / 1.0e+9
-	# Converts the supplied Kilobytes value to Kibibits
+	@doc """
+	Converts the supplied Kilobytes value to Kibibits
+	"""
 	def to_kibibits(value), do: value * 7.8125
-	# Converts the supplied Kilobytes value to Mebibits
+	@doc """
+	Converts the supplied Kilobytes value to Mebibits
+	"""
 	def to_mebibits(value), do: value * 0.00762939
 end
 
-# Mebibits conversion functions
 defmodule PutridParrot.Units.Mebibits do
-	# Converts the supplied Mebibits value to Bits
+	@moduledoc """
+	Mebibits conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Mebibits value to Bits
+	"""
 	def to_bits(value), do: value * 1048576.0
-	# Converts the supplied Mebibits value to Kilobits
+	@doc """
+	Converts the supplied Mebibits value to Kilobits
+	"""
 	def to_kilobits(value), do: value * 1048.58
-	# Converts the supplied Mebibits value to Megabits
+	@doc """
+	Converts the supplied Mebibits value to Megabits
+	"""
 	def to_megabits(value), do: value * 1.04858
-	# Converts the supplied Mebibits value to Gigabits
+	@doc """
+	Converts the supplied Mebibits value to Gigabits
+	"""
 	def to_gigabits(value), do: value / 953.67431640625
-	# Converts the supplied Mebibits value to Terabits
+	@doc """
+	Converts the supplied Mebibits value to Terabits
+	"""
 	def to_terabits(value), do: value / 953674.0
-	# Converts the supplied Mebibits value to Kilobytes
+	@doc """
+	Converts the supplied Mebibits value to Kilobytes
+	"""
 	def to_kilobytes(value), do: value / 0.00762939
-	# Converts the supplied Mebibits value to Megabytes
+	@doc """
+	Converts the supplied Mebibits value to Megabytes
+	"""
 	def to_megabytes(value), do: value / 7.62939
-	# Converts the supplied Mebibits value to Gigabytes
+	@doc """
+	Converts the supplied Mebibits value to Gigabytes
+	"""
 	def to_gigabytes(value), do: value / 7629.39
-	# Converts the supplied Mebibits value to Terabytes
+	@doc """
+	Converts the supplied Mebibits value to Terabytes
+	"""
 	def to_terabytes(value), do: value * 0.000000131072
-	# Converts the supplied Mebibits value to Kibibits
+	@doc """
+	Converts the supplied Mebibits value to Kibibits
+	"""
 	def to_kibibits(value), do: value * 1024.0
 end
 
-# Megabits conversion functions
 defmodule PutridParrot.Units.Megabits do
-	# Converts the supplied Megabits value to Bits
+	@moduledoc """
+	Megabits conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Megabits value to Bits
+	"""
 	def to_bits(value), do: value * 1.0e+6
-	# Converts the supplied Megabits value to Kilobits
+	@doc """
+	Converts the supplied Megabits value to Kilobits
+	"""
 	def to_kilobits(value), do: value * 1000.0
-	# Converts the supplied Megabits value to Gigabits
+	@doc """
+	Converts the supplied Megabits value to Gigabits
+	"""
 	def to_gigabits(value), do: value / 1000.0
-	# Converts the supplied Megabits value to Terabits
+	@doc """
+	Converts the supplied Megabits value to Terabits
+	"""
 	def to_terabits(value), do: value / 1.0e+6
-	# Converts the supplied Megabits value to Kilobytes
+	@doc """
+	Converts the supplied Megabits value to Kilobytes
+	"""
 	def to_kilobytes(value), do: value * 125.0
-	# Converts the supplied Megabits value to Megabytes
+	@doc """
+	Converts the supplied Megabits value to Megabytes
+	"""
 	def to_megabytes(value), do: value / 8.0
-	# Converts the supplied Megabits value to Gigabytes
+	@doc """
+	Converts the supplied Megabits value to Gigabytes
+	"""
 	def to_gigabytes(value), do: value / 8000.0
-	# Converts the supplied Megabits value to Terabytes
+	@doc """
+	Converts the supplied Megabits value to Terabytes
+	"""
 	def to_terabytes(value), do: value / 8.0e+6
-	# Converts the supplied Megabits value to Kibibits
+	@doc """
+	Converts the supplied Megabits value to Kibibits
+	"""
 	def to_kibibits(value), do: value * 976.563
-	# Converts the supplied Megabits value to Mebibits
+	@doc """
+	Converts the supplied Megabits value to Mebibits
+	"""
 	def to_mebibits(value), do: value / 1.04858
 end
 
-# Megabytes conversion functions
 defmodule PutridParrot.Units.Megabytes do
-	# Converts the supplied Megabytes value to Bits
+	@moduledoc """
+	Megabytes conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Megabytes value to Bits
+	"""
 	def to_bits(value), do: value * 8.0e+6
-	# Converts the supplied Megabytes value to Kilobits
+	@doc """
+	Converts the supplied Megabytes value to Kilobits
+	"""
 	def to_kilobits(value), do: value * 8000.0
-	# Converts the supplied Megabytes value to Megabits
+	@doc """
+	Converts the supplied Megabytes value to Megabits
+	"""
 	def to_megabits(value), do: value * 8.0
-	# Converts the supplied Megabytes value to Gigabits
+	@doc """
+	Converts the supplied Megabytes value to Gigabits
+	"""
 	def to_gigabits(value), do: value / 125.0
-	# Converts the supplied Megabytes value to Terabits
+	@doc """
+	Converts the supplied Megabytes value to Terabits
+	"""
 	def to_terabits(value), do: value / 125000.0
-	# Converts the supplied Megabytes value to Kilobytes
+	@doc """
+	Converts the supplied Megabytes value to Kilobytes
+	"""
 	def to_kilobytes(value), do: value * 1000.0
-	# Converts the supplied Megabytes value to Gigabytes
+	@doc """
+	Converts the supplied Megabytes value to Gigabytes
+	"""
 	def to_gigabytes(value), do: value / 1000.0
-	# Converts the supplied Megabytes value to Terabytes
+	@doc """
+	Converts the supplied Megabytes value to Terabytes
+	"""
 	def to_terabytes(value), do: value / 1.0e+6
-	# Converts the supplied Megabytes value to Kibibits
+	@doc """
+	Converts the supplied Megabytes value to Kibibits
+	"""
 	def to_kibibits(value), do: value * 7812.5
-	# Converts the supplied Megabytes value to Mebibits
+	@doc """
+	Converts the supplied Megabytes value to Mebibits
+	"""
 	def to_mebibits(value), do: value * 7.62939
 end
 
-# Terabits conversion functions
 defmodule PutridParrot.Units.Terabits do
-	# Converts the supplied Terabits value to Bits
+	@moduledoc """
+	Terabits conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Terabits value to Bits
+	"""
 	def to_bits(value), do: value * 1.0e+12
-	# Converts the supplied Terabits value to Kilobits
+	@doc """
+	Converts the supplied Terabits value to Kilobits
+	"""
 	def to_kilobits(value), do: value * 1.0e+9
-	# Converts the supplied Terabits value to Megabits
+	@doc """
+	Converts the supplied Terabits value to Megabits
+	"""
 	def to_megabits(value), do: value * 1.0e+6
-	# Converts the supplied Terabits value to Gigabits
+	@doc """
+	Converts the supplied Terabits value to Gigabits
+	"""
 	def to_gigabits(value), do: value * 1000.0
-	# Converts the supplied Terabits value to Kilobytes
+	@doc """
+	Converts the supplied Terabits value to Kilobytes
+	"""
 	def to_kilobytes(value), do: value * 1.25e+8
-	# Converts the supplied Terabits value to Megabytes
+	@doc """
+	Converts the supplied Terabits value to Megabytes
+	"""
 	def to_megabytes(value), do: value * 125000.0
-	# Converts the supplied Terabits value to Gigabytes
+	@doc """
+	Converts the supplied Terabits value to Gigabytes
+	"""
 	def to_gigabytes(value), do: value * 125.0
-	# Converts the supplied Terabits value to Terabytes
+	@doc """
+	Converts the supplied Terabits value to Terabytes
+	"""
 	def to_terabytes(value), do: value / 8.0
-	# Converts the supplied Terabits value to Kibibits
+	@doc """
+	Converts the supplied Terabits value to Kibibits
+	"""
 	def to_kibibits(value), do: value * 976562500.0
-	# Converts the supplied Terabits value to Mebibits
+	@doc """
+	Converts the supplied Terabits value to Mebibits
+	"""
 	def to_mebibits(value), do: value * 953674.0
 end
 
-# Terabytes conversion functions
 defmodule PutridParrot.Units.Terabytes do
-	# Converts the supplied Terabytes value to Bits
+	@moduledoc """
+	Terabytes conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Terabytes value to Bits
+	"""
 	def to_bits(value), do: value * 8.0e+12
-	# Converts the supplied Terabytes value to Kilobits
+	@doc """
+	Converts the supplied Terabytes value to Kilobits
+	"""
 	def to_kilobits(value), do: value * 8.0e+9
-	# Converts the supplied Terabytes value to Megabits
+	@doc """
+	Converts the supplied Terabytes value to Megabits
+	"""
 	def to_megabits(value), do: value * 8.0e+6
-	# Converts the supplied Terabytes value to Gigabits
+	@doc """
+	Converts the supplied Terabytes value to Gigabits
+	"""
 	def to_gigabits(value), do: value * 8000.0
-	# Converts the supplied Terabytes value to Terabits
+	@doc """
+	Converts the supplied Terabytes value to Terabits
+	"""
 	def to_terabits(value), do: value * 8.0
-	# Converts the supplied Terabytes value to Kilobytes
+	@doc """
+	Converts the supplied Terabytes value to Kilobytes
+	"""
 	def to_kilobytes(value), do: value * 1.0e+9
-	# Converts the supplied Terabytes value to Megabytes
+	@doc """
+	Converts the supplied Terabytes value to Megabytes
+	"""
 	def to_megabytes(value), do: value * 1.0e+6
-	# Converts the supplied Terabytes value to Gigabytes
+	@doc """
+	Converts the supplied Terabytes value to Gigabytes
+	"""
 	def to_gigabytes(value), do: value * 1000.0
-	# Converts the supplied Terabytes value to Kibibits
+	@doc """
+	Converts the supplied Terabytes value to Kibibits
+	"""
 	def to_kibibits(value), do: value * 7812500000.0
-	# Converts the supplied Terabytes value to Mebibits
+	@doc """
+	Converts the supplied Terabytes value to Mebibits
+	"""
 	def to_mebibits(value), do: value / 0.000000131072
 end

@@ -4,42 +4,78 @@
 # Changes to this file will be lost if the code is regenerated
 # </auto-generated>
 
-# Kilometre Per Litre conversion functions
 defmodule PutridParrot.Units.KilometrePerLitre do
-	# Converts the supplied Kilometre Per Litre value to US Miles Per Gallon
+	@moduledoc """
+	Kilometre Per Litre conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Kilometre Per Litre value to US Miles Per Gallon
+	"""
 	def to_usmilespergallon(value), do: value * 2.35215
-	# Converts the supplied Kilometre Per Litre value to Miles Per Gallon
+	@doc """
+	Converts the supplied Kilometre Per Litre value to Miles Per Gallon
+	"""
 	def to_milespergallon(value), do: value * 2.82481
-	# Converts the supplied Kilometre Per Litre value to Litres Per 100 Kilometres
+	@doc """
+	Converts the supplied Kilometre Per Litre value to Litres Per 100 Kilometres
+	"""
 	def to_litresper100kilometres(value), do: 100.0 / value
 end
 
-# Litres Per 100 Kilometres conversion functions
 defmodule PutridParrot.Units.LitresPer100Kilometres do
-	# Converts the supplied Litres Per 100 Kilometres value to Kilometre Per Litre
+	@moduledoc """
+	Litres Per 100 Kilometres conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Litres Per 100 Kilometres value to Kilometre Per Litre
+	"""
 	def to_kilometreperlitre(value), do: 100.0 / value
-	# Converts the supplied Litres Per 100 Kilometres value to Miles Per Gallon
+	@doc """
+	Converts the supplied Litres Per 100 Kilometres value to Miles Per Gallon
+	"""
 	def to_milespergallon(value), do: 282.481 / value
-	# Converts the supplied Litres Per 100 Kilometres value to US Miles Per Gallon
+	@doc """
+	Converts the supplied Litres Per 100 Kilometres value to US Miles Per Gallon
+	"""
 	def to_usmilespergallon(value), do: 235.215 / value
 end
 
-# Miles Per Gallon conversion functions
 defmodule PutridParrot.Units.MilesPerGallon do
-	# Converts the supplied Miles Per Gallon value to Kilometre Per Litre
+	@moduledoc """
+	Miles Per Gallon conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Miles Per Gallon value to Kilometre Per Litre
+	"""
 	def to_kilometreperlitre(value), do: value / 2.82481
-	# Converts the supplied Miles Per Gallon value to US Miles Per Gallon
+	@doc """
+	Converts the supplied Miles Per Gallon value to US Miles Per Gallon
+	"""
 	def to_usmilespergallon(value), do: value / 1.20095
-	# Converts the supplied Miles Per Gallon value to Litres Per 100 Kilometres
+	@doc """
+	Converts the supplied Miles Per Gallon value to Litres Per 100 Kilometres
+	"""
 	def to_litresper100kilometres(value), do: 282.481 / value
 end
 
-# US Miles Per Gallon conversion functions
 defmodule PutridParrot.Units.USMilesPerGallon do
-	# Converts the supplied US Miles Per Gallon value to Kilometre Per Litre
+	@moduledoc """
+	US Miles Per Gallon conversion functions
+	"""
+
+	@doc """
+	Converts the supplied US Miles Per Gallon value to Kilometre Per Litre
+	"""
 	def to_kilometreperlitre(value), do: value / 2.35215
-	# Converts the supplied US Miles Per Gallon value to Miles Per Gallon
+	@doc """
+	Converts the supplied US Miles Per Gallon value to Miles Per Gallon
+	"""
 	def to_milespergallon(value), do: value * 1.20095
-	# Converts the supplied US Miles Per Gallon value to Litres Per 100 Kilometres
+	@doc """
+	Converts the supplied US Miles Per Gallon value to Litres Per 100 Kilometres
+	"""
 	def to_litresper100kilometres(value), do: 235.215 / value
 end

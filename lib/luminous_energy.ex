@@ -4,42 +4,78 @@
 # Changes to this file will be lost if the code is regenerated
 # </auto-generated>
 
-# LumenHour conversion functions
 defmodule PutridParrot.Units.LumenHour do
-	# Converts the supplied LumenHour value to Talbot
+	@moduledoc """
+	LumenHour conversion functions
+	"""
+
+	@doc """
+	Converts the supplied LumenHour value to Talbot
+	"""
 	def to_talbot(value), do: value * 3600.0
-	# Converts the supplied LumenHour value to LumenMinute
+	@doc """
+	Converts the supplied LumenHour value to LumenMinute
+	"""
 	def to_lumenminute(value), do: value * 60.0
-	# Converts the supplied LumenHour value to LumenSecond
+	@doc """
+	Converts the supplied LumenHour value to LumenSecond
+	"""
 	def to_lumensecond(value), do: value * 3600.0
 end
 
-# LumenMinute conversion functions
 defmodule PutridParrot.Units.LumenMinute do
-	# Converts the supplied LumenMinute value to Talbot
+	@moduledoc """
+	LumenMinute conversion functions
+	"""
+
+	@doc """
+	Converts the supplied LumenMinute value to Talbot
+	"""
 	def to_talbot(value), do: value * 60.0
-	# Converts the supplied LumenMinute value to LumenHour
+	@doc """
+	Converts the supplied LumenMinute value to LumenHour
+	"""
 	def to_lumenhour(value), do: value / 60.0
-	# Converts the supplied LumenMinute value to LumenSecond
+	@doc """
+	Converts the supplied LumenMinute value to LumenSecond
+	"""
 	def to_lumensecond(value), do: value * 60.0
 end
 
-# LumenSecond conversion functions
 defmodule PutridParrot.Units.LumenSecond do
-	# Converts the supplied LumenSecond value to Talbot
+	@moduledoc """
+	LumenSecond conversion functions
+	"""
+
+	@doc """
+	Converts the supplied LumenSecond value to Talbot
+	"""
 	def to_talbot(value), do: value
-	# Converts the supplied LumenSecond value to LumenHour
+	@doc """
+	Converts the supplied LumenSecond value to LumenHour
+	"""
 	def to_lumenhour(value), do: value / 3600.0
-	# Converts the supplied LumenSecond value to LumenMinute
+	@doc """
+	Converts the supplied LumenSecond value to LumenMinute
+	"""
 	def to_lumenminute(value), do: value / 60.0
 end
 
-# Talbot conversion functions
 defmodule PutridParrot.Units.Talbot do
-	# Converts the supplied Talbot value to LumenSecond
+	@moduledoc """
+	Talbot conversion functions
+	"""
+
+	@doc """
+	Converts the supplied Talbot value to LumenSecond
+	"""
 	def to_lumensecond(value), do: value
-	# Converts the supplied Talbot value to LumenHour
+	@doc """
+	Converts the supplied Talbot value to LumenHour
+	"""
 	def to_lumenhour(value), do: value / 3600.0
-	# Converts the supplied Talbot value to LumenMinute
+	@doc """
+	Converts the supplied Talbot value to LumenMinute
+	"""
 	def to_lumenminute(value), do: value / 60.0
 end
